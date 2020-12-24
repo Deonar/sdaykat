@@ -1,2 +1,40 @@
+@media (max-width: 1000px) {
+  //=========================== HEADER
+  .header {
+    &-top__address {
+      display: none;
+    }
+    &-top__contact-tell::after {
+      display: block;
+    }
+    &-top__contact-tell p,
+    &-top__contact-text {
+      display: none;
+    }
+    &-bottom__menu-item {
+      margin-right: 20px;
+    }
+  }
+  //=========================== HEADER AND
+}
 @media (max-width: 767px) {
+  //=========================== HEADER
+  .header {
+    max-height: 60px;
+    &-bottom,
+    &-top__nav,
+    &-top__cabinet {
+      display: none;
+    }
+    &-top__contact {
+      margin-right: 0;
+    }
+    &-burger__wrapper {
+      display: block;
+    }
+    &-mob__logo {
+      display: flex;
+    }
+  }
+  //=========================== HEADER AND
 }

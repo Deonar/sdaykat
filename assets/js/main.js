@@ -1,19 +1,14 @@
 jQuery(document).ready(function ($) {
   //Mob-menu
-  $('.burgerJs').on('click', function (e) {
+  $('#header-burger').on('click', function (e) {
     $(this).toggleClass('active');
+    $('#mobMenu').addClass('active');
     $('body').toggleClass('overflow-h');
-    $('#headerNavbar').toggleClass('active');
   });
-  $('.navbar-menu a').on('click', function (e) {
+  $('.close-mob-menu-js').on('click', function (e) {
     $('body').removeClass('overflow-h');
-    $('#headerNavbar').removeClass('active');
-    $('.burgerJs').removeClass('active');
-  });
-  $('#closeNavbar').on('click', function (e) {
-    $('body').removeClass('overflow-h');
-    $('#headerNavbar').removeClass('active');
-    $('.burgerJs').removeClass('active');
+    $('#header-burger').removeClass('active');
+    $('#mobMenu').removeClass('active');
   });
 
   //======================== POPUPS
