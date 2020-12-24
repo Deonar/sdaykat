@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: $base-font;
+  font-style: normal;
+}
+body {
+  position: relative;
+  font-family: $base-font;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $text;
+}
+.text-center {
+  text-align: center;
+}
+
+.overflow-h {
+  overflow: hidden !important;
+}
+
+.h-100p {
+  height: 100%;
+}
+.m-auto {
+  margin: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+.primary-title {
+  width: 100%;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 40px;
+  color: $text;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 3000px;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  &:hover {
+    background: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.primary-btn {
+  background: $primary-btn;
+  &:hover {
+    border: 1px solid $primary-btn;
+    color: $primary-btn;
+  }
+}
+
+.small-btn {
+  padding: 10px 30px;
+}

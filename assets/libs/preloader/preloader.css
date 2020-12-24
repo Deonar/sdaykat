@@ -1,0 +1,145 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f8fa;
+}
+
+.preloader__logo {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.preloader__line {
+  width: 80px;
+  height: 2px;
+  background-color: #e43248;
+  animation: loaderLine 3s forwards;
+}
+
+.preloader__line-wrapper {
+  position: relative;
+  width: 300px;
+  height: 2px;
+  overflow: hidden;
+  background-color: #d6d6d6;
+}
+
+@keyframes loaderLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(220px);
+  }
+}
+
+/* .preloader__screen {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #000;
+  transition: transform 0.7s ease-in-out 0.7s;
+}
+
+.preloader__screen_left {
+  left: 0;
+  transform-origin: 0% 50%;
+}
+
+.preloader__screen_right {
+  right: 0;
+  transform-origin: 100% 50%;
+}
+
+.preloader__loader-infinite,
+.preloader__loader {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: white;
+  transform: scaleX(0.05);
+  transform-origin: 50% 50%;
+}
+
+.preloader_hide .preloader__screen_left,
+.preloader_hide .preloader__screen_right {
+  transform: scaleX(0);
+}
+
+.preloader_hide .preloader__loader-infinite {
+  display: none;
+}
+
+.preloader_hide .preloader__loader {
+  animation: loaderRotate 1.2s forwards;
+}
+
+.preloader__loader-infinite {
+  background: black;
+  animation: loaderInfinite 0.7s infinite alternate;
+}
+
+@keyframes loaderRotate {
+  30% {
+    background: white;
+    transform: rotate(90deg) scaleX(0.05);
+  }
+
+  50% {
+    background: white;
+    opacity: 1;
+    transform: rotate(90deg) scaleX(1);
+  }
+
+  100% {
+    background: #000;
+    opacity: 0;
+    transform: rotate(90deg) scaleX(1);
+  }
+}
+
+@keyframes loaderRotateMobile {
+  30% {
+    background: white;
+    transform: rotate(90deg) scaleX(0.05);
+  }
+
+  50% {
+    background: white;
+    opacity: 1;
+    transform: rotate(90deg) scaleX(2.5);
+  }
+
+  100% {
+    background: #000;
+    opacity: 0;
+    transform: rotate(90deg) scaleX(2.5);
+  }
+}
+
+@keyframes loaderInfinite {
+  from {
+    transform: scaleX(0.05);
+  }
+
+  to {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 1279px) and (orientation: portrait) {
+  .preloader_hide .preloader__loader {
+    animation: loaderRotateMobile 1.2s forwards;
+  }
+} */

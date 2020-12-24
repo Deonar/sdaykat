@@ -1,0 +1,47 @@
+.white-popup {
+  position: relative;
+  background: #f7f9fc;
+  border-radius: 5px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.mfp-close {
+  width: 25px;
+  height: 25px;
+  border: 1px solid $primary !important;
+  opacity: 1;
+  border-radius: 50%;
+  line-height: 24px;
+}
+.mfp-close-btn-in .mfp-close {
+  font-family: $base-font;
+  font-weight: 300;
+  color: $primary;
+  font-size: 30px;
+  right: 20px;
+  top: 20px;
+}
+.mfp-fade.mfp-bg {
+  height: 200% !important;
+  opacity: 0;
+  transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
