@@ -60,7 +60,7 @@ body {
 .mt-auto {
   margin-top: auto;
 }
-.mt-30{
+.mt-30 {
   margin-top: 30px;
 }
 
@@ -76,7 +76,7 @@ body {
 .mb-20 {
   margin-bottom: 20px;
 }
-.mb-10{
+.mb-10 {
   margin-bottom: 10px;
 }
 .mr-20 {
@@ -105,22 +105,22 @@ body {
   flex-direction: column;
 }
 
-.page {
+.indent-of-header {
   padding-top: 130px;
 }
 .page__no-padding {
   padding-top: 0px;
 }
 
-.opacity-3{
+.opacity-3 {
   opacity: 0.3;
 }
-.opacity-7{
+.opacity-7 {
   opacity: 0.7;
 }
 
 .small-text {
-  font-family: "ProximaNova";
+  font-family: 'ProximaNova';
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -128,15 +128,22 @@ body {
 }
 .primary-title {
   width: 100%;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 40px;
+  font-size: 30px;
   color: $text;
-  text-align: center;
+  font-family: 'Stapel';
+  font-weight: 500;
+  line-height: 38px;
+  &__light {
+    color: $text-light;
+  }
+  &__h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .popup-title {
-  font-family: "Stapel";
+  font-family: 'Stapel';
   font-weight: 500;
   font-size: 24px;
   color: $text;
@@ -189,7 +196,7 @@ body {
     vertical-align: top;
     z-index: 2;
     &:before {
-      content: "";
+      content: '';
       background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
       height: 100%;
       width: 20%;
@@ -216,22 +223,31 @@ body {
     background: $primary-btn;
   }
 }
-.separater-line{
+
+.gray2-btn {
+  background: $gray2-btn;
+  color: $text;
+  &:hover {
+    background: $gray2-btn;
+  }
+}
+.separater-line {
   height: 0;
   border-bottom: 1px solid #fff;
 }
 .link {
-  font-family: "ProximaNova";
+  font-family: 'ProximaNova';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: $text-primary;
 }
-
+.section {
+  margin-bottom: 100px;
+}
 .small-btn {
   padding: 10px 30px;
 }
@@ -249,7 +265,7 @@ body {
     width: 100%;
     max-width: 200px;
     &::before {
-      content: "";
+      content: '';
       display: block;
       height: 15px;
       width: 15px;
@@ -264,7 +280,7 @@ body {
   }
   &__phone {
     outline: none;
-    font-family: "ProximaNova";
+    font-family: 'ProximaNova';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -304,7 +320,7 @@ body {
     margin-right: 10px;
     cursor: pointer;
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       width: 10px;
       height: 7px;
