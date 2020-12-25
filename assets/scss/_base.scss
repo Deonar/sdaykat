@@ -102,7 +102,27 @@ body {
   color: $text;
   line-height: 30px;
 }
-
+.popup-btn {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text;
+  padding: 11px 18px;
+  border-radius: 3px;
+  background: #e6ebf5;
+  transition: all 0.3s ease;
+  &:hover {
+    background: #dae1f1;
+    transition: all 0.3s ease;
+  }
+  &:focus {
+    outline: none;
+  }
+}
 .btn {
   cursor: pointer;
   display: inline-block;
