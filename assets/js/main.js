@@ -17,7 +17,7 @@ jQuery(document).ready(function ($) {
     $('#mobMenu').removeClass('active');
   });
 
-  // Popup city
+  //==================================  Popup city
   $('#city-list').on('click', '.selectCity__item', function () {
     city = $(this).data('city');
     region = $(this).data('region');
@@ -34,7 +34,20 @@ jQuery(document).ready(function ($) {
   // $('#closeLocationPopup').on('click', function (e) {
   //   $('.location-popup').css({ opacity: '0', visibility: 'hidden' });
   // });
-  // Popup city and
+  // ======================= Popup city and
+
+  //======================== Footer tabs
+  $('.footer-tab-js').on('click', function (e) {
+    $(this).toggleClass('active');
+    if ($(this).hasClass('active')) {
+      $(this).find('.footer-item__menu-list').toggle('blind');
+    } else {
+      $(this).find('.footer-item__menu-list').hide('300');
+    }
+  });
+
+  //======================== Footer tabs and
+
   //======================== MASK
   // $('.mask-phone').mask('+7 (999) 999-99-99');
 

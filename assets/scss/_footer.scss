@@ -1,3 +1,141 @@
 .footer {
-  width: 100%;
+  background: $primary;
+  padding: 50px 0px 30px 0px;
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &-contacts {
+  }
+  &-tell,
+  &-tell--mob {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: $text-light;
+    transition: all 0.3s ease;
+    &:hover {
+      transition: all 0.3s ease;
+      color: $text-secondery;
+    }
+  }
+  &-tell--mob,
+  &-tell__text--mob {
+    display: none;
+  }
+  &-tell__text,
+  &-tell__text--mob {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    color: #8090b7;
+  }
+  &-privacy {
+    display: block;
+    color: $text-light;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    &:hover {
+      transition: all 0.3s ease;
+      color: $text-secondery;
+    }
+  }
+  &-social__list {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  &-social__item {
+    margin-right: 6px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &-social__link {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+      svg {
+        transition: all 0.3s ease;
+        fill: $text-secondery;
+      }
+    }
+    svg {
+      transition: all 0.3s ease;
+      fill: $white;
+    }
+    &.social__odnoklassniki svg {
+      width: 8px;
+      height: 12px;
+    }
+    &.social__vk svg {
+      width: 10px;
+      height: 6px;
+    }
+    &.social__inst svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  &-item.active {
+  }
+  &-item__about {
+  }
+  &-item__title {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 30px;
+    color: $text-light;
+  }
+  &-item__menu-list {
+    transition: all 0.3s ease;
+  }
+  &-item__menu-item {
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &-item__menu-link {
+    color: #8090b7;
+    font-size: 14px;
+    line-height: 18px;
+    transition: all 0.3s ease;
+    &:hover {
+      transition: all 0.3s ease;
+      color: $text-secondery;
+    }
+  }
+  &-item__clients {
+  }
+  &-item__journal {
+  }
+  &-copy {
+    text-align: center;
+    font-weight: 700;
+    color: $text-light;
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

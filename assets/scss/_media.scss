@@ -1,4 +1,4 @@
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
   //=========================== HEADER
   .header {
     &-top__address {
@@ -24,6 +24,19 @@
     }
   }
   //=========================== HEADER AND
+}
+@media (max-width: 992px) {
+  //=========================== Footer
+  .footer {
+    &-body {
+      flex-wrap: wrap;
+    }
+    &-item {
+      width: 35%;
+      margin-bottom: 30px;
+    }
+  }
+  //=========================== Footer AND
 }
 @media (max-width: 767px) {
   .page {
@@ -69,4 +82,66 @@
     font-size: 14px;
   }
   //====================== Popup city and
+
+  //=========================== Footer
+  .footer {
+    &-body {
+      margin-bottom: 50px;
+    }
+    &-contacts {
+      order: 3;
+    }
+    &-tell,
+    &-tell__text {
+      display: none;
+    }
+    &-tell--mob,
+    &-tell__text--mob {
+      display: block;
+      width: 100%;
+    }
+    &-item {
+      width: 100%;
+      margin-bottom: 0px;
+    }
+    &-item__title {
+      margin-bottom: 0;
+    }
+    &-item__menu-list {
+      display: none;
+      padding: 8px 0;
+    }
+    &-contacts {
+      margin-top: 25px;
+    }
+    &-item__about {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    &-item__about,
+    &-item__clients,
+    &-item__journal {
+      position: relative;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 4px;
+        top: 18px;
+        width: 8px;
+        height: 8px;
+        transform: rotate(-45deg);
+        border-bottom: 2px solid #ffffff;
+        border-left: 2px solid #ffffff;
+        transition: all 0.3s ease;
+      }
+    }
+    &-item.active {
+      &::after {
+        transform: rotate(-225deg);
+      }
+    }
+  }
+  //=========================== Footer AND
 }
