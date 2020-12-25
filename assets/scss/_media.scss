@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   //=========================== HEADER
   .header {
     &-top__address {
@@ -14,10 +14,27 @@
     &-bottom__menu-item {
       margin-right: 20px;
     }
+    &.header-dark {
+      .header-top__contact-tell::after {
+        display: none;
+      }
+      .header-top__contact-tell::before {
+        display: block;
+      }
+    }
   }
   //=========================== HEADER AND
 }
 @media (max-width: 767px) {
+  .page {
+    padding-top: 60px;
+  }
+  .page__no-padding {
+    padding-top: 0px;
+  }
+  .popup-title {
+    font-size: 18px;
+  }
   //=========================== HEADER
   .header {
     max-height: 60px;
@@ -36,5 +53,20 @@
       display: flex;
     }
   }
+
   //=========================== HEADER AND
+
+  //====================== Popup city
+  .popup-cities__body {
+    padding: 50px 20px 10px 20px;
+  }
+  .selectCity {
+    &__item {
+      width: 50%;
+    }
+  }
+  .selectRegion__item-title {
+    font-size: 14px;
+  }
+  //====================== Popup city and
 }

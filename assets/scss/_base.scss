@@ -79,6 +79,13 @@ body {
   max-width: 1170px;
 }
 
+.page {
+  padding-top: 130px;
+}
+.page__no-padding {
+  padding-top: 0px;
+}
+
 .primary-title {
   width: 100%;
   font-size: 25px;
@@ -86,6 +93,14 @@ body {
   line-height: 40px;
   color: $text;
   text-align: center;
+}
+
+.popup-title {
+  font-family: 'Stapel';
+  font-weight: 500;
+  font-size: 24px;
+  color: $text;
+  line-height: 30px;
 }
 
 .btn {
@@ -111,6 +126,7 @@ body {
     outline: none;
   }
 }
+
 .primary-btn {
   background: $primary-btn;
   &:hover {

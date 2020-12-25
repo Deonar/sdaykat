@@ -1,4 +1,10 @@
 jQuery(document).ready(function ($) {
+  //======================== Scrollbar
+  $('.scrollbar').scrollbar();
+
+  //======================== POPUPS
+  $('.popup').magnificPopup({});
+
   //Mob-menu
   $('#header-burger').on('click', function (e) {
     $(this).toggleClass('active');
@@ -11,14 +17,26 @@ jQuery(document).ready(function ($) {
     $('#mobMenu').removeClass('active');
   });
 
-  //======================== POPUPS
-  // $('.popup').magnificPopup({});
+  // Popup city
+  $('#city-list').on('click', '.selectCity__item', function () {
+    city = $(this).data('city');
+    region = $(this).data('region');
+    $('.selectCity__item').removeClass('selectCity__current');
+    $(this).addClass('selectCity__current');
+    $('.header-top__location .header-top__location-link').text(city);
+    $('.header-mob__location .header-mob__location-link').text(city);
+    $('#geo-city').text(city);
 
+    $('#inputCity').val(city);
+
+    $.magnificPopup.close();
+  });
+  // $('#closeLocationPopup').on('click', function (e) {
+  //   $('.location-popup').css({ opacity: '0', visibility: 'hidden' });
+  // });
+  // Popup city and
   //======================== MASK
   // $('.mask-phone').mask('+7 (999) 999-99-99');
-
-  //======================== Scrollbar
-  // $('.scrollbar').scrollbar();
 
   //======================== ALL SELECTIZES
   // $('.custom-select').selectize();
