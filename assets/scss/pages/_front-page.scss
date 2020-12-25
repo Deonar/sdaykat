@@ -1,0 +1,18 @@
+.main_front-page{
+    padding-top: 160px;
+    position: relative;
+    min-height: 670px;
+    background-image: url(../img/front-page-bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,.6);
+    }
+}
