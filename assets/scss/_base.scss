@@ -14,6 +14,19 @@ body {
   line-height: 1.4;
   color: $text;
 }
+
+::placeholder {
+  color: $text-placeholder;
+}
+
+:-ms-input-placeholder {
+  color: $text-placeholder;
+}
+
+::-ms-input-placeholder {
+  color: $text-placeholder;
+}
+
 .text-center {
   text-align: center;
 }
@@ -21,7 +34,9 @@ body {
 .overflow-h {
   overflow: hidden !important;
 }
-
+.text-placeholder {
+  color: $text-placeholder;
+}
 .text-orange {
   color: $text-secondery;
 }
@@ -45,6 +60,10 @@ body {
 .mt-auto {
   margin-top: auto;
 }
+.mt-30{
+  margin-top: 30px;
+}
+
 .mb-auto {
   margin-bottom: auto;
 }
@@ -56,6 +75,9 @@ body {
 }
 .mb-20 {
   margin-bottom: 20px;
+}
+.mb-10{
+  margin-bottom: 10px;
 }
 .mr-20 {
   margin-right: 20px;
@@ -90,6 +112,20 @@ body {
   padding-top: 0px;
 }
 
+.opacity-3{
+  opacity: 0.3;
+}
+.opacity-7{
+  opacity: 0.7;
+}
+
+.small-text {
+  font-family: "ProximaNova";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
 .primary-title {
   width: 100%;
   font-size: 25px;
@@ -136,7 +172,7 @@ body {
   line-height: 15px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 15px 30px;
+  padding: 17px 30px;
   border: 1px solid transparent;
   transition: all 0.3s ease;
   &:hover {
@@ -180,46 +216,38 @@ body {
     background: $primary-btn;
   }
 }
+.separater-line{
+  height: 0;
+  border-bottom: 1px solid #fff;
+}
+.link {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $text-primary;
+}
 
 .small-btn {
   padding: 10px 30px;
 }
 
 .main-form {
-  &__phone {
-
-    font-family: "Proxima Nova";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-
-
-    position: relative;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    padding-left: 40px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    font-size: 18px;
-    font-weight: 300;
-    background: #ffffff;
-    border-radius: 3px;
+  &__wrapper {
+    display: flex;
+    margin-bottom: 10px;
   }
-
   &__label_phone {
     position: relative;
-    min-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 25px;
+    margin-right: 5px;
+    width: 100%;
+    max-width: 200px;
     &::before {
       content: "";
       display: block;
@@ -229,9 +257,69 @@ body {
       background-repeat: no-repeat;
       background-size: 100%;
       position: absolute;
-      top: 4px;
-      left: 0;
+      top: 16px;
+      left: 15px;
       z-index: 9;
+    }
+  }
+  &__phone {
+    outline: none;
+    font-family: "ProximaNova";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    line-height: 50px;
+    height: 50px;
+    padding-left: 40px;
+    background: #ffffff;
+    border-radius: 3px;
+  }
+  &__text {
+    color: #fff;
+    a {
+      color: $text-placeholder;
+    }
+  }
+  &__policy {
+    display: flex;
+    align-items: center;
+  }
+  &__checkbox {
+    display: none;
+    &:checked + .main-form__checkbox-box::before {
+      opacity: 1;
+    }
+  }
+  &__checkbox-box {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 7px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/icons/icon-checked.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      opacity: 0;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
     }
   }
 }

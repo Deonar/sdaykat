@@ -7,7 +7,8 @@
 
 .scroll-wrapper > .scroll-content {
   border: none !important;
-  box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
   height: auto;
   left: 0;
   margin: 0;
@@ -30,7 +31,8 @@
 }
 
 .scroll-element, .scroll-element div {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .scroll-element.scroll-x.scroll-scrollx_visible,
@@ -54,7 +56,8 @@
 
 .scroll-textarea > .scroll-content > textarea {
   border: none !important;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100% !important;
   margin: 0;
   max-height: none !important;

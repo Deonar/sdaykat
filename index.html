@@ -176,58 +176,102 @@
       <div class="container">
         <div class="row">
           <div class="col-8">
-            <h1>Получите до <b class="text-orange">75 000₽</b> за старый катализатор <b class="text-orange">в Челябинске</b></h1>
+            <h1 class="main-title">Получите до <b class="text-orange">75 000₽</b><br> за старый катализатор<br><b class="text-orange">в Челябинске</b></h1>
+            <!-- Phone form  -->
             <form class="main-form">
-              <div class="main-form_wrapper">
+              <div class="main-form__wrapper">
                 <label class="main-form__label main-form__label_phone">
-                  <input class="main-form__phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+                  <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
                   <button class="main-form__submit btn btn_hover primary-btn" id="intro-submit-btn" type="button">Продать катализатор</button>
                 </div>
               </div>
-              <label class="main-form__label">
+              <label class="main-form__policy">
                 <input type="checkbox" checked="" class="main-form__checkbox" />
                 <span class="main-form__checkbox-box"></span>
-                <span class="main-form__text"> Я ознакомлен c <a href="#" data-fancybox="" data-src="#policy" class="main-form__text-link">политикой конфиденциальности</a> </span>
+                <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
               </label>
             </form>
+            <!-- Phone form end -->
+            <div class="separater-line opacity-3 mt-30 mb-20"></div>
+            <div class="info-block">
+              <div class="info-block__item">
+                <div class="info-block__icon opacity-7 mb-10">
+                  <img src="assets/img/icons/icon-up-rub.svg" alt="">
+                </div>
+                <h4 class="info-block__title mb-10">
+                  Высокие цены
+                </h4>
+                <p class="opacity-7">
+                  Выплачиваем до 75 000 ₽<br>
+                  за старый катализатор
+                </p>
+              </div>
+              <div class="info-block__item">
+                <div class="info-block__icon opacity-7 mb-10">
+                  <img src="assets/img/icons/icon-percent.svg" alt="">
+                </div>
+                <h4 class="info-block__title mb-10">
+                  Программа лояльности
+                </h4>
+                <p class="opacity-7">
+                  Выплачиваем до 75 000 ₽<br>
+                  за старый катализатор
+                </p>
+              </div>
+              <div class="info-block__item">
+                <div class="info-block__icon opacity-7 mb-10">
+                  <img src="assets/img/icons/icon-filial.svg" alt="">
+                </div>
+                <h4 class="info-block__title mb-10">
+                  3 точки в Челябинске
+                </h4>
+                <p class="opacity-7">
+                  Выплачиваем до 75 000 ₽<br>
+                  за старый катализатор
+                </p>
+              </div>
+            </div>  
           </div>
           <div class="col-4">
             <div class="curs-metal">
-              <div class="curs-metal-title">
+              <div class="curs-metal__title">
                 <h3>Честные выплаты до <span class="text-orange">75%</span> по LME</h3>
-                <div class="curs-metal-icon">
-                  <img src="" alt="" />
+                <div class="curs-metal__icon">
+                  <img src="assets/img/icons/icon-metal.svg" alt="" />
                 </div>
               </div>
               <div class="curs-metal-list">
-                <div class="curs-metal-list__item">
+                <div class="curs-metal-list__item d-flex justify-content-between text-placeholder">
                   <div class="small-text">Сегодня</div>
                   <div class="small-text">Вчера</div>
                 </div>
                 <div class="curs-metal-list__item">
-                  <div class="curs-metal__valuta curs-metal__valuta_up">Pd</div>
+                  <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
                   <div class="d-flex justify-content-between">
                     <div class="h4">5 658,74 ₽/г</div>
-                    <div class="h5">5 648,74 ₽/г</div>
+                    <div class="h5 text-placeholder">5 648,74 ₽/г</div>
                   </div>
                 </div>
                 <div class="curs-metal-list__item">
-                  <div class="curs-metal__valuta curs-metal__valuta_up">Pd</div>
+                  <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
                   <div class="d-flex justify-content-between">
                     <div class="h4">5 658,74 ₽/г</div>
-                    <div class="h5">5 648,74 ₽/г</div>
+                    <div class="h5 text-placeholder">5 648,74 ₽/г</div>
                   </div>
                 </div>
                 <div class="curs-metal-list__item">
-                  <div class="curs-metal__valuta curs-metal__valuta_up">Pd</div>
+                  <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_down"></span></div>
                   <div class="d-flex justify-content-between">
                     <div class="h4">5 658,74 ₽/г</div>
-                    <div class="h5">5 648,74 ₽/г</div>
+                    <div class="h5 text-placeholder">5 648,74 ₽/г</div>
                   </div>
                 </div>
               </div>
+              <div class="curs-metal__link text-center"><a href="#" class="link">
+               проверить на lme.com
+              </a></div>
             </div>
           </div>
         </div>
@@ -297,6 +341,7 @@
     <script src="assets/libs/scrollbar/jquery.scrollbar.min.js"></script>
     <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 
+    <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
     <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>
     <script src="assets/libs/jquery-libs/jquery.ui.touch-punch.min.js"></script>
 

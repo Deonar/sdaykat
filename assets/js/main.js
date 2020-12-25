@@ -34,9 +34,8 @@ jQuery(document).ready(function ($) {
   // $('#closeLocationPopup').on('click', function (e) {
   //   $('.location-popup').css({ opacity: '0', visibility: 'hidden' });
   // });
-  // Popup city and
-  //======================== MASK
-  // $('.mask-phone').mask('+7 (999) 999-99-99');
+  // ======================== MASK
+  $('.mask-phone').mask('+7 (999) 999-99-99');
 
   //======================== ALL SELECTIZES
   // $('.custom-select').selectize();

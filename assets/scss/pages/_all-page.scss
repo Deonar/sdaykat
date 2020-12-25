@@ -1,7 +1,59 @@
-.main{
+.main {
     min-height: 670px;
+    &-title {
+        color: #fff;
+        margin-bottom: 30px;
+    }
 }
-.curs-metal{
-
-
+.curs-metal {
+    background: #ffffff;
+    box-shadow: 0px 20px 40px rgba(30, 30, 30, 0.1);
+    border-radius: 3px;
+    padding: 30px;
+    &-list {
+        margin-bottom: 30px;
+        &__item {
+            padding: 10px 0;
+            border-bottom: 1px solid #e2e4ea;
+            .h4 {
+                color: #717784;
+            }
+        }
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        h3 {
+            max-width: 210px;
+        }
+    }
+    &__icon {
+        margin-top: 10px;
+    }
+    &__valuta {
+        font-family: "ProximaNova";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        &_down {
+            width: 0;
+            height: 0;
+            margin-left: 5px;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-top: 6px solid #d10000;
+        }
+        &_up {
+            width: 0;
+            height: 0;
+            margin-left: 5px;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-bottom: 6px solid #00ae26;
+        }
+    }
 }
