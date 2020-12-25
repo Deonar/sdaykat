@@ -60,7 +60,7 @@ body {
 .mt-auto {
   margin-top: auto;
 }
-.mt-30{
+.mt-30 {
   margin-top: 30px;
 }
 
@@ -76,7 +76,7 @@ body {
 .mb-20 {
   margin-bottom: 20px;
 }
-.mb-10{
+.mb-10 {
   margin-bottom: 10px;
 }
 .mr-20 {
@@ -112,19 +112,29 @@ body {
   padding-top: 0px;
 }
 
-.opacity-3{
+.opacity-3 {
   opacity: 0.3;
 }
-.opacity-7{
+.opacity-7 {
   opacity: 0.7;
 }
-
+.section-wrapper {
+  padding: 80px 0;
+}
 .small-text {
   font-family: "ProximaNova";
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
+}
+.title {
+  font-family: "Stapel";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+  margin-bottom: 40px;
 }
 .primary-title {
   width: 100%;
@@ -216,7 +226,7 @@ body {
     background: $primary-btn;
   }
 }
-.separater-line{
+.separater-line {
   height: 0;
   border-bottom: 1px solid #fff;
 }
