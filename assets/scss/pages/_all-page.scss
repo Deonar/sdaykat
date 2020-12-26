@@ -1,61 +1,291 @@
 .main {
-    min-height: 670px;
-    &-title {
-        color: #fff;
-        margin-bottom: 30px;
-    }
+  min-height: 670px;
+  &-title {
+    color: #fff;
+    margin-bottom: 30px;
+  }
 }
+
 .curs-metal {
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(30, 30, 30, 0.1);
+  border-radius: 3px;
+  padding: 30px;
+  &-list {
+    margin-bottom: 30px;
+    &__item {
+      padding: 10px 0;
+      border-bottom: 1px solid #e2e4ea;
+      .h4 {
+        color: #717784;
+      }
+    }
+  }
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    h3 {
+      max-width: 210px;
+    }
+  }
+  &__icon {
+    margin-top: 10px;
+  }
+  &__valuta {
+    font-family: 'ProximaNova';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    &_down {
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: 6px solid #d10000;
+    }
+    &_up {
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-bottom: 6px solid #00ae26;
+    }
+  }
+}
+
+.prices-ofmetal {
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__title {
+    max-width: 300px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+  }
+  &__btn {
+    text-transform: uppercase;
+  }
+  &__item {
+    width: calc(33.3333% - 30px);
+    margin: 0 15px;
+    background: #f4f7fa;
+    border-radius: 3px;
+    padding: 30px 30px 16px 30px;
+  }
+}
+
+.item-ofmetal {
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  &__title {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: $text-primary;
+  }
+  &__name {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-primary;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-top: 1px solid #e2e4ea;
+  }
+  &__quantity,
+  &__percent {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__quantity {
+    margin-right: 10px;
+    color: $text;
+    white-space: nowrap;
+  }
+  &__percent {
+    color: $text-gray;
+  }
+  &__addservice {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-gray;
+  }
+}
+
+.calculator {
+  &-price {
+  }
+  &-body {
+    position: relative;
+    background: $primary;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50px;
+      top: 50px;
+      width: 80px;
+      height: 80px;
+      background: url('../../img/icons/calculator-icon.svg') center center no-repeat;
+    }
+  }
+  &-settings {
+    width: 100%;
+    max-width: 430px;
+    margin-right: 110px;
+  }
+  &-title {
+    margin-bottom: 30px;
+  }
+  &-result__weight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .calculator-input {
+      max-width: 140px;
+    }
+  }
+  &-result__title {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: $text-light;
+  }
+  &-result__input {
+    display: flex;
+    align-items: center;
+  }
+  &-result__label {
+    color: $text-light;
+    font-size: 14px;
+    margin-left: 10px;
+    min-width: 35px;
+    text-align: left;
+  }
+  &-options {
+  }
+  &-form {
     background: #ffffff;
-    box-shadow: 0px 20px 40px rgba(30, 30, 30, 0.1);
     border-radius: 3px;
     padding: 30px;
-    &-list {
-        margin-bottom: 30px;
-        &__item {
-            padding: 10px 0;
-            border-bottom: 1px solid #e2e4ea;
-            .h4 {
-                color: #717784;
-            }
-        }
+    width: 100%;
+    max-width: 470px;
+  }
+  &-form__title {
+  }
+  &-form__price {
+    font-family: 'Stapel';
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 71px;
+    color: $text-secondery;
+    margin-bottom: 10px;
+  }
+  &-form__tell-label {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  &-form__tell {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: $text-primary;
+  }
+}
+.calculator-input {
+  background: $white;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 16px 12px;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 70px;
+  border: none;
+  outline: none;
+  &:focus {
+    &::placeholder {
+      font-size: 0;
+      outline: none;
     }
-    &__title {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-        h3 {
-            max-width: 210px;
-        }
+  }
+}
+.options {
+  &-calculator {
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
     }
-    &__icon {
-        margin-top: 10px;
-    }
-    &__valuta {
-        font-family: "ProximaNova";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 17px;
-        display: flex;
-        align-items: center;
-        &_down {
-            width: 0;
-            height: 0;
-            margin-left: 5px;
-            border-left: 3px solid transparent;
-            border-right: 3px solid transparent;
-            border-top: 6px solid #d10000;
-        }
-        &_up {
-            width: 0;
-            height: 0;
-            margin-left: 5px;
-            border-left: 3px solid transparent;
-            border-right: 3px solid transparent;
-            border-bottom: 6px solid #00ae26;
-        }
-    }
+  }
+  &-item__percent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 25px;
+    color: $text-light;
+    margin-right: 15px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  &-item__material {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 10px;
+    color: $text-light;
+  }
+  &-item__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  &-item__range {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
 }
 
 .catalysts {
