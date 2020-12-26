@@ -51,6 +51,23 @@ jQuery(document).ready(function ($) {
   });
 
   //======================== Footer tabs and
+  //======================== SWIPE SLIDERS
+  var mainSwiper = new Swiper('#main-slider', {
+    slidesPerView: 1,
+    speed: 1000,
+    pagination: {
+      el: '.main-slider .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.main-slider .swiper-button-next',
+      prevEl: '.main-slider .swiper-button-prev',
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
+  //======================== SWIPE SLIDERS AND
 
   //======================== Calculator
   $('.show-form-calculator').on('click', function (e) {});

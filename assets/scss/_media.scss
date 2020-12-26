@@ -78,6 +78,92 @@
     max-width: 100%;
   }
   //=========================== Calcularor and
+  //=========================== Bonuses
+  .bonuses {
+    &-body {
+      background: inherit;
+      border-radius: 0px;
+      padding: 0px;
+      position: relative;
+      &:after {
+        display: none;
+      }
+    }
+    &-title {
+      margin-bottom: 25px;
+      color: $text;
+    }
+    &-list {
+      padding-bottom: 0px;
+      border-bottom: 0px;
+      width: calc(100% + 15px);
+      margin: 0 -7.5px;
+    }
+    &-item {
+      &:last-child {
+        margin-right: auto;
+      }
+      max-width: 100%;
+      width: calc(33.333% - 15px);
+      margin: 0 7.5px;
+      padding: 20px;
+      background: #101010;
+      border-radius: 3px;
+    }
+    &-item__percent {
+      margin-bottom: 5px;
+    }
+    &-item__title {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+    &-options {
+      padding: 20px;
+      margin-top: 15px;
+      flex-direction: column;
+      background: #101010;
+      border-radius: 3px;
+    }
+    &-offer {
+      padding-top: 50px;
+      padding-left: 0px;
+      max-width: 100%;
+      &::after {
+        left: 0;
+        top: 0;
+      }
+    }
+    &-offer__title {
+      font-size: 14px;
+      line-height: 18px;
+      color: $white;
+      margin-right: 0px;
+      max-width: 400px;
+    }
+    &-offer__link {
+      display: none;
+    }
+    &-programs {
+      justify-content: space-between;
+      padding: 20px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    &-programs__item {
+      padding-right: 0px;
+      max-width: 35%;
+      &:last-child {
+        width: 100%;
+        max-width: 35%;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-left: 0px;
+      }
+    }
+  }
+  //=========================== Bonuses and
+
   //=========================== Footer
   .footer {
     &-body {
@@ -91,11 +177,8 @@
   //=========================== Footer AND
 }
 @media (max-width: 767px) {
-  .page {
-    padding-top: 60px;
-  }
-  .page__no-padding {
-    padding-top: 0px;
+  .section-wrapper {
+    padding: 25px 0;
   }
   .popup-title {
     font-size: 18px;
@@ -220,6 +303,30 @@
   }
 
   //=========================== Calcularor and
+  //=========================== Bonuses
+  .bonuses {
+    &-list {
+      flex-direction: column;
+    }
+    &-item {
+      width: calc(100% - 15px);
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-programs {
+      flex-direction: column;
+    }
+    &-programs__item {
+      margin-bottom: 20px;
+      max-width: 170px;
+      &:last-child {
+        max-width: 170px;
+      }
+    }
+  }
+  //=========================== Bonuses and
   //====================== Popup city
   .popup-cities__body {
     padding: 50px 20px 10px 20px;
