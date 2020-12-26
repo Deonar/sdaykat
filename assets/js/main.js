@@ -3,7 +3,9 @@ jQuery(document).ready(function ($) {
   $('.scrollbar').scrollbar();
 
   //======================== POPUPS
-  $('.popup').magnificPopup({});
+  $('.popup').magnificPopup({
+    mainClass: 'mfp-fade',
+  });
 
   //Mob-menu
   $('#header-burger').on('click', function (e) {
@@ -49,6 +51,11 @@ jQuery(document).ready(function ($) {
   });
 
   //======================== Footer tabs and
+
+  //======================== Calculator
+  $('.show-form-calculator').on('click', function (e) {});
+
+  //======================== Calculator and
 
   //======================== MASK
   // $('.mask-phone').mask('+7 (999) 999-99-99');

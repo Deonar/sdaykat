@@ -24,6 +24,26 @@
     }
   }
   //=========================== HEADER AND
+  //=========================== Calcularor
+  .calculator {
+    &-settings {
+      margin-right: 50px;
+    }
+    &-form__body {
+      .main-form__label_phone {
+        max-width: 100%;
+      }
+      .main-form__phone {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      .main-form__wrapper {
+        flex-direction: column;
+      }
+    }
+  }
+  //=========================== Calcularor and
 }
 @media (max-width: 992px) {
   //=========================== prices-ofmetal
@@ -34,9 +54,30 @@
     &__item {
       width: calc(50% - 30px);
       margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
   //=========================== prices-ofmetal and
+  //=========================== Calcularor
+  .calculator {
+    &-body {
+      flex-direction: column;
+    }
+    &-settings {
+      max-width: 100%;
+      margin-right: 0px;
+      margin-bottom: 50px;
+    }
+    &-form {
+      max-width: 100%;
+    }
+  }
+  .options-item__range {
+    max-width: 100%;
+  }
+  //=========================== Calcularor and
   //=========================== Footer
   .footer {
     &-body {
@@ -62,9 +103,10 @@
   .primary-title {
     font-size: 18px;
     line-height: 22px;
-  }
-  .section {
-    margin-bottom: 50px;
+    &__light {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
   //=========================== HEADER
   .header {
@@ -84,7 +126,6 @@
       display: flex;
     }
   }
-
   //=========================== HEADER AND
   //=========================== prices-ofmetal
   .prices-ofmetal {
@@ -113,6 +154,72 @@
     }
   }
   //=========================== prices-ofmetal and
+  //=========================== Calcularor
+  .calculator {
+    &-price .container {
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
+    }
+    &-body {
+      padding: 50px 25px;
+      &:after {
+        left: 20px;
+        top: 20px;
+        width: 60px;
+        height: 60px;
+        z-index: 10;
+        background: url('../img/icons/calculator-icon.svg') center center no-repeat;
+        background-size: contain;
+      }
+    }
+    &-form {
+      display: none;
+    }
+    &-settings {
+      margin-bottom: 15px;
+    }
+    &-result__title {
+      font-size: 14px;
+    }
+    &-calculate-btn {
+      display: block;
+    }
+    &-form {
+      padding: 50px 20px;
+    }
+    &-form__title {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: center;
+      line-height: 24px;
+    }
+    &-form__price {
+      text-align: center;
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
+    &-form__text {
+      font-size: 14px;
+      color: #717784;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    &-form__tell-label {
+      text-align: center;
+      margin-top: 45px;
+    }
+    &-form__tell {
+      display: block;
+      text-align: center;
+    }
+  }
+  .options-item__percent {
+    font-size: 12px;
+  }
+
+  //=========================== Calcularor and
   //====================== Popup city
   .popup-cities__body {
     padding: 50px 20px 10px 20px;
@@ -189,4 +296,19 @@
     }
   }
   //=========================== Footer AND
+}
+@media (max-width: 400px) {
+  //=========================== Calcularor
+  .calculator {
+    &-result__input {
+      margin-left: auto;
+    }
+  }
+  .options-item {
+    justify-content: flex-start;
+    &__range {
+      display: none;
+    }
+  }
+  //=========================== Calcularor and
 }
