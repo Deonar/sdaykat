@@ -33,7 +33,7 @@
     margin-top: 10px;
   }
   &__valuta {
-    font-family: 'ProximaNova';
+    font-family: "ProximaNova";
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -95,14 +95,14 @@
     padding-bottom: 30px;
   }
   &__title {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
     color: $text-primary;
   }
   &__name {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -117,7 +117,7 @@
   }
   &__quantity,
   &__percent {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -149,14 +149,14 @@
     justify-content: space-between;
     padding: 80px;
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 50px;
       top: 50px;
       width: 80px;
       height: 80px;
       z-index: 10;
-      background: url('../img/icons/calculator-icon.svg') center center no-repeat;
+      background: url("../img/icons/calculator-icon.svg") center center no-repeat;
     }
   }
   &-settings {
@@ -177,7 +177,7 @@
     }
   }
   &-result__title {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -246,7 +246,7 @@
   &-form__title {
   }
   &-form__price {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 400;
     font-size: 56px;
     line-height: 71px;
@@ -261,7 +261,7 @@
     color: #717784;
   }
   &-form__tell {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -311,7 +311,7 @@
     background: rgba(255, 255, 255, 0.1);
   }
   &-item__material {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -400,7 +400,7 @@
     label {
       position: relative;
       &::after {
-        content: '';
+        content: "";
         display: block;
         height: 15px;
         width: 15px;
@@ -456,7 +456,7 @@
     margin-bottom: 10px;
   }
   &__title {
-    font-family: 'ProximaNova';
+    font-family: "ProximaNova";
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -466,7 +466,7 @@
     margin-bottom: 5px;
   }
   &__price {
-    font-family: 'ProximaNova', sans-serif;
+    font-family: "ProximaNova", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -501,4 +501,121 @@
     letter-spacing: 0em;
     text-align: left;
   }
+}
+
+.pass-material {
+  &__header {
+  }
+  &__item {
+    padding: 30px;
+    position: relative;
+    border-radius: 3px;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    &_assessment {
+      background-color: #e6ebf5;
+    }
+    &_offices {
+      background-color: $blue;
+      .h4 {
+        color: #fff;
+      }
+      p {
+        color: #fff;
+      }
+    }
+    &_courier {
+      background-color: #fff8e5;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__text {
+    max-width: 200px;
+  }
+  &__btn {
+    margin-top: auto;
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+}
+
+.big-price {
+  font-family: "Stapel";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+}
+.about-block {
+  padding-top: 100px;
+  min-height: 540px;
+  margin-top: 50px;
+  position: relative;
+  background-image: url(../img/about-block-bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  &__header {
+    margin-bottom: 40px;
+    .title{
+      color: #fff;
+    }
+  }
+  &__content{
+    max-width: 570px;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    .btn:first-child{
+      margin-right: 10px;
+    }
+  }
+}
+.about-info {
+  h5, h4, h3, h2{
+    color: #fff;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px ;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_col {
+  }
+}
+
+.features {
+  padding: 80px 0;
+  background-color: $main-color;
+  color: #fff;
+  .title{
+    color: #fff;
+  }
+  &__title{
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  &__text{
+    color: #fff;
+    opacity: 0.7;
+  }
+  &__header{
+    margin-bottom: 30px;
+  } 
+  &__img {
+    margin-bottom: 20px;
+  }
+
 }
