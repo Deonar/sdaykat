@@ -558,28 +558,31 @@
   color: #fff;
   &__header {
     margin-bottom: 40px;
-    .title{
+    .title {
       color: #fff;
     }
   }
-  &__content{
+  &__content {
     max-width: 570px;
     margin-bottom: 40px;
   }
   &__btn {
-    .btn:first-child{
+    .btn:first-child {
       margin-right: 10px;
     }
   }
 }
 .about-info {
-  h5, h4, h3, h2{
+  h5,
+  h4,
+  h3,
+  h2 {
     color: #fff;
   }
   &__top {
     display: flex;
     align-items: center;
-    border-bottom: 1px ;
+    border-bottom: 1px;
   }
   &__bottom {
     display: flex;
@@ -593,24 +596,23 @@
   padding: 80px 0;
   background-color: $main-color;
   color: #fff;
-  .title{
+  .title {
     color: #fff;
   }
-  &__title{
+  &__title {
     color: #fff;
     margin-bottom: 15px;
   }
-  &__text{
+  &__text {
     color: #fff;
     opacity: 0.7;
   }
-  &__header{
+  &__header {
     margin-bottom: 30px;
-  } 
+  }
   &__img {
     margin-bottom: 20px;
   }
-
 }
 .bonuses {
   &-body {
@@ -619,14 +621,14 @@
     padding: 80px;
     position: relative;
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 50px;
       top: 50px;
       width: 80px;
       height: 80px;
       z-index: 10;
-      background: url('../img/icons/percent-icon.svg') center center no-repeat;
+      background: url("../img/icons/percent-icon.svg") center center no-repeat;
     }
   }
   &-title {
@@ -647,7 +649,7 @@
     }
   }
   &-item__percent {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -655,7 +657,7 @@
     color: $text-secondery;
   }
   &-item__title {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -677,7 +679,7 @@
     width: 100%;
     max-width: 380px;
     &::after {
-      content: '!';
+      content: "!";
       position: absolute;
       width: 40px;
       height: 40px;
@@ -693,7 +695,7 @@
     }
   }
   &-offer__title {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -732,7 +734,7 @@
   }
   &-programs__item-num,
   &-programs__item-text {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -750,5 +752,84 @@
     font-size: 12px;
     line-height: 15px;
     margin-top: 20px;
+  }
+}
+
+//Article
+
+.article {
+  &__item {
+    outline: none;
+    &:hover{
+      .article__title{
+          color: $blue;
+      }
+  }
+  }
+  &__img {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  &__label {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    display: inline-block;
+    padding: 4px;
+
+    font-family: "ProximaNova";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    background: $blue;
+    border-radius: 3px;
+    &_blue {
+      color: #fff;
+    background: $blue;
+    }
+    &_wthite {
+      color: #717784;
+    background: #fff;
+    }
+    &_orange {
+      background: $orange;
+    }
+    &_black {
+      background: $black;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+  &__bottom {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+
+    display: flex;
+    align-items: center;
+  }
+  &__date {
+    color: $gray;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #4f50552b;
+  }
+  &__views {
+    color: $blue;
+    display: flex;
+    align-items: center;
+    img{
+      margin-right: 5px;
+    }
   }
 }

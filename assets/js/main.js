@@ -55,13 +55,16 @@ jQuery(document).ready(function ($) {
   $('#reviews-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    // variableWidth: true,
     centerMode: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
     adaptiveHeight: true,
+    infinite: true,
     dots: true,
     centerPadding: '0',
     speed: 500,
+    arrows: false,
     responsive: [
       {
         breakpoint: 992,
@@ -85,7 +88,7 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
-  //======================== SLICK SLIDERS AND
+  //======================== SWIPE SLIDERS AND
 
   //======================== Calculator
   $('.show-form-calculator').on('click', function (e) {});
