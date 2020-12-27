@@ -27,12 +27,11 @@ body {
   color: $text-placeholder;
 }
 
-
-.bg-blue{
+.bg-blue {
   background-color: $blue;
 }
-.bg-cream{
-  background-color: #FFF8E5;
+.bg-cream {
+  background-color: #fff8e5;
 }
 
 .text-center {
@@ -68,10 +67,10 @@ body {
 .mt-auto {
   margin-top: auto;
 }
-.mt-10{
+.mt-10 {
   margin-top: 10px;
 }
-.mt-20{
+.mt-20 {
   margin-top: 20px;
 }
 .mt-30 {
@@ -318,7 +317,7 @@ body {
   }
 }
 
-.orange-btn{
+.orange-btn {
   background: $orange;
   color: #fff;
   &:hover {
@@ -326,7 +325,7 @@ body {
     background: $orange;
   }
 }
-.transparent-btn{
+.transparent-btn {
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
   &:hover {
@@ -335,12 +334,12 @@ body {
   }
 }
 
-.white-btn{
+.white-btn {
   background: #f4f7fa;
-  color: #1E1E1E;
+  color: #1e1e1e;
   &:hover {
-    border: 1px solid  #f4f7fa;
-    background:  #f4f7fa;
+    border: 1px solid #f4f7fa;
+    background: #f4f7fa;
   }
 }
 
@@ -367,8 +366,6 @@ body {
     background: $gray2-btn;
   }
 }
-
-
 
 .separater-line {
   height: 0;
@@ -483,7 +480,6 @@ body {
   }
 }
 
-
 //Star
 .star-rating {
   margin-bottom: 40px;
@@ -508,32 +504,32 @@ body {
 }
 
 .star-rating > fieldset:not(:checked) > label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url('../img/icons/rating-off.svg');
+  background-image: url("../img/icons/rating-off.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .star-rating > fieldset:not(:checked) > label:hover:before,
 .star-rating > fieldset:not(:checked) > label:hover ~ label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url('../img/icons/rating-on.svg');
+  background-image: url("../img/icons/rating-on.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .star-rating > fieldset > input:checked ~ label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url('../img/icons/rating-on.svg');
+  background-image: url("../img/icons/rating-on.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -559,9 +555,48 @@ body {
     background-position: center;
   }
   &_on {
-    background-image: url('../img/icons/rating-on.svg');
+    background-image: url("../img/icons/rating-on.svg");
   }
   &_off {
-    background-image: url('../img/icons/rating-off.svg');
+    background-image: url("../img/icons/rating-off.svg");
+  }
+}
+
+.slick-dots {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+   li {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  li button {
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $orange;
+    cursor: pointer;
+    color: transparent;
+    border-radius: 50%;
+    background: none;
+    opacity: 0.3;
+  }
+
+  .slick-active button {
+    border: 3px solid $orange;
+    opacity: 1;
   }
 }

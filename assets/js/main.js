@@ -53,15 +53,18 @@ jQuery(document).ready(function ($) {
   //======================== Footer tabs and
   //======================== SLICK SLIDERS
 	$('#reviews-slider').slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    // variableWidth: true,
 		centerMode: true,
-		autoplay: true,
-		autoplaySpeed: 2000,
+		// autoplay: true,
+		// autoplaySpeed: 2000,
 		adaptiveHeight: true,
+		infinite: true,
 		dots: true,
 		centerPadding: '0',
 		speed: 500,
+		arrows: false,
 		responsive: [
 		{
 			breakpoint: 992,
