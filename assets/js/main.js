@@ -51,22 +51,41 @@ jQuery(document).ready(function ($) {
   });
 
   //======================== Footer tabs and
-  //======================== SWIPE SLIDERS
-  var mainSwiper = new Swiper('#main-slider', {
-    slidesPerView: 1,
-    speed: 1000,
-    pagination: {
-      el: '.main-slider .swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.main-slider .swiper-button-next',
-      prevEl: '.main-slider .swiper-button-prev',
-    },
-    autoplay: {
-      delay: 5000,
-    },
-  });
+  //======================== SLICK SLIDERS
+	$('#reviews-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerMode: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		adaptiveHeight: true,
+		dots: true,
+		centerPadding: '0',
+		speed: 500,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				
+			}
+		},
+			{
+				breakpoint: 768,
+				settings: {
+				slidesToShow: 2,
+				arrows: false,
+			}
+		},  {
+				breakpoint: 576,
+				settings: {
+					arrows: false,
+					slidesToShow: 1,
+				
+			}
+		},
+		]
+	});
   //======================== SWIPE SLIDERS AND
 
   //======================== Calculator
