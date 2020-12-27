@@ -1,4 +1,18 @@
 @media (max-width: 1200px) {
+  .main-form__light {
+    .main-form__label_phone {
+      max-width: 100%;
+    }
+    .main-form__phone {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .main-form__wrapper {
+      flex-direction: column;
+    }
+  }
+
   //=========================== HEADER
   .header {
     &-top__address {
@@ -30,20 +44,19 @@
       margin-right: 50px;
     }
     &-form__body {
-      .main-form__label_phone {
-        max-width: 100%;
-      }
-      .main-form__phone {
-        max-width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
-      .main-form__wrapper {
-        flex-direction: column;
-      }
     }
   }
   //=========================== Calcularor and
+  //=========================== price-oftype
+  .price-oftype {
+    &__slider {
+      width: 450px;
+    }
+    .main-form__light .main-form__wrapper {
+      flex-direction: row;
+    }
+  }
+  //=========================== price-oftype and
 }
 @media (max-width: 992px) {
   //=========================== prices-ofmetal
@@ -163,7 +176,31 @@
     }
   }
   //=========================== Bonuses and
-
+  //=========================== price-oftype
+  .price-oftype {
+    .container--desc {
+      padding: 0;
+      max-width: 100%;
+    }
+    .container--mob {
+      padding: 0 15px;
+    }
+    &__body {
+      flex-direction: column;
+    }
+    &__content {
+      max-width: 100%;
+      margin-bottom: 50px;
+      margin-right: 0;
+    }
+    &__slider {
+      width: 100%;
+    }
+    &__slider-item {
+      padding-bottom: 11%;
+    }
+  }
+  //=========================== price-oftype and
   //=========================== Footer
   .footer {
     &-body {
@@ -327,6 +364,48 @@
     }
   }
   //=========================== Bonuses and
+  //=========================== price-oftype
+  .price-oftype {
+    .main-form {
+      width: 100%;
+      order: 1;
+    }
+    &__text {
+      order: 2;
+      margin: 30px 0 0 0;
+    }
+    .main-form__light .main-form__wrapper {
+      flex-direction: column;
+    }
+    .main-form__submit,
+    .main-form__label_phone {
+      max-width: 400px;
+      margin-right: 0;
+    }
+    &__content .container {
+      display: flex;
+      flex-flow: wrap;
+    }
+    &__title {
+      width: 100%;
+      order: 0;
+      max-width: 250px;
+      margin-bottom: 0;
+    }
+    &__range {
+      width: 100%;
+      order: 0;
+      margin-bottom: 10px;
+      span {
+        font-size: 18px;
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  //=========================== price-oftype and
   //====================== Popup city
   .popup-cities__body {
     padding: 50px 20px 10px 20px;

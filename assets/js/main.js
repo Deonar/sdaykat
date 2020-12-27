@@ -88,6 +88,21 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
+  $('#price-oftype__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // variableWidth: true,
+    // centerMode: true,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+    adaptiveHeight: true,
+    // infinite: true,
+    dots: true,
+    // centerPadding: '0',
+    // speed: 500,
+    prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
+    nextArrow: '<button class="slider-btn slider-btn__next"></button>',
+  });
   //======================== SWIPE SLIDERS AND
 
   //======================== Calculator
