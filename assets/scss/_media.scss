@@ -49,6 +49,9 @@
   //=========================== Calcularor and
   //=========================== price-oftype
   .price-oftype {
+    &__form .main-form__label {
+      max-width: 200px;
+    }
     &__slider {
       width: 450px;
     }
@@ -57,6 +60,15 @@
     }
   }
   //=========================== price-oftype and
+  //=========================== redemption
+  .redemption {
+    &-slider {
+      .slick-active:nth-child(1) .redemption-list {
+        margin-right: 0px;
+      }
+    }
+  }
+  //=========================== redemption and
 }
 @media (max-width: 992px) {
   //=========================== prices-ofmetal
@@ -201,6 +213,34 @@
     }
   }
   //=========================== price-oftype and
+  //=========================== requirement
+  .requirement {
+    &-list {
+      flex-wrap: wrap;
+    }
+    &-item {
+      padding: 20px;
+    }
+    &-item__icon {
+      height: 16px;
+      margin-bottom: 20px;
+    }
+    &-item__title {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  //=========================== requirement and
+  //=========================== redemption
+  .redemption {
+    &-title {
+      margin-bottom: 30px;
+    }
+    &-body {
+      padding: 50px 70px;
+    }
+  }
+  //=========================== redemption and
   //=========================== Footer
   .footer {
     &-body {
@@ -406,6 +446,23 @@
     }
   }
   //=========================== price-oftype and
+  //=========================== requirement
+  .requirement {
+    &-title {
+      max-width: 220px;
+    }
+    &-item {
+      width: 50%;
+    }
+  }
+  //=========================== requirement and
+  //=========================== redemption
+  .redemption {
+    &-title {
+      max-width: 200px;
+    }
+  }
+  //=========================== redemption and
   //====================== Popup city
   .popup-cities__body {
     padding: 50px 20px 10px 20px;
@@ -482,6 +539,36 @@
     }
   }
   //=========================== Footer AND
+}
+@media (max-width: 500px) {
+  //=========================== requirement
+  .requirement {
+    &-item {
+      width: 100%;
+    }
+  }
+  //=========================== requirement and
+  //=========================== redemption
+  .redemption {
+    .container {
+      padding: 0;
+      max-width: 100%;
+    }
+    &-body {
+      padding: 50px 25px;
+      &::after {
+        left: 20px;
+        top: 20px;
+      }
+    }
+    &-slider {
+      display: none;
+    }
+    &-form {
+      display: block;
+    }
+  }
+  //=========================== redemption and
 }
 @media (max-width: 400px) {
   //=========================== Calcularor

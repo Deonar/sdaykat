@@ -897,3 +897,197 @@
     }
   }
 }
+
+.requirement {
+  &-body {
+  }
+  &-title {
+    margin-bottom: 40px;
+    max-width: 350px;
+  }
+  &-list {
+    display: flex;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  &-item {
+    padding: 30px 30px 45px 30px;
+    width: 25%;
+    background: #fff;
+    border: 1px solid #f4f7fa;
+    transition: all 0.3s ease;
+    &:hover {
+      transition: all 0.3s ease;
+      background: #f4f7fa;
+    }
+  }
+  &-item__icon {
+    height: 16px;
+    margin-bottom: 20px;
+  }
+  &-item__title {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: $text;
+    margin-bottom: 10px;
+  }
+  &-item__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+  }
+}
+
+.redemption {
+  &-body {
+    position: relative;
+    padding: 70px 80px 55px 80px;
+    border-radius: 3px;
+    background: $primary;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50px;
+      top: 50px;
+      width: 60px;
+      height: 80px;
+      z-index: 10;
+      background: url('../img/icons/rubles-icon.svg') center center no-repeat;
+    }
+  }
+  &-title {
+    margin-bottom: 40px;
+    max-width: 320px;
+  }
+  &-slider {
+    .slick-current .redemption-list {
+      margin-left: 0px;
+    }
+    .slider-btn {
+      &__prev {
+        left: -30px;
+      }
+      &__next {
+        right: -30px;
+      }
+      &:hover {
+        border-bottom: 2px solid $text-secondery;
+        border-left: 2px solid $text-secondery;
+      }
+      &.slick-disabled {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        border-left: 2px solid rgba(255, 255, 255, 0.5);
+        &:hover {
+          border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+          border-left: 2px solid rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+    .slick-dots {
+      position: absolute;
+      bottom: -20px;
+      li button {
+        width: 5px;
+        height: 5px;
+      }
+    }
+  }
+  &-slider__item {
+    outline: none;
+  }
+  &-list {
+    margin-left: 50px;
+  }
+  &-list__item {
+    position: relative;
+    padding: 15px 30px 15px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    outline: none;
+    &:last-child {
+      border-bottom: 0px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%) rotate(-135deg);
+      width: 8px;
+      height: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+      z-index: 10;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      .redemption-auto,
+      .redemption-range {
+        color: $text-secondery;
+        transition: all 0.3s ease;
+      }
+      &::after {
+        border-bottom: 1px solid $text-secondery;
+        border-left: 1px solid $text-secondery;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  &-list__link {
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-auto {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-light;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+  }
+  &-range {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-light;
+    transition: all 0.3s ease;
+  }
+  &-form {
+    display: none;
+  }
+  &-price__title {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: $text-light;
+  }
+  &-price__range {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-light;
+    margin-bottom: 20px;
+    span {
+      font-family: 'Stapel';
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: $text-secondery;
+      margin-left: 5px;
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &-button {
+    display: block;
+    max-width: 100%;
+  }
+}
