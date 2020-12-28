@@ -714,7 +714,6 @@
   }
   &-more-btn {
     display: none;
-    display: block;
     text-align: center;
     text-transform: uppercase;
     color: $text-secondery;
@@ -820,16 +819,10 @@
     margin-bottom: 10px;
   }
   &__range {
-    line-height: 18px;
-    font-size: 14px;
-    color: $gray;
+    color: $text;
     span {
-      display: inline-block;
-      font-family: 'Stapel';
-      font-weight: 500;
       font-size: 30px;
       line-height: 38px;
-      color: $text-secondery;
       padding-left: 5px;
       padding-right: 20px;
     }
@@ -912,6 +905,7 @@
     overflow: hidden;
   }
   &-item {
+    cursor: pointer;
     padding: 30px 30px 45px 30px;
     width: 25%;
     background: #fff;
@@ -1069,25 +1063,198 @@
     color: $text-light;
   }
   &-price__range {
-    font-size: 14px;
-    line-height: 18px;
-    color: $text-light;
     margin-bottom: 20px;
-    span {
-      font-family: 'Stapel';
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 23px;
-      color: $text-secondery;
-      margin-left: 5px;
-      margin-right: 40px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
   }
   &-button {
     display: block;
     max-width: 100%;
+  }
+}
+
+.price-ofauto {
+  &__body {
+    display: flex;
+  }
+  &__content {
+    width: 100%;
+    max-width: 760px;
+    background: #f4f7fa;
+    border-radius: 3px;
+    padding: 50px 50px 60px 50px;
+    margin-right: 30px;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__logo {
+    position: relative;
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    margin-right: 30px;
+    img {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+  }
+  &__title-wrapp {
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__range {
+    color: $text;
+    span {
+      margin-right: 20px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-gray;
+  }
+  &__form {
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e2e4ea;
+    box-sizing: border-box;
+    border-radius: 3px;
+    .main-form__wrapper {
+      flex-direction: column;
+    }
+    .main-form__label_phone {
+      margin-right: 0;
+      margin-bottom: 12px;
+      max-width: 100%;
+      input {
+        max-width: 100%;
+      }
+    }
+    .main-form__submit {
+      background: #e2e4ea;
+      color: $text-primary;
+      &:hover {
+        border: 1px solid inherit;
+      }
+    }
+    .main-form__wrapper {
+      margin-bottom: 20px;
+    }
+  }
+  &__form-title {
+    margin-bottom: 10px;
+  }
+  &__form-text {
+    color: $text-gray;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+}
+
+.redemption-ofauto {
+  &__prices {
+  }
+  &__body {
+  }
+  &__title {
+    margin-bottom: 50px;
+    max-width: 310px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 30px);
+    margin: 0 -15px -30px -15px;
+  }
+  &__item {
+    width: calc(33.3333% - 30px);
+    margin: 0 15px 30px 15px;
+    background: #f4f7fa;
+    border-radius: 3px;
+    padding: 30px;
+  }
+  &__item-title {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: $text-primary;
+    margin-bottom: 30px;
+  }
+  &__price-list {
+  }
+  &__price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    padding: 15px 0;
+    border-top: 1px solid #e2e4ea;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  &__year {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text;
+  }
+  &__price {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+  }
+}
+
+.calculator-price__ofauto {
+  .options-item {
+    max-width: 350px;
+  }
+  .calculator-body:after {
+    width: 60px;
+    height: 80px;
+    background: url('../img/icons/rubles-icon.svg') center center no-repeat;
+  }
+  .calculator-title {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  .select {
+    margin-bottom: 20px;
+    &__label {
+      font-weight: 400;
+    }
+    &__body {
+      max-width: 240px;
+      left: auto !important;
+      right: 0;
+    }
+    &__header-search {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__arrow {
+      width: 100%;
+      max-width: 240px;
+      &::after {
+        top: 17px;
+      }
+    }
   }
 }

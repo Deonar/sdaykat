@@ -69,6 +69,16 @@
     }
   }
   //=========================== redemption and
+  //=========================== price-ofauto
+  .price-ofauto {
+    &__form {
+      .main-form__label_phone {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  //=========================== price-ofauto and
 }
 @media (max-width: 992px) {
   //=========================== prices-ofmetal
@@ -186,6 +196,9 @@
         border-left: 0px;
       }
     }
+    &-more-btn {
+      display: block;
+    }
   }
   //=========================== Bonuses and
   //=========================== price-oftype
@@ -241,6 +254,74 @@
     }
   }
   //=========================== redemption and
+  //=========================== price-ofauto
+  .price-ofauto {
+    &__content {
+      padding: 50px 25px 50px 25px;
+      margin-right: 15px;
+    }
+    &__head {
+      margin-bottom: 20px;
+    }
+    &__logo {
+      min-width: 90px;
+      min-height: 90px;
+      max-width: 90px;
+      max-height: 90px;
+      margin-right: 20px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__form {
+      padding: 50px 25px 50px 25px;
+    }
+    &__form-title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__form-text {
+      margin-bottom: 20px;
+    }
+  }
+  //=========================== price-ofauto and
+  //=========================== calculator-price__ofauto
+  .calculator-price__ofauto {
+    .options-item {
+      max-width: 350px;
+      margin-bottom: 0;
+    }
+    .calculator {
+      &-title {
+        margin-top: 0px;
+        margin-bottom: 30px;
+      }
+      &-settings {
+        margin-bottom: 30px;
+      }
+      &-options {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .select {
+      margin-bottom: 15px;
+      &__body {
+        max-width: 240px;
+        left: 0 !important;
+        right: auto;
+      }
+      &__header-search {
+        width: 240px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &__label {
+        font-weight: 700;
+      }
+    }
+  }
+  //=========================== calculator-price__ofauto and
   //=========================== Footer
   .footer {
     &-body {
@@ -254,6 +335,10 @@
   //=========================== Footer AND
 }
 @media (max-width: 767px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
   .section-wrapper {
     padding: 25px 0;
   }
@@ -444,12 +529,16 @@
         }
       }
     }
+    &__slider-wrapper .slider-item__preview-btn {
+      display: block;
+    }
   }
   //=========================== price-oftype and
   //=========================== requirement
   .requirement {
     &-title {
       max-width: 220px;
+      margin-bottom: 30px;
     }
     &-item {
       width: 50%;
@@ -463,6 +552,26 @@
     }
   }
   //=========================== redemption and
+  //=========================== redemption-ofauto
+  .redemption-ofauto {
+    &__title {
+      margin-bottom: 30px;
+      max-width: 200px;
+    }
+    &__list {
+      width: calc(100% + 15px);
+      margin: 0 -7.5px -15px -7.5px;
+    }
+    &__item {
+      width: calc(50% - 15px);
+      margin: 0 7.5px 15px 7.5px;
+      padding: 20px;
+    }
+    &__item-title {
+      margin-bottom: 12px;
+    }
+  }
+  //=========================== redemption-ofauto and
   //====================== Popup city
   .popup-cities__body {
     padding: 50px 20px 10px 20px;
@@ -476,6 +585,44 @@
     font-size: 14px;
   }
   //====================== Popup city and
+  //=========================== price-ofauto
+  .price-ofauto {
+    .container {
+      padding: 0;
+    }
+    &__body {
+      flex-direction: column;
+    }
+    &__content {
+      margin-right: 0px;
+    }
+    &__logo {
+      min-width: 60px;
+      min-height: 60px;
+      max-width: 60px;
+      max-height: 60px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__form {
+      border: none;
+      padding: 50px 25px 20px 25px;
+    }
+  }
+  //=========================== price-ofauto and
+  //=========================== calculator-price__ofauto
+  .calculator-price__ofauto {
+    .select {
+      &__body {
+        max-width: 200px;
+      }
+      &__header-search {
+        width: 200px;
+      }
+    }
+  }
+  //=========================== calculator-price__ofauto and
 
   //=========================== Footer
   .footer {
@@ -569,6 +716,38 @@
     }
   }
   //=========================== redemption and
+  //=========================== redemption-ofauto
+  .redemption-ofauto {
+    &__item {
+      width: calc(100% - 15px);
+    }
+  }
+  //=========================== redemption-ofauto and
+  //=========================== calculator-price__ofauto
+  .calculator-price__ofauto {
+    .options-item {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+    .calculator-settings {
+      margin-bottom: 0px;
+    }
+    .calculator-options {
+      flex-direction: column;
+    }
+    .select {
+      &__body {
+        max-width: 100%;
+      }
+      &__header-search {
+        width: 100%;
+      }
+      &__arrow {
+        max-width: 100%;
+      }
+    }
+  }
+  //=========================== calculator-price__ofauto and
 }
 @media (max-width: 400px) {
   //=========================== Calcularor
@@ -584,4 +763,25 @@
     }
   }
   //=========================== Calcularor and
+}
+@media (max-width: 360px) {
+  //=========================== price-ofauto
+  .price-ofauto {
+    &__head {
+      align-items: flex-start;
+    }
+    &__logo {
+      min-width: 40px;
+      min-height: 40px;
+      max-width: 40px;
+      max-height: 40px;
+    }
+    &__range {
+      span {
+        margin-right: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+  //=========================== price-ofauto and
 }
