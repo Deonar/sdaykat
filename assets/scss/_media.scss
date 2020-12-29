@@ -226,6 +226,52 @@
     }
   }
   //=========================== price-oftype and
+  //=========================== article
+  .article__big-items {
+    margin-bottom: 20px;
+    .article {
+      &__item {
+        &:hover .article__item-title {
+          color: $text-primary;
+        }
+      }
+      &__item-title {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 18px;
+        color: $text;
+      }
+      &__text {
+        color: $text-gray;
+        margin-bottom: 10px;
+      }
+      &__date,
+      &__views {
+        font-weight: 700;
+        opacity: 1;
+      }
+      &__views {
+        color: $text-primary;
+        svg {
+          fill: $text-primary;
+        }
+      }
+      &__date {
+        color: $text-gray;
+      }
+      &__item-bottom {
+        margin-top: 20px;
+        position: relative;
+        bottom: auto;
+        padding: 0px;
+      }
+      &__label {
+        left: 10px;
+        top: 10px;
+      }
+    }
+  }
+  //=========================== article and
   //=========================== requirement
   .requirement {
     &-list {
@@ -357,7 +403,6 @@
   //=========================== Footer AND
 }
 @media (max-width: 767px) {
-
   .container {
     padding-left: 25px;
     padding-right: 25px;
@@ -373,10 +418,10 @@
   .popup-title {
     font-size: 18px;
   }
-  .title{
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 23px;
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
   }
   .primary-title {
     font-size: 18px;
@@ -701,24 +746,58 @@
   }
 
   //=========================== Article
-  .article{
-    &__item{
+  .article {
+    &__item {
       max-width: 370px;
       margin: auto;
       margin-bottom: 20px;
     }
-    &__title{
+    &__title {
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
       line-height: 18px;
     }
-    &__label{
+    &__label {
       top: 10px;
       left: 10px;
     }
-    &__text{
-      margin-bottom: 10px
+    &__text {
+      margin-bottom: 10px;
+    }
+    &-section__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &-section {
+      margin-bottom: 50px;
+    }
+    &-section__row {
+      margin-bottom: 20px;
+    }
+  }
+  .article__big-items {
+    .article {
+      &__item {
+        max-width: 100%;
+      }
+      &__item-img {
+        padding-top: 54%;
+      }
+    }
+  }
+  .article__small-items {
+    .article {
+      &__item {
+        max-width: 100%;
+        padding: 20px;
+      }
+      &__item-title {
+        font-size: 14px;
+      }
+      &__label {
+        margin-bottom: 20px;
+      }
     }
   }
   //=========================== Article AND
