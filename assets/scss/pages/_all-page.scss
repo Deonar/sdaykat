@@ -981,6 +981,13 @@
 }
 
 .map {
+  &__header{
+    .select__current{
+      font-family: "Stapel";
+      font-weight: 500;
+      font-size: 30px;
+    }
+  }
   &-wrapper {
   }
 

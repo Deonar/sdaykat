@@ -81,6 +81,41 @@
   //=========================== price-ofauto and
 }
 @media (max-width: 992px) {
+  //=========================== Catalysts
+  .catalysts {
+    .title {
+      margin-bottom: 30px;
+    }
+    &__item {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  //=========================== Catalysts end
+  //=========================== Brands
+  .brands {
+    &__header {
+      display: block;
+    }
+    .title {
+      margin-bottom: 30px;
+    }
+    &__item {
+      flex: 0 0 25%;
+      width: 100%;
+      max-width: 25%;
+    }
+  }
+  //=========================== Brands end
+  //=========================== Delete-catalysts
+  .delete-catalysts {
+    &__wrapper {
+      padding-bottom: 300px;
+      background-position-x: 80%;
+    }
+  }
+
+  //=========================== Delete-catalysts end
   //=========================== prices-ofmetal
   .prices-ofmetal {
     &__list {
@@ -94,7 +129,26 @@
       }
     }
   }
-  //=========================== prices-ofmetal and
+  //=========================== prices-ofmetal end
+//=========================== pass-material
+.pass-material {
+  img{
+    position: static;
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  &__text{
+    margin-bottom: 20px;
+  }
+  &__item{
+    height: 100%;
+  }
+}
+//=========================== pass-material end
+
+
   //=========================== Calcularor
   .calculator {
     &-body {
@@ -357,7 +411,6 @@
   //=========================== Footer AND
 }
 @media (max-width: 767px) {
-
   .container {
     padding-left: 25px;
     padding-right: 25px;
@@ -373,10 +426,10 @@
   .popup-title {
     font-size: 18px;
   }
-  .title{
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 23px;
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
   }
   .primary-title {
     font-size: 18px;
@@ -431,7 +484,17 @@
       line-height: 23px;
     }
   }
-  //=========================== prices-ofmetal and
+  //=========================== prices-ofmetal end
+ //=========================== pass-material
+ .pass-material {
+  &__item{
+    max-width: 370px;
+  }
+  &__text{
+    max-width: 100%;
+  }
+}
+//=========================== pass-material end
   //=========================== Calcularor
   .calculator {
     &-price .container {
@@ -447,7 +510,7 @@
         width: 60px;
         height: 60px;
         z-index: 10;
-        background: url('../img/icons/calculator-icon.svg') center center no-repeat;
+        background: url("../img/icons/calculator-icon.svg") center center no-repeat;
         background-size: contain;
       }
     }
@@ -694,25 +757,31 @@
   }
 
   //=========================== Article
-  .article{
-    &__item{
+  .article {
+    &__item {
       max-width: 370px;
       margin: auto;
       margin-bottom: 20px;
     }
-    &__title{
+    &__title {
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
       line-height: 18px;
     }
-    &__label{
+    &__label {
       top: 10px;
       left: 10px;
     }
-    &__text{
-      margin-bottom: 10px
+    &__text {
+      margin-bottom: 10px;
     }
+    // &__img img{
+    //   max-width: 100%;
+    //   width: 100%;
+    //   display: block;
+    //   height: auto;
+    // }
   }
   //=========================== Article AND
 
@@ -759,7 +828,7 @@
       padding: 12px 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       &::after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         right: 4px;
@@ -781,13 +850,109 @@
   //=========================== Footer AND
 }
 @media (max-width: 500px) {
+  .main {
+    height: auto;
+    min-height: 480px;
+    padding-top: 160px;
+    padding-bottom: 50px;
+  }
+  .main-form {
+    max-width: 370px;
+    &__wrapper {
+      display: block;
+    }
+    &__label {
+      max-width: 100%;
+      margin-bottom: 10px;
+      input {
+        max-width: 100%;
+      }
+    }
+    &__btn .btn {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .main-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+  }
+
+  //=========================== Brands
+  .brands {
+    &__header {
+      display: block;
+      margin-bottom: 30px;
+    }
+    &__search {
+      display: block;
+      span {
+        max-width: 100%;
+        display: inline-block;
+        margin: auto;
+        margin-bottom: 5px;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        position: relative;
+        &::after {
+          top: 18px;
+        }
+      }
+      input {
+        padding: 15px;
+        width: 100%;
+      }
+    }
+    .title {
+      margin-bottom: 30px;
+    }
+    &__item {
+      flex: 0 0 50%;
+      width: 100%;
+      max-width: 50%;
+    }
+  }
+  //=========================== Brands end
+  //=========================== Catalysts
+  .catalysts {
+    &__wrapper {
+      margin-right: -5px;
+      margin-left: -5px;
+    }
+    &__item {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-right: 5px;
+      padding-left: 5px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__link {
+      margin-top: auto;
+      font-size: 10px;
+    }
+  }
+  //=========================== Catalysts end
+  //=========================== Front page
+  .main_front-page .main-title {
+    margin-top: 0;
+  }
+
+  //=========================== Front page end
   //=========================== requirement
   .requirement {
     &-item {
       width: 100%;
     }
   }
-  //=========================== requirement and
+  //=========================== requirement end
   //=========================== redemption
   .redemption {
     .container {
@@ -870,7 +1035,30 @@
       display: none;
     }
   }
-  //=========================== Calcularor and
+  //=========================== Calcularor end
+  //=========================== pass-material
+.pass-material {
+  &__item{
+    padding: 20px;
+  }
+  .btn{
+    max-width: 100%;
+    width: 100%;
+  }
+}
+//=========================== pass-material end
+  //=========================== Delete-catalysts
+  .delete-catalysts {
+    &__wrapper{
+      padding: 20px;
+      padding-bottom: 300px;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+
+  //=========================== Delete-catalysts end
 }
 @media (max-width: 360px) {
   //=========================== price-ofauto

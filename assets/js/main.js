@@ -64,7 +64,8 @@ jQuery(document).ready(function ($) {
     dots: true,
     centerPadding: '0',
     speed: 500,
-    arrows: false,
+    prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
+    nextArrow: '<button class="slider-btn slider-btn__next"></button>',
     responsive: [
       {
         breakpoint: 992,
