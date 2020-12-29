@@ -336,6 +336,16 @@ body {
     background: $orange;
   }
 }
+
+.blue-sky-btn {
+  background: $blue-sky;
+  color: #fff;
+  &:hover {
+    border: 1px solid $blue-sky;
+    background: $blue-sky;
+  }
+}
+
 .transparent-btn {
   background: rgba(255, 255, 255, 0.15);
   color: #fff;

@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <header class="header" style="display: none">
+    <header class="header">
       <div class="header-body">
         <div class="container">
           <div class="header-top">
@@ -98,11 +98,11 @@
             </a>
             <div class="header-bottom__menu">
               <ul class="header-bottom__menu-list">
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Главная</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Цены</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Удаление катализатора</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Оптовикам</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Журнал</a></li>
+                <li class="header-bottom__menu-item"><a href="/" class="header-bottom__menu-link">Главная</a></li>
+                <li class="header-bottom__menu-item"><a href="/prices.html" class="header-bottom__menu-link">Цены</a></li>
+                <li class="header-bottom__menu-item"><a href="/delete-catalysts.html" class="header-bottom__menu-link">Удаление катализатора</a></li>
+                <li class="header-bottom__menu-item"><a href="/prices-wholesalers.html" class="header-bottom__menu-link">Оптовикам</a></li>
+                <li class="header-bottom__menu-item"><a href="/journal.html" class="header-bottom__menu-link">Журнал</a></li>
                 <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">О компании</a></li>
               </ul>
             </div>
@@ -173,14 +173,11 @@
       </div>
     </header>
 
-    <main class="main main_front-page" style="display: none">
+    <main class="main main_delete-catalysts">
       <div class="container">
         <div class="row">
-          <div class="col-8">
-            <h1 class="main-title">
-              Получите до <b class="text-orange">75 000₽</b><br />
-              за старый катализатор<br /><b class="text-orange">в Челябинске</b>
-            </h1>
+          <div class="col-12 col-lg-6">
+            <h1 class="main-title">Бесплатно удалим катализатор<br/>и выкупим сырье</h1>
             <!-- Phone form  -->
             <form class="main-form">
               <div class="main-form__wrapper">
@@ -188,7 +185,7 @@
                   <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
-                  <button class="main-form__submit btn btn_hover primary-btn" id="intro-submit-btn" type="button">Продать катализатор</button>
+                  <button class="main-form__submit btn btn_hover blue-sky-btn" id="intro-submit-btn" type="button">удалить катализатор</button>
                 </div>
               </div>
               <label class="main-form__policy">
@@ -198,82 +195,78 @@
               </label>
             </form>
             <!-- Phone form end -->
-            <div class="separater-line opacity-3 mt-30 mb-20"></div>
-            <div class="info-block">
-              <div class="info-block__item">
-                <div class="info-block__icon opacity-7 mb-10">
-                  <img src="assets/img/icons/icon-up-rub.svg" alt="" />
-                </div>
-                <h4 class="info-block__title mb-10">Высокие цены</h4>
-                <p class="opacity-7">
-                  Выплачиваем до 75 000 ₽<br />
-                  за старый катализатор
-                </p>
-              </div>
-              <div class="info-block__item">
-                <div class="info-block__icon opacity-7 mb-10">
-                  <img src="assets/img/icons/icon-percent.svg" alt="" />
-                </div>
-                <h4 class="info-block__title mb-10">Программа лояльности</h4>
-                <p class="opacity-7">
-                  Выплачиваем до 75 000 ₽<br />
-                  за старый катализатор
-                </p>
-              </div>
-              <div class="info-block__item">
-                <div class="info-block__icon opacity-7 mb-10">
-                  <img src="assets/img/icons/icon-filial.svg" alt="" />
-                </div>
-                <h4 class="info-block__title mb-10">3 точки в Челябинске</h4>
-                <p class="opacity-7">
-                  Выплачиваем до 75 000 ₽<br />
-                  за старый катализатор
-                </p>
-              </div>
-            </div>
           </div>
-          <div class="col-4">
-            <div class="curs-metal">
-              <div class="curs-metal__title">
-                <h3>Честные выплаты до <span class="text-orange">75%</span> по LME</h3>
-                <div class="curs-metal__icon">
-                  <img src="assets/img/icons/icon-metal.svg" alt="" />
+          <div class="col-6">
+            <div class="about-info d-none d-lg-block">
+              <div class="about-info__top">
+                <div class="big-price mr-10">150 000+</div>
+                <h5>удаленных<br/>катализаторов в год</h5>
+              </div>
+              <div class="separater-line opacity-3 mt-20 mb-20"></div>
+              <div class="about-info__bottom">
+                <div class="about-info_col">
+                  <h2>48 партнёров</h2>
+                  <h5>в регионах</h5>
+                </div>
+                <div class="separater-line-ver opacity-3"></div>
+                <div class="about-info_col">
+                  <h2>12 регионов</h2>
+                  <h5>по всей стране</h5>
                 </div>
               </div>
-              <div class="curs-metal-list">
-                <div class="curs-metal-list__item d-flex justify-content-between text-placeholder">
-                  <div class="small-text">Сегодня</div>
-                  <div class="small-text">Вчера</div>
-                </div>
-                <div class="curs-metal-list__item">
-                  <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
-                  <div class="d-flex justify-content-between">
-                    <div class="h4">5 658,74 ₽/г</div>
-                    <div class="h5 text-placeholder">5 648,74 ₽/г</div>
-                  </div>
-                </div>
-                <div class="curs-metal-list__item">
-                  <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
-                  <div class="d-flex justify-content-between">
-                    <div class="h4">5 658,74 ₽/г</div>
-                    <div class="h5 text-placeholder">5 648,74 ₽/г</div>
-                  </div>
-                </div>
-                <div class="curs-metal-list__item">
-                  <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_down"></span></div>
-                  <div class="d-flex justify-content-between">
-                    <div class="h4">5 658,74 ₽/г</div>
-                    <div class="h5 text-placeholder">5 648,74 ₽/г</div>
-                  </div>
-                </div>
-              </div>
-              <div class="curs-metal__link text-center"><a href="#" class="link"> проверить на lme.com </a></div>
             </div>
           </div>
         </div>
       </div>
     </main>
-
+    <section class="section-wrapper delete-catalysts">
+      <div class="container">
+        <h2 class="h2 title d-block d-md-none mb-30">Когда нужно удалять<br />катализатор?</h2>
+        <div class="delete-catalysts__wrapper">
+          <h2 class="h2 title d-none d-md-block">Когда нужно удалять<br />катализатор?</h2>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="delete-catalysts__icon mb-20">
+                <img src="assets/img/icons/icon-sky.svg" alt="" />
+              </div>
+              <p class="delete-catalysts__text">Уменьшается приемистость мотора, появление ядовитого<br />запаха выхлопных газов</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="delete-catalysts__icon mb-20">
+                <img src="assets/img/icons/icon-engine.svg" alt="" />
+              </div>
+              <p class="delete-catalysts__text">Загорается лампочка Check Engine, появляются ошибки Р0430</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="delete-catalysts__icon mb-20">
+                <img src="assets/img/icons/icon-vibration.svg" alt="" />
+              </div>
+              <p class="delete-catalysts__text">Возникает вибрация<br />под водительским сидением</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="delete-catalysts__icon mb-20">
+                <img src="assets/img/icons/icon-tachometer.svg" alt="" />
+              </div>
+              <p class="delete-catalysts__text">"Плаванье" стрелки тахометра<br />на холостом ходу</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="delete-catalysts__icon mb-20">
+                <img src="assets/img/icons/icon-transmission.svg" alt="" />
+              </div>
+              <p class="delete-catalysts__text">Автоматическая коробка передач,<br />неровно переключает скорости</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="delete-catalysts__icon mb-20">
+                <img src="assets/img/icons/icon-fuel.svg" alt="" />
+              </div>
+              <p class="delete-catalysts__text">Расход топлива<br />увеличился</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="requirement section-wrapper">
       <div class="container">
         <div class="requirement-body">
@@ -315,7 +308,88 @@
         </div>
       </div>
     </section>
+    <section class="section-wrapper d-none d-xl-block">
+      <div class="container">
+        <div class="select select-custom-js mb-30">
+          <div class="select__header map__header h2">Адреса и контакты <br />в <span class="select__current h2">Челябинске</span></div>
+          <div class="select__body">
+            <div class="select__item">Екатеренбурге</div>
+            <div class="select__item">Ижевске</div>
+            <div class="select__item">Уфе</div>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-3">
+            <div class="map-wrapper tab-wrapper">
+              <div class="map-tabs">
+                <div class="map-tab tab active" data-tab="1">
+                    <span>Продать<br/> катализатор</span>
+                </div>
+                <div class="map-tab tab" data-tab="2">
+                    <span>Удалить<br/> катализатор</span>
+                </div>
+              </div>
+              <div class="map-list tab-content scrollbar-js" data-tab="1">
+                <div class="map-item active">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Братьев Кашириных, 101</p>
+                </div>
+                <div class="map-item">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Механическая, 101</p>
+                </div>
+                <div class="map-item">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Братьев Кашириных, 101</p>
+                </div>
+                <div class="map-item">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Механическая, 101</p>
+                </div>
+                <div class="map-item">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Братьев Кашириных, 101</p>
+                </div>
+                <div class="map-item">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Механическая, 101</p>
+                </div>
+              </div>
+              <div class="map-list tab-content scrollbar-js" data-tab="2" style="display: none">
+                <div class="map-item">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Братьев Кашириных, 101</p>
+                </div>
+                <div class="map-item">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Механическая, 101</p>
+                </div>
+                <div class="map-item">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Братьев Кашириных, 101</p>
+                </div>
+                <div class="map-item">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Механическая, 101</p>
+                </div>
+                <div class="map-item">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Братьев Кашириных, 101</p>
+                </div>
+                <div class="map-item">
+                  <h5>SDAYKAT</h5>
+                  <p class="small-text">ул. Механическая, 101</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-9">
+            <div id="yandex-map" style="width: 100%; height: 440px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="delete-proof section-wrapper">
       <div class="container">
         <div class="delete-proof__body">
@@ -548,6 +622,8 @@
     <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>
     <script src="assets/libs/jquery-libs/jquery.ui.touch-punch.min.js"></script>
 
+    <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script>
+    <script src="assets/js/map.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

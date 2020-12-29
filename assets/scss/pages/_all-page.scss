@@ -1,10 +1,52 @@
 .main {
+  padding-top: 260px;
+  position: relative;
   min-height: 670px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+  }
   &-title {
     color: #fff;
     margin-bottom: 30px;
   }
 }
+
+//Delete catalysts
+.main_delete-catalysts {
+  background-image: url(../img/delete-cat-page-bg.jpg);
+  .main-title {
+      max-width: 375px;
+  }
+  .about-info{
+    max-width: 470px;
+  }
+}
+
+//main_price-page
+.main_price-page{
+  padding-top: 195px;  
+}
+
+//Wholesale price
+.main_price-wholesale {
+  padding-top: 170px;
+  background-image: url(../img/price-wholesale-bg.jpg);
+  .main-title {
+    margin-top: 40px;
+      max-width: 375px;
+  }
+}
+
+
 
 .curs-metal {
   background: #ffffff;
@@ -544,6 +586,7 @@
   }
 }
 .about-info {
+  color: #fff;
   h5,
   h4,
   h3,
