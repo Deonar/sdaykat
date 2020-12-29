@@ -242,6 +242,12 @@
       font-size: 14px;
       line-height: 18px;
     }
+    &-item__link {
+      &--tell {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
   }
   //=========================== requirement and
   //=========================== redemption
@@ -322,6 +328,22 @@
     }
   }
   //=========================== calculator-price__ofauto and
+  //=========================== additional-service
+  .additional {
+    &-title {
+      margin-bottom: 30px;
+    }
+    &-list {
+      width: calc(100% + 20px);
+      margin: 0 -10px -20px -10px;
+    }
+    &-item {
+      width: calc(50% - 20px);
+      margin: 0 10px 20px 10px;
+    }
+  }
+
+  //=========================== additional-service  and
   //=========================== Footer
   .footer {
     &-body {
@@ -339,6 +361,11 @@
   .container {
     padding-left: 25px;
     padding-right: 25px;
+  }
+  .h3,
+  h3 {
+    font-size: 18px;
+    line-height: 23px;
   }
   .section-wrapper {
     padding: 25px 0;
@@ -549,6 +576,12 @@
     &-item {
       width: 50%;
     }
+    &-item__link {
+      &--tell {
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
   }
   //=========================== requirement and
   //=========================== redemption
@@ -629,6 +662,36 @@
     }
   }
   //=========================== calculator-price__ofauto and
+  //=========================== delete-proof
+  .delete-proof {
+    &__title {
+      max-width: 250px;
+    }
+    &__item {
+      padding: 20px;
+    }
+    &__item-num {
+      font-size: 42px;
+      line-height: 42px;
+    }
+    &__item-title {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  //=========================== delete-proof and
+  //=========================== additional-service
+  .additional {
+    &-item__title {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &-item__price {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
 
   //=========================== Article
   .article{
@@ -653,6 +716,7 @@
   }
   //=========================== Article AND
 
+  //=========================== additional-service  and
   //=========================== Footer
   .footer {
     padding: 30px 0;
@@ -777,6 +841,21 @@
     }
   }
   //=========================== calculator-price__ofauto and
+  //=========================== delete-proof
+  .delete-proof {
+    &__item {
+      width: 100%;
+    }
+  }
+  //=========================== delete-proof and
+  //=========================== additional-service
+  .additional {
+    &-item {
+      width: calc(100% - 20px);
+    }
+  }
+
+  //=========================== additional-service  and
 }
 @media (max-width: 400px) {
   //=========================== Calcularor
