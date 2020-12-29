@@ -357,6 +357,7 @@
   //=========================== Footer AND
 }
 @media (max-width: 767px) {
+
   .container {
     padding-left: 25px;
     padding-right: 25px;
@@ -371,6 +372,11 @@
   }
   .popup-title {
     font-size: 18px;
+  }
+  .title{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
   }
   .primary-title {
     font-size: 18px;
@@ -693,6 +699,29 @@
       line-height: 18px;
     }
   }
+
+  //=========================== Article
+  .article{
+    &__item{
+      max-width: 370px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    &__title{
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px;
+    }
+    &__label{
+      top: 10px;
+      left: 10px;
+    }
+    &__text{
+      margin-bottom: 10px
+    }
+  }
+  //=========================== Article AND
 
   //=========================== additional-service  and
   //=========================== Footer

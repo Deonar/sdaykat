@@ -1,3 +1,11 @@
+
+/* stapel-400 - latin_cyrillic */
+@font-face {
+  font-family: 'Stapel';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/stapel/Stapel_Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/stapel/Stapel_Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* stapel-500 - latin_cyrillic */
 @font-face {
   font-family: 'Stapel';
