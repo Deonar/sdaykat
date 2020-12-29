@@ -27,7 +27,7 @@ body {
   color: $text-placeholder;
 }
 
-.img-responsive{
+.img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
@@ -82,7 +82,9 @@ body {
 .mt-30 {
   margin-top: 30px;
 }
-
+.m-0 {
+  margin: 0;
+}
 .mb-auto {
   margin-bottom: auto;
 }
@@ -399,6 +401,24 @@ body {
 }
 .small-btn {
   padding: 10px 30px;
+}
+.page {
+  &-head {
+    margin-bottom: 50px;
+  }
+  &-title {
+    font-family: 'Stapel';
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 42px;
+    color: $text;
+    margin-bottom: 20px;
+  }
+  &-text {
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-gray;
+  }
 }
 
 .main-form {

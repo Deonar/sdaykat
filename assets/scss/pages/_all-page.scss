@@ -727,8 +727,8 @@
 //Article
 .article {
   &__item {
+    position: relative;
     outline: none;
-    margin-bottom: 20px;
     &:hover {
       .article__title {
         color: $blue;
@@ -760,7 +760,7 @@
       color: #fff;
       background: $blue;
     }
-    &_wthite {
+    &_white {
       color: #717784;
       background: #fff;
     }
@@ -776,7 +776,6 @@
   }
   &__text {
     margin-bottom: 20px;
-    color: $gray;
   }
   &__bottom {
     font-size: 12px;
@@ -800,6 +799,106 @@
     align-items: center;
     img {
       margin-right: 5px;
+    }
+    svg {
+      width: 15px;
+      height: 10px;
+      fill: $primary;
+      margin-right: 5px;
+    }
+  }
+  &-section {
+    margin-bottom: 80px;
+  }
+  &-section__row {
+    margin-bottom: 30px;
+  }
+}
+.article__big-items {
+  margin-bottom: 30px;
+  .article {
+    &__item {
+      position: relative;
+      display: block;
+      transition: all 0.3s ease;
+      &:hover .article__item-title {
+        transition: all 0.3s ease;
+        color: $text-secondery;
+      }
+    }
+    &__item-title {
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 22px;
+      color: $text-light;
+      margin-bottom: 10px;
+    }
+    &__date,
+    &__views {
+      color: $white;
+      font-weight: 700;
+      opacity: 0.5;
+    }
+    &__views {
+      line-height: 17px;
+      svg {
+        fill: $white;
+      }
+    }
+    &__item-bottom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 30px;
+    }
+    &__label {
+      left: 30px;
+      top: 30px;
+    }
+    &__item-img {
+      position: relative;
+      padding-top: 74%;
+      border-radius: 3px;
+      overflow: hidden;
+      img {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+      }
+    }
+  }
+}
+.article__small-items {
+  .article {
+    &__item {
+      display: block;
+      padding: 30px;
+      border-radius: 3px;
+      background: $white;
+      border: 1px solid #f4f7fa;
+      &:hover {
+        background: #f4f7fa;
+      }
+    }
+    &__item-title {
+      margin-bottom: 10px;
+    }
+    &__text {
+      color: $text-gray;
+    }
+    &__label {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin-bottom: 10px;
     }
   }
 }
