@@ -130,24 +130,23 @@
     }
   }
   //=========================== prices-ofmetal end
-//=========================== pass-material
-.pass-material {
-  img{
-    position: static;
-    width: 100%;
-    max-width: 60px;
-    height: auto;
-    margin-bottom: 15px;
+  //=========================== pass-material
+  .pass-material {
+    img {
+      position: static;
+      width: 100%;
+      max-width: 60px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+    &__item {
+      height: 100%;
+    }
   }
-  &__text{
-    margin-bottom: 20px;
-  }
-  &__item{
-    height: 100%;
-  }
-}
-//=========================== pass-material end
-
+  //=========================== pass-material end
 
   //=========================== Calcularor
   .calculator {
@@ -491,8 +490,18 @@
       font-size: 24px;
       line-height: 32px;
     }
+    &__all-content {
+      h3 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+    }
   }
+
   //=========================== HEADER
+  .header-top__indent {
+    padding-top: 110px !important;
+  }
   .header {
     max-height: 60px;
     &-bottom,
@@ -508,6 +517,11 @@
     }
     &-mob__logo {
       display: flex;
+    }
+    &.h-fixed {
+      .header-top {
+        border-bottom: none;
+      }
     }
   }
   //=========================== HEADER AND
@@ -538,16 +552,16 @@
     }
   }
   //=========================== prices-ofmetal end
- //=========================== pass-material
- .pass-material {
-  &__item{
-    max-width: 370px;
+  //=========================== pass-material
+  .pass-material {
+    &__item {
+      max-width: 370px;
+    }
+    &__text {
+      max-width: 100%;
+    }
   }
-  &__text{
-    max-width: 100%;
-  }
-}
-//=========================== pass-material end
+  //=========================== pass-material end
   //=========================== Calcularor
   .calculator {
     &-price .container {
@@ -563,7 +577,7 @@
         width: 60px;
         height: 60px;
         z-index: 10;
-        background: url("../img/icons/calculator-icon.svg") center center no-repeat;
+        background: url('../img/icons/calculator-icon.svg') center center no-repeat;
         background-size: contain;
       }
     }
@@ -870,6 +884,17 @@
     //   height: auto;
     // }
   }
+  .single-article {
+    &__body {
+      padding-top: 54%;
+    }
+    &__content {
+      padding: 50px 25px;
+      .page-title {
+        margin-bottom: 10px;
+      }
+    }
+  }
   //=========================== Article AND
 
   //=========================== additional-service  and
@@ -915,7 +940,7 @@
       padding: 12px 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       &::after {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         right: 4px;
@@ -1100,13 +1125,25 @@
     }
   }
   //=========================== delete-proof and
+  //=========================== single-article
+  .single-article {
+    .container {
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+    &__body {
+      padding-top: 150%;
+      border-radius: 0px;
+    }
+  }
+  //=========================== single-article and
   //=========================== additional-service
   .additional {
     &-item {
       width: calc(100% - 20px);
     }
   }
-
   //=========================== additional-service  and
 }
 @media (max-width: 400px) {
@@ -1124,19 +1161,19 @@
   }
   //=========================== Calcularor end
   //=========================== pass-material
-.pass-material {
-  &__item{
-    padding: 20px;
+  .pass-material {
+    &__item {
+      padding: 20px;
+    }
+    .btn {
+      max-width: 100%;
+      width: 100%;
+    }
   }
-  .btn{
-    max-width: 100%;
-    width: 100%;
-  }
-}
-//=========================== pass-material end
+  //=========================== pass-material end
   //=========================== Delete-catalysts
   .delete-catalysts {
-    &__wrapper{
+    &__wrapper {
       padding: 20px;
       padding-bottom: 300px;
     }

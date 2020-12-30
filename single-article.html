@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="assets/libs/bootstrap-grid/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/libs/slick/slick.css" />
+    <link rel="stylesheet" href="assets/libs/jquery-libs/jquery-ui.min.css" />
     <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
 
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -13,7 +15,7 @@
   </head>
 
   <body>
-    <header class="header header-dark" style="position: relative">
+    <header id="header" class="header header-light">
       <div class="header-body">
         <div class="container">
           <div class="header-top">
@@ -173,185 +175,68 @@
       </div>
     </header>
 
-    <main class="main">
-      <section class="page-head">
+    <main class="single-article-page header-top__indent">
+      <div class="breadcrumbs">
         <div class="container">
-          <h1 class="page-title">Каталитические системы</h1>
-          <div class="page-text">Оснащение автомобильными катализаторами позволяет производить автомобили в соответствии с современными нормами экологичности.</div>
+          <ul class="breadcrumbs__container">
+            <li class="breadcrumbs__item">
+              <a href="/journal.html" class="nuxt-link-active breadcrumbs__link t-control">Журнал</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="/single-section-journal.html" class="nuxt-link-active breadcrumbs__link t-control">Каталитические системы</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span to="/single-article" class="breadcrumbs__link t-control breadcrumbs__link--disabled">Сколько стоит удаленный катализатор</span>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
 
-      <section class="popular-article">
+      <section class="single-article">
         <div class="container">
-          <div class="row article article__big-items">
-            <div class="col-12 col-sm-6">
-              <a href="#" class="article__item">
-                <div class="article__item-img">
-                  <img src="assets/img/article/article_4.jpg" alt="Каталитические системы" />
-                </div>
-                <span class="article__label article__label_white"> Каталитические системы </span>
-                <div class="article__item-bottom">
-                  <h2 class="article__item-title primary-title primary-title__light">Сколько стоит старый катализатор?</h2>
-                  <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
-                  <div class="article__bottom">
-                    <span class="article__date">12.02.2020</span>
-                    <span class="article__views">
-                      <svg>
-                        <use xlink:href="assets/img/icons/icon-views-light.svg#icon-views"></use>
-                      </svg>
-                      500
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-12 col-sm-6">
-              <a href="#" class="article__item">
-                <div class="article__item-img">
-                  <img src="assets/img/article/article_5.jpg" alt="Каталитические системы" />
-                </div>
-                <span class="article__label article__label_blue"> Каталитические системы </span>
-                <div class="article__item-bottom">
-                  <h2 class="article__item-title primary-title primary-title__light">Сколько стоит старый катализатор?</h2>
-                  <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
-                  <div class="article__bottom">
-                    <span class="article__date">12.02.2020</span>
-                    <span class="article__views">
-                      <svg>
-                        <use xlink:href="assets/img/icons/icon-views-light.svg#icon-views"></use>
-                      </svg>
-                      500
-                    </span>
-                  </div>
-                </div>
-              </a>
+          <div class="single-article__body">
+            <img src="assets/img/article/article_6.jpg" alt="" class="single-article__img" />
+            <div class="single-article__content">
+              <span class="article__label article__label_white"> Каталитические системы </span>
+              <h1 class="page-title">Каталитические системы</h1>
+              <div class="article__bottom">
+                <span class="article__date">12.02.2020</span>
+                <span class="article__views">
+                  <svg>
+                    <use xlink:href="assets/img/icons/icon-views-light.svg#icon-views"></use>
+                  </svg>
+                  500
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="article-section">
+      <section class="page__all-content">
         <div class="container">
-          <div class="row article article-section__row">
-            <a href="#" class="col-12 col-sm-4 article__item">
-              <div class="article__img">
-                <span class="article__label article__label_white"> Каталитические системы </span>
-                <img src="assets/img/article/article_1.jpg" class="img-responsive" alt="Каталитические системы" />
-              </div>
-              <h4 class="article__title">Сколько стоит старый катализатор?</h4>
-              <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
-              <div class="article__bottom">
-                <span class="article__date">12.02.2020</span>
-                <span class="article__views"><img src="assets/img/icons/icon-views.svg" alt="" />500</span>
-              </div>
-            </a>
-            <a href="#" class="col-12 col-sm-4 article__item">
-              <div class="article__img">
-                <span class="article__label article__label_blue"> Каталитические системы </span>
-                <img src="assets/img/article/article_2.jpg" class="img-responsive" alt="Каталитические системы" />
-              </div>
-              <h4 class="article__title">Сколько стоит старый катализатор?</h4>
-              <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
-              <div class="article__bottom">
-                <span class="article__date">12.02.2020</span>
-                <span class="article__views"><img src="assets/img/icons/icon-views.svg" alt="" />500</span>
-              </div>
-            </a>
-            <a href="#" class="col-12 col-sm-4 article__item">
-              <div class="article__img">
-                <span class="article__label article__label_orange"> Каталитические системы </span>
-                <img src="assets/img/article/article_3.jpg" class="img-responsive" alt="Каталитические системы" />
-              </div>
-              <h4 class="article__title">Сколько стоит старый катализатор?</h4>
-              <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
-              <div class="article__bottom">
-                <span class="article__date">12.02.2020</span>
-                <span class="article__views"><img src="assets/img/icons/icon-views.svg" alt="" />500</span>
-              </div>
-            </a>
-          </div>
-          <div class="row article article-section__row">
-            <a href="#" class="col-12 col-sm-4 article__item">
-              <div class="article__img">
-                <span class="article__label article__label_white"> Каталитические системы </span>
-                <img src="assets/img/article/article_1.jpg" class="img-responsive" alt="Каталитические системы" />
-              </div>
-              <h4 class="article__title">Сколько стоит старый катализатор?</h4>
-              <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
-              <div class="article__bottom">
-                <span class="article__date">12.02.2020</span>
-                <span class="article__views"><img src="assets/img/icons/icon-views.svg" alt="" />500</span>
-              </div>
-            </a>
-            <a href="#" class="col-12 col-sm-4 article__item">
-              <div class="article__img">
-                <span class="article__label article__label_blue"> Каталитические системы </span>
-                <img src="assets/img/article/article_2.jpg" class="img-responsive" alt="Каталитические системы" />
-              </div>
-              <h4 class="article__title">Сколько стоит старый катализатор?</h4>
-              <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
-              <div class="article__bottom">
-                <span class="article__date">12.02.2020</span>
-                <span class="article__views"><img src="assets/img/icons/icon-views.svg" alt="" />500</span>
-              </div>
-            </a>
-            <a href="#" class="col-12 col-sm-4 article__item">
-              <div class="article__img">
-                <span class="article__label article__label_orange"> Каталитические системы </span>
-                <img src="assets/img/article/article_3.jpg" class="img-responsive" alt="Каталитические системы" />
-              </div>
-              <h4 class="article__title">Сколько стоит старый катализатор?</h4>
-              <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
-              <div class="article__bottom">
-                <span class="article__date">12.02.2020</span>
-                <span class="article__views"><img src="assets/img/icons/icon-views.svg" alt="" />500</span>
-              </div>
-            </a>
-          </div>
-          <div class="row article article-section__row">
-            <a href="#" class="col-12 col-sm-4 article__item">
-              <div class="article__img">
-                <span class="article__label article__label_white"> Каталитические системы </span>
-                <img src="assets/img/article/article_1.jpg" class="img-responsive" alt="Каталитические системы" />
-              </div>
-              <h4 class="article__title">Сколько стоит старый катализатор?</h4>
-              <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
-              <div class="article__bottom">
-                <span class="article__date">12.02.2020</span>
-                <span class="article__views"><img src="assets/img/icons/icon-views.svg" alt="" />500</span>
-              </div>
-            </a>
-            <a href="#" class="col-12 col-sm-4 article__item">
-              <div class="article__img">
-                <span class="article__label article__label_blue"> Каталитические системы </span>
-                <img src="assets/img/article/article_2.jpg" class="img-responsive" alt="Каталитические системы" />
-              </div>
-              <h4 class="article__title">Сколько стоит старый катализатор?</h4>
-              <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
-              <div class="article__bottom">
-                <span class="article__date">12.02.2020</span>
-                <span class="article__views"><img src="assets/img/icons/icon-views.svg" alt="" />500</span>
-              </div>
-            </a>
-            <a href="#" class="col-12 col-sm-4 article__item">
-              <div class="article__img">
-                <span class="article__label article__label_orange"> Каталитические системы </span>
-                <img src="assets/img/article/article_3.jpg" class="img-responsive" alt="Каталитические системы" />
-              </div>
-              <h4 class="article__title">Сколько стоит старый катализатор?</h4>
-              <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
-              <div class="article__bottom">
-                <span class="article__date">12.02.2020</span>
-                <span class="article__views"><img src="assets/img/icons/icon-views.svg" alt="" />500</span>
-              </div>
-            </a>
-          </div>
+          <p><strong>Вы заметили симптомы забитого катализатора,</strong> хотя раньше даже не знали о наличии такой детали в автомобиле? Не отчаивайтесь, ведь вы не одиноки: большинство автомобилистов сталкивается с неисправностью катализатора и его последующим удалением.</p>
+          <h3>Как работает катализатор?</h3>
+          <img src="assets/img/all-content/img-1.jpg" alt="" />
+          <p>Устройство, обеспечивающее чистоту выхлопных газов двигателя внутреннего сгорания, находится под капотом автомобиля и называется каталитическим нейтрализатором / катколлектором / катализатором. Внешняя оболочка состоит из металла, а внутри катализатора располагается огромное количество сот. Примерно 60 микроканалов на 1 квадратный сантиметр функционируют ради фильтрации токсичных выбросов, защищая окружающую среду.</p>
+          <p><strong>Чем грязнее выхлоп, тем сложнее переработать его.</strong> Постепенно катализатор забивается и выходит из строя. Если вы заправляете свой автомобиль некачественным топливом, то вам очень скоро придется удалять катализатор.</p>
+          <h3>Как спасти катализатор</h3>
+          <p>Устройство, обеспечивающее чистоту выхлопных газов двигателя внутреннего сгорания, находится под капотом автомобиля и называется каталитическим нейтрализатором / катколлектором / катализатором. Внешняя оболочка состоит из металла, а внутри катализатора располагается огромное количество сот. Примерно 60 микроканалов на 1 квадратный сантиметр функционируют ради фильтрации токсичных выбросов, защищая окружающую среду.</p>
+          <p><strong>Чем грязнее выхлоп, тем сложнее переработать его.</strong> Постепенно катализатор забивается и выходит из строя. Если вы заправляете свой автомобиль некачественным топливом, то вам очень скоро придется удалять катализатор.</p>
+          <h3>Как спасти катализатор</h3>
+          <img src="assets/img/all-content/img-2.jpg" alt="" />
+          <p>Устройство, обеспечивающее чистоту выхлопных газов двигателя внутреннего сгорания, находится под капотом автомобиля и называется каталитическим нейтрализатором / катколлектором / катализатором. Внешняя оболочка состоит из металла, а внутри катализатора располагается огромное количество сот. Примерно 60 микроканалов на 1 квадратный сантиметр функционируют ради фильтрации токсичных выбросов, защищая окружающую среду.</p>
+          <p><strong>Чем грязнее выхлоп, тем сложнее переработать его.</strong> Постепенно катализатор забивается и выходит из строя. Если вы заправляете свой автомобиль некачественным топливом, то вам очень скоро придется удалять катализатор.</p>
+          <h3>Как спасти катализатор</h3>
+          <p>Устройство, обеспечивающее чистоту выхлопных газов двигателя внутреннего сгорания, находится под капотом автомобиля и называется каталитическим нейтрализатором / катколлектором / катализатором. Внешняя оболочка состоит из металла, а внутри катализатора располагается огромное количество сот. Примерно 60 микроканалов на 1 квадратный сантиметр функционируют ради фильтрации токсичных выбросов, защищая окружающую среду.</p>
+          <p><strong>Чем грязнее выхлоп, тем сложнее переработать его.</strong> Постепенно катализатор забивается и выходит из строя. Если вы заправляете свой автомобиль некачественным топливом, то вам очень скоро придется удалять катализатор.</p>
+          <img src="assets/img/all-content/img-3.jpg" alt="" />
         </div>
       </section>
 
       <section class="popular-article article-section">
         <div class="container">
-          <h3 class="article-section__title primary-title__h3 mb-30">Популярные статьи</h3>
+          <h3 class="article-section__title primary-title__h3 mb-30">Читайте также</h3>
           <div class="row article article__big-items">
             <div class="col-12 col-sm-6">
               <a href="#" class="article__item">
@@ -603,7 +488,7 @@
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <button class="main-form__submit btn btn_hover primary-btn" id="intro-submit-btn" type="button">Продать катализатор</button>
+                <button class="main-form__submit btn btn_hover primary-btn" type="button">Продать катализатор</button>
               </div>
             </div>
             <label class="main-form__policy">
@@ -622,6 +507,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/libs/scrollbar/jquery.scrollbar.min.js"></script>
     <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/libs/slick/slick.min.js"></script>
 
     <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
     <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>

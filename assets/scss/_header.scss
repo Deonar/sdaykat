@@ -1,9 +1,29 @@
+.h-fixed {
+  position: fixed !important;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all ease 0.3s;
+  opacity: 1;
+  background: #fff;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.15);
+}
+.header-top__indent {
+  padding-top: 190px !important;
+}
 .header {
   position: absolute;
+  left: 0;
   top: 0;
-  width: 100%;
+  right: 0;
   max-height: 130px;
   z-index: 1000;
+  &.active {
+    z-index: 15;
+    top: -100%;
+    transition: all 0.3s;
+  }
   &-body {
     position: relative;
   }
@@ -263,6 +283,7 @@
   }
   &-mob__body {
     position: fixed;
+    opacity: 1;
     left: 0;
     top: 0;
     bottom: 0;
@@ -418,7 +439,8 @@
 .logo-dark {
   display: none;
 }
-.header.header-dark {
+.header.header-light,
+.header.h-fixed {
   .header-burger span {
     background: #1e1e1e;
   }

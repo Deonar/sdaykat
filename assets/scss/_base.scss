@@ -73,6 +73,15 @@ body {
 .mt-auto {
   margin-top: auto;
 }
+.pt-0 {
+  padding-top: 0px;
+}
+.mt-0 {
+  margin-top: 0px;
+}
+.m-0 {
+  margin: 0;
+}
 .mt-10 {
   margin-top: 10px;
 }
@@ -82,9 +91,7 @@ body {
 .mt-30 {
   margin-top: 30px;
 }
-.m-0 {
-  margin: 0;
-}
+
 .mb-auto {
   margin-bottom: auto;
 }
@@ -138,6 +145,7 @@ body {
 .section-wrapper {
   padding: 50px 0;
 }
+
 .small-text {
   font-family: 'ProximaNova';
   font-size: 12px;
@@ -406,9 +414,7 @@ body {
   text-transform: uppercase;
   color: $text-primary;
 }
-.section {
-  margin-bottom: 100px;
-}
+
 .small-btn {
   padding: 10px 30px;
 }
@@ -428,6 +434,80 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: $text-gray;
+  }
+  &__all-content {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    strong {
+      font-size: 16px;
+      width: 100%;
+      max-width: 770px;
+      margin: 0 auto;
+      font-weight: 700;
+    }
+    p {
+      font-size: 16px;
+      width: 100%;
+      max-width: 770px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+    img {
+      display: flex;
+      width: 100%;
+      max-width: 970px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    h3 {
+      width: 100%;
+      max-width: 770px;
+      margin: 0 auto;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.breadcrumbs {
+  z-index: 900;
+  display: block;
+  margin-bottom: 30px;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    color: #717784;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 14px;
+    &:not(:last-child):after {
+      display: block;
+      content: '/';
+      color: #717784;
+      transform: translateX(5px);
+    }
+  }
+  &__link {
+    color: #717784;
+    white-space: nowrap;
+    transition: color 0.3s;
+    &:hover {
+      color: $text-primary;
+      transition: color 0.3s;
+    }
+  }
+  &__link--disabled {
+    color: $text-primary;
+    text-decoration: none !important;
+    &:hover {
+      color: $text-primary;
+    }
   }
 }
 

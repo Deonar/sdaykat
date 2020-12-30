@@ -6,13 +6,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.6);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
   }
   &-title {
     color: #fff;
@@ -24,16 +24,11 @@
 .main_delete-catalysts {
   background-image: url(../img/delete-cat-page-bg.jpg);
   .main-title {
-      max-width: 375px;
+    max-width: 375px;
   }
-  .about-info{
+  .about-info {
     max-width: 470px;
   }
-}
-
-//main_price-page
-.main_price-page{
-  padding-top: 195px;  
 }
 
 //Wholesale price
@@ -42,11 +37,9 @@
   background-image: url(../img/price-wholesale-bg.jpg);
   .main-title {
     margin-top: 40px;
-      max-width: 375px;
+    max-width: 375px;
   }
 }
-
-
 
 .curs-metal {
   background: #ffffff;
@@ -946,6 +939,56 @@
   }
 }
 
+.single-article {
+  margin-bottom: 50px;
+  &__body {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 44.445%;
+  }
+  &__img {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+  &__content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    padding: 50px;
+    .article {
+      &__date {
+        color: $white;
+      }
+      &__views {
+        color: $white;
+        svg {
+          fill: $white;
+        }
+      }
+      &__label {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 20px;
+      }
+      &__label_white {
+      }
+    }
+    .page-title {
+      color: $text-light;
+      margin-bottom: 50px;
+    }
+  }
+}
 //Yandex map
 .select {
   position: relative;
@@ -1123,9 +1166,9 @@
 }
 
 .map {
-  &__header{
-    .select__current{
-      font-family: "Stapel";
+  &__header {
+    .select__current {
+      font-family: 'Stapel';
       font-weight: 500;
       font-size: 30px;
     }
