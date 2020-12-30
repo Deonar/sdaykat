@@ -166,6 +166,50 @@
     max-width: 100%;
   }
   //=========================== Calcularor and
+  //=========================== about-company
+  .about-company {
+    &__histoty {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 50px;
+    }
+    &__statistics {
+      width: 100%;
+      max-width: 470px;
+    }
+    &__quantity-people {
+      padding-bottom: 20px;
+      font-size: 42px;
+      line-height: 40px;
+    }
+    &__statistics-item {
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 15px;
+      span {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      &:last-child {
+        padding-left: 17px;
+      }
+    }
+    &__target {
+      padding: 20px;
+    }
+    &__target-title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 12px;
+    }
+  }
+
+  //=========================== about-company and
   //=========================== Bonuses
   .bonuses {
     &-body {
@@ -468,9 +512,33 @@
   .section-wrapper {
     padding: 25px 0;
   }
-  .popup-title {
-    font-size: 18px;
+
+  .popup {
+    &-primary__title {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+    &-secondery__title {
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 10px;
+    }
+    &-body {
+      padding: 50px 25px;
+    }
+    &-form {
+      .main-form__label {
+        margin-bottom: 0;
+      }
+    }
   }
+  .popup-vacancy {
+    .popup-secondery__title {
+      font-size: 24px;
+    }
+  }
+
   .title {
     font-size: 18px;
     font-weight: 500;
@@ -780,6 +848,20 @@
     }
   }
   //=========================== price-ofauto and
+  //=========================== about-company
+  .about-section__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  .about-team {
+    padding-bottom: 60px;
+    &__item-name {
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 5px;
+    }
+  }
+  //=========================== about-company and
   //=========================== calculator-price__ofauto
   .calculator-price__ofauto {
     .select {
@@ -962,6 +1044,12 @@
   //=========================== Footer AND
 }
 @media (max-width: 500px) {
+  .custom-popup {
+    // min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .main {
     height: auto;
     min-height: 480px;
@@ -1057,6 +1145,14 @@
     margin-top: 0;
   }
 
+  //=========================== Front page end
+  //=========================== Front page end
+  .main_about-page {
+    min-height: 300px;
+    .main-title {
+      margin-bottom: 0px;
+    }
+  }
   //=========================== Front page end
   //=========================== requirement
   .requirement {

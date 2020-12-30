@@ -76,11 +76,17 @@ body {
 .pt-0 {
   padding-top: 0px;
 }
+.pb-0 {
+  padding-bottom: 0px;
+}
 .mt-0 {
   margin-top: 0px;
 }
 .m-0 {
   margin: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
 }
 .mt-10 {
   margin-top: 10px;
@@ -185,34 +191,6 @@ body {
   }
 }
 
-.popup-title {
-  font-family: 'Stapel';
-  font-weight: 500;
-  font-size: 24px;
-  color: $text;
-  line-height: 30px;
-}
-.popup-btn {
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $text;
-  padding: 11px 18px;
-  border-radius: 3px;
-  background: #e6ebf5;
-  transition: all 0.3s ease;
-  &:hover {
-    background: #dae1f1;
-    transition: all 0.3s ease;
-  }
-  &:focus {
-    outline: none;
-  }
-}
 // Helpers
 @keyframes move {
   to {
@@ -360,6 +338,16 @@ body {
   &:hover {
     border: 1px solid rgba(255, 255, 255, 0.15);
     background: rgba(255, 255, 255, 0.15);
+  }
+}
+.border-gray-btn {
+  background: #fff;
+  color: $text;
+  border: 1px solid #b1b9ca;
+  &:hover {
+    border: 1px solid #b1b9ca;
+    background: #b1b9ca;
+    color: #fff;
   }
 }
 

@@ -40,7 +40,23 @@
     max-width: 375px;
   }
 }
-
+.main_about-page {
+  background-image: url(../img/about-page-bg.jpg);
+  display: flex;
+  min-height: 540px;
+  margin-bottom: 50px;
+  .container {
+    display: flex;
+    align-items: flex-end;
+  }
+  .main-title {
+    position: relative;
+    z-index: 10;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    max-width: 375px;
+  }
+}
 .curs-metal {
   background: #ffffff;
   box-shadow: 0px 20px 40px rgba(30, 30, 30, 0.1);
@@ -1666,6 +1682,19 @@
     line-height: 23px;
     color: $text-gray;
   }
+  &__item-link {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    img {
+      margin-left: 10px;
+      margin-bottom: 1px;
+    }
+  }
 }
 
 .additional {
@@ -1729,4 +1758,220 @@
     line-height: 23px;
     color: $text-secondery;
   }
+}
+
+.about-company {
+  &__row-statistics {
+  }
+  &__row-target {
+    margin-bottom: -15px;
+  }
+  &__histoty {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-gray;
+  }
+  &__statistics {
+    width: 100%;
+    max-width: 470px;
+  }
+  &__quantity-people {
+    font-family: 'Stapel';
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 23px;
+    font-size: 56px;
+    line-height: 45px;
+    color: $text-primary;
+    border-bottom: 1px solid #e2e4ea;
+    span {
+      font-family: 'Stapel';
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      max-width: 90px;
+      margin-left: 10px;
+    }
+  }
+  &__statistics-block {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__statistics-item {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    color: #043598;
+    margin-top: 13px;
+    white-space: nowrap;
+    span {
+      white-space: normal;
+      display: block;
+      font-family: 'Stapel';
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: $text-gray;
+      margin-top: 4px;
+    }
+    &:last-child {
+      margin-left: 35px;
+      padding-left: 35px;
+      border-left: 1px solid #e2e4ea;
+    }
+  }
+  &__target {
+    border-radius: 3px;
+    padding: 50px;
+    background: $primary;
+    margin-bottom: 15px;
+  }
+  &__target-title {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    color: $text-light;
+    margin-bottom: 30px;
+    white-space: nowrap;
+  }
+  &__target-text {
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+.about-section__title {
+  margin-bottom: 40px;
+  width: 100%;
+}
+.about-team {
+  &__row {
+    margin-bottom: -20px;
+  }
+  &__item {
+    border-radius: 3px;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+  &__item-photo {
+    position: relative;
+    padding-top: 120%;
+    background: #f4f7fa;
+    img {
+      position: absolute;
+      display: block;
+      width: 100%;
+      left: 50%;
+      bottom: 0;
+      padding: 0 10px;
+      transform: translate(-50%, 0%);
+      object-fit: cover;
+    }
+  }
+  &__item-name {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 10px;
+  }
+  &__item-desc {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+  }
+}
+.vacancy {
+  background: #f4f7fa;
+  &-row {
+    margin-bottom: -30px;
+  }
+  &-item {
+    padding: 30px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  &-item__icon {
+    max-height: 16px;
+    margin-bottom: 20px;
+  }
+  &-item__title {
+    margin-bottom: 5px;
+  }
+  &-item__price {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-primary;
+    margin-bottom: 20px;
+  }
+  &-item__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-gray;
+    margin-bottom: 30px;
+  }
+  &-item__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.popup-vacancy {
+}
+.popup-vacancy__body {
+}
+.popup-vacancy__form {
+}
+.calculator-form__title {
+}
+.primary-title__h3 {
+}
+.popup-vacancy__price {
+}
+.popup-vacancy__text {
+}
+.popup-vacancy__form-body {
+}
+.main-form {
+}
+.main-form__wrapper {
+}
+.main-form__label {
+}
+.main-form__label_phone {
+}
+.main-form__phone {
+}
+.mask-phone {
+}
+.main-form__btn {
+}
+.main-form__submit {
+}
+.btn {
+}
+.btn_hover {
+}
+.primary-btn {
+}
+.main-form__policy {
+}
+.main-form__checkbox {
+}
+.main-form__checkbox-box {
+}
+.main-form__text {
+}
+.small-text {
 }
