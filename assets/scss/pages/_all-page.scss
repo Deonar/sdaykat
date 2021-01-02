@@ -774,6 +774,32 @@
     line-height: 15px;
     margin-top: 20px;
   }
+
+  .list-bonuses {
+    &__item {
+      margin-bottom: 15px;
+      display: flex;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__item-num {
+      font-family: 'Stapel';
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: $text-secondery;
+      width: 100%;
+      max-width: 30px;
+      margin-right: 15px;
+    }
+    &__item-text {
+      font-size: 14px;
+      line-height: 18px;
+      color: $text-light;
+      opacity: 0.7;
+    }
+  }
 }
 
 //Article
@@ -1637,7 +1663,7 @@
   }
 }
 
-.delete-proof {
+.steps {
   &__body {
   }
   &__title {
@@ -1927,51 +1953,144 @@
   }
 }
 
-.popup-vacancy {
+.loyalty-programs {
+  &__title {
+    margin-bottom: 40px;
+  }
+  .bonuses {
+    &-body {
+      background: transparent;
+      border-radius: 0px;
+      padding: 0px;
+      &:after {
+        display: none;
+      }
+    }
+    &-list {
+      padding-bottom: 0px;
+      border-bottom: none;
+      flex-wrap: wrap;
+      width: calc(100% + 30px);
+      margin: 0 -15px;
+    }
+    &-item {
+      position: relative;
+      background: #101010;
+      width: calc(33.3333% - 30px);
+      margin: 0 15px;
+      border-radius: 3px;
+      padding: 30px;
+      max-width: 100%;
+      &:last-child {
+        margin-right: auto;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        width: 80px;
+        height: 80px;
+        z-index: 10;
+        background: url('../img/icons/percent-icon.svg') center center no-repeat;
+      }
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &-options {
+      padding: 50px;
+      background: #101010;
+      border-radius: 3px;
+    }
+  }
 }
-.popup-vacancy__body {
+
+.loyalty-instruction {
+  &__body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  &__card {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 80px;
+    img {
+      max-width: 450px;
+    }
+  }
+  &__steps {
+    .steps {
+      &__item {
+        padding: 25px 30px;
+      }
+      &__item-num {
+        font-size: 42px;
+        line-height: 42px;
+      }
+      &__item-title {
+        font-size: 18px;
+        line-height: 23px;
+      }
+      &__item-text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
 }
-.popup-vacancy__form {
-}
-.calculator-form__title {
-}
-.primary-title__h3 {
-}
-.popup-vacancy__price {
-}
-.popup-vacancy__text {
-}
-.popup-vacancy__form-body {
-}
-.main-form {
-}
-.main-form__wrapper {
-}
-.main-form__label {
-}
-.main-form__label_phone {
-}
-.main-form__phone {
-}
-.mask-phone {
-}
-.main-form__btn {
-}
-.main-form__submit {
-}
-.btn {
-}
-.btn_hover {
-}
-.primary-btn {
-}
-.main-form__policy {
-}
-.main-form__checkbox {
-}
-.main-form__checkbox-box {
-}
-.main-form__text {
-}
-.small-text {
+
+.loyalty-cabinet {
+  &__body {
+    display: flex;
+  }
+  &__entry {
+    width: 100%;
+    max-width: 370px;
+    padding: 30px;
+    background: $primary;
+    border-radius: 3px;
+  }
+  &__entry-img {
+    max-height: 17px;
+    margin-bottom: 20px;
+  }
+  &__entry-title {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    color: $text-light;
+  }
+  &__entry-btn {
+    display: block;
+    max-width: 100%;
+  }
+  &__conditions {
+    .requirement {
+      &-list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      &-item {
+        cursor: default;
+        pointer-events: none;
+        border: none;
+        width: 40%;
+        padding: 0 30px 30px 30px;
+        &:nth-child(3),
+        &:nth-child(4) {
+          padding-bottom: 0;
+        }
+      }
+      &-item__icon {
+      }
+      &-item__title {
+      }
+      &-item__text {
+      }
+    }
+  }
 }

@@ -79,8 +79,29 @@
   }
 
   //=========================== price-ofauto and
+  //=========================== loyalty-instruction
+  .loyalty-instruction {
+    &__card {
+      max-width: 350px;
+      margin-left: 50px;
+      img {
+        max-width: 350px;
+      }
+    }
+  }
+  //=========================== loyalty-instruction and
 }
 @media (max-width: 992px) {
+  //=========================== HEADER
+  .header {
+    &-top__menu-item {
+      margin-right: 10px;
+    }
+    &-bottom__menu-item {
+      margin-right: 15px;
+    }
+  }
+  //=========================== HEADER AND
   //=========================== Catalysts
   .catalysts {
     .title {
@@ -487,6 +508,69 @@
   }
 
   //=========================== additional-service  and
+  //=========================== loyalty-programs
+  .loyalty-programs {
+    .bonuses {
+      &-list {
+        width: calc(100% + 15px);
+        margin: 0 -7.5px;
+      }
+      &-item {
+        width: calc(33.3333% - 15px);
+        margin: 0 7.5px;
+        padding: 20px;
+      }
+      &-options {
+        padding: 20px;
+      }
+    }
+  }
+  //=========================== loyalty-programs  and
+  //=========================== loyalty-instruction
+  .loyalty-instruction {
+    &__card {
+      display: none;
+    }
+    &__steps {
+      .steps {
+        &__item {
+          padding: 20px;
+        }
+        &__item-title {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+  //=========================== loyalty-instruction and
+  //=========================== loyalty-cabinet
+  .loyalty-cabinet {
+    &__entry {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    &__entry-title {
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 20px;
+    }
+    &__entry-btn {
+      margin-top: auto;
+    }
+    &__conditions {
+      .requirement {
+        &-item {
+          width: 50%;
+          padding: 0 20px 20px 20px;
+        }
+      }
+    }
+  }
+  //=========================== loyalty-cabinet and
+
   //=========================== Footer
   .footer {
     &-body {
@@ -874,8 +958,8 @@
     }
   }
   //=========================== calculator-price__ofauto and
-  //=========================== delete-proof
-  .delete-proof {
+  //=========================== steps
+  .steps {
     &__title {
       max-width: 250px;
     }
@@ -891,7 +975,7 @@
       line-height: 18px;
     }
   }
-  //=========================== delete-proof and
+  //=========================== steps and
   //=========================== additional-service
   .additional {
     &-item__title {
@@ -978,6 +1062,37 @@
     }
   }
   //=========================== Article AND
+
+  //=========================== loyalty-programs
+  .loyalty-programs {
+    &__title {
+      margin-bottom: 30px;
+    }
+    .bonuses {
+      &-item {
+        width: calc(100% - 15px);
+        margin: 0 7.5px 15px 7.5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &-options {
+        padding: 20px;
+      }
+    }
+  }
+  //=========================== loyalty-programs  and
+  //=========================== loyalty-cabinet
+  .loyalty-cabinet {
+    &__body {
+      flex-direction: column-reverse;
+    }
+    &__entry {
+      max-width: 100%;
+      margin-top: 50px;
+    }
+  }
+  //=========================== loyalty-cabinet and
 
   //=========================== additional-service  and
   //=========================== Footer
@@ -1214,13 +1329,13 @@
     }
   }
   //=========================== calculator-price__ofauto and
-  //=========================== delete-proof
-  .delete-proof {
+  //=========================== steps
+  .steps {
     &__item {
       width: 100%;
     }
   }
-  //=========================== delete-proof and
+  //=========================== steps and
   //=========================== single-article
   .single-article {
     .container {
@@ -1241,6 +1356,21 @@
     }
   }
   //=========================== additional-service  and
+  //=========================== loyalty-cabinet
+  .loyalty-cabinet {
+    .requirement {
+      &-item {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 30px;
+        width: 100%;
+        &:nth-child(3) {
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+  //=========================== loyalty-cabinet and
 }
 @media (max-width: 400px) {
   //=========================== Calcularor
