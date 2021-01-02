@@ -2085,12 +2085,53 @@
           padding-bottom: 0;
         }
       }
-      &-item__icon {
-      }
-      &-item__title {
-      }
-      &-item__text {
-      }
     }
+  }
+}
+
+.privacy-policy-page {
+  .page-head {
+    margin-left: 300px;
+  }
+}
+.privacy-policy {
+  &__body {
+    display: flex;
+  }
+  &__menu-body {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 100px;
+  }
+  &__menu-title {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  &__menu {
+  }
+  &__menu-item {
+    margin-bottom: 16px;
+  }
+  &__menu-link {
+    font-family: 'Stapel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+    transition: all 0.3s ease;
+    &:hover {
+      transition: all 0.3s ease;
+      color: $text-secondery;
+    }
+  }
+  &__content {
+    width: 100%;
+    max-width: 570px;
+    margin-left: 0;
+    margin-right: auto;
   }
 }

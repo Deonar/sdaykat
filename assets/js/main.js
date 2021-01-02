@@ -2,6 +2,27 @@ jQuery(document).ready(function ($) {
   //======================== Scrollbar
   $('.scrollbar').scrollbar();
 
+  //=================== scroll to page
+  $('.scrollto').on('click', function () {
+    let href = $(this).attr('href');
+
+    $('html, body').animate(
+      {
+        scrollTop: $(href).offset().top - 150,
+      },
+      {
+        duration: 370, // по умолчанию «400»
+        easing: 'linear', // по умолчанию «swing»
+      }
+    );
+    if ($(window).width() < 768) {
+      $('html, body').animate({
+        scrollTop: $(href).offset().top - 70,
+      });
+    }
+    return false;
+  });
+
   //======================== POPUPS
   $('.popup').magnificPopup({
     mainClass: 'mfp-fade',

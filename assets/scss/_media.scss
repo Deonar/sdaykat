@@ -570,6 +570,18 @@
     }
   }
   //=========================== loyalty-cabinet and
+  //=========================== privacy-policy
+  .privacy-policy-page {
+    .page-head {
+      margin-left: 250px;
+    }
+  }
+  .privacy-policy {
+    &__menu-body {
+      margin-right: 50px;
+    }
+  }
+  //=========================== privacy-policy and
 
   //=========================== Footer
   .footer {
@@ -595,6 +607,10 @@
   }
   .section-wrapper {
     padding: 25px 0;
+  }
+
+  .page-head {
+    margin-bottom: 20px;
   }
 
   .popup {
@@ -646,6 +662,10 @@
       h3 {
         margin-top: 50px;
         margin-bottom: 20px;
+      }
+      h4 {
+        margin-top: 30px;
+        margin-bottom: 15px;
       }
     }
   }
@@ -1093,6 +1113,31 @@
     }
   }
   //=========================== loyalty-cabinet and
+  //=========================== privacy-policy
+  .privacy-policy-page {
+    .page-head {
+      margin-left: 155px;
+    }
+  }
+  .privacy-policy {
+    &__menu-body {
+      max-width: 140px;
+      margin-right: 15px;
+    }
+    &__menu-title {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    &__menu-item {
+      margin-bottom: 10px;
+    }
+    &__menu-link {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  //=========================== privacy-policy and
 
   //=========================== additional-service  and
   //=========================== Footer
@@ -1371,6 +1416,34 @@
     }
   }
   //=========================== loyalty-cabinet and
+  //=========================== privacy-policy
+  .privacy-policy-page {
+    .page-head {
+      margin-left: 0px;
+    }
+  }
+  .privacy-policy {
+    &__body {
+      flex-direction: column;
+    }
+    &__menu-body {
+      max-width: 100%;
+      margin-right: 0px;
+    }
+    &__menu {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__menu-item {
+      margin-bottom: 10px;
+      margin-right: 30px;
+    }
+    &__menu-link {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  //=========================== privacy-policy and
 }
 @media (max-width: 400px) {
   //=========================== Calcularor
