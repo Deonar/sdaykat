@@ -2135,3 +2135,69 @@
     margin-right: auto;
   }
 }
+.representative {
+  &-page {
+    .page-text {
+      max-width: 540px;
+    }
+  }
+  &-map {
+  }
+  &-map__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding-top: 60%;
+    img {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+  }
+  &-list {
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:first-child .representative-list__cities {
+      border-top: 1px solid #e2e4ea;
+    }
+  }
+  &-item__head {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+  &-item__img {
+    img {
+      height: 40px;
+      max-height: 40px;
+    }
+  }
+  &-item__title {
+    margin-left: 45px;
+  }
+  &-list__cities {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 770px;
+    padding: 35px 0px 20px 0px;
+    border-bottom: 1px solid #e2e4ea;
+  }
+  &-list__cities-item {
+    font-size: 16px;
+    line-height: 23px;
+    color: $text-gray;
+    margin-bottom: 15px;
+    width: 25%;
+  }
+}

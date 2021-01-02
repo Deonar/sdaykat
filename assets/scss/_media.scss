@@ -544,6 +544,16 @@
     }
   }
   //=========================== loyalty-instruction and
+  //=========================== representative
+  .representative {
+    &-item__title {
+      margin-left: 30px;
+    }
+    &-list__cities-item {
+      width: 33.333%;
+    }
+  }
+  //=========================== representative and
   //=========================== loyalty-cabinet
   .loyalty-cabinet {
     &__entry {
@@ -1139,7 +1149,65 @@
   }
   //=========================== privacy-policy and
 
-  //=========================== additional-service  and
+  //=========================== representative
+  .representative {
+    &-item {
+      position: relative;
+      display: block;
+      border-bottom: 1px solid #e2e4ea;
+      &:first-child {
+        border-top: 1px solid #e2e4ea;
+
+        .representative-list__cities {
+          border-top: none;
+        }
+      }
+      &.active .representative-item__head::after {
+        transform: translateY(-50%) rotate(-225deg);
+        transition: all 0.3s ease;
+      }
+    }
+    &-item__img {
+      width: 30px;
+      img {
+        height: 30px;
+        max-height: 30px;
+      }
+    }
+    &-item__head {
+      position: relative;
+      margin-right: 0;
+      width: 100%;
+      max-width: 100%;
+      padding: 15px 0;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 4px;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        transform: translateY(-50%) rotate(-45deg);
+        border-bottom: 2px solid #1e1e1e;
+        border-left: 2px solid #1e1e1e;
+        transition: all 0.3s ease;
+      }
+    }
+    &-list__cities-wrapp {
+      display: none;
+    }
+    &-list__cities {
+      position: relative;
+      border: none;
+      padding: 5px 0 0 0;
+      transition: all 0.3s;
+    }
+    &-list__cities-item {
+      transition: all 0.3s ease;
+    }
+  }
+  //=========================== representative and
   //=========================== Footer
   .footer {
     padding: 30px 0;
@@ -1444,6 +1512,13 @@
     }
   }
   //=========================== privacy-policy and
+  //=========================== representative
+  .representative {
+    &-list__cities-item {
+      width: 50%;
+    }
+  }
+  //=========================== representative and
 }
 @media (max-width: 400px) {
   //=========================== Calcularor

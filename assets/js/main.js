@@ -82,17 +82,22 @@ jQuery(document).ready(function ($) {
   $('.mask-phone').mask('+7 (999) 999-99-99');
   // ======================= Popup city and
 
-  //======================== Footer tabs
-  $('.footer-tab-js').on('click', function (e) {
-    $(this).toggleClass('active');
-    if ($(this).hasClass('active')) {
-      $(this).find('.footer-item__menu-list').toggle('blind');
-    } else {
-      $(this).find('.footer-item__menu-list').hide('300');
-    }
-  });
+  //========================  tabs mobile
 
-  //======================== Footer tabs and
+  if ($(window).innerWidth() <= 768) {
+    $('.accordion-tab-js').on('click', function () {
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $(this).find('.accordion-content-js').hide('300');
+      } else {
+        $('.accordion-tab-js').removeClass('active');
+        $(this).addClass('active');
+        $('.accordion-content-js').slideUp(200);
+        $(this).find('.accordion-content-js').toggle('blind');
+      }
+    });
+  }
+  //======================== tabs mobile and
   //======================== SLICK SLIDERS
   $('#reviews-slider').slick({
     slidesToShow: 3,
