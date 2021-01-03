@@ -88,6 +88,9 @@ body {
 .mb-0 {
   margin-bottom: 0;
 }
+.mt-5 {
+  margin-top: 5px!important;
+}
 .mt-10 {
   margin-top: 10px;
 }
@@ -415,6 +418,12 @@ body {
 
 .small-btn {
   padding: 10px 30px;
+}
+.text-gray{
+  color: $text-gray;
+}
+.text-black{
+  color: $black;
 }
 .page {
   &-head {

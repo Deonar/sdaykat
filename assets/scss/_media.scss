@@ -37,6 +37,7 @@
       }
     }
   }
+
   .header.h-fixed {
     .header-top__contact-tell::after {
       display: none;
@@ -45,7 +46,7 @@
       display: block;
     }
   }
-  //=========================== HEADER AND
+  //=========================== HEADER end
   //=========================== Calcularor
   .calculator {
     &-settings {
@@ -54,7 +55,7 @@
     &-form__body {
     }
   }
-  //=========================== Calcularor and
+  //=========================== Calcularor end
   //=========================== price-oftype
   .price-oftype {
     &__form .main-form__label {
@@ -67,7 +68,7 @@
       flex-direction: row;
     }
   }
-  //=========================== price-oftype and
+  //=========================== price-oftype end
   //=========================== redemption
   .redemption {
     &-slider {
@@ -76,7 +77,7 @@
       }
     }
   }
-  //=========================== redemption and
+  //=========================== redemption end
   //=========================== price-ofauto
   .price-ofauto {
     &__form {
@@ -86,7 +87,7 @@
     }
   }
 
-  //=========================== price-ofauto and
+  //=========================== price-ofauto end
   //=========================== loyalty-instruction
   .loyalty-instruction {
     &__card {
@@ -195,7 +196,7 @@
   .options-item__range {
     max-width: 100%;
   }
-  //=========================== Calcularor and
+  //=========================== Calcularor end
   //=========================== about-company
   .about-company {
     &__histoty {
@@ -239,7 +240,7 @@
     }
   }
 
-  //=========================== about-company and
+  //=========================== about-company end
   //=========================== Bonuses
   .bonuses {
     &-body {
@@ -327,7 +328,7 @@
       display: block;
     }
   }
-  //=========================== Bonuses and
+  //=========================== Bonuses end
   //=========================== price-oftype
   .price-oftype {
     .container--desc {
@@ -352,7 +353,7 @@
       padding-bottom: 11%;
     }
   }
-  //=========================== price-oftype and
+  //=========================== price-oftype end
   //=========================== article
   .article__big-items {
     margin-bottom: 20px;
@@ -398,7 +399,7 @@
       }
     }
   }
-  //=========================== article and
+  //=========================== article end
   //=========================== requirement
   .requirement {
     &-list {
@@ -422,7 +423,7 @@
       }
     }
   }
-  //=========================== requirement and
+  //=========================== requirement end
   //=========================== redemption
   .redemption {
     &-title {
@@ -432,7 +433,7 @@
       padding: 50px 70px;
     }
   }
-  //=========================== redemption and
+  //=========================== redemption end
   //=========================== price-ofauto
   .price-ofauto {
     &__content {
@@ -463,7 +464,7 @@
       margin-bottom: 20px;
     }
   }
-  //=========================== price-ofauto and
+  //=========================== price-ofauto end
   //=========================== calculator-price__ofauto
   .calculator-price__ofauto {
     .options-item {
@@ -500,7 +501,7 @@
       }
     }
   }
-  //=========================== calculator-price__ofauto and
+  //=========================== calculator-price__ofauto end
   //=========================== additional-service
   .additional {
     &-title {
@@ -516,7 +517,38 @@
     }
   }
 
-  //=========================== additional-service  and
+  //=========================== additional-service  end
+  //=========================== About block
+  .about-block {
+    padding: 50px 0;
+    &__btn {
+      margin-bottom: 50px;
+      .btn:first-child {
+      }
+    }
+  }
+  //=========================== About block end
+  //=========================== Reviews
+  .reviews {
+    .slider-btn__prev {
+      left: -10px;
+    }
+    .slider-btn__next {
+      right: -10px;
+    }
+  }
+  //=========================== Reviews end
+  //=========================== Features
+  .features {
+    padding: 50px 0;
+    &__text {
+      margin-bottom: 30px;
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  //=========================== Features end
   //=========================== loyalty-programs
   .loyalty-programs {
     .bonuses {
@@ -629,7 +661,7 @@
       margin-bottom: 30px;
     }
   }
-  //=========================== Footer AND
+  //=========================== Footer end
 }
 @media (max-width: 767px) {
   .container {
@@ -732,7 +764,7 @@
       }
     }
   }
-  //=========================== HEADER AND
+  //=========================== HEADER end
   //=========================== prices-ofmetal
   .prices-ofmetal {
     &__head {
@@ -835,7 +867,7 @@
     font-size: 12px;
   }
 
-  //=========================== Calcularor and
+  //=========================== Calcularor end
   //=========================== Bonuses
   .bonuses {
     &-list {
@@ -859,7 +891,7 @@
       }
     }
   }
-  //=========================== Bonuses and
+  //=========================== Bonuses end
   //=========================== price-oftype
   .price-oftype {
     .main-form {
@@ -904,7 +936,7 @@
       display: block;
     }
   }
-  //=========================== price-oftype and
+  //=========================== price-oftype end
   //=========================== requirement
   .requirement {
     &-title {
@@ -921,14 +953,14 @@
       }
     }
   }
-  //=========================== requirement and
+  //=========================== requirement end
   //=========================== redemption
   .redemption {
     &-title {
       max-width: 200px;
     }
   }
-  //=========================== redemption and
+  //=========================== redemption end
   //=========================== redemption-ofauto
   .redemption-ofauto {
     &__title {
@@ -948,7 +980,7 @@
       margin-bottom: 12px;
     }
   }
-  //=========================== redemption-ofauto and
+  //=========================== redemption-ofauto end
   //====================== Popup city
   .popup-cities__body {
     padding: 50px 20px 10px 20px;
@@ -961,7 +993,7 @@
   .selectRegion__item-title {
     font-size: 14px;
   }
-  //====================== Popup city and
+  //====================== Popup city end
   //=========================== price-ofauto
   .price-ofauto {
     .container {
@@ -987,7 +1019,29 @@
       padding: 50px 25px 20px 25px;
     }
   }
-  //=========================== price-ofauto and
+  //=========================== price-ofauto end
+  //=========================== Reviews
+  .reviews {
+    &__item {
+      padding: 20px;
+      max-width: 100%;
+    }
+    &__top {
+      h4 {
+        font-size: 14px;
+      }
+    }
+    .link {
+      max-width: 90px;
+    }
+    .slider-btn__prev {
+      left: -10px;
+    }
+    .slider-btn__next {
+      right: -10px;
+    }
+  }
+  //=========================== Reviews end
   //=========================== about-company
   .about-section__title {
     margin-bottom: 30px;
@@ -1001,7 +1055,7 @@
       margin-top: 5px;
     }
   }
-  //=========================== about-company and
+  //=========================== about-company end
   //=========================== calculator-price__ofauto
   .calculator-price__ofauto {
     .select {
@@ -1013,6 +1067,8 @@
       }
     }
   }
+  //=========================== calculator-price__ofauto end
+
   //=========================== calculator-price__ofauto and
   //=========================== steps
   .steps {
@@ -1031,7 +1087,7 @@
       line-height: 18px;
     }
   }
-  //=========================== steps and
+
   //=========================== additional-service
   .additional {
     &-item__title {
@@ -1117,6 +1173,17 @@
       }
     }
   }
+  //=========================== Map
+  .map {
+    &__header {
+      .select__current {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+      }
+    }
+  }
+  //=========================== Map end
   //=========================== Article AND
 
   //=========================== loyalty-programs
@@ -1417,9 +1484,9 @@
       }
     }
   }
-  //=========================== Footer AND
+  //=========================== Footer end
 }
-@media (max-width: 500px) {
+@media (max-width: 578px) {
   .custom-popup {
     // min-height: 100vh;
     display: flex;
@@ -1522,14 +1589,13 @@
   }
 
   //=========================== Front page end
-  //=========================== Front page end
   .main_about-page {
     min-height: 300px;
     .main-title {
       margin-bottom: 0px;
     }
   }
-  //=========================== Front page end
+
   //=========================== requirement
   .requirement {
     &-item {
@@ -1557,14 +1623,14 @@
       display: block;
     }
   }
-  //=========================== redemption and
+  //=========================== redemption end
   //=========================== redemption-ofauto
   .redemption-ofauto {
     &__item {
       width: calc(100% - 15px);
     }
   }
-  //=========================== redemption-ofauto and
+  //=========================== redemption-ofauto end
   //=========================== calculator-price__ofauto
   .calculator-price__ofauto {
     .options-item {
@@ -1589,6 +1655,8 @@
       }
     }
   }
+  //=========================== calculator-price__ofauto end
+
   //=========================== calculator-price__ofauto and
   //=========================== steps
   .steps {
@@ -1609,14 +1677,103 @@
       border-radius: 0px;
     }
   }
-  //=========================== single-article and
+  //=========================== single-article end
   //=========================== additional-service
   .additional {
     &-item {
       width: calc(100% - 20px);
     }
   }
-  //=========================== additional-service  and
+  //=========================== additional-service  end
+  //=========================== About block
+  .about-block {
+    &__content {
+    }
+    &__btn {
+      margin-bottom: 50px;
+      .btn {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+      }
+      .btn:first-child {
+        margin-bottom: 15px;
+      }
+    }
+    .about-info {
+      h2 {
+        font-size: 18px;
+      }
+      h5 {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+      .big-price {
+        font-size: 42px;
+      }
+      &__top {
+      }
+      &__bottom {
+      }
+      &_col {
+      }
+    }
+  }
+  //=========================== About block end
+  //=========================== Map
+  .map {
+    &-tabs {
+      margin-bottom: 20px;
+    }
+    &-item {
+      padding: 20px;
+      background-color: #fff;
+      max-width: 320px;
+      margin: auto;
+      margin-bottom: 15px;
+      border: 1px solid #e2e4ea;
+      box-sizing: border-box;
+      border-radius: 3px;
+      h5 {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e2e4ea;
+      }
+      &::after {
+        display: none;
+      }
+      &.active {
+        background-color: #fff;
+      }
+      &_desk {
+        display: none;
+      }
+      &_mob {
+        display: block;
+        border-bottom: 1px solid #e2e4ea;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+      &_btn {
+        display: block;
+        .btn {
+          font-size: 12px;
+          padding: 10px;
+          width: 100%;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 16px;
+          text-align: center;
+          background: rgba(4, 53, 152, 0.1);
+          border-radius: 3px;
+          color: $blue;
+        }
+      }
+    }
+  }
+  //=========================== Map end
   //=========================== loyalty-cabinet
   .loyalty-cabinet {
     .requirement {
@@ -1800,5 +1957,13 @@
       }
     }
   }
-  //=========================== price-ofauto and
+  //=========================== price-ofauto end
+  .about-block {
+    .about-info {
+      &_col:first-child {
+        max-width: 110px;
+      }
+    }
+  }
+  //=========================== About block end
 }
