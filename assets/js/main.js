@@ -54,9 +54,7 @@ jQuery(document).ready(function ($) {
 
     $.magnificPopup.close();
   });
-  // $('#closeLocationPopup').on('click', function (e) {
-  //   $('.location-popup').css({ opacity: '0', visibility: 'hidden' });
-  // });
+
   // ======================== MASK
   $('.mask-phone').mask('+7 (999) 999-99-99');
   // ======================= Popup city and
@@ -91,20 +89,12 @@ jQuery(document).ready(function ($) {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
           slidesToShow: 2,
-          arrows: false,
         },
       },
       {
-        breakpoint: 576,
+        breakpoint: 767,
         settings: {
-          arrows: false,
           slidesToShow: 1,
         },
       },
@@ -163,48 +153,34 @@ jQuery(document).ready(function ($) {
   //======================== Calculator
   $('.show-form-calculator').on('click', function (e) {});
 
-  //======================== Calculator and
-
-  //======================== MASK
-  // $('.mask-phone').mask('+7 (999) 999-99-99');
-
   //======================== ALL SELEC
   let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
     let selectItem = document.querySelectorAll('.select__item');
 
     selectHeader.forEach((item) => {
-      item.addEventListener('click', selectToggle);
+        item.addEventListener('click', selectToggle);
     });
 
     selectItem.forEach((item) => {
-      item.addEventListener('click', selectChoose);
+        item.addEventListener('click', selectChoose);
     });
 
     function selectToggle() {
-      this.parentElement.classList.toggle('is-active');
+        this.parentElement.classList.toggle('is-active');
     }
 
     function selectChoose() {
-      let text = this.innerHTML,
-        select = this.closest('.select-custom-js'),
-        selectDataValue = this.dataset.selectValue;
-      if (select) {
+        let text = this.innerHTML,
+            select = this.closest('.select-custom-js'),
+            selectDataValue = this.dataset.selectValue;
         currentText = select.querySelector('.select__current');
-        currentInput = select.querySelector('input');
 
         currentText.innerHTML = text;
-        currentInput.value = selectDataValue;
-      }
-      select.classList.remove('is-active');
+        select.classList.remove('is-active');
     }
-  };
-  select();
-
-  function insertMark(string, pos, len) {
-    $('.scrollbar-inner').scrollbar();
-    return string.slice(0, pos) + '<mark class="mark-color">' + string.slice(pos, pos + len) + '</mark>' + string.slice(pos + len);
-  }
+};
+select();
 
   $('.select__header-search').on('click', function () {
     $(this).parent('.container-search-js').addClass('is-active');

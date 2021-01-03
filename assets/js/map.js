@@ -1,30 +1,4 @@
-let select = function () {
-    let selectHeader = document.querySelectorAll('.select__header');
-    let selectItem = document.querySelectorAll('.select__item');
-
-    selectHeader.forEach((item) => {
-        item.addEventListener('click', selectToggle);
-    });
-
-    selectItem.forEach((item) => {
-        item.addEventListener('click', selectChoose);
-    });
-
-    function selectToggle() {
-        this.parentElement.classList.toggle('is-active');
-    }
-
-    function selectChoose() {
-        let text = this.innerHTML,
-            select = this.closest('.select-custom-js'),
-            selectDataValue = this.dataset.selectValue;
-        currentText = select.querySelector('.select__current');
-
-        currentText.innerHTML = text;
-        select.classList.remove('is-active');
-    }
-};
-select();
+$('.scrollbar-js').scrollbar();
 
 $(".tab-wrapper").on("click", ".tab", function (event) {
     var tab = $(this).attr("data-tab");
@@ -39,28 +13,29 @@ $(".tab-wrapper").on("click", ".tab", function (event) {
 });
 
 
- //Yandex map
- ymaps.ready(init);
- function init () {
-     var myMap = new ymaps.Map("yandex-map", {
-             center: [55.75898200418115,37.6644832754631],
-             zoom: 17,
-             controls: ['zoomControl']
-         }),
-         myPlacemark2 = new ymaps.Placemark([55.75898200418115,37.6644832754631], {
-             // Свойства.
-             hintContent: 'Арт Коттедж'
-         }, {
-              iconLayout: "default#image",
-             iconImageHref: 'http://art-cottage.pro/wp-content/themes/building/assets/img/map-label.png',
-             // Размеры метки.
-             iconImageSize: [90, 90],
-             // Смещение левого верхнего угла иконки относительно
-             // её "ножки" (точки привязки).
-             iconImageOffset: [-45, -45]
-         });
-     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-      myMap.behaviors.disable('drag');
-     } 
-     myMap.geoObjects.add(myPlacemark2)
- }
+//Yandex map
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map("yandex-map", {
+        center: [55.191700, 61.430303],
+        zoom: 12,
+        controls: ['zoomControl']
+    }),
+    myPlacemark1 = new ymaps.Placemark([55.191700, 61.430303], {
+        balloonContentHeader: `<h5>SDAYKAT</h5><div style='margin: 10px 0;border-bottom: 1px solid #74686830;'></div>`,
+        balloonContentBody: '<p class="mb-10"><img src="assets/img/icons/location-icon-dark.svg" class="mr-10"><span>ул. Братьев Кашириных, 101<br></span>' +
+        '<p class="mb-10 d-flex"><img src="assets/img/icons/icon-time-dark.svg" class="mr-10"><span><b>Пн-Пт</b> с 10:00 до 18:00<br><b>Пн-Пт</b> с 10:00 до 18:00</span></p>' +
+        '<p class="d-flex"><img src="assets/img/icons/icon-phone-dark.svg" class="mr-10"><a href="tel:+7-123-456-78-90">+7 (123) 456-78-90</a><br/></p>',
+        hintContent: "ул. Братьев Кашириных, 101",
+    }, {
+        iconLayout: "default#image",
+        iconImageHref: 'assets/img/map-icon.svg',
+        iconImageSize: [60, 60],
+        iconImageOffset: [-30, -30],
+
+       
+    });
+   
+    myMap.geoObjects.add(myPlacemark1);
+}

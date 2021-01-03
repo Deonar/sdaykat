@@ -26,9 +26,6 @@
   .main-title {
     max-width: 375px;
   }
-  .about-info {
-    max-width: 470px;
-  }
 }
 
 //Wholesale price
@@ -596,6 +593,7 @@
 }
 .about-info {
   color: #fff;
+  max-width: 470px;
   h5,
   h4,
   h3,
@@ -1104,6 +1102,8 @@
     width: 100%;
     max-width: 570px;
     margin-right: 30px;
+    max-height: 360px;
+    overflow: hidden;
   }
   &__title {
     margin-bottom: 10px;
@@ -1191,7 +1191,7 @@
   }
   &-wrapper {
   }
-
+  
   &-tabs {
     border: 1px solid #e2e4ea;
     box-sizing: border-box;
@@ -1222,7 +1222,11 @@
     }
   }
 
-  &-list {
+  &-list.scrollbar{
+    max-height: 360px!important;
+    & > .scroll-element .scroll-bar{
+      background-color:$blue;
+    }
   }
 
   &-item {
@@ -1251,8 +1255,16 @@
         border: 4px solid $blue;
       }
     }
+    &_mob{
+      display: none;
+    }
+    &_btn{
+      display: none;
+    }
   }
+  
 }
+
 .requirement {
   &-body {
   }
