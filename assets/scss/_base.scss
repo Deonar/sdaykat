@@ -386,6 +386,13 @@ body {
     background: $gray2-btn;
   }
 }
+.gray-btn {
+  background: $gray-btn;
+  color: #fff;
+  &:hover {
+    background: $gray-btn;
+  }
+}
 
 .separater-line {
   height: 0;

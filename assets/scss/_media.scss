@@ -37,6 +37,14 @@
       }
     }
   }
+  .header.h-fixed {
+    .header-top__contact-tell::after {
+      display: none;
+    }
+    .header-top__contact-tell::before {
+      display: block;
+    }
+  }
   //=========================== HEADER AND
   //=========================== Calcularor
   .calculator {
@@ -101,6 +109,7 @@
       margin-right: 15px;
     }
   }
+
   //=========================== HEADER AND
   //=========================== Catalysts
   .catalysts {
@@ -592,6 +601,23 @@
     }
   }
   //=========================== privacy-policy and
+  //=========================== franchise-sentence
+  .franchise-sentence {
+    &__img {
+      max-width: 300px;
+      margin-left: 30px;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    &__item {
+      max-width: 200px;
+    }
+  }
+  //=========================== franchise-sentence and
 
   //=========================== Footer
   .footer {
@@ -1208,6 +1234,74 @@
     }
   }
   //=========================== representative and
+
+  //=========================== franchise-sentence
+  .franchise-sentence {
+    padding: 50px 0;
+    margin-bottom: 25px;
+    &__head {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    &__content {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin-left: 0px;
+    }
+    &__item {
+      max-width: 100%;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__item-title {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  //=========================== franchise-sentence and
+  //=========================== franchise-map
+  .franchise-map {
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__info {
+      width: 100%;
+      max-width: 100%;
+    }
+    &__sub-title {
+      margin-bottom: 30px;
+    }
+    &__info-content {
+      padding: 20px 25px;
+      height: auto;
+    }
+    &__region {
+      display: none;
+    }
+    &__city {
+      width: 33.333%;
+    }
+    &__body {
+      display: none;
+    }
+    &__select {
+      display: block;
+    }
+  }
+
+  //=========================== franchise-map and
+
   //=========================== Footer
   .footer {
     padding: 30px 0;
@@ -1519,6 +1613,24 @@
     }
   }
   //=========================== representative and
+  //=========================== franchise-map
+  .franchise-map {
+    &__city {
+      width: 50%;
+    }
+    &__info-content {
+      margin-left: -25px;
+      margin-right: -25px;
+    }
+    &__info-tabs {
+      justify-content: space-between;
+    }
+    &__info-tab {
+      margin-right: 0;
+    }
+  }
+
+  //=========================== franchise-map and
 }
 @media (max-width: 400px) {
   //=========================== Calcularor

@@ -40,6 +40,15 @@
     max-width: 375px;
   }
 }
+//Wholesale price
+.main_franchise {
+  padding-top: 170px;
+  background-image: url('../img/franchise-page-bg.jpg');
+  .main-title {
+    margin-top: 40px;
+    max-width: 500px;
+  }
+}
 .main_about-page {
   background-image: url(../img/about-page-bg.jpg);
   display: flex;
@@ -2199,5 +2208,208 @@
     color: $text-gray;
     margin-bottom: 15px;
     width: 25%;
+  }
+}
+
+.franchise-sentence {
+  padding: 80px 0;
+  margin-bottom: 50px;
+  background: #f4f7fa;
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__content {
+    width: 100%;
+    max-width: 570px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 23px;
+    color: $text-gray;
+    opacity: 0.7;
+  }
+  &__img {
+    width: 100%;
+    max-width: 470px;
+    height: auto;
+    margin-left: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 100%;
+    max-width: 270px;
+  }
+  &__item-img {
+    height: 16px;
+    max-height: 16px;
+    margin-bottom: 20px;
+  }
+  &__item-title {
+    font-family: 'Stapel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 15px;
+  }
+  &__item-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+    opacity: 0.7;
+  }
+}
+
+.franchise-map {
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__sub-title {
+    font-size: 16px;
+    line-height: 23px;
+    color: $text-gray;
+    margin-bottom: 50px;
+    span {
+      font-family: 'Stapel';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: $text-primary;
+    }
+  }
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 100%;
+    max-width: 370px;
+  }
+  &__info-tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__info-tab {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px;
+    color: $text-gray;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      border-radius: 3px;
+      transition: all 0.3s ease;
+      color: $text-primary;
+      background: #f4f7fa;
+    }
+    &:hover {
+      transition: all 0.3s ease;
+      color: $text-primary;
+      background: #f4f7fa;
+    }
+  }
+  &__info-content {
+    background: #f4f7fa;
+    border-radius: 3px;
+    padding: 30px;
+  }
+  &__region {
+    font-family: 'Stapel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  &__cityes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  &__city {
+    width: 50%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 23px;
+    color: $text-gray;
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    margin-left: 50px;
+  }
+  &__svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+    img {
+      position: absolute;
+      display: block;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+  }
+  &__select {
+    display: none;
+    margin-bottom: 30px;
+    max-width: 350px;
+    .select__label {
+      color: $text;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 5px;
+    }
+    &.is-active {
+      .select__body {
+        max-width: 350px;
+      }
+    }
+    .custom-input {
+      position: relative;
+      border: 1px solid #e2e4ea;
+      &__wrapper {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 12px;
+          height: 12px;
+          background: url('../img/icons/icon-search-geo.svg') center center no-repeat;
+          background-size: contain;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
   }
 }

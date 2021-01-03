@@ -82,7 +82,7 @@ jQuery(document).ready(function ($) {
   $('.mask-phone').mask('+7 (999) 999-99-99');
   // ======================= Popup city and
 
-  //========================  tabs mobile
+  //========================  tabs accordion mobile
 
   if ($(window).innerWidth() <= 768) {
     $('.accordion-tab-js').on('click', function () {
@@ -97,7 +97,20 @@ jQuery(document).ready(function ($) {
       }
     });
   }
-  //======================== tabs mobile and
+  //======================== tabs accordion mobile and
+  //======================== tabs
+  $('.tab-wrapper').on('click', '.tab', function (event) {
+    var tab = $(this).attr('data-tab');
+    $(this).closest('.tab-wrapper').find('.tab').removeClass('active');
+    $(this).addClass('active');
+
+    $(this).closest('.tab-wrapper').find('.tab-content').hide();
+    $(this)
+      .closest('.tab-wrapper')
+      .find('.tab-content[data-tab = ' + tab + ']')
+      .show();
+  });
+  //======================== tabs  and
   //======================== SLICK SLIDERS
   $('#reviews-slider').slick({
     slidesToShow: 3,
@@ -193,6 +206,29 @@ jQuery(document).ready(function ($) {
 
   //======================== MASK
   // $('.mask-phone').mask('+7 (999) 999-99-99');
+
+  // GeoLocation
+  $('.input-search-js').on('input', function () {
+    let val = this.value.toLowerCase().trim();
+    let elasticItems = document.querySelectorAll('.select__body .select__item-search');
+    if (val != '') {
+      elasticItems.forEach(function (elem) {
+        if (elem.innerText.toLowerCase().search(val) == -1) {
+          elem.classList.add('hide');
+          elem.innerHTML = elem.innerText;
+        } else {
+          elem.classList.remove('hide');
+          let str = elem.innerText;
+          elem.innerHTML = insertMark(str, elem.innerText.search(RegExp(val, 'gi')), val.length);
+        }
+      });
+    } else {
+      elasticItems.forEach(function (elem) {
+        elem.classList.remove('hide');
+        elem.innerHTML = elem.innerText;
+      });
+    }
+  });
 
   //======================== ALL SELEC
   let select = function () {
