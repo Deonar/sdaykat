@@ -1301,6 +1301,60 @@
   }
 
   //=========================== franchise-map and
+  //=========================== franchise-office
+  .franchise-office {
+    &__wrapp {
+      justify-content: inherit;
+      flex-direction: column;
+    }
+    &__content {
+      max-width: 100%;
+      margin-right: 0px;
+      margin-bottom: 50px;
+    }
+    &__title {
+      margin-bottom: 30px;
+      max-width: 100%;
+    }
+    &__item-title {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+    &__form-wrapp {
+      display: flex;
+      justify-content: center;
+    }
+    &__form {
+      width: 100%;
+      padding: 30px 25px;
+      .main-form__label {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  //=========================== franchise-office and
+  //=========================== franchise-benefit
+  .franchise-benefit {
+    &__title {
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+    &__sub-title {
+      margin-bottom: 30px;
+      max-width: 100%;
+    }
+
+    &__item {
+      width: calc(50% - 30px);
+    }
+    &__item-title {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  //=========================== franchise-benefit and
 
   //=========================== Footer
   .footer {
@@ -1631,6 +1685,32 @@
   }
 
   //=========================== franchise-map and
+  //=========================== franchise-office
+  .franchise-office {
+    &__item {
+      width: 100%;
+      max-width: 100%;
+      &:nth-child(1),
+      &:nth-child(3) {
+        padding-right: 0px;
+      }
+    }
+    &__form-wrapp {
+      margin-left: -25px;
+      margin-right: -25px;
+    }
+    &__form {
+      max-width: 100%;
+    }
+  }
+  //=========================== franchise-office and
+  //=========================== franchise-benefit
+  .franchise-benefit {
+    &__item {
+      width: calc(100% - 30px);
+    }
+  }
+  //=========================== franchise-benefit and
 }
 @media (max-width: 400px) {
   //=========================== Calcularor
@@ -1643,6 +1723,9 @@
     justify-content: flex-start;
     &__range {
       display: none;
+    }
+    &__label {
+      font-size: 14px;
     }
   }
   //=========================== Calcularor end
@@ -1669,6 +1752,34 @@
   }
 
   //=========================== Delete-catalysts end
+  //=========================== franchise-calculator
+  .franchise-calculator {
+    .calculator {
+      &-form__price {
+        font-size: 30px;
+      }
+      &-input {
+        width: 100px;
+      }
+      &-options {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    .options-item {
+      width: 50%;
+      margin-bottom: 15px;
+      &__label {
+        width: 50%;
+        margin-bottom: 15px;
+        max-width: 100px;
+      }
+    }
+  }
+  //=========================== franchise-calculator end
 }
 @media (max-width: 360px) {
   //=========================== price-ofauto
