@@ -2,6 +2,27 @@ jQuery(document).ready(function ($) {
   //======================== Scrollbar
   $('.scrollbar').scrollbar();
 
+  //=================== scroll to page
+  $('.scrollto').on('click', function () {
+    let href = $(this).attr('href');
+
+    $('html, body').animate(
+      {
+        scrollTop: $(href).offset().top - 150,
+      },
+      {
+        duration: 370, // по умолчанию «400»
+        easing: 'linear', // по умолчанию «swing»
+      }
+    );
+    if ($(window).width() < 768) {
+      $('html, body').animate({
+        scrollTop: $(href).offset().top - 70,
+      });
+    }
+    return false;
+  });
+
   //======================== POPUPS
   $('.popup').magnificPopup({
     mainClass: 'mfp-fade',
@@ -59,17 +80,35 @@ jQuery(document).ready(function ($) {
   $('.mask-phone').mask('+7 (999) 999-99-99');
   // ======================= Popup city and
 
-  //======================== Footer tabs
-  $('.footer-tab-js').on('click', function (e) {
-    $(this).toggleClass('active');
-    if ($(this).hasClass('active')) {
-      $(this).find('.footer-item__menu-list').toggle('blind');
-    } else {
-      $(this).find('.footer-item__menu-list').hide('300');
-    }
-  });
+  //========================  tabs accordion mobile
 
-  //======================== Footer tabs and
+  if ($(window).innerWidth() <= 768) {
+    $('.accordion-tab-js').on('click', function () {
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $(this).find('.accordion-content-js').hide('300');
+      } else {
+        $('.accordion-tab-js').removeClass('active');
+        $(this).addClass('active');
+        $('.accordion-content-js').slideUp(200);
+        $(this).find('.accordion-content-js').toggle('blind');
+      }
+    });
+  }
+  //======================== tabs accordion mobile and
+  //======================== tabs
+  $('.tab-wrapper').on('click', '.tab', function (event) {
+    var tab = $(this).attr('data-tab');
+    $(this).closest('.tab-wrapper').find('.tab').removeClass('active');
+    $(this).addClass('active');
+
+    $(this).closest('.tab-wrapper').find('.tab-content').hide();
+    $(this)
+      .closest('.tab-wrapper')
+      .find('.tab-content[data-tab = ' + tab + ']')
+      .show();
+  });
+  //======================== tabs  and
   //======================== SLICK SLIDERS
   $('#reviews-slider').slick({
     slidesToShow: 3,
@@ -153,6 +192,29 @@ jQuery(document).ready(function ($) {
   //======================== Calculator
   $('.show-form-calculator').on('click', function (e) {});
 
+  // GeoLocation
+  $('.input-search-js').on('input', function () {
+    let val = this.value.toLowerCase().trim();
+    let elasticItems = document.querySelectorAll('.select__body .select__item-search');
+    if (val != '') {
+      elasticItems.forEach(function (elem) {
+        if (elem.innerText.toLowerCase().search(val) == -1) {
+          elem.classList.add('hide');
+          elem.innerHTML = elem.innerText;
+        } else {
+          elem.classList.remove('hide');
+          let str = elem.innerText;
+          elem.innerHTML = insertMark(str, elem.innerText.search(RegExp(val, 'gi')), val.length);
+        }
+      });
+    } else {
+      elasticItems.forEach(function (elem) {
+        elem.classList.remove('hide');
+        elem.innerHTML = elem.innerText;
+      });
+    }
+  });
+
   //======================== ALL SELEC
   let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
@@ -179,8 +241,8 @@ jQuery(document).ready(function ($) {
         currentText.innerHTML = text;
         select.classList.remove('is-active');
     }
-};
-select();
+  };
+  select();
 
   $('.select__header-search').on('click', function () {
     $(this).parent('.container-search-js').addClass('is-active');

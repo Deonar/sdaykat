@@ -6,8 +6,6 @@
 
     <link rel="stylesheet" href="assets/libs/bootstrap-grid/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/libs/slick/slick.css" />
-    <link rel="stylesheet" href="assets/libs/jquery-libs/jquery-ui.min.css" />
     <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
 
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -175,300 +173,94 @@
       </div>
     </header>
 
-    <div class="price-oftype-page header-top__indent">
-      <div class="breadcrumbs">
-        <div class="container">
-          <ul class="breadcrumbs__container">
-            <li class="breadcrumbs__item">
-              <a href="/journal.html" class="nuxt-link-active breadcrumbs__link t-control">Журнал</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a href="/single-section-journal.html" class="nuxt-link-active breadcrumbs__link t-control">Каталитические системы</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <span to="/single-article" class="breadcrumbs__link t-control breadcrumbs__link--disabled">Сколько стоит удаленный катализатор</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <section class="price-oftype section-wrapper pt-0">
-        <div class="container container--desc">
-          <div class="price-oftype__body">
-            <div class="price-oftype__content">
-              <div class="container container--mob">
-                <h2 class="price-oftype__title primary-title">Цены на керамические фильтры</h2>
-                <div class="price-oftype__range price__range">от<span>4 000 ₽</span>до <span>27 000 ₽</span></div>
-                <div class="price-oftype__text">Что такое и для чего нужен керамический катализатор? Керамический автомобильный катализатор или каталитический преобразователь – это необходимая деталь выхлопной системы автомобиля, призванная снизить уровень токсичных газов, образующихся при сгорании топлива.</div>
-                <form class="price-oftype__form main-form main-form__light">
-                  <div class="main-form__wrapper">
-                    <label class="main-form__label main-form__label_phone">
-                      <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
-                    </label>
-                    <div class="main-form__btn">
-                      <button class="main-form__submit btn btn_hover primary-btn" id="intro-submit-btn" type="button">Продать катализатор</button>
-                    </div>
-                  </div>
-                  <label class="main-form__policy">
-                    <input type="checkbox" checked="" class="main-form__checkbox" />
-                    <span class="main-form__checkbox-box"></span>
-                    <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
-                  </label>
-                </form>
-              </div>
-            </div>
-            <div class="price-oftype__slider-wrapper">
-              <div class="price-oftype__slider" id="price-oftype__slider">
-                <div class="price-oftype__slider-item">
-                  <img class="slider-item__img" src="assets/img/catalysts/ceramics-slider.jpg" alt="" />
-                </div>
-                <div class="price-oftype__slider-item">
-                  <img class="slider-item__img" src="assets/img/catalysts/ceramics-slider-1.jpg" alt="" />
-                </div>
-                <div class="price-oftype__slider-item">
-                  <img class="slider-item__img" src="assets/img/catalysts/ceramics-slider-2.jpg" alt="" />
-                </div>
-              </div>
-              <button class="slider-item__preview-btn"></button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="requirement section-wrapper">
-        <div class="container">
-          <div class="requirement-body">
-            <h2 class="requirement-title primary-title">Требования к принимаемому сырью</h2>
-            <div class="requirement-list">
-              <div href="#" class="requirement-item">
-                <img src="assets/img/icons/requirement-1.svg" alt="" class="requirement-item__icon" />
-                <div class="requirement-item__title">Влажность</div>
-                <div class="requirement-item__text">Катализаторы не должны быть влажными, допускается естественная влажность 1-2%</div>
-              </div>
-              <div href="#" class="requirement-item">
-                <img src="assets/img/icons/requirement-2.svg" alt="" class="requirement-item__icon" />
-                <div class="requirement-item__title">Чистота</div>
-                <div class="requirement-item__text">Катализаторы не должны быть влажными, допускается естественная влажность 1-2%</div>
-              </div>
-              <div href="#" class="requirement-item">
-                <img src="assets/img/icons/requirement-3.svg" alt="" class="requirement-item__icon" />
-                <div class="requirement-item__title">Состояние</div>
-                <div class="requirement-item__text">Катализаторы не должны быть влажными, допускается естественная влажность 1-2%</div>
-              </div>
-              <div href="#" class="requirement-item">
-                <img src="assets/img/icons/requirement-4.svg" alt="" class="requirement-item__icon" />
-                <div class="requirement-item__title">Состав</div>
-                <div class="requirement-item__text">Катализаторы не должны быть влажными, допускается естественная влажность 1-2%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="redemption section-wrapper">
-        <div class="container">
-          <div class="redemption-body">
-            <div class="redemption-title primary-title primary-title__light">Наши цены на выкуп катализаторов</div>
-            <div id="redemption-slider" class="redemption-slider">
-              <div class="redemption-slider__item">
-                <ul class="redemption-list">
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Mercedes Benz</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="redemption-slider__item">
-                <ul class="redemption-list">
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Mercedes Benz</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="redemption-slider__item">
-                <ul class="redemption-list">
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Mercedes Benz</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                  <li class="redemption-list__item">
-                    <a href="/single-price-ofauto.html" class="redemption-list__link">
-                      <div class="redemption-auto">Audi</div>
-                      <div class="redemption-range">от 4 000 до 45 000 ₽</div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <form class="redemption-form">
-              <div class="select select-dropdown container-search-js">
-                <div class="select__header-search">
-                  <label class="select__label">Марка авто</label>
-                  <span class="select__arrow">
-                    <input type="text" class="custom-input input-search-js" placeholder="Mazda" />
-                  </span>
-                </div>
+    <div class="privacy-policy-page header-top__indent">
+      <div class="container">
+        <section class="page-head">
+          <h1 class="page-title mb-0">
+            Политика
+            <br />
+            конфиденциальности
+          </h1>
+        </section>
 
-                <div class="select__body">
-                  <div class="scrollbar-inner">
-                    <div class="select__item-search">Mazda</div>
-                    <div class="select__item-search">Mercedes-Benz</div>
-                    <div class="select__item-search">Mitsubishi</div>
-                    <div class="select__item-search">Mini</div>
-                    <div class="select__item-search">ВАЗ</div>
-                    <div class="select__item-search">Газ</div>
-                    <div class="select__item-search">Волга</div>
-                    <div class="select__item-search">Нива</div>
-                    <div class="select__item-search">Mazda</div>
-                    <div class="select__item-search">Mercedes-Benz</div>
-                    <div class="select__item-search">Mitsubishi</div>
-                    <div class="select__item-search">Mini</div>
-                    <div class="select__item-search">ВАЗ</div>
-                    <div class="select__item-search">Газ</div>
-                    <div class="select__item-search">Волга</div>
-                    <div class="select__item-search">Нива</div>
-                  </div>
-                </div>
-              </div>
-              <div class="redemption-price__title">
-                Стоимость катализатора <br />
-                BMW
-              </div>
-              <div class="redemption-price__range price__range">от <span>4 000 ₽</span> до <span>45 000 ₽</span></div>
-              <a href="#" class="redemption-button btn light-blue-btn">УЗНАТЬ ТОЧНУЮ СТОИМОСТЬ</a>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section class="bonuses section-wrapper">
-        <div class="container">
-          <div class="bonuses-body">
-            <h2 class="bonuses-title primary-title__light">Программа лояльности</h2>
-            <ul class="bonuses-list">
-              <li class="bonuses-item">
-                <div class="bonuses-item__percent">5%</div>
-                <div class="bonuses-item__title">Ретро-бонусы</div>
-                <div class="bonuses-item__text">Каждую 10-ю сделку мы возвращаем ретро-бонусы в размере 5% от общей суммы этих сделок.</div>
+        <div class="privacy-policy__body section-wrapper pt-0">
+          <div class="privacy-policy__menu-body">
+            <div class="privacy-policy__menu-title">Оглавление</div>
+            <ul class="privacy-policy__menu">
+              <li class="privacy-policy__menu-item">
+                <a href="#paragraph-1" class="privacy-policy__menu-link scrollto">Обрабатываемые данные</a>
               </li>
-              <li class="bonuses-item">
-                <div class="bonuses-item__percent">5%</div>
-                <div class="bonuses-item__title">Ретро-бонусы</div>
-                <div class="bonuses-item__text">Каждую 10-ю сделку мы возвращаем ретро-бонусы в размере 5% от общей суммы этих сделок.</div>
+              <li class="privacy-policy__menu-item">
+                <a href="#paragraph-2" class="privacy-policy__menu-link scrollto">Цели обработки данных</a>
               </li>
-              <li class="bonuses-item">
-                <div class="bonuses-item__percent">10%</div>
-                <div class="bonuses-item__title">Ретро-бонусы</div>
-                <div class="bonuses-item__text">За каждого приведенного друга через личный кабинет мы начисляем Вам 10% от суммы сделки.</div>
+              <li class="privacy-policy__menu-item">
+                <a href="#paragraph-3" class="privacy-policy__menu-link scrollto">Требования к защите данных</a>
+              </li>
+              <li class="privacy-policy__menu-item">
+                <a href="#paragraph-4" class="privacy-policy__menu-link scrollto">Передача данных</a>
+              </li>
+              <li class="privacy-policy__menu-item">
+                <a href="#paragraph-5" class="privacy-policy__menu-link scrollto">Изменение Политики конфиденциальности</a>
               </li>
             </ul>
-            <div class="bonuses-options">
-              <div class="bonuses-offer">
-                <div class="bonuses-offer__title">Постоянным оптовым клиентам готовы предложить индивидуальные условия сотрудничества</div>
-                <a href="#" class="bonuses-offer__link">узнать больше</a>
-              </div>
-              <ul class="bonuses-programs">
-                <li class="bonuses-programs__item">
-                  <div class="bonuses-programs__item-num">01</div>
-                  <div class="bonuses-programs__item-text">Индивидуальный расчет стоимости</div>
-                </li>
-                <li class="bonuses-programs__item">
-                  <div class="bonuses-programs__item-num">02</div>
-                  <div class="bonuses-programs__item-text">Персональная программа лояльности</div>
-                </li>
-              </ul>
-              <a href="#" class="bonuses-more-btn">узнать больше</a>
-            </div>
+          </div>
+
+          <div class="privacy-policy__content page__all-content">
+            <p>Настоящий документ «Политика конфиденциальности» (далее по тексту – «Политика») представляет собой правила использования сайта sdaykat.ru (далее – «мы» и/или «Администрация») данных интернет-пользователей (далее «вы» и/или «Пользователь»), собираемых с использованием сайта (далее – «Сайт»), включая поддомены.</p>
+            <h4 id="paragraph-1"><strong>1. Обрабатываемые данные</strong></h4>
+            <ol>
+              <li><strong>1.1</strong> Мы не осуществляем сбор ваших персональных данных с использованием Сайта <a href="https://sdaykat.ru">https://sdaykat.ru</a>.</li>
+              <li><strong>1.2</strong>Все данные, собираемые на Сайте, предоставляются и принимаются в обезличенной форме (далее – «Обезличенные данные»).</li>
+              <li><strong>1.3</strong>Обезличенные данные включают следующие сведения, которые не позволяют вас идентифицировать:</li>
+              <li><strong>1.3.1</strong>Информацию, которую вы предоставляете о себе самостоятельно с использованием онлайн-форм и программных модулей Сайта, включая город, имя, номер телефона и/или адрес электронной почты.</li>
+              <li>
+                <ol class="ml-20">
+                  <li><strong>a)</strong> данные браузера (тип, версия, cookie);</li>
+                  <li><strong>b)</strong> данные браузера (тип, версия, cookie);</li>
+                  <li><strong>c)</strong> данные браузера (тип, версия, cookie);</li>
+                  <li><strong>d)</strong> данные браузера (тип, версия, cookie);</li>
+                </ol>
+              </li>
+              <li><strong>1.3.2</strong>Информацию, которую вы предоставляете о себе самостоятельно с использованием онлайн-форм и программных модулей Сайта, включая город, имя, номер телефона и/или адрес электронной почты.</li>
+            </ol>
+            <h4 id="paragraph-2"><strong>2. Цели обработки данных</strong></h4>
+            <ol>
+              <li><strong>2.1</strong> Мы не осуществляем сбор ваших персональных данных с использованием Сайта.</li>
+              <li><strong>2.2</strong>Все данные, собираемые на Сайте, предоставляются и принимаются в обезличенной форме (далее – «Обезличенные данные»).</li>
+              <li><strong>2.3</strong>Обезличенные данные включают следующие сведения, которые не позволяют вас идентифицировать:</li>
+              <li><strong>2.3.1</strong>Информацию, которую вы предоставляете о себе самостоятельно с использованием онлайн-форм и программных модулей Сайта, включая город, имя, номер телефона и/или адрес электронной почты.</li>
+            </ol>
+            <h4 id="paragraph-3"><strong>3. Требования к защите данных</strong></h4>
+            <ol>
+              <li><strong>3.1</strong> Мы не осуществляем сбор ваших персональных данных с использованием Сайта.</li>
+              <li><strong>3.2</strong>Все данные, собираемые на Сайте, предоставляются и принимаются в обезличенной форме (далее – «Обезличенные данные»).</li>
+              <li><strong>3.3</strong>Обезличенные данные включают следующие сведения, которые не позволяют вас идентифицировать:</li>
+              <li><strong>3.3.1</strong>Информацию, которую вы предоставляете о себе самостоятельно с использованием онлайн-форм и программных модулей Сайта, включая город, имя, номер телефона и/или адрес электронной почты.</li>
+            </ol>
+            <h4 id="paragraph-4"><strong>4. Передача данных</strong></h4>
+            <ol>
+              <li><strong>4.1</strong> Мы не осуществляем сбор ваших персональных данных с использованием Сайта.</li>
+              <li><strong>4.2</strong>Все данные, собираемые на Сайте, предоставляются и принимаются в обезличенной форме (далее – «Обезличенные данные»).</li>
+              <li><strong>4.3</strong>Обезличенные данные включают следующие сведения, которые не позволяют вас идентифицировать:</li>
+              <li>
+                <ul>
+                  <li>Пользователь выразил свое согласие на такие действия, включая случаи применения Пользователем настроек используемого программного обеспечения, не ограничивающих предоставление определенной информации;</li>
+                  <li>Пользователь выразил свое согласие на такие действия, включая случаи применения Пользователем настроек используемого программного обеспечения, не ограничивающих предоставление определенной информации;</li>
+                  <li>Пользователь выразил свое согласие на такие действия, включая случаи применения Пользователем настроек используемого программного обеспечения, не ограничивающих предоставление определенной информации;</li>
+                  <li>Пользователь выразил свое согласие на такие действия, включая случаи применения Пользователем настроек используемого программного обеспечения, не ограничивающих предоставление определенной информации;</li>
+                </ul>
+              </li>
+            </ol>
+            <h4 id="paragraph-5"><strong>5. Изменение Политики конфиденциальности</strong></h4>
+            <ol>
+              <li><strong>5.1</strong> Мы не осуществляем сбор ваших персональных данных с использованием Сайта.</li>
+              <li><strong>5.2</strong>Все данные, собираемые на Сайте, предоставляются и принимаются в обезличенной форме (далее – «Обезличенные данные»).</li>
+              <li><strong>5.3</strong>Обезличенные данные включают следующие сведения, которые не позволяют вас идентифицировать:</li>
+              <li><strong>5.3.1</strong>Информацию, которую вы предоставляете о себе самостоятельно с использованием онлайн-форм и программных модулей Сайта, включая город, имя, номер телефона и/или адрес электронной почты.</li>
+            </ol>
           </div>
         </div>
-      </section>
+      </div>
     </div>
 
     <footer class="footer">
@@ -566,7 +358,6 @@
         <div class="footer-copy">© 2020, Sdaykat.ru</div>
       </div>
     </footer>
-
     <!-- Popup city -->
     <div id="popup-cities" class="popup-cities white-popup mfp-hide">
       <div class="popup-cities__body">
@@ -623,42 +414,10 @@
       </div>
     </div>
     <!-- Popup city and-->
-    <!-- Popup city -->
-    <div id="popup-form-calculator" class="popup-form-calculator white-popup mfp-hide">
-      <div class="popup-calculator__body">
-        <div class="calculator-form">
-          <h3 class="calculator-form__title primary-title__h3">
-            Предварительная <br />
-            стоимость сырья
-          </h3>
-          <div class="calculator-form__price">28 000 ₽</div>
-          <div class="calculator-form__text">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта точной стоимости катализатора.</div>
-          <form class="calculator-form__body main-form">
-            <div class="main-form__wrapper">
-              <label class="main-form__label main-form__label_phone">
-                <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
-              </label>
-              <div class="main-form__btn">
-                <button class="main-form__submit btn btn_hover primary-btn" type="button">Продать катализатор</button>
-              </div>
-            </div>
-            <label class="main-form__policy">
-              <input type="checkbox" checked="" class="main-form__checkbox" />
-              <span class="main-form__checkbox-box"></span>
-              <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
-            </label>
-          </form>
-          <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>
-          <a href="tel:+88005507940" class="calculator-form__tell">8 800 550 79 40</a>
-        </div>
-      </div>
-    </div>
-    <!-- Popup city and-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/libs/scrollbar/jquery.scrollbar.min.js"></script>
     <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/libs/slick/slick.min.js"></script>
 
     <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
     <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>

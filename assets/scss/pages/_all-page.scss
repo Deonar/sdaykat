@@ -37,6 +37,15 @@
     max-width: 375px;
   }
 }
+//Wholesale price
+.main_franchise {
+  padding-top: 170px;
+  background-image: url('../img/franchise-page-bg.jpg');
+  .main-title {
+    margin-top: 40px;
+    max-width: 500px;
+  }
+}
 .main_about-page {
   background-image: url(../img/about-page-bg.jpg);
   display: flex;
@@ -771,6 +780,32 @@
     font-size: 12px;
     line-height: 15px;
     margin-top: 20px;
+  }
+
+  .list-bonuses {
+    &__item {
+      margin-bottom: 15px;
+      display: flex;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__item-num {
+      font-family: 'Stapel';
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: $text-secondery;
+      width: 100%;
+      max-width: 30px;
+      margin-right: 15px;
+    }
+    &__item-text {
+      font-size: 14px;
+      line-height: 18px;
+      color: $text-light;
+      opacity: 0.7;
+    }
   }
 }
 
@@ -1649,7 +1684,7 @@
   }
 }
 
-.delete-proof {
+.steps {
   &__body {
   }
   &__title {
@@ -1939,51 +1974,454 @@
   }
 }
 
-.popup-vacancy {
+.loyalty-programs {
+  &__title {
+    margin-bottom: 40px;
+  }
+  .bonuses {
+    &-body {
+      background: transparent;
+      border-radius: 0px;
+      padding: 0px;
+      &:after {
+        display: none;
+      }
+    }
+    &-list {
+      padding-bottom: 0px;
+      border-bottom: none;
+      flex-wrap: wrap;
+      width: calc(100% + 30px);
+      margin: 0 -15px;
+    }
+    &-item {
+      position: relative;
+      background: #101010;
+      width: calc(33.3333% - 30px);
+      margin: 0 15px;
+      border-radius: 3px;
+      padding: 30px;
+      max-width: 100%;
+      &:last-child {
+        margin-right: auto;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        width: 80px;
+        height: 80px;
+        z-index: 10;
+        background: url('../img/icons/percent-icon.svg') center center no-repeat;
+      }
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &-options {
+      padding: 50px;
+      background: #101010;
+      border-radius: 3px;
+    }
+  }
 }
-.popup-vacancy__body {
+
+.loyalty-instruction {
+  &__body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  &__card {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 80px;
+    img {
+      max-width: 450px;
+    }
+  }
+  &__steps {
+    .steps {
+      &__item {
+        padding: 25px 30px;
+      }
+      &__item-num {
+        font-size: 42px;
+        line-height: 42px;
+      }
+      &__item-title {
+        font-size: 18px;
+        line-height: 23px;
+      }
+      &__item-text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
 }
-.popup-vacancy__form {
+
+.loyalty-cabinet {
+  &__body {
+    display: flex;
+  }
+  &__entry {
+    width: 100%;
+    max-width: 370px;
+    padding: 30px;
+    background: $primary;
+    border-radius: 3px;
+  }
+  &__entry-img {
+    max-height: 17px;
+    margin-bottom: 20px;
+  }
+  &__entry-title {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    color: $text-light;
+  }
+  &__entry-btn {
+    display: block;
+    max-width: 100%;
+  }
+  &__conditions {
+    .requirement {
+      &-list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      &-item {
+        cursor: default;
+        pointer-events: none;
+        border: none;
+        width: 40%;
+        padding: 0 30px 30px 30px;
+        &:nth-child(3),
+        &:nth-child(4) {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
 }
-.calculator-form__title {
+
+.privacy-policy-page {
+  .page-head {
+    margin-left: 300px;
+  }
 }
-.primary-title__h3 {
+.privacy-policy {
+  &__body {
+    display: flex;
+  }
+  &__menu-body {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 100px;
+  }
+  &__menu-title {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  &__menu {
+  }
+  &__menu-item {
+    margin-bottom: 16px;
+  }
+  &__menu-link {
+    font-family: 'Stapel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+    transition: all 0.3s ease;
+    &:hover {
+      transition: all 0.3s ease;
+      color: $text-secondery;
+    }
+  }
+  &__content {
+    width: 100%;
+    max-width: 570px;
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
-.popup-vacancy__price {
+.representative {
+  &-page {
+    .page-text {
+      max-width: 540px;
+    }
+  }
+  &-map {
+  }
+  &-map__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding-top: 60%;
+    img {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+  }
+  &-list {
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:first-child .representative-list__cities {
+      border-top: 1px solid #e2e4ea;
+    }
+  }
+  &-item__head {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+  &-item__img {
+    img {
+      height: 40px;
+      max-height: 40px;
+    }
+  }
+  &-item__title {
+    margin-left: 45px;
+  }
+  &-list__cities {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 770px;
+    padding: 35px 0px 20px 0px;
+    border-bottom: 1px solid #e2e4ea;
+  }
+  &-list__cities-item {
+    font-size: 16px;
+    line-height: 23px;
+    color: $text-gray;
+    margin-bottom: 15px;
+    width: 25%;
+  }
 }
-.popup-vacancy__text {
+
+.franchise-sentence {
+  padding: 80px 0;
+  margin-bottom: 50px;
+  background: #f4f7fa;
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__content {
+    width: 100%;
+    max-width: 570px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 23px;
+    color: $text-gray;
+    opacity: 0.7;
+  }
+  &__img {
+    width: 100%;
+    max-width: 470px;
+    height: auto;
+    margin-left: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 100%;
+    max-width: 270px;
+  }
+  &__item-img {
+    height: 16px;
+    max-height: 16px;
+    margin-bottom: 20px;
+  }
+  &__item-title {
+    font-family: 'Stapel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 15px;
+  }
+  &__item-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+    opacity: 0.7;
+  }
 }
-.popup-vacancy__form-body {
-}
-.main-form {
-}
-.main-form__wrapper {
-}
-.main-form__label {
-}
-.main-form__label_phone {
-}
-.main-form__phone {
-}
-.mask-phone {
-}
-.main-form__btn {
-}
-.main-form__submit {
-}
-.btn {
-}
-.btn_hover {
-}
-.primary-btn {
-}
-.main-form__policy {
-}
-.main-form__checkbox {
-}
-.main-form__checkbox-box {
-}
-.main-form__text {
-}
-.small-text {
+
+.franchise-map {
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__sub-title {
+    font-size: 16px;
+    line-height: 23px;
+    color: $text-gray;
+    margin-bottom: 50px;
+    span {
+      font-family: 'Stapel';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: $text-primary;
+    }
+  }
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 100%;
+    max-width: 370px;
+  }
+  &__info-tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__info-tab {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px;
+    color: $text-gray;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      border-radius: 3px;
+      transition: all 0.3s ease;
+      color: $text-primary;
+      background: #f4f7fa;
+    }
+    &:hover {
+      transition: all 0.3s ease;
+      color: $text-primary;
+      background: #f4f7fa;
+    }
+  }
+  &__info-content {
+    background: #f4f7fa;
+    border-radius: 3px;
+    padding: 30px;
+  }
+  &__region {
+    font-family: 'Stapel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  &__cityes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  &__city {
+    width: 50%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 23px;
+    color: $text-gray;
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    margin-left: 50px;
+  }
+  &__svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+    img {
+      position: absolute;
+      display: block;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+  }
+  &__select {
+    display: none;
+    margin-bottom: 30px;
+    max-width: 350px;
+    .select__label {
+      color: $text;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 5px;
+    }
+    &.is-active {
+      .select__body {
+        max-width: 350px;
+      }
+    }
+    .custom-input {
+      position: relative;
+      border: 1px solid #e2e4ea;
+      &__wrapper {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 12px;
+          height: 12px;
+          background: url('../img/icons/icon-search-geo.svg') center center no-repeat;
+          background-size: contain;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
 }
