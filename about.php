@@ -115,7 +115,7 @@
               <div class="steps__item-num">01</div>
               <div class="steps__item-title">Честные выплаты до 75% по LME</div>
               <div class="steps__item-text">Собственная CRM-система, интегрированная с LME и ЦБ РФ, расчитывающая стоимость по курсу предыдущего дня.</div>
-              <a href="#" class="steps__item-link link">прОВЕРИТЬ НА lme.COM <img src="assets/img/icons/icon-arrow-box.svg" alt="" /></a>
+              <a href="https://www.lme.com/" target="_blank" class="steps__item-link link">проверить НА lme.COM <img src="assets/img/icons/icon-arrow-box.svg" alt="" /></a>
             </li>
             <li class="steps__item">
               <div class="steps__item-num">02</div>

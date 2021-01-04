@@ -136,7 +136,7 @@
           </div>
           <h4 class="catalysts__title">Керамический фильтр</h4>
           <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-          <a href="#popup-form-manager" class="catalysts__link link popup"> Узнать стоимость </a>
+          <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
         </div>
         <div class="catalysts__item">
           <div class="catalysts__img">
@@ -144,7 +144,7 @@
           </div>
           <h4 class="catalysts__title">Сажевый фильтр</h4>
           <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-          <a href="#popup-form-manager" class="catalysts__link link popup"> Узнать стоимость </a>
+          <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
         </div>
         <div class="catalysts__item">
           <div class="catalysts__img">
@@ -152,7 +152,7 @@
           </div>
           <h4 class="catalysts__title">Металл импортный</h4>
           <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-          <a href="#popup-form-manager" class="catalysts__link link popup"> Узнать стоимость </a>
+          <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
         </div>
         <div class="catalysts__item">
           <div class="catalysts__img">
@@ -160,13 +160,13 @@
           </div>
           <h4 class="catalysts__title">Металл отечественный</h4>
           <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-          <a href="#popup-form-manager" class="catalysts__link link popup"> Узнать стоимость </a>
+          <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
         </div>
       </div>
     </div>
   </section>
 
-  <?php include("templates/brands.php"); ?>
+  <?php include("templates/brands.php"); ?> 
 
   <section class="section-wrapper delete-catalysts">
     <div class="container">

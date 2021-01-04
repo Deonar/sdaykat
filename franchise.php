@@ -191,21 +191,20 @@
       </div>
     </section>
 
-    <section class="about-block d-none d-xl-block">
+    <section class="about-block">
       <div class="container">
         <div class="about-block__header">
           <h2 class="h2 title">О компании SDAYKAT</h2>
         </div>
         <div class="row">
-          <div class="col-7">
+          <div class="col-12 col-lg-7">
             <div class="about-block__content">
               <p class="big-text mb-20">Еще 15 лет назад об электромобилях никто не говорил всерьез, но сегодня уже каждый знает, что это, а многие готовы приобрести за любые деньги.</p>
               <p class="small-text mb-20 opacity-7">Еще 15 лет назад об электромобилях никто не говорил всерьез, но сегодня уже каждый знает, что это, а многие готовы приобрести за любые деньги.</p>
             </div>
             <div class="about-block__btn">
-              <a href="#" class="btn white-btn">4 вакансии</a>
-              <a href="#" class="btn transparent-btn btn_arrow"
-                >Узнать больше о компании
+              <a href="/about.php#vacancy" class="btn white-btn">4 вакансии</a>
+              <a href="/about.php" class="btn transparent-btn btn_arrow">Узнать больше о компании
                 <span class="arrow-move">
                   <span class="arrow-move-clip">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
@@ -214,11 +213,10 @@
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
                       <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
                     </svg>
-                  </span> </span
-              ></a>
+                  </span> </span></a>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-12 col-lg-5">
             <div class="about-info">
               <div class="about-info__top">
                 <div class="big-price mr-10">3 000</div>
