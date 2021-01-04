@@ -59,7 +59,7 @@
                   <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
-                  <button class="main-form__submit btn btn_hover" type="button">Продать катализатор</button>
+                  <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover popup" type="button">Продать катализатор</a>
                 </div>
               </div>
               <label class="main-form__policy">
@@ -292,7 +292,7 @@
                     <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                   </label>
                   <div class="main-form__btn">
-                    <button class="main-form__submit btn btn_hover primary-btn" id="intro-submit-btn" type="button">Продать катализатор</button>
+                    <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover primary-btn popup" type="button">Продать катализатор</a>
                   </div>
                 </div>
                 <label class="main-form__policy">
@@ -332,7 +332,7 @@
             <div class="bonuses-options">
               <div class="bonuses-offer">
                 <div class="bonuses-offer__title">Постоянным оптовым клиентам готовы предложить индивидуальные условия сотрудничества</div>
-                <a href="#" class="bonuses-offer__link">узнать больше</a>
+                <a href="/loyalty-program.php" class="bonuses-offer__link">узнать больше</a>
               </div>
               <ul class="bonuses-programs">
                 <li class="bonuses-programs__item">
@@ -344,7 +344,7 @@
                   <div class="bonuses-programs__item-text">Персональная программа лояльности</div>
                 </li>
               </ul>
-              <a href="#" class="bonuses-more-btn">узнать больше</a>
+              <a href="/loyalty-program.php" class="bonuses-more-btn">узнать больше</a>
             </div>
           </div>
         </div>
