@@ -1212,3 +1212,46 @@ body {
     color: #717784;
   }
 }
+/******* Preloader ********/
+#dr-preloader {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  transition: all 300ms linear 0ms;
+  background-color: #fff;
+  .dr-preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 4em;
+    height: 4em;
+    &-child {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: $blue;
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: sk-double-bounce 2s infinite ease-in-out;
+    }
+    &-double-bounce-2 {
+      animation-delay: -1s;
+    }
+  }
+}
+@keyframes sk-double-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}

@@ -1,9 +1,15 @@
 <?php
-if(!$header_class){
-$header_class = '';
+if (!$header_class) {
+    $header_class = '';
 }
 ?>
-<header id="header" class="header  <?php echo($header_class); ?> ">
+<div id="dr-preloader">
+    <div class="dr-preloader">
+        <div class="dr-preloader-child dr-preloader-double-bounce-1"></div>
+        <div class="dr-preloader-child dr-preloader-double-bounce-2"></div>
+    </div>
+</div>
+<header id="header" class="header  <?php echo ($header_class); ?> ">
     <div class="header-body">
         <div class="container">
             <div class="header-top">
@@ -52,7 +58,7 @@ $header_class = '';
                         <div class="header-top__contact-text">Звонок бесплатный</div>
                     </div>
                     <div class="header-top__cabinet">
-                        <a href="/authorization.html" class="header__cabinet-entry" >Личный кабинет</a>
+                        <a href="/authorization.html" class="header__cabinet-entry">Личный кабинет</a>
                         <div class="header-authorized" style="display: none">
                             <div class="header-authorized__login">+7 999 444 11 01</div>
                             <img src="assets/img/authorized.jpg" alt="" class="header-authorized__logo" />
@@ -109,7 +115,7 @@ $header_class = '';
                 <button class="header-mob__body-close close-mob-menu-js"></button>
             </div>
             <div class="header-mob__cabinet">
-                <a href="/authorization.html" class="header__cabinet-entry close-mob-menu-js" >Личный кабинет</a>
+                <a href="/authorization.html" class="header__cabinet-entry close-mob-menu-js">Личный кабинет</a>
                 <div class="header-mob__authorized" style="display: none">
                     <div class="authorized-logo">
                         <img src="assets/img/icons/authorized-icon.svg" alt="" class="authorized-logo__img" />
@@ -130,7 +136,7 @@ $header_class = '';
                         </li>
                     </ul>
                     <a href="#" class="authorized-btn close-mob-menu-js">Выйти</a>
-                </div> 
+                </div>
             </div>
             <ul class="header-mob__menu">
                 <li class="header-mob__menu-item">
