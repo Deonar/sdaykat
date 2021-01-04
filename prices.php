@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="assets/libs/bootstrap-grid/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/libs/jquery-libs/jquery-ui.min.css" />
     <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
 
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -174,9 +175,9 @@
                   <div class="options-item__percent">65%</div>
                   <div class="options-item__material">PT</div>
                   <img src="assets/img/icons/important-icon.svg" alt="" class="options-item__icon" />
-                  <input type="range" class="options-item__range" min="0" max="20" value="6" name="pd" step="0.1" />
+                  <div id="calculate-range-pt" class="options-item__range custom-range"></div>
                   <div class="calculator-result__input">
-                    <input class="calculator-input" type="text" placeholder="20" />
+                    <input id="calculate-input-pt" class="calculator-input" type="text" placeholder="20" />
                     <label class="calculator-result__label">Г/ Кг</label>
                   </div>
                 </div>
@@ -184,9 +185,9 @@
                   <div class="options-item__percent">65%</div>
                   <div class="options-item__material">PT</div>
                   <img src="assets/img/icons/important-icon.svg" alt="" class="options-item__icon" />
-                  <input type="range" class="options-item__range" min="0" max="20" value="6" name="pd" step="0.1" />
+                  <div id="calculate-range-pd" class="options-item__range custom-range"></div>
                   <div class="calculator-result__input">
-                    <input class="calculator-input" type="text" placeholder="20" />
+                  <input id="calculate-input-pd" class="calculator-input" type="text" placeholder="20" />
                     <label class="calculator-result__label">Г/ Кг</label>
                   </div>
                 </div>
@@ -194,9 +195,9 @@
                   <div class="options-item__percent">65%</div>
                   <div class="options-item__material">PT</div>
                   <img src="assets/img/icons/important-icon.svg" alt="" class="options-item__icon" />
-                  <input type="range" class="options-item__range" min="0" max="20" value="6" name="pd" step="0.1" />
+                  <div id="calculate-range-rh" class="options-item__range custom-range"></div>
                   <div class="calculator-result__input">
-                    <input class="calculator-input" type="text" placeholder="20" />
+                  <input id="calculate-input-rh" class="calculator-input" type="text" placeholder="20" />
                     <label class="calculator-result__label">Г/ Кг</label>
                   </div>
                 </div>
