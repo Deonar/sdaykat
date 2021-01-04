@@ -261,4 +261,10 @@ jQuery(document).ready(function ($) {
       });
     }
   });
+
+
+  $('#brands_btn-more').on('click', function(){
+    $(this).hide();
+    $('.brands__wrapper').addClass('brands_show-all');
+  })
 });

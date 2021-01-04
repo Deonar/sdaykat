@@ -507,6 +507,25 @@
     letter-spacing: 0em;
     color: #717784;
   }
+  &__btn{
+    display: none;
+    margin-top: 20px;
+    &.btn{
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0.04em;
+      text-align: center;
+      width: 100%;
+      max-width: 100%;
+      color: $gray;
+
+      border: 1px solid #E2E4EA;
+      box-sizing: border-box;
+      border-radius: 3px;
+    }
+  }
 }
 .delete-catalysts {
   &__wrapper {

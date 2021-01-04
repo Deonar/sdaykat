@@ -69,5 +69,8 @@ $brands = array(
                 </a>
             <?php } ?>
         </div>
+        <div class="brands__btn btn" id="brands_btn-more">
+            показать больше марок
+        </div>
     </div>
 </section>

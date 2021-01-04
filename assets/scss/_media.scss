@@ -1552,10 +1552,22 @@
     .title {
       margin-bottom: 30px;
     }
+    &__btn{
+      display: block;
+    }
     &__item {
       flex: 0 0 50%;
       width: 100%;
       max-width: 50%;
+      display: none;
+      &:nth-child(-n+6){
+        display: flex;
+      }
+    }
+    &_show-all{
+      .brands__item{
+        display: flex;
+      }
     }
   }
   //=========================== Brands end
