@@ -205,6 +205,20 @@
             </a>
           </div>
         </div>
+        <div class="pagination__wrapp">
+          <div class="container">
+            <div class="pagination">
+              <a class="pagination__arrow pagination__item" href="#" title="previous">
+              </a>
+              <span class="pagination__item active">1</span>
+              <a href="#" class="pagination__item"> 2</a>
+              <a href="#" class="pagination__item"> 3</a>
+              <a href="#" class="pagination__item"> 4</a>
+              <a class="pagination__arrow pagination__item" href="#" title="next"></a>
+            </div>
+                                  
+          </div>
+        </div>
       </section>
 
       <section class="popular-article article-section">
