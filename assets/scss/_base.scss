@@ -163,13 +163,15 @@ body {
 //=============== pagination
 .pagination {
   display: flex;
+  span.pagination__arrow {
+    background: transparent;
+    opacity: 0.7;
+    pointer-events: none;
+  }
   &__arrow {
     &:first-child {
       margin-left: 0px;
       margin-right: 10px;
-      background: transparent;
-      opacity: 0.7;
-      pointer-events: none;
     }
     &:last-child {
       margin-left: 10px;
