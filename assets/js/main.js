@@ -305,5 +305,29 @@ jQuery(document).ready(function ($) {
     },
   });
 
+   // Население
+   $("#calculate-range-people").slider({
+    range: "min",
+    value: 4800000,
+    min: 0,
+    max: 10000000,
+    step: 100,
+    slide: function (event, ui) {
+      $("#calculate-input-people").val(ui.value);
+    },
+  });
+
+   // Обьем сырья
+   $("#calculate-range-size").slider({
+    range: "min",
+    value: 150,
+    min: 0,
+    max: 1000,
+    step: 1,
+    slide: function (event, ui) {
+      $("#calculate-input-size").val(ui.value);
+    },
+  });
+
 
 });

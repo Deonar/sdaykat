@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/libs/bootstrap-grid/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
+    <link rel="stylesheet" href="assets/libs/jquery-libs/jquery-ui.min.css" />
     <link rel="stylesheet" href="assets/libs/slick/slick.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <title>SDAYKAT</title>
@@ -293,17 +294,17 @@
             <div class="calculator-options options-calculator">
               <div class="options-item__label">Население:</div>
               <div class="options-item">
-                <input type="range" class="options-item__range" min="0" max="20" value="6" name="pd" step="0.1" />
+              <div id="calculate-range-people" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                  <input class="calculator-input" type="text" placeholder="20" />
+                <input id="calculate-input-people" class="calculator-input" type="text" placeholder="20" />
                   <label class="calculator-result__label">чел</label>
                 </div>
               </div>
               <div class="options-item__label">Объем сырья в регионе:</div>
               <div class="options-item">
-                <input type="range" class="options-item__range" min="0" max="20" value="6" name="pd" step="0.1" />
+              <div id="calculate-range-size" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                  <input class="calculator-input" type="text" placeholder="20" />
+                <input id="calculate-input-size" class="calculator-input" type="text" placeholder="20" />
                   <label class="calculator-result__label">Кг</label>
                 </div>
               </div>
