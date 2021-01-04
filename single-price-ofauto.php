@@ -308,6 +308,53 @@
           </div>
         </div>
       </section>
+      <section class="section-wrapper pass-material">
+        <div class="container">
+          <div class="pass-material__header mb-30">
+            <h2 class="h2 title">Как сдать<br />старый катализатор?</h2>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-xl-4 mb-30">
+              <div class="pass-material__item pass-material__item_assessment">
+                <img src="assets/img/pass-assessment.png" alt="#" />
+                <h4 class="h4 pass-material__title">Выездная оценка</h4>
+                <p class="pass-material__text">Каждую 10-ю сделку<br />мы возвращаем ретро-бонусы в размере 5% от общей.</p>
+                <div class="pass-material__btn">
+                  <a href="#popup-form-manager" class="btn btn_small orange-btn popup"> Заказать выезд менеджера </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4 mb-30">
+              <div class="pass-material__item pass-material__item_offices">
+                <img src="assets/img/pass-offices.png" alt="#" />
+                <h4 class="h4 pass-material__title">Стационарные офисы</h4>
+                <p class="pass-material__text">
+                  Каждую 10-ю сделку<br />
+                  мы возвращаем ретро-бонусы в размере 5% от общей.
+                </p>
+                <div class="pass-material__btn">
+                  <a href="#map" class="btn btn_small light-blue-btn scrollto">Показать на карте</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4 mb-30">
+              <div class="pass-material__item pass-material__item_courier">
+                <img src="assets/img/pass-courier.png" alt="#" />
+                <h4 class="h4 pass-material__title">Курьерская служба</h4>
+                <p class="pass-material__text">
+                  Каждую 10-ю сделку<br />
+                  мы возвращаем ретро-бонусы в размере 5% от общей.
+                </p>
+                <div class="pass-material__btn">
+                  <a href="#popup-form-courier" class="btn btn_small blue-btn popup">Вызвать курьера</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <?php include("templates/map.php"); ?>
       <section class="bonuses section-wrapper">
         <div class="container">
           <div class="bonuses-body">

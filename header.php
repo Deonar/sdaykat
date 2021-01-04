@@ -109,8 +109,8 @@ $header_class = '';
                 <button class="header-mob__body-close close-mob-menu-js"></button>
             </div>
             <div class="header-mob__cabinet">
-                <a href="/authorization.html" class="header__cabinet-entry close-mob-menu-js" style="display: none">Личный кабинет</a>
-                <div class="header-mob__authorized">
+                <a href="/authorization.html" class="header__cabinet-entry close-mob-menu-js" >Личный кабинет</a>
+                <div class="header-mob__authorized" style="display: none">
                     <div class="authorized-logo">
                         <img src="assets/img/icons/authorized-icon.svg" alt="" class="authorized-logo__img" />
                         <div class="authorized-login">+7 999 444 11 01</div>
