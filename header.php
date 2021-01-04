@@ -52,8 +52,8 @@ $header_class = '';
                         <div class="header-top__contact-text">Звонок бесплатный</div>
                     </div>
                     <div class="header-top__cabinet">
-                        <a href="/authorization.html" class="header__cabinet-entry" style="display: none">Личный кабинет</a>
-                        <div class="header-authorized">
+                        <a href="/authorization.html" class="header__cabinet-entry" >Личный кабинет</a>
+                        <div class="header-authorized" style="display: none">
                             <div class="header-authorized__login">+7 999 444 11 01</div>
                             <img src="assets/img/authorized.jpg" alt="" class="header-authorized__logo" />
                             <div class="header-authorized__popup">
@@ -130,7 +130,7 @@ $header_class = '';
                         </li>
                     </ul>
                     <a href="#" class="authorized-btn close-mob-menu-js">Выйти</a>
-                </div>
+                </div> 
             </div>
             <ul class="header-mob__menu">
                 <li class="header-mob__menu-item">

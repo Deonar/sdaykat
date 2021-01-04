@@ -481,8 +481,9 @@
     color: #b1b9ca;
   }
   .header__cabinet-entry {
-    background: #f4f7fa;
+    background: transparent;
     color: $text;
+    border: 1px solid #e2e4ea;
   }
   .header-top__address-link:hover {
     color: $text-secondery;
