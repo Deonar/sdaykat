@@ -431,4 +431,76 @@
     </div>
     <!-- popup-thank and-->
 
+    <!-- popup-form manager -->
+  <div id="popup-form-manager" class="popup-form-calculator custom-popup mfp-hide">
+    <div class="popup-body">
+      <h3 class="popup-primary__title">Выездная оценка</h3>
+
+      <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта точной стоимости катализатора.</div>
+      <form class="popup-form main-form main-form__light">
+        <div class="main-form__wrapper">
+          <label class="main-form__label main-form__label_phone">
+            <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+          </label>
+          <div class="main-form__btn">
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup" type="button">вызвать специалиста</a>
+          </div>
+        </div>
+        <label class="main-form__policy">
+          <input type="checkbox" checked="" class="main-form__checkbox" />
+          <span class="main-form__checkbox-box"></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+        </label>
+      </form>
+    </div>
+  </div>
+  <!-- popup-form manager end-->
+
+  <!-- popup-thank-curyer -->
+  <div id="popup-thank-curyer" class="popup-thank-specialist custom-popup mfp-hide">
+    <div class="popup-body">
+      <div class="popup-primary__title">Спасибо!</div>
+      <div class="popup-desc">Не забудьте приложить копию паспорта к посылке.</div>
+      <img src="assets/img/pasport.png" alt="" class="popup-img__thank-curyer" />
+    </div>
+  </div>
+  <!-- popup-thank end-->
+
+  <!-- popup-form curyer -->
+  <div id="popup-form-courier" class="popup-form-calculator custom-popup mfp-hide">
+    <div class="popup-body">
+      <h3 class="popup-primary__title">Выезд курьера</h3>
+
+      <div class="popup-desc">Отправьте заявку для выезда курьера. Мы свяжемся с вами для уточнения информации.</div>
+      <form class="popup-form main-form main-form__light">
+        <div class="main-form__wrapper">
+          <label class="main-form__label main-form__label_phone">
+            <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+          </label>
+          <div class="main-form__btn">
+            <a href="#popup-thank-curyer" class="main-form__submit btn btn_hover blue-btn popup" type="button">вызвать специалиста</a>
+          </div>
+        </div>
+        <label class="main-form__policy">
+          <input type="checkbox" checked="" class="main-form__checkbox" />
+          <span class="main-form__checkbox-box"></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+        </label>
+      </form>
+    </div>
+  </div>
+  <!-- popup-form curyer end-->
+
+  <!-- popup-thank-specialist -->
+  <div id="popup-thank-specialist" class="popup-thank-specialist custom-popup mfp-hide">
+      <div class="popup-body">
+        <div class="popup-primary__title">Спасибо!</div>
+        <div class="popup-desc">К вам подъедет наш специалист</div>
+        <img src="assets/img/icons/specialist-icon.svg" alt="" class="popup-img__thank-specialist" />
+        <div class="popup-thank-specialist-name">Алексей Иванов</div>
+        <div class="popup-desc mb-0">Менеджер выездной оценки</div>
+      </div>
+    </div>
+    <!-- popup-thank end-->
+
     <?php include("footer.php"); ?>
