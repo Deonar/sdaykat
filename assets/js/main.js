@@ -78,8 +78,7 @@ jQuery(document).ready(function ($) {
 
   // ======================== MASK
   $('.mask-phone').mask('+7 (999) 999-99-99');
-  // ======================= Popup city and
-
+ 
   //========================  tabs accordion mobile
 
   if ($(window).innerWidth() <= 768) {
@@ -95,7 +94,7 @@ jQuery(document).ready(function ($) {
       }
     });
   }
-  //======================== tabs accordion mobile and
+  //======================== tabs accordion mobile end
   //======================== tabs
   $('.tab-wrapper').on('click', '.tab', function (event) {
     var tab = $(this).attr('data-tab');
@@ -108,7 +107,7 @@ jQuery(document).ready(function ($) {
       .find('.tab-content[data-tab = ' + tab + ']')
       .show();
   });
-  //======================== tabs  and
+  //======================== tabs  end
   //======================== SLICK SLIDERS
   $('#reviews-slider').slick({
     slidesToShow: 3,
@@ -243,4 +242,23 @@ jQuery(document).ready(function ($) {
     }
   });
   //======================== ALL SELEC END
+
+  //======================== Search Brand
+  $('#brands-search').on('input', function () {
+    let val = this.value.toLowerCase().trim();
+    let elasticItems = document.querySelectorAll('.brands__wrapper .brands__item');
+    if (val != '') {
+      elasticItems.forEach(function (elem) {
+        if (elem.dataset.name.toLowerCase().search(val) == -1) {
+          elem.classList.add('d-none');
+        } else {
+          elem.classList.remove('d-none');
+        }
+      });
+    } else {
+      elasticItems.forEach(function (elem) {
+        elem.classList.remove('d-none');
+      });
+    }
+  });
 });

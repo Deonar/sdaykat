@@ -1035,10 +1035,10 @@
       max-width: 90px;
     }
     .slider-btn__prev {
-      left: -10px;
+      left: -15px;
     }
     .slider-btn__next {
-      right: -10px;
+      right: -15px;
     }
   }
   //=========================== Reviews end
@@ -1724,6 +1724,11 @@
   //=========================== About block end
   //=========================== Map
   .map {
+    &-wrapper{
+      .map-list.scrollbar{
+        max-height: 100% !important;
+      }
+    }
     &-tabs {
       margin-bottom: 20px;
     }

@@ -41,6 +41,7 @@
             </label>
           </form>
           <!-- Phone form end -->
+
           <div class="d-none d-lg-block">
             <div class="separater-line opacity-3 mt-30 mb-20"></div>
             <div class="info-block">
@@ -76,6 +77,7 @@
               </div>
             </div>
           </div>
+
         </div>
         <div class="d-none d-lg-block col-12 col-lg-4">
           <div class="curs-metal">
@@ -114,7 +116,7 @@
                 </div>
               </div>
             </div>
-            <div class="curs-metal__link text-center"><a href="#" class="link"> проверить на lme.com <img class="ml-10" src="assets/img/icons/icon-arrow-box.svg" alt=""></a></div>
+            <div class="curs-metal__link text-center"><a href="https://www.lme.com/" target="_blank" class="link"> проверить на lme.com <img class="ml-10" src="assets/img/icons/icon-arrow-box.svg" alt=""></a></div>
           </div>
         </div>
       </div>
@@ -164,106 +166,7 @@
     </div>
   </section>
 
-  <section class="section-wrapper brands">
-    <div class="container">
-      <div class="brands__header">
-        <h2 class="h2 title">Стоимость катализаторов популярных марок авто</h2>
-        <div class="brands__search">
-          <span>Найдите свою марку </span>
-          <label for="#brands-search">
-            <input type="text" id="brands-search" placeholder="Например, audi" />
-          </label>
-        </div>
-      </div>
-      <div class="brands__wrapper">
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-        <div class="brands__item">
-          <div class="brands__img">
-            <img src="assets/img/brands/brand-lada.png" alt="lada" />
-          </div>
-          <div class="brands__title">LADA</div>
-          <div class="brands__price">до 6 000 ₽</div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php include("templates/brands.php"); ?>
 
   <section class="section-wrapper delete-catalysts">
     <div class="container">
@@ -308,7 +211,7 @@
             <p class="delete-catalysts__text">Расход топлива<br />увеличился</p>
           </div>
         </div>
-        <a href="#" class="btn btn_arrow light-blue-btn mt-30">Узнать больше
+        <a href="/delete-catalysts.php" class="btn btn_arrow light-blue-btn mt-30">Узнать больше
           <span class="arrow-move">
             <span class="arrow-move-clip">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
@@ -349,7 +252,7 @@
               мы возвращаем ретро-бонусы в размере 5% от общей.
             </p>
             <div class="pass-material__btn">
-              <a href="#" class="btn btn_small light-blue-btn">Показать на карте</a>
+              <a href="#map" class="btn btn_small light-blue-btn scrollto">Показать на карте</a>
             </div>
           </div>
         </div>
@@ -382,8 +285,8 @@
             <p class="small-text mb-20 opacity-7">Еще 15 лет назад об электромобилях никто не говорил всерьез, но сегодня уже каждый знает, что это, а многие готовы приобрести за любые деньги.</p>
           </div>
           <div class="about-block__btn">
-            <a href="#" class="btn white-btn">4 вакансии</a>
-            <a href="#" class="btn transparent-btn btn_arrow">Узнать больше о компании
+            <a href="/about.php#vacancy" class="btn white-btn">4 вакансии</a>
+            <a href="/about.php" class="btn transparent-btn btn_arrow">Узнать больше о компании
               <span class="arrow-move">
                 <span class="arrow-move-clip">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
@@ -427,7 +330,7 @@
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="features__img">
-            <img src="assets/img/icons/icon-map.svg" alt="" />
+            <img src="assets/img/icons/icon-map.svg" alt="#" />
           </div>
           <h4 class="features__title">Присутствие в 16 регионах страны</h4>
           <p class="features__text">
@@ -438,7 +341,7 @@
 
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="features__img">
-            <img src="assets/img/icons/icon-people.svg" alt="" />
+            <img src="assets/img/icons/icon-people.svg" alt="#" />
           </div>
           <h4 class="features__title">
             Личный<br />
@@ -453,10 +356,10 @@
 
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="features__img">
-            <img src="assets/img/icons/icon-percent-cyan.svg" alt="" />
+            <img src="assets/img/icons/icon-percent-cyan.svg" alt="#" />
           </div>
           <h4 class="features__title">
-            Программа<br />
+            Программа<br/>
             лояльности
           </h4>
           <p class="features__text">
@@ -468,7 +371,7 @@
 
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="features__img">
-            <img src="assets/img/icons/icon-metal-cyan.svg" alt="" />
+            <img src="assets/img/icons/icon-metal-cyan.svg" alt="#" />
           </div>
           <h4 class="features__title">Честные<br />выплаты по LME</h4>
           <p class="features__text">
@@ -589,10 +492,10 @@
     <div class="container">
       <div class="d-flex justify-content-between align-items-center mb-30">
         <h2 class="h2 title">Журнал Sdaykat</h2>
-        <a href="#" class="link"> все статьи </a>
+        <a href="/journal.php" class="link"> все статьи </a>
       </div>
       <div class="row article">
-        <a href="#" class="col-12 col-sm-4 article__item">
+        <a href="/single-article.php" class="col-12 col-sm-4 article__item">
           <div class="article__img">
             <span class="article__label article__label_white"> Каталитические системы </span>
             <img src="assets/img/article/article_1.jpg" class="img-responsive" alt="Каталитические системы" />
@@ -604,7 +507,7 @@
             <span class="article__views"><img src="assets/img/icons/icon-views.svg" alt="" />500</span>
           </div>
         </a>
-        <a href="#" class="col-12 col-sm-4 article__item">
+        <a href="/single-article.php" class="col-12 col-sm-4 article__item">
           <div class="article__img">
             <span class="article__label article__label_blue"> Каталитические системы </span>
             <img src="assets/img/article/article_2.jpg" class="img-responsive" alt="Каталитические системы" />
@@ -616,7 +519,7 @@
             <span class="article__views"><img src="assets/img/icons/icon-views.svg" alt="" />500</span>
           </div>
         </a>
-        <a href="#" class="col-12 col-sm-4 article__item">
+        <a href="/single-article.php" class="col-12 col-sm-4 article__item">
           <div class="article__img">
             <span class="article__label article__label_orange"> Каталитические системы </span>
             <img src="assets/img/article/article_3.jpg" class="img-responsive" alt="Каталитические системы" />
@@ -632,283 +535,7 @@
     </div>
   </section>
 
-  <section class="section-wrapper">
-    <div class="container">
-      <div class="select select-custom-js mb-30">
-        <div class="select__header map__header title">Адреса и контакты <br />в <span class="select__current title">Челябинске</span></div>
-        <div class="select__body">
-          <div class="select__item">Екатеренбурге</div>
-          <div class="select__item">Ижевске</div>
-          <div class="select__item">Уфе</div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 col-sm-5 col-xl-3">
-          <div class="map-wrapper tab-wrapper_map">
-            <div class="map-tabs">
-              <div class="map-tab tab active" data-tab="1">
-                <span>Продать<br />
-                  катализатор</span>
-              </div>
-              <div class="map-tab tab" data-tab="2">
-                <span>Удалить<br />
-                  катализатор</span>
-              </div>
-            </div>
-            <div class="tab-content" data-tab="1">
-              <div class="map-list scrollbar-js scrollbar">
-                <div class="map-item active" data-coord-x="54.54" , data-coord-y="54.54">
-                  <div class="map-item_desk">
-                    <h5>SDAYKAT</h5>
-                    <p class="small-text">ул. Братьев Кашириных, 101</p>
-                  </div>
-                  <div class="map-item_mob">
-                    <h5>SDAYKAT1</h5>
-                    <p class="mb-10">
-                      <img src="assets/img/icons/location-icon-dark.svg" class="mr-10 mt-5" /><span class="address">ул. Братьев Кашириных, 101</span><br />
-                    </p>
-                    <p class="mb-10 d-flex align-items-start">
-                      <img src="assets/img/icons/icon-time-dark.svg" class="mr-10 mt-5" /><span class="text-gray time"><b class="text-black">Пн-Пт</b> с 10:00 до 18:00<br /><b class="text-black">Пн-Пт</b> с 10:00 до 18:00</span>
-                    </p>
-                    <p class="d-flex align-items-start">
-                      <img src="assets/img/icons/icon-phone-dark.svg" class="mr-10 mt-5" /><span><a href="tel:+7-123-456-78-90" class="text-gray phone">+7 (123) 456-78-90</a><br /><a href="tel:+7-123-456-78-90" class="text-gray">+7 (123) 456-78-90</a></span>
-                    </p>
-                  </div>
-                  <div class="map-item_btn">
-                    <a href="https://yandex.ru/maps/-/CCUIiAeScD" target="_blank" class="btn"> Показать на карте </a>
-                  </div>
-                </div>
-                <div class="map-item" data-coord-x="55.54" , data-coord-y="54.54">
-                  <div class="map-item_desk">
-                    <h5>SDAYKAT</h5>
-                    <p class="small-text">ул. Механическая, 101</p>
-                  </div>
-                  <div class="map-item_mob">
-                    <h5>SDAYKAT2</h5>
-                    <p class="mb-10">
-                      <img src="assets/img/icons/location-icon-dark.svg" class="mr-10 mt-5" /><span class="address">ул. Братьев Кашириных, 101</span><br />
-                    </p>
-                    <p class="mb-10 d-flex align-items-start">
-                      <img src="assets/img/icons/icon-time-dark.svg" class="mr-10 mt-5" /><span class="text-gray time"><b class="text-black">Пн-Пт</b> с 10:00 до 18:00<br /><b class="text-black">Пн-Пт</b> с 10:00 до 18:00</span>
-                    </p>
-                    <p class="d-flex align-items-start">
-                      <img src="assets/img/icons/icon-phone-dark.svg" class="mr-10 mt-5" /><span><a href="tel:+7-123-456-78-90" class="text-gray phone">+7 (123) 456-78-90</a><br /><a href="tel:+7-123-456-78-90" class="text-gray">+7 (123) 456-78-90</a></span>
-                    </p>
-                  </div>
-                  <div class="map-item_btn">
-                    <a href="https://yandex.ru/maps/-/CCUIiAqOHC" target="_blank" class="btn"> Показать на карте </a>
-                  </div>
-                </div>
-
-                <div class="map-item" data-coord-x="56.54" , data-coord-y="54.54">
-                  <div class="map-item_desk">
-                    <h5>SDAYKAT</h5>
-                    <p class="small-text">ул. Механическая, 101</p>
-                  </div>
-                  <div class="map-item_mob">
-                    <h5>SDAYKAT2</h5>
-                    <p class="mb-10">
-                      <img src="assets/img/icons/location-icon-dark.svg" class="mr-10 mt-5" /><span class="address">ул. Братьев Кашириных, 101</span><br />
-                    </p>
-                    <p class="mb-10 d-flex align-items-start">
-                      <img src="assets/img/icons/icon-time-dark.svg" class="mr-10 mt-5" /><span class="text-gray time"><b class="text-black">Пн-Пт</b> с 10:00 до 18:00<br /><b class="text-black">Пн-Пт</b> с 10:00 до 18:00</span>
-                    </p>
-                    <p class="d-flex align-items-start">
-                      <img src="assets/img/icons/icon-phone-dark.svg" class="mr-10 mt-5" /><span><a href="tel:+7-123-456-78-90" class="text-gray phone">+7 (123) 456-78-90</a><br /><a href="tel:+7-123-456-78-90" class="text-gray">+7 (123) 456-78-90</a></span>
-                    </p>
-                  </div>
-                  <div class="map-item_btn">
-                    <a href="https://yandex.ru/maps/-/CCUIiAqOHC" target="_blank" class="btn"> Показать на карте </a>
-                  </div>
-                </div>
-
-                <div class="map-item" data-coord-x="57.54" , data-coord-y="54.54">
-                  <div class="map-item_desk">
-                    <h5>SDAYKAT</h5>
-                    <p class="small-text">ул. Механическая, 101</p>
-                  </div>
-                  <div class="map-item_mob">
-                    <h5>SDAYKAT2</h5>
-                    <p class="mb-10">
-                      <img src="assets/img/icons/location-icon-dark.svg" class="mr-10 mt-5" /><span class="address">ул. Братьев Кашириных, 101</span><br />
-                    </p>
-                    <p class="mb-10 d-flex align-items-start">
-                      <img src="assets/img/icons/icon-time-dark.svg" class="mr-10 mt-5" /><span class="text-gray time"><b class="text-black">Пн-Пт</b> с 10:00 до 18:00<br /><b class="text-black">Пн-Пт</b> с 10:00 до 18:00</span>
-                    </p>
-                    <p class="d-flex align-items-start">
-                      <img src="assets/img/icons/icon-phone-dark.svg" class="mr-10 mt-5" /><span><a href="tel:+7-123-456-78-90" class="text-gray phone">+7 (123) 456-78-90</a><br /><a href="tel:+7-123-456-78-90" class="text-gray">+7 (123) 456-78-90</a></span>
-                    </p>
-                  </div>
-                  <div class="map-item_btn">
-                    <a href="https://yandex.ru/maps/-/CCUIiAqOHC" target="_blank" class="btn"> Показать на карте </a>
-                  </div>
-                </div>
-
-                <div class="map-item" data-coord-x="58.54" , data-coord-y="54.54">
-                  <div class="map-item_desk">
-                    <h5>SDAYKAT</h5>
-                    <p class="small-text">ул. Механическая, 101</p>
-                  </div>
-                  <div class="map-item_mob">
-                    <h5>SDAYKAT2</h5>
-                    <p class="mb-10">
-                      <img src="assets/img/icons/location-icon-dark.svg" class="mr-10 mt-5" /><span class="address">ул. Братьев Кашириных, 101</span><br />
-                    </p>
-                    <p class="mb-10 d-flex align-items-start">
-                      <img src="assets/img/icons/icon-time-dark.svg" class="mr-10 mt-5" /><span class="text-gray time"><b class="text-black">Пн-Пт</b> с 10:00 до 18:00<br /><b class="text-black">Пн-Пт</b> с 10:00 до 18:00</span>
-                    </p>
-                    <p class="d-flex align-items-start">
-                      <img src="assets/img/icons/icon-phone-dark.svg" class="mr-10 mt-5" /><span><a href="tel:+7-123-456-78-90" class="text-gray phone">+7 (123) 456-78-90</a><br /><a href="tel:+7-123-456-78-90" class="text-gray">+7 (123) 456-78-90</a></span>
-                    </p>
-                  </div>
-                  <div class="map-item_btn">
-                    <a href="https://yandex.ru/maps/-/CCUIiAqOHC" target="_blank" class="btn"> Показать на карте </a>
-                  </div>
-                </div>
-
-                <div class="map-item" data-coord-x="59.54" , data-coord-y="54.54">
-                  <div class="map-item_desk">
-                    <h5>SDAYKAT</h5>
-                    <p class="small-text">ул. Механическая, 101</p>
-                  </div>
-                  <div class="map-item_mob">
-                    <h5>SDAYKAT2</h5>
-                    <p class="mb-10">
-                      <img src="assets/img/icons/location-icon-dark.svg" class="mr-10 mt-5" /><span class="address">ул. Братьев Кашириных, 101</span><br />
-                    </p>
-                    <p class="mb-10 d-flex align-items-start">
-                      <img src="assets/img/icons/icon-time-dark.svg" class="mr-10 mt-5" /><span class="text-gray time"><b class="text-black">Пн-Пт</b> с 10:00 до 18:00<br /><b class="text-black">Пн-Пт</b> с 10:00 до 18:00</span>
-                    </p>
-                    <p class="d-flex align-items-start">
-                      <img src="assets/img/icons/icon-phone-dark.svg" class="mr-10 mt-5" /><span><a href="tel:+7-123-456-78-90" class="text-gray phone">+7 (123) 456-78-90</a><br /><a href="tel:+7-123-456-78-90" class="text-gray">+7 (123) 456-78-90</a></span>
-                    </p>
-                  </div>
-                  <div class="map-item_btn">
-                    <a href="https://yandex.ru/maps/-/CCUIiAqOHC" target="_blank" class="btn"> Показать на карте </a>
-                  </div>
-                </div>
-
-                <div class="map-item" data-coord-x="60.54" , data-coord-y="54.54">
-                  <div class="map-item_desk">
-                    <h5>SDAYKAT</h5>
-                    <p class="small-text">ул. Механическая, 101</p>
-                  </div>
-                  <div class="map-item_mob">
-                    <h5>SDAYKAT2</h5>
-                    <p class="mb-10">
-                      <img src="assets/img/icons/location-icon-dark.svg" class="mr-10 mt-5" /><span class="address">ул. Братьев Кашириных, 101</span><br />
-                    </p>
-                    <p class="mb-10 d-flex align-items-start">
-                      <img src="assets/img/icons/icon-time-dark.svg" class="mr-10 mt-5" /><span class="text-gray time"><b class="text-black">Пн-Пт</b> с 10:00 до 18:00<br /><b class="text-black">Пн-Пт</b> с 10:00 до 18:00</span>
-                    </p>
-                    <p class="d-flex align-items-start">
-                      <img src="assets/img/icons/icon-phone-dark.svg" class="mr-10 mt-5" /><span><a href="tel:+7-123-456-78-90" class="text-gray phone">+7 (123) 456-78-90</a><br /><a href="tel:+7-123-456-78-90" class="text-gray">+7 (123) 456-78-90</a></span>
-                    </p>
-                  </div>
-                  <div class="map-item_btn">
-                    <a href="https://yandex.ru/maps/-/CCUIiAqOHC" target="_blank" class="btn"> Показать на карте </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="tab-content" data-tab="2" style="display: none">
-              <div class="map-list scrollbar-js scrollbar">
-                <div class="map-item active" data-coord-x="51.15" data-coord-y="51.15">
-                  <div class="map-item_desk">
-                    <h5>SDAYKAT</h5>
-                    <p class="small-text">ул. Братьев Кашириных, 101</p>
-                  </div>
-                  <div class="map-item_mob">
-                    <h5>SDAYKAT</h5>
-                    <p class="mb-10">
-                      <img src="assets/img/icons/location-icon-dark.svg" class="mr-10 mt-5" /><span class="address">ул. Братьев Кашириных, 101</span><br />
-                    </p>
-                    <p class="mb-10 d-flex align-items-start">
-                      <img src="assets/img/icons/icon-time-dark.svg" class="mr-10 mt-5" /><span class="text-gray time"><b class="text-black">Пн-Пт</b> с 10:00 до 18:00<br /><b class="text-black">Пн-Пт</b> с 10:00 до 18:00</span>
-                    </p>
-                    <p class="d-flex align-items-start">
-                      <img src="assets/img/icons/icon-phone-dark.svg" class="mr-10 mt-5" /><span><a href="tel:+7-123-456-78-90" class="text-gray phone">+7 (123) 456-78-90</a><br /><a href="tel:+7-123-456-78-90" class="text-gray">+7 (123) 456-78-90</a></span>
-                    </p>
-                  </div>
-                  <div class="map-item_btn">
-                    <a href="https://yandex.ru/maps/-/CCUIiAeScD" target="_blank" class="btn"> Показать на карте </a>
-                  </div>
-                </div>
-                <div class="map-item" data-coord-x="52.15" data-coord-y="51.15">
-                  <div class="map-item_desk">
-                    <h5>SDAYKAT</h5>
-                    <p class="small-text">ул. Механическая, 101</p>
-                  </div>
-                  <div class="map-item_mob">
-                    <h5>SDAYKAT2</h5>
-                    <p class="mb-10">
-                      <img src="assets/img/icons/location-icon-dark.svg" class="mr-10 mt-5" /><span class="address">ул. Братьев Кашириных, 101</span><br />
-                    </p>
-                    <p class="mb-10 d-flex align-items-start">
-                      <img src="assets/img/icons/icon-time-dark.svg" class="mr-10 mt-5" /><span class="text-gray time"><b class="text-black">Пн-Пт</b> с 10:00 до 18:00<br /><b class="text-black">Пн-Пт</b> с 10:00 до 18:00</span>
-                    </p>
-                    <p class="d-flex align-items-start">
-                      <img src="assets/img/icons/icon-phone-dark.svg" class="mr-10 mt-5" /><span><a href="tel:+7-123-456-78-90" class="text-gray phone">+7 (123) 456-78-90</a><br /><a href="tel:+7-123-456-78-90" class="text-gray">+7 (123) 456-78-90</a></span>
-                    </p>
-                  </div>
-                  <div class="map-item_btn">
-                    <a href="https://yandex.ru/maps/-/CCUIiAqOHC" target="_blank" class="btn"> Показать на карте </a>
-                  </div>
-                </div>
-                <div class="map-item" data-coord-x="53.15" data-coord-y="51.15">
-                  <div class="map-item_desk">
-                    <h5>SDAYKAT</h5>
-                    <p class="small-text">ул. Механическая, 101</p>
-                  </div>
-                  <div class="map-item_mob">
-                    <h5>SDAYKAT2</h5>
-                    <p class="mb-10">
-                      <img src="assets/img/icons/location-icon-dark.svg" class="mr-10 mt-5" /><span class="address">ул. Братьев Кашириных, 101</span><br />
-                    </p>
-                    <p class="mb-10 d-flex align-items-start">
-                      <img src="assets/img/icons/icon-time-dark.svg" class="mr-10 mt-5" /><span class="text-gray time"><b class="text-black">Пн-Пт</b> с 10:00 до 18:00<br /><b class="text-black">Пн-Пт</b> с 10:00 до 18:00</span>
-                    </p>
-                    <p class="d-flex align-items-start">
-                      <img src="assets/img/icons/icon-phone-dark.svg" class="mr-10 mt-5" /><span><a href="tel:+7-123-456-78-90" class="text-gray phone">+7 (123) 456-78-90</a><br /><a href="tel:+7-123-456-78-90" class="text-gray">+7 (123) 456-78-90</a></span>
-                    </p>
-                  </div>
-                  <div class="map-item_btn">
-                    <a href="https://yandex.ru/maps/-/CCUIiAqOHC" target="_blank" class="btn"> Показать на карте </a>
-                  </div>
-                </div>
-                <div class="map-item" data-coord-x="53.15" data-coord-y="52.15">
-                  <div class="map-item_desk">
-                    <h5>SDAYKAT</h5>
-                    <p class="small-text">ул. Механическая, 101</p>
-                  </div>
-                  <div class="map-item_mob">
-                    <h5>SDAYKAT2</h5>
-                    <p class="mb-10">
-                      <img src="assets/img/icons/location-icon-dark.svg" class="mr-10 mt-5" /><span class="address">ул. Братьев Кашириных, 101</span><br />
-                    </p>
-                    <p class="mb-10 d-flex align-items-start">
-                      <img src="assets/img/icons/icon-time-dark.svg" class="mr-10 mt-5" /><span class="text-gray time"><b class="text-black">Пн-Пт</b> с 10:00 до 18:00<br /><b class="text-black">Пн-Пт</b> с 10:00 до 18:00</span>
-                    </p>
-                    <p class="d-flex align-items-start">
-                      <img src="assets/img/icons/icon-phone-dark.svg" class="mr-10 mt-5" /><span><a href="tel:+7-123-456-78-90" class="text-gray phone">+7 (123) 456-78-90</a><br /><a href="tel:+7-123-456-78-90" class="text-gray">+7 (123) 456-78-90</a></span>
-                    </p>
-                  </div>
-                  <div class="map-item_btn">
-                    <a href="https://yandex.ru/maps/-/CCUIiAqOHC" target="_blank" class="btn"> Показать на карте </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-none d-sm-block col-sm-7 col-xl-9">
-          <div id="yandex-map" style="width: 100%; height: 440px"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php include("templates/map.php"); ?>
 
   <!-- Popup city -->
   <div id="popup-cities" class="popup-cities white-popup mfp-hide">
