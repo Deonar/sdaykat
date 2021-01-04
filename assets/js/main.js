@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
   //======================== Scrollbar
-  $('.scrollbar').scrollbar();
+  $('.scrollbar-js').scrollbar();
 
   //=================== scroll to page
   $('.scrollto').on('click', function () {
@@ -113,10 +113,7 @@ jQuery(document).ready(function ($) {
   $('#reviews-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    // variableWidth: true,
     centerMode: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
     adaptiveHeight: true,
     infinite: true,
     dots: true,
@@ -142,30 +139,17 @@ jQuery(document).ready(function ($) {
   $('#price-oftype__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    // variableWidth: true,
-    // centerMode: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
     adaptiveHeight: true,
-    // infinite: true,
     dots: true,
-    // centerPadding: '0',
-    // speed: 500,
     prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"></button>',
   });
   $('#redemption-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    // variableWidth: true,
-    // centerMode: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
     adaptiveHeight: true,
     infinite: false,
     dots: false,
-    // centerPadding: '0',
-    // speed: 500,
     prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"></button>',
     responsive: [
@@ -187,10 +171,6 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
-  //======================== SWIPE SLIDERS AND
-
-  //======================== Calculator
-  $('.show-form-calculator').on('click', function (e) {});
 
   // GeoLocation
   $('.input-search-js').on('input', function () {
@@ -221,25 +201,24 @@ jQuery(document).ready(function ($) {
     let selectItem = document.querySelectorAll('.select__item');
 
     selectHeader.forEach((item) => {
-        item.addEventListener('click', selectToggle);
+      item.addEventListener('click', selectToggle);
     });
 
     selectItem.forEach((item) => {
-        item.addEventListener('click', selectChoose);
+      item.addEventListener('click', selectChoose);
     });
 
     function selectToggle() {
-        this.parentElement.classList.toggle('is-active');
+      this.parentElement.classList.toggle('is-active');
     }
 
     function selectChoose() {
-        let text = this.innerHTML,
-            select = this.closest('.select-custom-js'),
-            selectDataValue = this.dataset.selectValue;
+      let text = this.innerHTML,
+        select = this.closest('.select-custom-js'),
         currentText = select.querySelector('.select__current');
 
-        currentText.innerHTML = text;
-        select.classList.remove('is-active');
+      currentText.innerHTML = text;
+      select.classList.remove('is-active');
     }
   };
   select();
@@ -252,18 +231,16 @@ jQuery(document).ready(function ($) {
     $('.container-search-js').removeClass('is-active');
   });
 
-  $('.scrollbar-inner').scrollbar();
-
   $('.select').on('click', function () {
     if ($('.select').not(this).hasClass('is-active')) {
       $('.select').not(this).removeClass('is-active');
     }
   });
-
   $(document).mouseup(function (e) {
     var select = $('.select');
     if (e.target != select[0] && select.has(e.target).length === 0) {
       $('.select').removeClass('is-active');
     }
   });
+  //======================== ALL SELEC END
 });

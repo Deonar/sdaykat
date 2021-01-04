@@ -185,7 +185,7 @@
                   <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
-                  <button class="main-form__submit btn btn_hover blue-sky-btn" id="intro-submit-btn" type="button">удалить катализатор</button>
+                  <a href="#popup-thank__dell" class="main-form__submit btn btn_hover blue-sky-btn popup" type="button">удалить катализатор</a>
                 </div>
               </div>
               <label class="main-form__policy">
@@ -569,7 +569,7 @@
           <div class="selectCity__input">
             <input type="text" placeholder="Введите свой город" id="inputCity" />
           </div>
-          <ul class="selectCity__list scrollbar" id="city-list">
+          <ul class="selectCity__list scrollbar scrollbar-js" id="city-list">
             <li class="selectRegion__item">
               <div class="selectRegion__item-title">Свердловкая область</div>
               <ul class="selectRegion__item-list">
@@ -617,6 +617,32 @@
       </div>
     </div>
     <!-- Popup city and-->
+    <!-- popup-thank -->
+    <div id="popup-thank__dell" class="popup-thank popup-thank__dell custom-popup mfp-hide">
+      <div class="popup-body">
+        <div class="popup-primary__title">Спасибо!</div>
+        <div class="popup-desc">Менеджер свяжется с вами в ближайшее время</div>
+        <div class="popup-desc">Вы отправили заявку в сервис:</div>
+        <div class="popup-schedule schedule">
+          <div class="schedule-head">Chekpipe</div>
+          <div class="schedule-row">
+            <img src="assets/img/icons/location-icon-dark.svg" alt="" class="schedule-icon" />
+            <div class="schedule-street">ул. Братьев Кашириных, 101</div>
+          </div>
+          <div class="schedule-row">
+            <img src="assets/img/icons/oclock-icon.svg" alt="" class="schedule-icon" />
+            <div class="schedule-day"><span>Пн-Пт</span>с 10:00 до 18:00</div>
+            <div class="schedule-day"><span>Сб-Вс</span> с 10:00 до 15:00</div>
+          </div>
+          <div class="schedule-row">
+            <img src="assets/img/icons/tell-icon-dark.svg" alt="" class="schedule-icon" />
+            <a href="tell:+78005527840" class="schedule-tell">+7 800 552 78 40</a>
+            <a href="tell:+78005527840" class="schedule-tell">+7 800 552 78 40</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup-thank and-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/libs/scrollbar/jquery.scrollbar.min.js"></script>

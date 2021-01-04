@@ -89,7 +89,7 @@ body {
   margin-bottom: 0;
 }
 .mt-5 {
-  margin-top: 5px!important;
+  margin-top: 5px !important;
 }
 .mt-10 {
   margin-top: 10px;
@@ -419,10 +419,10 @@ body {
 .small-btn {
   padding: 10px 30px;
 }
-.text-gray{
+.text-gray {
   color: $text-gray;
 }
-.text-black{
+.text-black {
   color: $black;
 }
 .page {
@@ -1095,5 +1095,55 @@ body {
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+.schedule {
+  padding: 20px;
+  border-radius: 3px;
+  background: #f4f7fa;
+  text-align: left;
+  &-head {
+    font-family: 'Stapel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1e1e1e;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e4ea;
+    margin-bottom: 15px;
+  }
+  &-row {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+  &-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 14px;
+  }
+  &-street {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text;
+  }
+  &-day {
+    font-size: 14px;
+    line-height: 18px;
+    color: #717784;
+    span {
+      font-weight: 700;
+      color: $text;
+      margin-right: 5px;
+    }
+  }
+  &-tell {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    color: #717784;
   }
 }
