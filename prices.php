@@ -37,7 +37,7 @@
                 <div class="catalysts__range-price-block">до<span>27 000 ₽</span></div>
               </div> 
               <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-              <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
+              <a href="/single-price-oftype.php" class="catalysts__link link "> Узнать стоимость </a>
             </div>
             <div class="catalysts__item">
               <div class="catalysts__img">
@@ -49,7 +49,7 @@
                 <div class="catalysts__range-price-block">до<span>27 000 ₽</span></div>
               </div> 
               <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-              <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
+              <a href="/single-price-oftype.php" class="catalysts__link link "> Узнать стоимость </a>
             </div>
             <div class="catalysts__item">
               <div class="catalysts__img">
@@ -61,7 +61,7 @@
                 <div class="catalysts__range-price-block">до<span>27 000 ₽</span></div>
               </div> 
               <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-              <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
+              <a href="/single-price-oftype.php" class="catalysts__link link "> Узнать стоимость </a>
             </div>
             <div class="catalysts__item">
               <div class="catalysts__img">
@@ -73,7 +73,7 @@
                 <div class="catalysts__range-price-block">до<span>27 000 ₽</span></div>
               </div> 
               <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-              <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
+              <a href="/single-price-oftype.php" class="catalysts__link link "> Узнать стоимость </a>
             </div>
           </div>
         </div>
