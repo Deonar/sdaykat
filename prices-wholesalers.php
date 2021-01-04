@@ -38,8 +38,8 @@
             </form>
             <!-- Phone form end -->
           </div>
-          <div class="col-4">
-            <div class="curs-metal">
+          <div class="d-none d-lg-block col-12 col-lg-4">
+            <div class=" curs-metal">
               <div class="curs-metal__title">
                 <h3>
                   <b>Честные выплаты до <span class="text-orange">75%</span> по LME</b>
@@ -317,7 +317,7 @@
                 <div class="bonuses-programs__item-text">Персональная программа лояльности</div>
               </li>
             </ul>
-            <a href="#" class="bonuses-more-btn">узнать больше</a>
+            <a href="/loyalty-program.php" class="bonuses-more-btn">узнать больше</a>
           </div>
         </div>
       </div>

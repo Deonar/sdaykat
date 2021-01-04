@@ -166,7 +166,7 @@
     </div>
   </section>
 
-  <?php include("templates/brands.php"); ?>
+  <?php include("templates/brands.php"); ?> 
 
   <section class="section-wrapper delete-catalysts">
     <div class="container">

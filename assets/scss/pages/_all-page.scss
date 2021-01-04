@@ -507,10 +507,10 @@
     letter-spacing: 0em;
     color: #717784;
   }
-  &__btn{
+  &__btn {
     display: none;
     margin-top: 20px;
-    &.btn{
+    &.btn {
       font-size: 12px;
       font-style: normal;
       font-weight: 700;
@@ -521,7 +521,7 @@
       max-width: 100%;
       color: $gray;
 
-      border: 1px solid #E2E4EA;
+      border: 1px solid #e2e4ea;
       box-sizing: border-box;
       border-radius: 3px;
     }
@@ -1254,7 +1254,7 @@
   }
   &-wrapper {
   }
-  
+
   &-tabs {
     border: 1px solid #e2e4ea;
     box-sizing: border-box;
@@ -1285,10 +1285,10 @@
     }
   }
 
-  &-list.scrollbar{
-    max-height: 360px!important;
-    & > .scroll-element .scroll-bar{
-      background-color:$blue;
+  &-list.scrollbar {
+    max-height: 360px !important;
+    & > .scroll-element .scroll-bar {
+      background-color: $blue;
     }
   }
 
@@ -1318,14 +1318,13 @@
         border: 4px solid $blue;
       }
     }
-    &_mob{
+    &_mob {
       display: none;
     }
-    &_btn{
+    &_btn {
       display: none;
     }
   }
-  
 }
 
 .requirement {

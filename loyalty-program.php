@@ -93,7 +93,6 @@
                   <div class="bonuses-programs__item-text">Персональная программа лояльности</div>
                 </li>
               </ul>
-              <a href="#" class="bonuses-more-btn">узнать больше</a>
             </div>
           </div>
         </div>
@@ -147,7 +146,7 @@
             <div class="loyalty-cabinet__entry">
               <img src="assets/img/icons/requirement-9.svg" alt="" class="loyalty-cabinet__entry-img" />
               <div class="loyalty-cabinet__entry-title">Зарегистрируйтесь в личном кабинете и начните получать бонусы!</div>
-              <a href="#" class="loyalty-cabinet__entry-btn btn btn_hover orange-btn">зарегистрироваться</a>
+              <a href="/authorization.php" class="loyalty-cabinet__entry-btn btn btn_hover orange-btn">зарегистрироваться</a>
             </div>
             <div class="loyalty-cabinet__conditions">
               <div class="requirement-list">
