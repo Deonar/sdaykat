@@ -1,15 +1,15 @@
 jQuery(document).ready(function ($) {
-  	/*-------------------------------------
+  /*-------------------------------------
 		Preloader
 	-------------------------------------*/
-	$(document).ready(function() {
-	  setTimeout(function(){
-	    $('.dr-preloader').fadeOut('slow');
-	  }, 500);
-	  setTimeout(function(){
-	    $('#dr-preloader').fadeOut('slow');
-	  }, 800);
-	});
+  $(document).ready(function () {
+    setTimeout(function () {
+      $('.dr-preloader').fadeOut('slow');
+    }, 500);
+    setTimeout(function () {
+      $('#dr-preloader').fadeOut('slow');
+    }, 800);
+  });
   //======================== Scrollbar
   $('.scrollbar-js').scrollbar();
 
@@ -72,6 +72,16 @@ jQuery(document).ready(function ($) {
     $('#mobMenu').removeClass('active');
   });
 
+  //entry-account
+  $('#entry-account').on('click', function (e) {
+    $('#authorization-confirm').show();
+    $('#entry-cabinet__entry').hide();
+  });
+  $('#change-number').on('click', function (e) {
+    $('#entry-cabinet__entry').show();
+    $('#authorization-confirm').hide();
+  });
+
   //==================================  Popup city
   $('#city-list').on('click', '.selectCity__item', function () {
     city = $(this).data('city');
@@ -89,7 +99,7 @@ jQuery(document).ready(function ($) {
 
   // ======================== MASK
   $('.mask-phone').mask('+7 (999) 999-99-99');
- 
+
   //========================  tabs accordion mobile
 
   if ($(window).innerWidth() <= 768) {
@@ -273,72 +283,68 @@ jQuery(document).ready(function ($) {
     }
   });
 
-
-  $('#brands_btn-more').on('click', function(){
+  $('#brands_btn-more').on('click', function () {
     $(this).hide();
     $('.brands__wrapper').addClass('brands_show-all');
-  })
-
+  });
 
   // Стоимость сырья PT
-  $("#calculate-range-pt").slider({
-    range: "min",
+  $('#calculate-range-pt').slider({
+    range: 'min',
     value: 0.4,
     min: 0,
     max: 1,
     step: 0.1,
     slide: function (event, ui) {
-      $("#calculate-input-pt").val(ui.value);
+      $('#calculate-input-pt').val(ui.value);
     },
   });
 
   // Стоимость сырья PD
-  $("#calculate-range-pd").slider({
-    range: "min",
+  $('#calculate-range-pd').slider({
+    range: 'min',
     value: 0.5,
     min: 0,
     max: 1,
     step: 0.1,
     slide: function (event, ui) {
-      $("#calculate-input-pd").val(ui.value);
+      $('#calculate-input-pd').val(ui.value);
     },
   });
-  
+
   // Стоимость сырья RH
-  $("#calculate-range-rh").slider({
-    range: "min",
+  $('#calculate-range-rh').slider({
+    range: 'min',
     value: 0.3,
     min: 0,
     max: 1,
     step: 0.1,
     slide: function (event, ui) {
-      $("#calculate-input-rh").val(ui.value);
+      $('#calculate-input-rh').val(ui.value);
     },
   });
 
-   // Население
-   $("#calculate-range-people").slider({
-    range: "min",
+  // Население
+  $('#calculate-range-people').slider({
+    range: 'min',
     value: 4800000,
     min: 0,
     max: 10000000,
     step: 100,
     slide: function (event, ui) {
-      $("#calculate-input-people").val(ui.value);
+      $('#calculate-input-people').val(ui.value);
     },
   });
 
-   // Обьем сырья
-   $("#calculate-range-size").slider({
-    range: "min",
+  // Обьем сырья
+  $('#calculate-range-size').slider({
+    range: 'min',
     value: 150,
     min: 0,
     max: 1000,
     step: 1,
     slide: function (event, ui) {
-      $("#calculate-input-size").val(ui.value);
+      $('#calculate-input-size').val(ui.value);
     },
   });
-
-
 });

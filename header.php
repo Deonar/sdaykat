@@ -58,7 +58,7 @@ if (!$header_class) {
                         <div class="header-top__contact-text">Звонок бесплатный</div>
                     </div>
                     <div class="header-top__cabinet">
-                        <a href="/authorization.html" class="header__cabinet-entry">Личный кабинет</a>
+                        <a href="/authorization.php" class="header__cabinet-entry">Личный кабинет</a>
                         <div class="header-authorized" style="display: none">
                             <div class="header-authorized__login">+7 999 444 11 01</div>
                             <img src="assets/img/authorized.jpg" alt="" class="header-authorized__logo" />
@@ -115,7 +115,7 @@ if (!$header_class) {
                 <button class="header-mob__body-close close-mob-menu-js"></button>
             </div>
             <div class="header-mob__cabinet">
-                <a href="/authorization.html" class="header__cabinet-entry close-mob-menu-js">Личный кабинет</a>
+                <a href="/authorization.php" class="header__cabinet-entry close-mob-menu-js">Личный кабинет</a>
                 <div class="header-mob__authorized" style="display: none">
                     <div class="authorized-logo">
                         <img src="assets/img/icons/authorized-icon.svg" alt="" class="authorized-logo__img" />

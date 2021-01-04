@@ -12,170 +12,125 @@
   </head>
 
   <body>
-    <header id="header" class="header header-light">
-      <div class="header-body">
-        <div class="container">
-          <div class="header-top">
-            <!-- mobile content -->
-            <div class="header-burger__wrapper" id="header-burger">
-              <div class="header-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-            <a href="#" class="header-mob__logo">
-              <img src="assets/img/logo-light.svg" class="logo-light" alt="logo-light" />
-              <img src="assets/img/logo-dark.svg" class="logo-dark" alt="logo-dark" />
-            </a>
-            <!-- mobile content and-->
-
-            <div class="header-top__nav">
-              <div class="header-top__location">
-                <a href="#" class="header-top__location-link">Челябинск</a>
-                <div class="location-popup">
-                  <div class="location-popup__body">
-                    <div class="location-popup__title">Вы находитесь в Челябинске?</div>
-                    <button id="closeLocationPopup" class="location-popup__btn popup-btn">Верно</button>
-                    <a href="#popup-cities" class="location-popup__search-city popup">Изменить город</a>
-                  </div>
-                </div>
-              </div>
-              <div class="header-top__menu">
-                <ul class="header-top__menu-list">
-                  <li class="header-top__menu-item"><a href="#" class="header-top__menu-link">Франшиза</a></li>
-                  <li class="header-top__menu-item"><a href="#" class="header-top__menu-link">Представительства</a></li>
-                  <li class="header-top__menu-item"><a href="#" class="header-top__menu-link">Программа лояльности</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="header-top__info">
-              <div class="header-top__address">
-                <div class="header-top__address-text">ул. Механическая, 101</div>
-                <a href="#" class="header-top__address-link">Показать на карте</a>
-              </div>
-              <div class="header-top__contact">
-                <a href="tel:+88005507940" class="header-top__contact-tell"> <p>8 800 550 79 40</p> </a>
-                <div class="header-top__contact-text">Звонок бесплатный</div>
-              </div>
-              <div class="header-top__cabinet">
-                <a href="/authorization.html" class="header__cabinet-entry" style="display: none">Личный кабинет</a>
-                <div class="header-authorized">
-                  <div class="header-authorized__login">+7 999 444 11 01</div>
-                  <img src="assets/img/authorized.jpg" alt="" class="header-authorized__logo" />
-                  <div class="header-authorized__popup">
-                    <div class="popup-authorized">
-                      <div class="popup-authorized__status-wrapp">
-                        <img src="assets/img/icons/status-icon.svg" alt="" class="popup-authorized__status-logo" />
-                        <div class="popup-authorized__status-content">
-                          <div class="popup-authorized__status">Серебрянный</div>
-                          <div class="popup-authorized__status-text">Ваш статус</div>
-                        </div>
-                      </div>
-                      <ul class="popup-authorized__menu">
-                        <li class="popup-authorized__menu-item">
-                          <a href="#" class="popup-authorized__menu-link">Профиль</a>
-                        </li>
-                        <li class="popup-authorized__menu-item">
-                          <a href="#" class="popup-authorized__menu-link">Сделки</a>
-                        </li>
-                        <li class="popup-authorized__menu-item">
-                          <a href="#" class="popup-authorized__menu-link">Аналитика</a>
-                        </li>
-                      </ul>
-                      <div class="popup-authorized__btn popup-btn">Выйти</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="header-bottom">
-            <a href="#" class="header-bottom__logo">
-              <img src="assets/img/logo-light.svg" class="logo-light" alt="logo-light" />
-              <img src="assets/img/logo-dark.svg" class="logo-dark" alt="logo-dark" />
-            </a>
-            <div class="header-bottom__menu">
-              <ul class="header-bottom__menu-list">
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Главная</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Цены</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Удаление катализатора</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Оптовикам</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Журнал</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">О компании</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div id="mobMenu" class="header-mob__body">
-          <div class="header-mob__head">
-            <div class="header-mob__location">
-              <a href="#popup-cities" class="header-mob__location-link popup">Челябинск</a>
-              <div class="header-mob__location-street">ул. Механическая, 101</div>
-            </div>
-            <button class="header-mob__body-close close-mob-menu-js"></button>
-          </div>
-          <div class="header-mob__cabinet">
-            <a href="/authorization.html" class="header__cabinet-entry close-mob-menu-js" style="display: none">Личный кабинет</a>
-            <div class="header-mob__authorized">
-              <div class="authorized-logo">
-                <img src="assets/img/icons/authorized-icon.svg" alt="" class="authorized-logo__img" />
-                <div class="authorized-login">+7 999 444 11 01</div>
-              </div>
-              <ul class="authorized-menu">
-                <li class="authorized-menu__item">
-                  <a href="" class="authorized-menu__link close-mob-menu-js">профиль</a>
-                </li>
-                <li class="authorized-menu__item">
-                  <a href="" class="authorized-menu__link close-mob-menu-js">аналитика</a>
-                </li>
-                <li class="authorized-menu__item">
-                  <a href="" class="authorized-menu__link close-mob-menu-js">сделки</a>
-                </li>
-                <li class="authorized-menu__item">
-                  <a href="" class="authorized-menu__link close-mob-menu-js">бонусы</a>
-                </li>
-              </ul>
-              <a href="#" class="authorized-btn close-mob-menu-js">Выйти</a>
-            </div>
-          </div>
-          <ul class="header-mob__menu">
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Главная</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Цены</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Удаление катализатора</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Оптовикам</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Журнал</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">О компании</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Франшиза</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Представительства</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Программа лояльности</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <?php 
+  $header_class = 'header-light';
+  include("header.php"); 
+  ?>
 
     <main class="page__authorization header-top__indent">
-      <div class="container">
-        <h1>Вход в личный кабинет клиента</h1>
-      </div>
+      <section class="authorization entry-cabinet section-wrapper pt-0">
+        <div class="container">
+          <div class="entry-cabinet__body">
+            <div id="entry-cabinet__entry" class="entry-cabinet__entry">
+              <img src="assets/img/icons/requirement-9.svg" alt="" class="entry-cabinet__entry-img" />
+              <form class="authorization__form main-form">
+                <h3 class="authorization__form-title h3">
+                  Вход в личный <br />
+                  кабинет клиента
+                </h3>
+                <div class="authorization__form-text">
+                  Для входа в личный кабинет, введите <br />
+                  Ваше номер телефона
+                </div>
+                <div class="main-form__wrapper">
+                  <label class="main-form__label main-form__label_phone">
+                    <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+                  </label>
+                  <div class="main-form__btn">
+                    <button id="entry-account" class="authorization__btn btn btn_hover" type="button">войти в аккаунт</button>
+                    <a href="#" id="registration-account" class="authorization__btn btn btn_hover" type="button">Зарегистрироваться</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <form action="#" id="authorization-confirm" class="authorization-confirm" style="display: none">
+              <button id="change-number" class="authorization-confirm__change-number" type="button">Изменить номер</button>
+              <div class="authorization-confirm__body">
+                <p class="authorization-confirm__title">
+                  Введите код из СМС, <br />
+                  oтправленный на ваш номер
+                </p>
+                <div class="authorization-confirm__input-wrap">
+                  <input class="authorization-confirm__input" maxlength="1" type="text" placeholder="|" />
+                  <input class="authorization-confirm__input" maxlength="1" type="text" placeholder="|" />
+                  <input class="authorization-confirm__input" maxlength="1" type="text" placeholder="|" />
+                  <input class="authorization-confirm__input" maxlength="1" type="text" placeholder="|" />
+                </div>
+                <a href="#" class="authorization-confirm__btn btn btn_hover primary-btn">Подтвердить</a>
+                <span id="authorization-confirm__sms" class="authorization-confirm__sms">Отправить повторное смс через:</span>
+                <span id="authorization-confirm__sms-timer" class="authorization-confirm__sms-timer">00:15</span>
+                <span id="authorization-confirm__sms-send" class="authorization-confirm__sms-send">Отправить смс</span>
+              </div>
+            </form>
+            <div class="entry-cabinet__conditions">
+              <h2 class="authorization__title primary-title">Зачем нужен личный кабинет?</h2>
+              <div class="requirement-list">
+                <div href="#" class="requirement-item">
+                  <img src="assets/img/icons/requirement-10.svg" alt="" class="requirement-item__icon" />
+                  <div class="requirement-item__title">Доступ онлайн 24/7</div>
+                  <div class="requirement-item__text">Получайте моментальную оценку сырья из личного кабинета, управляйте своим балансом удаленно.</div>
+                </div>
+                <div href="#" class="requirement-item">
+                  <img src="assets/img/icons/requirement-11.svg" alt="" class="requirement-item__icon" />
+                  <div class="requirement-item__title">Аналитика</div>
+                  <div class="requirement-item__text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+                </div>
+                <div href="#" class="requirement-item">
+                  <img src="assets/img/icons/requirement-10.svg" alt="" class="requirement-item__icon" />
+                  <div class="requirement-item__title">Доступ онлайн 24/7</div>
+                  <div class="requirement-item__text">Получайте моментальную оценку сырья из личного кабинета, управляйте своим балансом удаленно.</div>
+                </div>
+                <div href="#" class="requirement-item">
+                  <img src="assets/img/icons/requirement-11.svg" alt="" class="requirement-item__icon" />
+                  <div class="requirement-item__title">Аналитика</div>
+                  <div class="requirement-item__text">Катализаторы не должны быть влажными, допускается естественная влажность 1-2%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bonuses section-wrapper">
+        <div class="container">
+          <div class="bonuses-body">
+            <h2 class="bonuses-title primary-title__light">Программа лояльности</h2>
+            <ul class="bonuses-list">
+              <li class="bonuses-item">
+                <div class="bonuses-item__percent">5%</div>
+                <div class="bonuses-item__title">Ретро-бонусы</div>
+                <div class="bonuses-item__text">Каждую 10-ю сделку мы возвращаем ретро-бонусы в размере 5% от общей суммы этих сделок.</div>
+              </li>
+              <li class="bonuses-item">
+                <div class="bonuses-item__percent">5%</div>
+                <div class="bonuses-item__title">Ретро-бонусы</div>
+                <div class="bonuses-item__text">Каждую 10-ю сделку мы возвращаем ретро-бонусы в размере 5% от общей суммы этих сделок.</div>
+              </li>
+              <li class="bonuses-item">
+                <div class="bonuses-item__percent">10%</div>
+                <div class="bonuses-item__title">Ретро-бонусы</div>
+                <div class="bonuses-item__text">За каждого приведенного друга через личный кабинет мы начисляем Вам 10% от суммы сделки.</div>
+              </li>
+            </ul>
+            <div class="bonuses-options">
+              <div class="bonuses-offer">
+                <div class="bonuses-offer__title">Постоянным оптовым клиентам готовы предложить индивидуальные условия сотрудничества</div>
+                <a href="/loyalty-program.php" class="bonuses-offer__link">узнать больше</a>
+              </div>
+              <ul class="bonuses-programs">
+                <li class="bonuses-programs__item">
+                  <div class="bonuses-programs__item-num">01</div>
+                  <div class="bonuses-programs__item-text">Индивидуальный расчет стоимости</div>
+                </li>
+                <li class="bonuses-programs__item">
+                  <div class="bonuses-programs__item-num">02</div>
+                  <div class="bonuses-programs__item-text">Персональная программа лояльности</div>
+                </li>
+              </ul>
+              <a href="/loyalty-program.php" class="bonuses-more-btn">узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -331,17 +286,6 @@
     </div>
     <!-- Popup city and-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/libs/scrollbar/jquery.scrollbar.min.js"></script>
-    <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/libs/slick/slick.min.js"></script>
-
-    <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
-    <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>
-    <script src="assets/libs/jquery-libs/jquery.ui.touch-punch.min.js"></script>
-
-    <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script>
-    <script src="assets/js/map.js"></script>
-    <script src="assets/js/main.js"></script>
+    <?php include("footer.php"); ?>
   </body>
 </html>

@@ -595,8 +595,8 @@
     }
   }
   //=========================== representative and
-  //=========================== loyalty-cabinet
-  .loyalty-cabinet {
+  //=========================== entry-cabinet
+  .entry-cabinet {
     &__entry {
       display: flex;
       flex-direction: column;
@@ -620,7 +620,7 @@
       }
     }
   }
-  //=========================== loyalty-cabinet and
+  //=========================== entry-cabinet and
   //=========================== privacy-policy
   .privacy-policy-page {
     .page-head {
@@ -1207,8 +1207,8 @@
     }
   }
   //=========================== loyalty-programs  and
-  //=========================== loyalty-cabinet
-  .loyalty-cabinet {
+  //=========================== entry-cabinet
+  .entry-cabinet {
     &__body {
       flex-direction: column-reverse;
     }
@@ -1217,7 +1217,7 @@
       margin-top: 50px;
     }
   }
-  //=========================== loyalty-cabinet and
+  //=========================== entry-cabinet and
   //=========================== privacy-policy
   .privacy-policy-page {
     .page-head {
@@ -1424,6 +1424,33 @@
     }
   }
   //=========================== franchise-benefit and
+  //=========================== authorization
+  .authorization {
+    &__title {
+      margin-left: 0;
+      margin-bottom: 30px;
+    }
+    &__form {
+      width: 100%;
+    }
+    &-confirm {
+      margin: 0 auto 50px auto;
+    }
+    .requirement-list {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    .entry-cabinet {
+      &__body {
+        flex-direction: column;
+      }
+      &__entry {
+        max-width: 370px;
+        margin: 0 auto 50px auto;
+      }
+    }
+  }
+  //=========================== authorization and
 
   //=========================== Footer
   .footer {
@@ -1495,6 +1522,14 @@
     align-items: center;
     justify-content: center;
   }
+  //=========================== authorization
+  .authorization {
+    .requirement-list {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  //=========================== authorization and
   .main {
     height: auto;
     min-height: 480px;
@@ -1797,8 +1832,8 @@
     }
   }
   //=========================== Map end
-  //=========================== loyalty-cabinet
-  .loyalty-cabinet {
+  //=========================== entry-cabinet
+  .entry-cabinet {
     .requirement {
       &-item {
         padding-left: 0;
@@ -1811,7 +1846,7 @@
       }
     }
   }
-  //=========================== loyalty-cabinet and
+  //=========================== entry-cabinet and
   //=========================== privacy-policy
   .privacy-policy-page {
     .page-head {

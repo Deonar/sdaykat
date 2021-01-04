@@ -2142,7 +2142,7 @@
   }
 }
 
-.loyalty-cabinet {
+.entry-cabinet {
   &__body {
     display: flex;
   }
@@ -2637,5 +2637,172 @@
   }
   .options-item {
     margin-bottom: 30px;
+  }
+}
+
+.authorization {
+  &__title {
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    background: transparent;
+    color: $text-light;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+  &__form {
+    &-title {
+      color: $text-light;
+      margin-bottom: 10px;
+    }
+    &-text {
+      color: $text-light;
+      margin-bottom: 20px;
+      opacity: 0.7;
+    }
+    .main-form {
+      &__wrapper {
+        flex-direction: column;
+        margin-bottom: 0px;
+      }
+      &__label_phone {
+        margin-right: 0;
+        margin-bottom: 12px;
+        max-width: 100%;
+        input {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+.authorization-confirm {
+  width: 100%;
+  max-width: 370px;
+  padding: 30px;
+  background: $primary;
+  border-radius: 3px;
+  &__change-number {
+    position: relative;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 60px;
+    padding-left: 25px;
+    color: $text-light;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 12px;
+      background: url('../img/icons/arrow-prev-light.svg') center center no-repeat;
+      background-size: contain;
+    }
+    &:hover {
+      outline: none;
+      transition: all 0.3s ease;
+      color: $text-secondery;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 190px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-light;
+    margin-bottom: 20px;
+    opacity: 0.7;
+  }
+  &__input-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  &__input {
+    border: none;
+    outline: none;
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: $text-light;
+    width: 40px;
+    height: 54px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    &:focus::placeholder {
+      font-size: 0;
+    }
+    &::placeholder {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23px;
+      color: $text-light;
+    }
+    &:-moz-placeholder,
+    &::-webkit-input-placeholder {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23px;
+      color: $text-light;
+    }
+  }
+  &__btn {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+  }
+  &__sms {
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-light;
+    margin-bottom: 5px;
+    opacity: 0.7;
+  }
+  &__sms-timer {
+    font-family: 'Stapel';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: $text-light;
+    margin-bottom: 10px;
+  }
+  &__sms-send {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-light;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      transition: all 0.3s ease;
+      color: $text-secondery;
+    }
   }
 }

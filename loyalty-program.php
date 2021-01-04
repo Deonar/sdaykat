@@ -136,19 +136,19 @@
         </div>
       </section>
 
-      <section class="loyalty-cabinet section-wrapper">
+      <section class="entry-cabinet section-wrapper">
         <div class="container">
           <h2 class="loyalty-programs__title primary-title">
             Личный <br />
             кабинет клиента
           </h2>
-          <div class="loyalty-cabinet__body">
-            <div class="loyalty-cabinet__entry">
-              <img src="assets/img/icons/requirement-9.svg" alt="" class="loyalty-cabinet__entry-img" />
-              <div class="loyalty-cabinet__entry-title">Зарегистрируйтесь в личном кабинете и начните получать бонусы!</div>
-              <a href="/authorization.php" class="loyalty-cabinet__entry-btn btn btn_hover orange-btn">зарегистрироваться</a>
+          <div class="entry-cabinet__body">
+            <div class="entry-cabinet__entry">
+              <img src="assets/img/icons/requirement-9.svg" alt="" class="entry-cabinet__entry-img" />
+              <div class="entry-cabinet__entry-title">Зарегистрируйтесь в личном кабинете и начните получать бонусы!</div>
+              <a href="/authorization.php" class="entry-cabinet__entry-btn btn btn_hover orange-btn">зарегистрироваться</a>
             </div>
-            <div class="loyalty-cabinet__conditions">
+            <div class="entry-cabinet__conditions">
               <div class="requirement-list">
                 <div href="#" class="requirement-item">
                   <img src="assets/img/icons/requirement-10.svg" alt="" class="requirement-item__icon" />
