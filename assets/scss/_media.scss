@@ -1552,7 +1552,7 @@
     .title {
       margin-bottom: 30px;
     }
-    &__btn{
+    &__btn {
       display: block;
     }
     &__item {
@@ -1560,12 +1560,12 @@
       width: 100%;
       max-width: 50%;
       display: none;
-      &:nth-child(-n+6){
+      &:nth-child(-n + 6) {
         display: flex;
       }
     }
-    &_show-all{
-      .brands__item{
+    &_show-all {
+      .brands__item {
         display: flex;
       }
     }
@@ -1592,6 +1592,10 @@
     &__link {
       margin-top: auto;
       font-size: 10px;
+    }
+    &__range-price span {
+      font-size: 14px;
+      line-height: 18px;
     }
   }
   //=========================== Catalysts end
@@ -1736,8 +1740,8 @@
   //=========================== About block end
   //=========================== Map
   .map {
-    &-wrapper{
-      .map-list.scrollbar{
+    &-wrapper {
+      .map-list.scrollbar {
         max-height: 100% !important;
       }
     }

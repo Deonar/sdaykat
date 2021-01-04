@@ -162,6 +162,7 @@
           </ul>
         </div>
       </section>
+      <?php include("templates/map.php"); ?>
     </div>
 
     <!-- Popup city -->

@@ -32,32 +32,48 @@
                 <img src="assets/img/catalysts/ceramics.png" alt="" />
               </div>
               <h4 class="catalysts__title">Керамический фильтр</h4>
+              <div class="catalysts__range-price"> 
+                <div class="catalysts__range-price-block">от <span>4 000 ₽</span></div> 
+                <div class="catalysts__range-price-block">до<span>27 000 ₽</span></div>
+              </div> 
               <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-              <a href="#popup-form-manager" class="catalysts__link link popup"> Узнать стоимость </a>
+              <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
             </div>
             <div class="catalysts__item">
               <div class="catalysts__img">
                 <img src="assets/img/catalysts/filter.png" alt="" />
               </div>
               <h4 class="catalysts__title">Сажевый фильтр</h4>
+              <div class="catalysts__range-price"> 
+                <div class="catalysts__range-price-block">от <span>4 000 ₽</span></div> 
+                <div class="catalysts__range-price-block">до<span>27 000 ₽</span></div>
+              </div> 
               <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-              <a href="#popup-form-manager" class="catalysts__link link popup"> Узнать стоимость </a>
+              <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
             </div>
             <div class="catalysts__item">
               <div class="catalysts__img">
                 <img src="assets/img/catalysts/import.png" alt="" />
               </div>
               <h4 class="catalysts__title">Металл импортный</h4>
+              <div class="catalysts__range-price"> 
+                <div class="catalysts__range-price-block">от <span>4 000 ₽</span></div> 
+                <div class="catalysts__range-price-block">до<span>27 000 ₽</span></div>
+              </div> 
               <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-              <a href="#popup-form-manager" class="catalysts__link link popup"> Узнать стоимость </a>
+              <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
             </div>
             <div class="catalysts__item">
               <div class="catalysts__img">
                 <img src="assets/img/catalysts/native.png" alt="" />
               </div>
               <h4 class="catalysts__title">Металл отечественный</h4>
+              <div class="catalysts__range-price"> 
+                <div class="catalysts__range-price-block">от <span>4 000 ₽</span></div> 
+                <div class="catalysts__range-price-block">до<span>27 000 ₽</span></div>
+              </div> 
               <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-              <a href="#popup-form-manager" class="catalysts__link link popup"> Узнать стоимость </a>
+              <a href="/single-price-oftype.php" class="catalysts__link link popup"> Узнать стоимость </a>
             </div>
           </div>
         </div>
@@ -255,7 +271,7 @@
             <div class="bonuses-options">
               <div class="bonuses-offer">
                 <div class="bonuses-offer__title">Постоянным оптовым клиентам готовы предложить индивидуальные условия сотрудничества</div>
-                <a href="#" class="bonuses-offer__link">узнать больше</a>
+                <a href="/loyalty-program.php" class="bonuses-offer__link">узнать больше</a>
               </div>
               <ul class="bonuses-programs">
                 <li class="bonuses-programs__item">

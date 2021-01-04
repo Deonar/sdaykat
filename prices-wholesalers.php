@@ -305,7 +305,7 @@
           <div class="bonuses-options">
             <div class="bonuses-offer">
               <div class="bonuses-offer__title">Постоянным оптовым клиентам готовы предложить индивидуальные условия сотрудничества</div>
-              <a href="#" class="bonuses-offer__link">узнать больше</a>
+              <a href="/loyalty-program.php" class="bonuses-offer__link">узнать больше</a>
             </div>
             <ul class="bonuses-programs">
               <li class="bonuses-programs__item">

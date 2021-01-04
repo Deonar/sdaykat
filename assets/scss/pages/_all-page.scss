@@ -411,6 +411,30 @@
   &__text {
     margin-bottom: 25px;
   }
+  &__range-price {
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-gray;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      font-family: 'Stapel';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: $text-secondery;
+      margin-left: 5px;
+    }
+    &-block {
+      white-space: nowrap;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
   &__link {
   }
 }
@@ -1673,17 +1697,17 @@
   }
 }
 
-.custom-range.ui-widget.ui-widget-content{
+.custom-range.ui-widget.ui-widget-content {
   height: 1px;
   border: none;
-  background: #1D49A2;
+  background: #1d49a2;
   height: 1px;
   display: block;
-  .ui-slider-range-min{
+  .ui-slider-range-min {
     height: 100%;
     background-color: $orange;
   }
-  .ui-slider-handle{
+  .ui-slider-handle {
     height: 16px;
     width: 16px;
     background-color: #fff;
@@ -1695,11 +1719,12 @@
     top: -7px;
     margin-left: -8px;
   }
-  .ui-state-hover, .ui-state-active, .ui-state-focus{
+  .ui-state-hover,
+  .ui-state-active,
+  .ui-state-focus {
     outline: none;
   }
 }
-
 
 .calculator-price__ofauto {
   .options-item {
@@ -2561,7 +2586,7 @@
     line-height: 23px;
     color: $text-gray;
     margin-bottom: 40px;
-    max-width: 570px;
+    max-width: 500px;
     span {
       font-family: 'Stapel';
       font-style: normal;
