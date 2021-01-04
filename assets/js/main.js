@@ -1,4 +1,15 @@
 jQuery(document).ready(function ($) {
+  	/*-------------------------------------
+		Preloader
+	-------------------------------------*/
+	$(document).ready(function() {
+	  setTimeout(function(){
+	    $('.dr-preloader').fadeOut('slow');
+	  }, 500);
+	  setTimeout(function(){
+	    $('#dr-preloader').fadeOut('slow');
+	  }, 800);
+	});
   //======================== Scrollbar
   $('.scrollbar-js').scrollbar();
 
