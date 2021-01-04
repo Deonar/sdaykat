@@ -102,9 +102,9 @@
     <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
     <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>
     <script src="assets/libs/jquery-libs/jquery.ui.touch-punch.min.js"></script>
-
+   
+    <script src="assets/js/main.js"></script>
     <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script>
     <script src="assets/js/map.js"></script>
-    <script src="assets/js/main.js"></script>
   </body>
 </html>

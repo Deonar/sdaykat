@@ -267,4 +267,43 @@ jQuery(document).ready(function ($) {
     $(this).hide();
     $('.brands__wrapper').addClass('brands_show-all');
   })
+
+
+  // Стоимость сырья PT
+  $("#calculate-range-pt").slider({
+    range: "min",
+    value: 0.4,
+    min: 0,
+    max: 1,
+    step: 0.1,
+    slide: function (event, ui) {
+      $("#calculate-input-pt").val(ui.value);
+    },
+  });
+
+  // Стоимость сырья PD
+  $("#calculate-range-pd").slider({
+    range: "min",
+    value: 0.5,
+    min: 0,
+    max: 1,
+    step: 0.1,
+    slide: function (event, ui) {
+      $("#calculate-input-pd").val(ui.value);
+    },
+  });
+  
+  // Стоимость сырья RH
+  $("#calculate-range-rh").slider({
+    range: "min",
+    value: 0.3,
+    min: 0,
+    max: 1,
+    step: 0.1,
+    slide: function (event, ui) {
+      $("#calculate-input-rh").val(ui.value);
+    },
+  });
+
+
 });
