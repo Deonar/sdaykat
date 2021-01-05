@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/libs/bootstrap-grid/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
+    <link rel="stylesheet" href="assets/libs/slick/slick.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>SDAYKAT</title>
+  </head>
+
+  <body>
+    <header id="header" class="header header-light">
+      <div class="header-body">
+        <div class="container">
+          <div class="header-top">
+            <!-- mobile content -->
+            <div class="header-burger__wrapper" id="header-burger">
+              <div class="header-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <a href="#" class="header-mob__logo">
+              <img src="assets/img/logo-light.svg" class="logo-light" alt="logo-light" />
+              <img src="assets/img/logo-dark.svg" class="logo-dark" alt="logo-dark" />
+            </a>
+            <!-- mobile content and-->
+
+            <div class="header-top__nav">
+              <div class="header-top__location">
+                <a href="#" class="header-top__location-link">Челябинск</a>
+                <div class="location-popup">
+                  <div class="location-popup__body">
+                    <div class="location-popup__title">Вы находитесь в Челябинске?</div>
+                    <button id="closeLocationPopup" class="location-popup__btn popup-btn">Верно</button>
+                    <a href="#popup-cities" class="location-popup__search-city popup">Изменить город</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header-top__menu">
+                <ul class="header-top__menu-list">
+                  <li class="header-top__menu-item"><a href="#" class="header-top__menu-link">Франшиза</a></li>
+                  <li class="header-top__menu-item"><a href="#" class="header-top__menu-link">Представительства</a></li>
+                  <li class="header-top__menu-item"><a href="#" class="header-top__menu-link">Программа лояльности</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-top__info">
+              <div class="header-top__address">
+                <div class="header-top__address-text">ул. Механическая, 101</div>
+                <a href="#" class="header-top__address-link">Показать на карте</a>
+              </div>
+              <div class="header-top__contact">
+                <a href="tel:+88005507940" class="header-top__contact-tell"> <p>8 800 550 79 40</p> </a>
+                <div class="header-top__contact-text">Звонок бесплатный</div>
+              </div>
+              <div class="header-top__cabinet">
+                <a href="/authorization.html" class="header__cabinet-entry" style="display: none">Личный кабинет</a>
+                <div class="header-authorized">
+                  <div class="header-authorized__login">+7 999 444 11 01</div>
+                  <img src="assets/img/authorized.jpg" alt="" class="header-authorized__logo" />
+                  <div class="header-authorized__popup">
+                    <div class="popup-authorized">
+                      <div class="popup-authorized__status-wrapp">
+                        <img src="assets/img/icons/status-icon.svg" alt="" class="popup-authorized__status-logo" />
+                        <div class="popup-authorized__status-content">
+                          <div class="popup-authorized__status">Серебрянный</div>
+                          <div class="popup-authorized__status-text">Ваш статус</div>
+                        </div>
+                      </div>
+                      <ul class="popup-authorized__menu">
+                        <li class="popup-authorized__menu-item">
+                          <a href="#" class="popup-authorized__menu-link">Профиль</a>
+                        </li>
+                        <li class="popup-authorized__menu-item">
+                          <a href="#" class="popup-authorized__menu-link">Сделки</a>
+                        </li>
+                        <li class="popup-authorized__menu-item">
+                          <a href="#" class="popup-authorized__menu-link">Аналитика</a>
+                        </li>
+                      </ul>
+                      <div class="popup-authorized__btn popup-btn">Выйти</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-bottom">
+            <a href="#" class="header-bottom__logo">
+              <img src="assets/img/logo-light.svg" class="logo-light" alt="logo-light" />
+              <img src="assets/img/logo-dark.svg" class="logo-dark" alt="logo-dark" />
+            </a>
+            <div class="header-bottom__menu">
+              <ul class="header-bottom__menu-list">
+                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Главная</a></li>
+                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Цены</a></li>
+                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Удаление катализатора</a></li>
+                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Оптовикам</a></li>
+                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Журнал</a></li>
+                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">О компании</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="mobMenu" class="header-mob__body">
+          <div class="header-mob__head">
+            <div class="header-mob__location">
+              <a href="#popup-cities" class="header-mob__location-link popup">Челябинск</a>
+              <div class="header-mob__location-street">ул. Механическая, 101</div>
+            </div>
+            <button class="header-mob__body-close close-mob-menu-js"></button>
+          </div>
+          <div class="header-mob__cabinet">
+            <a href="/authorization.html" class="header__cabinet-entry close-mob-menu-js" style="display: none">Личный кабинет</a>
+            <div class="header-mob__authorized">
+              <div class="authorized-logo">
+                <img src="assets/img/icons/authorized-icon.svg" alt="" class="authorized-logo__img" />
+                <div class="authorized-login">+7 999 444 11 01</div>
+              </div>
+              <ul class="authorized-menu">
+                <li class="authorized-menu__item">
+                  <a href="" class="authorized-menu__link close-mob-menu-js">профиль</a>
+                </li>
+                <li class="authorized-menu__item">
+                  <a href="" class="authorized-menu__link close-mob-menu-js">аналитика</a>
+                </li>
+                <li class="authorized-menu__item">
+                  <a href="" class="authorized-menu__link close-mob-menu-js">сделки</a>
+                </li>
+                <li class="authorized-menu__item">
+                  <a href="" class="authorized-menu__link close-mob-menu-js">бонусы</a>
+                </li>
+              </ul>
+              <a href="#" class="authorized-btn close-mob-menu-js">Выйти</a>
+            </div>
+          </div>
+          <ul class="header-mob__menu">
+            <li class="header-mob__menu-item">
+              <a href="#" class="header-mob__menu-link close-mob-menu-js">Главная</a>
+            </li>
+            <li class="header-mob__menu-item">
+              <a href="#" class="header-mob__menu-link close-mob-menu-js">Цены</a>
+            </li>
+            <li class="header-mob__menu-item">
+              <a href="#" class="header-mob__menu-link close-mob-menu-js">Удаление катализатора</a>
+            </li>
+            <li class="header-mob__menu-item">
+              <a href="#" class="header-mob__menu-link close-mob-menu-js">Оптовикам</a>
+            </li>
+            <li class="header-mob__menu-item">
+              <a href="#" class="header-mob__menu-link close-mob-menu-js">Журнал</a>
+            </li>
+            <li class="header-mob__menu-item">
+              <a href="#" class="header-mob__menu-link close-mob-menu-js">О компании</a>
+            </li>
+            <li class="header-mob__menu-item">
+              <a href="#" class="header-mob__menu-link close-mob-menu-js">Франшиза</a>
+            </li>
+            <li class="header-mob__menu-item">
+              <a href="#" class="header-mob__menu-link close-mob-menu-js">Представительства</a>
+            </li>
+            <li class="header-mob__menu-item">
+              <a href="#" class="header-mob__menu-link close-mob-menu-js">Программа лояльности</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="profile-page header-top__indent">
+      <section class="profile section-wrapper pt-0">
+        <div class="container">
+          <div class="profile-head">
+            <div class="profile-tabs">
+              <div class="profile-tab active">Профиль</div>
+              <div class="profile-tab">Сделки</div>
+              <div class="profile-tab">Аналитика</div>
+            </div>
+            <a href="/index.php" class="profile-exit__btn btn_hover btn gray2-btn">Выйти</a>
+          </div>
+          <div class="profile-body">
+            <div class="profile-blocks">
+              <div class="profile-block">
+                <div class="profile-block__head">
+                  <div class="profile-block__head-col">
+                    <div class="profile-block__head-title">Данные профиля</div>
+                    <div class="profile-block__head-text">Заполните данные о себе. За каждый заполненный пункт мы начисляем % кешбека.</div>
+                  </div>
+                  <div class="profile-block__head-col">
+                    <div class="profile-block__label profile-block__label--yellow">+1% кэшбека</div>
+                  </div>
+                </div>
+                <form id="profile-personal-info" class="profile-block__content profile-block__form">
+                  <div class="profile-photo__wrapp">
+                    <div class="profile-photo__img">
+                      <img src="assets/img/icons/icon-photo-none.svg" alt="" />
+                    </div>
+                    <div class="profile-photo__edit">
+                      <button class="profile-photo__edit-button">изменить фотографию</button>
+                      <div class="profile-photo__edit-desc">Размер фото не должен превышать 5 MB</div>
+                    </div>
+                  </div>
+                  <div class="profile-list__info">
+                    <div class="profile-item">
+                      <div class="profile-item__name">Ваш номер</div>
+                      <div class="profile-item__content">
+                        <input class="profile__custom-input custom-input mask-phone" type="tell" name="profile-phone" placeholder="+7 (___) ___-__-__" />
+                      </div>
+                    </div>
+                    <div class="profile-item align-items-start">
+                      <div class="profile-item__name">Тип профиля</div>
+                      <div class="profile-item__content">
+                        <div class="radio-items">
+                          <div class="radio-group">
+                            <input class="radio-input" type="radio" id="natural-person" name="radio-group" checked />
+                            <label class="radio-label" for="natural-person">Физ. лицо</label>
+                          </div>
+                          <div class="radio-group">
+                            <input class="radio-input" type="radio" id="legal-entity" name="radio-group" />
+                            <label class="radio-label" for="legal-entity">Юр. лицо</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile-item">
+                      <div class="profile-item__name">Ваши ФИО</div>
+                      <div class="profile-item__content">
+                        <input class="profile__custom-input profile__custom-input--big custom-input" type="text" name="profile-name" placeholder="ФИО" />
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="profile-block">
+                <div class="profile-block__head">
+                  <div class="profile-block__head-col">
+                    <div class="profile-block__head-title">Паспортные данные</div>
+                    <div class="profile-block__head-text">Нужны для ОФД и чеков</div>
+                  </div>
+                  <div class="profile-block__head-col">
+                    <div class="profile-block__label profile-block__label--blue">+1% кэшбека</div>
+                  </div>
+                </div>
+                <form id="profile-personal-passport" class="profile-block__content profile-block__form">
+                  <div class="profile-passport__wrapp">
+                    <div class="profile-item__name">Фото паспорта</div>
+                    <div class="profile-item__content">
+                      <div class="profile-passport__img">
+                        <img src="assets/img/pasport.jpg" alt="" />
+                      </div>
+                      <div class="profile-passport__edit">
+                        <button class="profile-passport__edit-button">Загрузить фото</button>
+                        <div class="profile-passport__edit-desc">Загрузите фото лицевой и оборотной стороны</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-list__info-wrapp">
+                    <div class="profile-list__info">
+                      <div class="profile-item">
+                        <div class="profile-item__name">Серия и номер паспорта</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-passport-siries" placeholder="45 41 217 877" />
+                        </div>
+                      </div>
+                      <div class="profile-item">
+                        <div class="profile-item__name">Дата рождения</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-birthday" placeholder="10.08.1995" />
+                        </div>
+                      </div>
+                      <div class="profile-item">
+                        <div class="profile-item__name">Место рождения</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-place-of-birth" placeholder="РФ, г. Челябинск" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile-list__info">
+                      <div class="profile-item">
+                        <div class="profile-item__name">Дата выдачи</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue" placeholder="11.02.2020" />
+                        </div>
+                      </div>
+                      <div class="profile-item align-items-start">
+                        <div class="profile-item__name pt-1">Кем выдан паспорт</div>
+                        <div class="profile-item__content">
+                          <textarea class="profile__custom-textarea" rows="5" type="text" name="profile-passport-issued-by"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="profile-block">
+                <div class="profile-block__head">
+                  <div class="profile-block__head-col">
+                    <div class="profile-block__head-title">Адрес постоянной регистрации</div>
+                    <div class="profile-block__head-text">Нужны для ОФД и чеков</div>
+                  </div>
+                  <div class="profile-block__head-col">
+                    <div class="profile-block__label profile-block__label--yellow">+1% кэшбека</div>
+                  </div>
+                </div>
+                <form id="profile-personal-address" class="profile-block__content profile-block__form">
+                  <div class="profile-list__info-wrapp">
+                    <div class="profile-list__info">
+                      <div class="profile-item">
+                        <div class="profile-item__name">Индекс</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-index" placeholder="454 074" />
+                        </div>
+                      </div>
+                      <div class="profile-item">
+                        <div class="profile-item__name">Регион</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-region" placeholder="Уральский" />
+                        </div>
+                      </div>
+                      <div class="profile-item">
+                        <div class="profile-item__name">Город</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-city" placeholder="Челябинск" />
+                        </div>
+                      </div>
+                      <div class="profile-item">
+                        <div class="profile-item__name">Улица</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-street" placeholder="пр-т Ленина" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile-list__info">
+                      <div class="profile-item">
+                        <div class="profile-item__name">Дом</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue" placeholder="44" />
+                        </div>
+                      </div>
+                      <div class="profile-item">
+                        <div class="profile-item__name">Корпус</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue" placeholder="4" />
+                        </div>
+                      </div>
+                      <div class="profile-item">
+                        <div class="profile-item__name">Строение</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue" placeholder="1" />
+                        </div>
+                      </div>
+                      <div class="profile-item">
+                        <div class="profile-item__name">Квартира</div>
+                        <div class="profile-item__content">
+                          <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue" placeholder="41" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <button id="save-info" class="btn btn_hover blue-btn mt-30">сохранить информацию</button>
+            </div>
+            <div class="profile-sidebar">
+              <div class="quotes profile-sidebar__item profile-block">
+                <div class="quotes__head">
+                  <div class="profile-block__head-title">Катировки</div>
+                  <div class="quotes__tabs">
+                    <div class="quotes__tab active">RUB</div>
+                    <div class="quotes__tab">USD</div>
+                  </div>
+                </div>
+                <div class="quotes__content">
+                  <ul class="quotes-items">
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">5 658,74 ₽/г</div>
+                    </li>
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">5 658,74 ₽/г</div>
+                    </li>
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_down"></span></div>
+                      <div class="curs-metal__price">5 658,74 ₽/г</div>
+                    </li>
+                  </ul>
+                  <ul class="quotes-items">
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">EUR<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">55 ₽</div>
+                    </li>
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">USD<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">56 ₽</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-body">
+          <a href="tel:+88005507940" class="footer-tell--mob">8 800 550 79 40</a>
+          <div class="footer-tell__text--mob">Звонок бесплатный</div>
+          <div class="footer-item footer-contacts">
+            <a href="tel:+88005507940" class="footer-tell">8 800 550 79 40</a>
+            <div class="footer-tell__text">Звонок бесплатный</div>
+            <a href="#" class="footer-privacy">Пользовательское соглашение</a>
+            <a href="#" class="footer-privacy">Политика конфиденциальности</a>
+            <ul class="footer-social__list">
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link social__vk" target="_blank">
+                  <svg>
+                    <use xlink:href="assets/img/icons/vk-icon.svg#vk-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link social__inst" target="_blank">
+                  <svg>
+                    <use xlink:href="assets/img/icons/inst-icon.svg#inst-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link social__odnoklassniki" target="_blank">
+                  <svg>
+                    <use xlink:href="assets/img/icons/odnoklassniki-icon.svg#odnoklassniki-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item footer-item__about accordion-tab-js">
+            <div class="footer-item__title">О компании</div>
+            <ul class="footer-item__menu-list accordion-content-js">
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Миссия и ценности</a>
+              </li>
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Команда</a>
+              </li>
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Вакансии</a>
+              </li>
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Контакты</a>
+              </li>
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Франшиза</a>
+              </li>
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Представительства</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item footer-item__clients accordion-tab-js">
+            <div class="footer-item__title">Клиентам и партнёрам</div>
+            <ul class="footer-item__menu-list accordion-content-js">
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Цены</a>
+              </li>
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Удаление катализатора</a>
+              </li>
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Оптовикам</a>
+              </li>
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Программа лояльности</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item footer-item__journal accordion-tab-js">
+            <div class="footer-item__title">Журнал</div>
+            <ul class="footer-item__menu-list accordion-content-js">
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Каталитические системы</a>
+              </li>
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Драгоценные металлы</a>
+              </li>
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Автомобильная отрасль</a>
+              </li>
+              <li class="footer-item__menu-item">
+                <a href="#" class="footer-item__menu-link">Вторичное сырьё</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copy">© 2020, Sdaykat.ru</div>
+      </div>
+    </footer>
+
+    <!-- Popup city -->
+    <div id="popup-cities" class="popup-cities white-popup mfp-hide">
+      <div class="popup-cities__body">
+        <div class="selectCity__wrapper">
+          <div class="selectCity__title popup-primary__title">Список городов присутствия</div>
+          <div class="selectCity__input">
+            <input type="text" placeholder="Введите свой город" id="inputCity" />
+          </div>
+          <ul class="selectCity__list scrollbar scrollbar-js" id="city-list">
+            <li class="selectRegion__item-ofmetal">
+              <div class="selectRegion__item-ofmetal-title">Свердловкая область</div>
+              <ul class="selectRegion__item-ofmetal-list">
+                <li class="selectCity__item-ofmetal" data-city="Екатеринбург" data-region="Свердловкая область">Екатеринбург</li>
+                <li class="selectCity__item-ofmetal" data-city="Пышма" data-region="Свердловкая область">Пышма</li>
+                <li class="selectCity__item-ofmetal" data-city="Первоуральск" data-region="Свердловкая область">Первоуральск</li>
+                <li class="selectCity__item-ofmetal" data-city="Реж" data-region="Свердловкая область">Реж</li>
+                <li class="selectCity__item-ofmetal" data-city="Артемовский" data-region="Свердловкая область">Артемовский</li>
+                <li class="selectCity__item-ofmetal" data-city="Березовский" data-region="Свердловкая область">Березовский</li>
+                <li class="selectCity__item-ofmetal" data-city="Сысерть" data-region="Свердловкая область">Сысерть</li>
+                <li class="selectCity__item-ofmetal" data-city="Арамиль" data-region="Свердловкая область">Арамиль</li>
+                <li class="selectCity__item-ofmetal" data-city="Нижний Тагил" data-region="Свердловкая область">Нижний Тагил</li>
+              </ul>
+            </li>
+            <li class="selectRegion__item-ofmetal">
+              <div class="selectRegion__item-ofmetal-title">Челябинская область</div>
+              <ul class="selectRegion__item-ofmetal-list">
+                <li class="selectCity__item-ofmetal" data-city="Екатеринбург" data-region="Свердловкая область">Екатеринбург</li>
+                <li class="selectCity__item-ofmetal" data-city="Пышма" data-region="Свердловкая область">Пышма</li>
+                <li class="selectCity__item-ofmetal" data-city="Первоуральск" data-region="Свердловкая область">Первоуральск</li>
+                <li class="selectCity__item-ofmetal" data-city="Реж" data-region="Свердловкая область">Реж</li>
+                <li class="selectCity__item-ofmetal" data-city="Артемовский" data-region="Свердловкая область">Артемовский</li>
+                <li class="selectCity__item-ofmetal" data-city="Березовский" data-region="Свердловкая область">Березовский</li>
+                <li class="selectCity__item-ofmetal" data-city="Сысерть" data-region="Свердловкая область">Сысерть</li>
+                <li class="selectCity__item-ofmetal" data-city="Арамиль" data-region="Свердловкая область">Арамиль</li>
+                <li class="selectCity__item-ofmetal" data-city="Нижний Тагил" data-region="Свердловкая область">Нижний Тагил</li>
+              </ul>
+            </li>
+            <li class="selectRegion__item-ofmetal">
+              <div class="selectRegion__item-ofmetal-title">Челябинская область</div>
+              <ul class="selectRegion__item-ofmetal-list">
+                <li class="selectCity__item-ofmetal" data-city="Екатеринбург" data-region="Свердловкая область">Екатеринбург</li>
+                <li class="selectCity__item-ofmetal" data-city="Пышма" data-region="Свердловкая область">Пышма</li>
+                <li class="selectCity__item-ofmetal" data-city="Первоуральск" data-region="Свердловкая область">Первоуральск</li>
+                <li class="selectCity__item-ofmetal" data-city="Реж" data-region="Свердловкая область">Реж</li>
+                <li class="selectCity__item-ofmetal" data-city="Артемовский" data-region="Свердловкая область">Артемовский</li>
+                <li class="selectCity__item-ofmetal" data-city="Березовский" data-region="Свердловкая область">Березовский</li>
+                <li class="selectCity__item-ofmetal" data-city="Сысерть" data-region="Свердловкая область">Сысерть</li>
+                <li class="selectCity__item-ofmetal" data-city="Арамиль" data-region="Свердловкая область">Арамиль</li>
+                <li class="selectCity__item-ofmetal" data-city="Нижний Тагил" data-region="Свердловкая область">Нижний Тагил</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Popup city and-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/libs/scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/libs/slick/slick.min.js"></script>
+
+    <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
+    <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>
+    <script src="assets/libs/jquery-libs/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

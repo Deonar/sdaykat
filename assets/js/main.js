@@ -49,7 +49,7 @@ jQuery(document).ready(function ($) {
     }
 
     var st = $(this).scrollTop();
-    if (st > scrollPos) {
+    if (st < scrollPos) {
       $('#header').removeClass('active');
     } else {
       $('#header').addClass('active');
