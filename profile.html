@@ -189,6 +189,10 @@
               <!-- TAB PROFILE -->
               <div class="profile-tab__content tab-content" data-tab="1">
                 <div id="profile-registration-edit" class="profile-registration-edit profile-blocks">
+                  <div class="profile-tab__title-mob">
+                    <h3 class="profile-tab__title h3">Профиль</h3>
+                  </div>
+
                   <div class="profile-block">
                     <div class="profile-block__head">
                       <div class="profile-block__head-col">
@@ -291,10 +295,10 @@
                               <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue" placeholder="11.02.2020" />
                             </div>
                           </div>
-                          <div class="profile-item align-items-start">
+                          <div class="profile-item profile-item__textarea align-items-start">
                             <div class="profile-item__name pt-1">Кем выдан паспорт</div>
                             <div class="profile-item__content">
-                              <textarea class="profile__custom-textarea" rows="5" type="text" name="profile-passport-issued-by"></textarea>
+                              <textarea class="profile__custom-textarea" type="text" name="profile-passport-issued-by"></textarea>
                             </div>
                           </div>
                         </div>
@@ -339,7 +343,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="profile-list__info">
+                        <div class="profile-list__info profile-list__info--mob">
                           <div class="profile-item">
                             <div class="profile-item__name">Дом</div>
                             <div class="profile-item__content">
@@ -368,9 +372,13 @@
                       </div>
                     </form>
                   </div>
-                  <button id="save-info" class="btn btn_hover blue-btn mt-30">сохранить информацию</button>
+                  <button id="save-info" class="profile__btn-save-info btn btn_hover blue-btn mt-10">сохранить информацию</button>
                 </div>
                 <div id="profile-registration" class="profile-registration profile-blocks" style="display: none">
+                  <div class="profile-tab__title-mob">
+                    <h3 class="profile-tab__title h3">Профиль</h3>
+                    <div class="profile__info-for-edit">Чтобы изменить данные, свяжитесь с менеджером по телефону <a href="tel:+88005507940" class="link">8 800 550 79 40</a></div>
+                  </div>
                   <div class="profile-block">
                     <div class="profile-block__head">
                       <div class="profile-block__head-col">

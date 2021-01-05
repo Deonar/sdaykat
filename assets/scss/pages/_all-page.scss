@@ -2849,6 +2849,17 @@
       color: $text-primary;
     }
   }
+  &-tab__title-mob {
+    display: none;
+    margin-bottom: 30px;
+    .profile-tab__title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .profile__info-for-edit {
+      margin-top: 10px;
+    }
+  }
   &-exit__btn {
     padding: 11px 13px;
   }
@@ -2915,6 +2926,7 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
+    white-space: nowrap;
     color: $text-light;
     &--blue {
       background: #043598;
@@ -2933,6 +2945,7 @@
     width: 100%;
     max-width: 300px;
     margin-bottom: 15px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2985,6 +2998,11 @@
       width: 100%;
     }
   }
+  &-list__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   &-item {
     margin-bottom: 15px;
     display: flex;
@@ -2993,6 +3011,12 @@
     width: 50%;
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+  &-item__textarea {
+    height: 100%;
+    .profile-item__content {
+      height: 100%;
     }
   }
   &-item__name {
@@ -3013,6 +3037,7 @@
     }
   }
   &__custom-textarea {
+    height: 100%;
     width: 275px;
     resize: none;
     max-width: 275px;
@@ -3152,6 +3177,7 @@
       line-height: 18px;
       color: $text-primary;
       text-transform: uppercase;
+      white-space: nowrap;
       transition: all 0.3s ease;
       &:hover {
         transition: all 0.3s ease;

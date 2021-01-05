@@ -86,7 +86,6 @@
       }
     }
   }
-
   //=========================== price-ofauto end
   //=========================== loyalty-instruction
   .loyalty-instruction {
@@ -98,7 +97,46 @@
       }
     }
   }
-  //=========================== loyalty-instruction and
+  //=========================== loyalty-instruction end
+  //=========================== profile
+  .profile {
+    &-passport__wrapp {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 20px;
+    }
+    &__custom-input {
+      width: 100%;
+      max-width: 320px;
+    }
+    &-item {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      &__name {
+        padding: 0 !important;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+    &-list__info {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .profile-registration {
+    .profile {
+      &-item {
+        flex-direction: row;
+      }
+      &-list__info {
+        max-width: 270px;
+      }
+    }
+  }
+  //=========================== profile end
 }
 @media (max-width: 992px) {
   //=========================== HEADER
@@ -650,6 +688,71 @@
     }
   }
   //=========================== franchise-sentence and
+  //=========================== profile
+  .profile {
+    &-tab {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    &__custom-textarea {
+      width: 100%;
+      max-width: 100%;
+    }
+    &-item__name {
+      margin-bottom: 5px;
+    }
+
+    &-item__content {
+      align-items: flex-start;
+    }
+
+    &-block__content {
+      padding: 20px;
+    }
+    &-block__head {
+      padding: 20px;
+    }
+    &-passport__wrapp {
+      .profile {
+        &-item__content {
+          display: flex;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+  .profile-registration {
+    .profile {
+      &-block__form {
+        flex-direction: column;
+      }
+      &__info-for-edit {
+        display: none;
+      }
+      &-list__info {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .quotes {
+    &__head {
+      padding: 20px;
+    }
+    &__content {
+      padding: 0 20px 20px 20px;
+    }
+  }
+  .status {
+    &-head {
+      padding: 20px;
+    }
+    &-content {
+      padding: 0 20px 20px 20px;
+    }
+  }
+  //=========================== profile end
 
   //=========================== Footer
   .footer {
@@ -1451,7 +1554,97 @@
     }
   }
   //=========================== authorization and
+  //=========================== profile
+  .profile {
+    &-sidebar,
+    &-head {
+      display: none;
+    }
+    &-tab__title-mob {
+      display: block;
+      .profile__info-for-edit {
+        display: block;
+      }
+    }
+    &-block {
+      border: none;
+      margin-right: -20px;
+      margin-left: -20px;
+    }
+    &-item__content {
+      flex-direction: row-reverse;
+    }
+    &-passport__edit {
+      align-items: flex-start;
+      flex-direction: column-reverse;
+    }
+    &-passport__wrapp {
+      .profile-item__name {
+        margin-bottom: 10px;
+      }
+      .profile-item__content {
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+    }
+    &-passport__edit-desc {
+      max-width: 160px;
+      margin-bottom: 15px;
+    }
+    &-passport__edit-button {
+      max-width: 130px;
+      height: 90px;
+      display: flex;
+      &::after {
+        width: 10px;
+        height: 10px;
+      }
+    }
+    &-passport__img {
+      min-width: 130px;
+      min-height: 90px;
+      max-width: 130px;
+      max-height: 90px;
+      margin-right: 0;
+    }
+    &-list__info {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    &__btn-save-info {
+      display: block;
+      width: 100%;
+    }
+    &-list__info--mob {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-bottom: -15px;
+      .profile-item {
+        width: 48%;
+        &:last-child {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    &-list__info-wrapp {
+      flex-direction: column;
+    }
+    &__custom-input {
+      max-width: 100%;
+    }
+  }
+  .radio {
+    &-items {
+      display: flex;
+    }
+    &-group {
+      margin-right: 40px;
+    }
+  }
 
+  //=========================== profile end
   //=========================== Footer
   .footer {
     padding: 30px 0;
