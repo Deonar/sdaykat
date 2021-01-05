@@ -82,6 +82,14 @@ jQuery(document).ready(function ($) {
     $('#authorization-confirm').hide();
   });
 
+  // profile save-info
+  $('#save-info').on('click', function (e) {
+    $('#profile-registration').show();
+    $('#profile-registration-edit').hide();
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+  });
+
   //==================================  Popup city
   $('#city-list').on('click', '.selectCity__item', function () {
     city = $(this).data('city');
