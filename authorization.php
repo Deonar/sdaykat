@@ -63,8 +63,10 @@
               <a href="#" class="authorization-confirm__btn btn btn_hover primary-btn">Подтвердить</a>
               <span id="authorization-confirm__sms" class="authorization-confirm__sms">Отправить повторное смс
                 через:</span>
-              <span id="authorization-confirm__sms-timer" class="authorization-confirm__sms-timer">00:15</span>
-              <span id="authorization-confirm__sms-send" class="authorization-confirm__sms-send">Отправить смс</span>
+              <span id="authorization-confirm__sms-timer" class="authorization-confirm__sms-timer ">00:<span
+                  class="authorization-confirm__sms-timer seconds"> 15</span></span>
+              <span id="send-sms" id="authorization-confirm__sms-send" class="authorization-confirm__sms-send"
+                style="display: none">Отправить смс</span>
             </div>
           </form>
           <div class="entry-cabinet__conditions">

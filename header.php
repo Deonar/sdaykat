@@ -32,21 +32,23 @@ if (!isset($header_class)) {
         <!-- mobile content end-->
 
         <div class="header-top__nav">
-          <div class="header-top__location">
+          <div class="header-top__location active">
             <a href="#" class="header-top__location-link">Челябинск</a>
             <div class="location-popup">
               <div class="location-popup__body">
                 <div class="location-popup__title">Вы находитесь в Челябинске?</div>
-                <button id="closeLocationPopup" class="location-popup__btn popup-btn">Верно</button>
-                <a href="#popup-cities" class="location-popup__search-city popup">Изменить город</a>
+                <span class="location-popup__btn closeLocationPopup">Верно</span>
+                <a href="#popup-cities" class="location-popup__search-city popup closeLocationPopup">Изменить город</a>
               </div>
             </div>
           </div>
           <div class="header-top__menu">
             <ul class="header-top__menu-list">
               <li class="header-top__menu-item"><a href="/franchise.php" class="header-top__menu-link">Франшиза</a></li>
-              <li class="header-top__menu-item"><a href="/representative.php" class="header-top__menu-link">Представительства</a></li>
-              <li class="header-top__menu-item"><a href="/loyalty-program.php" class="header-top__menu-link">Программа лояльности</a></li>
+              <li class="header-top__menu-item"><a href="/representative.php"
+                  class="header-top__menu-link">Представительства</a></li>
+              <li class="header-top__menu-item"><a href="/loyalty-program.php" class="header-top__menu-link">Программа
+                  лояльности</a></li>
             </ul>
           </div>
         </div>
@@ -102,10 +104,13 @@ if (!isset($header_class)) {
           <ul class="header-bottom__menu-list">
             <li class="header-bottom__menu-item"><a href="/" class="header-bottom__menu-link">Главная</a></li>
             <li class="header-bottom__menu-item"><a href="/prices.php" class="header-bottom__menu-link">Цены</a></li>
-            <li class="header-bottom__menu-item"><a href="/delete-catalysts.php" class="header-bottom__menu-link">Удаление катализатора</a></li>
-            <li class="header-bottom__menu-item"><a href="/prices-wholesalers.php" class="header-bottom__menu-link">Оптовикам</a></li>
+            <li class="header-bottom__menu-item"><a href="/delete-catalysts.php"
+                class="header-bottom__menu-link">Удаление катализатора</a></li>
+            <li class="header-bottom__menu-item"><a href="/prices-wholesalers.php"
+                class="header-bottom__menu-link">Оптовикам</a></li>
             <li class="header-bottom__menu-item"><a href="/journal.php" class="header-bottom__menu-link">Журнал</a></li>
-            <li class="header-bottom__menu-item"><a href="/about.php" class="header-bottom__menu-link">О компании</a></li>
+            <li class="header-bottom__menu-item"><a href="/about.php" class="header-bottom__menu-link">О компании</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -119,7 +124,8 @@ if (!isset($header_class)) {
         <button class="header-mob__body-close close-mob-menu-js"></button>
       </div>
       <div class="header-mob__cabinet">
-        <a href="/authorization.php" class="header__cabinet-entry close-mob-menu-js" style="display: none">Личный кабинет</a>
+        <a href="/authorization.php" class="header__cabinet-entry close-mob-menu-js" style="display: none">Личный
+          кабинет</a>
         <div class="header-mob__authorized">
           <div class="authorized-logo">
             <img src="assets/img/icons/authorized-icon.svg" alt="" class="authorized-logo__img" />
