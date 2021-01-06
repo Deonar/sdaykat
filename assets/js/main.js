@@ -139,6 +139,15 @@ jQuery(document).ready(function ($) {
     $.magnificPopup.close();
   });
 
+  // ======================== location popup
+
+  $('.closeLocationPopup').on('click', function (e) {
+    $('.header-top__location').removeClass('active');
+  });
+  $('.header-top__location-link').on('click', function (e) {
+    $('.header-top__location').toggleClass('active');
+  });
+
   // ======================== MASK
   $('.mask-phone').mask('+7 (999) 999-99-99');
 
