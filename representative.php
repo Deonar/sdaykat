@@ -30,11 +30,11 @@
       </section>
       <section class="representative-map section-wrapper pt-0">
         <div class="container">
-          <div class="representative-map__img">
-            <img src="assets/img/map.svg" alt="" />
+          <div class="representative-map__img" id="representative-map">
+            <?php include('templates/map-representative.php') ?>
           </div>
           <ul class="representative-list">
-            <li class="representative-item accordion-tab-js">
+            <li class="representative-item accordion-tab-js" data-id="19">
               <div class="representative-item__head">
                 <div class="representative-item__img">
                   <img src="assets/img/map/moscow.svg" alt="" />
@@ -59,7 +59,7 @@
                 </ul>
               </div>
             </li>
-            <li class="representative-item accordion-tab-js">
+            <li class="representative-item accordion-tab-js" data-id="20">
               <div class="representative-item__head">
                 <div class="representative-item__img">
                   <img src="assets/img/map/tymen.svg" alt="" />
@@ -84,7 +84,7 @@
                 </ul>
               </div>
             </li>
-            <li class="representative-item accordion-tab-js">
+            <li class="representative-item accordion-tab-js" data-id="21">
               <div class="representative-item__head">
                 <div class="representative-item__img">
                   <img src="assets/img/map/tatarstan.svg" alt="" />
@@ -109,7 +109,7 @@
                 </ul>
               </div>
             </li>
-            <li class="representative-item accordion-tab-js">
+            <li class="representative-item accordion-tab-js" data-id="22">
               <div class="representative-item__head">
                 <div class="representative-item__img">
                   <img src="assets/img/map/sverdlovsk.svg" alt="" />
@@ -134,7 +134,7 @@
                 </ul>
               </div>
             </li>
-            <li class="representative-item accordion-tab-js">
+            <li class="representative-item accordion-tab-js" data-id="23">
               <div class="representative-item__head">
                 <div class="representative-item__img">
                   <img src="assets/img/map/chelabinsk.svg" alt="" />

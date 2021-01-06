@@ -1,3 +1,8 @@
+$('#map_btn-more').on('click', function () {
+  $(this).hide();
+  $('#map .map-list').addClass('map_show-all');
+});
+
 if (document.documentElement.clientWidth > 578) {
   $('.scrollbar-map-js').scrollbar();
 }
@@ -13,10 +18,14 @@ function init() {
     controls: ['zoomControl']
   })
 
-  getPointOpt = function () {
+  getPointOpt = function (type) {
+    hrefIcon = 'assets/img/map-icon.svg';
+    if(type == 2){
+      hrefIcon = 'assets/img/map-icon_orange.svg';
+    }
     return {
       iconLayout: "default#image",
-      iconImageHref: 'assets/img/map-icon.svg',
+      iconImageHref: hrefIcon,
       iconImageSize: [60, 60],
       iconImageOffset: [-30, -30],
       hideIconOnBalloonOpen: false
@@ -54,7 +63,7 @@ function init() {
     myMap.geoObjects.removeAll();
     geoObjects = []
     for (var i = 0; i < $('.tab-content[data-tab="' + type + '"] .map-item').length; i++) {
-      geoObjects[i] = new ymaps.Placemark(getPoint(i, type), getPointData(i, type), getPointOpt());
+      geoObjects[i] = new ymaps.Placemark(getPoint(i, type), getPointData(i, type), getPointOpt(type));
       myMap.geoObjects.add(geoObjects[i]);
     }
 
@@ -103,15 +112,20 @@ function init() {
 
   }
 
-  $('.select__item').click(function () {
-    var t = $('.tab-content[data-tab="1"]').html()
-    $('.tab-content[data-tab="1"]').html($('.tab-content[data-tab="2"]').html())
-    $('.tab-content[data-tab="2"]').html(t)
+
+  //==================================  Popup city
+  $('#map-city-list').on('click', '.selectCity__item', function () {
+    city = $(this).data('city');
+    region = $(this).data('region');
+    $('#current-map-city').text(city);
+
+    $.magnificPopup.close();
 
     // ajax
     updatePoints()
-  })
+  });
 
+  
   $(".tab-wrapper_map").on("click", ".tab", function (event) {
     var tab = $(this).attr("data-tab");
     var mainWrap = $(this).closest(".tab-wrapper_map");

@@ -37,7 +37,7 @@
             <label class="main-form__policy">
               <input type="checkbox" checked="" class="main-form__checkbox" />
               <span class="main-form__checkbox-box"></span>
-              <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+              <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
             </label>
           </form>
           <!-- Phone form end -->
@@ -130,38 +130,38 @@
         катализаторов скупаем?
       </h2>
       <div class="catalysts__wrapper">
-        <div class="catalysts__item">
+        <a href="/single-price-oftype.php" class="catalysts__item">
           <div class="catalysts__img">
             <img src="assets/img/catalysts/ceramics.png" alt="" />
           </div>
           <h4 class="catalysts__title">Керамический фильтр</h4>
           <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-          <a href="/single-price-oftype.php" class="catalysts__link link "> Узнать стоимость </a>
-        </div>
-        <div class="catalysts__item">
+          <div class="catalysts__link link"> Узнать стоимость </div>
+        </a>
+        <a href="/single-price-oftype.php" class="catalysts__item">
           <div class="catalysts__img">
             <img src="assets/img/catalysts/filter.png" alt="" />
           </div>
           <h4 class="catalysts__title">Сажевый фильтр</h4>
           <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-          <a href="/single-price-oftype.php" class="catalysts__link link "> Узнать стоимость </a>
-        </div>
-        <div class="catalysts__item">
+          <div class="catalysts__link link"> Узнать стоимость </div>
+          </a>
+        <a href="/single-price-oftype.php" class="catalysts__item">
           <div class="catalysts__img">
             <img src="assets/img/catalysts/import.png" alt="" />
           </div>
           <h4 class="catalysts__title">Металл импортный</h4>
           <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-          <a href="/single-price-oftype.php" class="catalysts__link link "> Узнать стоимость </a>
-        </div>
-        <div class="catalysts__item">
+          <div class="catalysts__link link"> Узнать стоимость </div>
+</a>
+        <a href="/single-price-oftype.php" class="catalysts__item">
           <div class="catalysts__img">
             <img src="assets/img/catalysts/native.png" alt="" />
           </div>
           <h4 class="catalysts__title">Металл отечественный</h4>
           <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
-          <a href="/single-price-oftype.php" class="catalysts__link link "> Узнать стоимость </a>
-        </div>
+          <div class="catalysts__link link"> Узнать стоимость </div>
+          </a>
       </div>
     </div>
   </section>
@@ -239,7 +239,7 @@
             <h4 class="h4 pass-material__title">Выездная оценка</h4>
             <p class="pass-material__text">Каждую 10-ю сделку<br />мы возвращаем ретро-бонусы в размере 5% от общей.</p>
             <div class="pass-material__btn">
-              <a href="#popup-form-manager" class="btn btn_small orange-btn popup"> Заказать выезд менеджера </a>
+              <a href="#popup-form-manager" class="btn btn_small btn_hover orange-btn popup"> Заказать выезд менеджера </a>
             </div>
           </div>
         </div>
@@ -252,7 +252,7 @@
               мы возвращаем ретро-бонусы в размере 5% от общей.
             </p>
             <div class="pass-material__btn">
-              <a href="#map" class="btn btn_small light-blue-btn scrollto">Показать на карте</a>
+              <a href="#map" class="btn btn_small btn_hover light-blue-btn scrollto">Показать на карте</a>
             </div>
           </div>
         </div>
@@ -265,7 +265,7 @@
               мы возвращаем ретро-бонусы в размере 5% от общей.
             </p>
             <div class="pass-material__btn">
-              <a href="#popup-form-courier" class="btn btn_small blue-btn popup">Вызвать курьера</a>
+              <a href="#popup-form-courier" class="btn btn_small btn_hover blue-btn popup">Вызвать курьера</a>
             </div>
           </div>
         </div>
@@ -567,7 +567,7 @@
         <label class="main-form__policy">
           <input type="checkbox" checked="" class="main-form__checkbox" />
           <span class="main-form__checkbox-box"></span>
-          <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
         </label>
       </form>
     </div>
@@ -602,7 +602,7 @@
         <label class="main-form__policy">
           <input type="checkbox" checked="" class="main-form__checkbox" />
           <span class="main-form__checkbox-box"></span>
-          <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
         </label>
       </form>
     </div>

@@ -36,7 +36,7 @@
               <label class="main-form__policy">
                 <input type="checkbox" checked="" class="main-form__checkbox" />
                 <span class="main-form__checkbox-box"></span>
-                <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+                <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
               </label>
             </form>
             <!-- Phone form end -->
@@ -132,8 +132,8 @@
             </div>
           </div>
           <div class="franchise-map__body">
-            <div class="franchise-map__svg">
-              <img src="assets/img/map.svg" alt="" />
+            <div class="franchise-map__svg" id="franchise-map">
+              <?php include('templates/map-franchise.php') ?>
             </div>
           </div>
         </div>
@@ -183,7 +183,7 @@
               <label class="main-form__policy">
                 <input type="checkbox" checked="" class="main-form__checkbox" />
                 <span class="main-form__checkbox-box"></span>
-                <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+                <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
               </label>
             </form>
           </div>
@@ -323,7 +323,7 @@
               <label class="main-form__policy">
                 <input type="checkbox" checked="" class="main-form__checkbox" />
                 <span class="main-form__checkbox-box"></span>
-                <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+                <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
               </label>
             </form>
             <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>
@@ -366,7 +366,7 @@
           <label class="main-form__policy">
             <input type="checkbox" checked="" class="main-form__checkbox" />
             <span class="main-form__checkbox-box"></span>
-            <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+            <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
           </label>
         </form>
         <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>

@@ -1,0 +1,248 @@
+[
+  {
+    "id": "19",
+    "title": "Челябинская область",
+    "occupied": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat",
+      "aute",
+      "veniam",
+      "velit"
+    ],
+    "avaliable": [
+      "commodo",
+      "commodo",
+      "consequat",
+      "aliquip",
+      "qui",
+      "mollit",
+      "ea"
+    ]
+  },
+  {
+    "id": "17",
+    "title": "Московская область",
+    "occupied": [
+      "commodo",
+      "commodo",
+      "consequat",
+      "aliquip",
+      "qui",
+      "mollit",
+      "ea"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat",
+      "aute",
+      "veniam",
+      "velit"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Волгоградская область",
+    "occupied": [
+      "est",
+      "exercitation",
+      "nostrud",
+      "eu",
+      "officia",
+      "non",
+      "dolor"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat",
+      "aute",
+      "veniam",
+      "velit"
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Калиниградская область",
+    "occupied": [
+      "laborum",
+      "tempor",
+      "incididunt",
+      "eu",
+      "dolore",
+      "sint"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat",
+      "aute"
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Ленинградская область",
+    "occupied": [
+      "Lorem",
+      "excepteur",
+      "culpa",
+      "fugiat",
+      "proident",
+      "proident",
+      "proident"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat"
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Челябинская область1",
+    "occupied": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat",
+      "aute",
+      "veniam",
+      "velit"
+    ],
+    "avaliable": [
+      "commodo",
+      "commodo",
+      "consequat",
+      "aliquip",
+      "qui",
+      "mollit",
+      "ea"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Московская область1",
+    "occupied": [
+      "commodo",
+      "commodo",
+      "consequat",
+      "aliquip",
+      "qui",
+      "mollit",
+      "ea"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat",
+      "aute",
+      "veniam",
+      "velit"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Волгоградская область1",
+    "occupied": [
+      "est",
+      "exercitation",
+      "nostrud",
+      "eu",
+      "officia",
+      "non",
+      "dolor"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat",
+      "aute",
+      "veniam",
+      "velit"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Калиниградская область1",
+    "occupied": [
+      "laborum",
+      "tempor",
+      "incididunt",
+      "eu",
+      "dolore",
+      "sint"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat",
+      "aute"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Ленинградская область1",
+    "occupied": [
+      "Lorem",
+      "excepteur",
+      "culpa",
+      "fugiat",
+      "proident",
+      "proident",
+      "proident"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat"
+    ]
+  },
+  {
+    "id": "0",
+    "title": "Ленинградская область2",
+    "occupied": [
+      "Lorem",
+      "excepteur",
+      "culpa",
+      "fugiat",
+      "proident",
+      "proident",
+      "proident"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat"
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Ленинградская область3",
+    "occupied": [
+      "Lorem",
+      "excepteur",
+      "culpa",
+      "fugiat",
+      "proident",
+      "proident",
+      "proident"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat"
+    ]
+  }
+]

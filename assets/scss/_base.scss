@@ -287,10 +287,10 @@ body {
 }
 @keyframes hoverFlare {
   0% {
-    left: 200%;
+    left: -90px;
   }
   100% {
-    left: -100px;
+    left: 150%;
   }
 }
 .btn {
@@ -321,18 +321,19 @@ body {
     z-index: 2;
     &:before {
       content: "";
+      transition: 3s ease-in-out;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+      height: 100%;
+      width: 20%;
+      position: absolute;
+      top: 0;
+      transform: skewX(-45deg);
+      left: -90px;
     }
     &:hover {
       // transform: scale(1.1)
       &:before {
-        transition: 1s ease-in-out;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
-        height: 100%;
-        width: 20%;
-        position: absolute;
-        top: 0;
-        transform: skewX(-45deg);
-        animation: hoverFlare 1.3s infinite;
+        animation: hoverFlare 1.5s infinite;
       }
     }
   }
@@ -442,7 +443,8 @@ body {
   color: #1e1e1e;
   &:hover {
     border: 1px solid #f4f7fa;
-    background: #f4f7fa;
+    background: $blue;
+    color: #fff;
   }
 }
 
@@ -494,6 +496,9 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $text-primary;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 
 .small-btn {
@@ -699,6 +704,9 @@ body {
     color: #fff;
     a {
       color: $text-placeholder;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
   &__policy {

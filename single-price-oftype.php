@@ -56,7 +56,7 @@
                   <label class="main-form__policy">
                     <input type="checkbox" checked="" class="main-form__checkbox" />
                     <span class="main-form__checkbox-box"></span>
-                    <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+                    <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
                   </label>
                 </form>
               </div>
@@ -393,7 +393,7 @@
         <label class="main-form__policy">
           <input type="checkbox" checked="" class="main-form__checkbox" />
           <span class="main-form__checkbox-box"></span>
-          <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
         </label>
       </form>
     </div>
@@ -428,7 +428,7 @@
         <label class="main-form__policy">
           <input type="checkbox" checked="" class="main-form__checkbox" />
           <span class="main-form__checkbox-box"></span>
-          <span class="main-form__text small-text"> Я ознакомлен c <a href="#">политикой конфиденциальности</a></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
         </label>
       </form>
     </div>
