@@ -128,7 +128,7 @@ jQuery(document).ready(function ($) {
       }
     });
   }
-  //========================  tabs desc accordion
+  //========================  tabs profile accordion
   $('.accordion-js').on('click', function () {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
@@ -144,7 +144,10 @@ jQuery(document).ready(function ($) {
       $(this).parent().find('.transactions-block__more').text('свернуть');
     }
   });
-  //======================== tabs accordion mobile end
+  //======================== tabs profile end
+  //======================== daterangepicker profile
+  $('input[name="daterange"]').daterangepicker();
+  //======================== daterangepicker profile end
   //======================== tabs
   $('.tab-wrapper').on('click', '.tab', function (event) {
     var tab = $(this).attr('data-tab');

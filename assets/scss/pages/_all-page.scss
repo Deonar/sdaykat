@@ -2874,6 +2874,9 @@
     min-width: 270px;
     max-width: 270px;
     margin-left: 30px;
+    .profile-head {
+      justify-content: flex-end;
+    }
   }
   &-sidebar__item {
   }
@@ -3479,8 +3482,34 @@
     align-items: center;
     justify-content: space-between;
   }
-  &-sort__ofcalendar {
+  &-sort__daterange {
+    display: flex;
+    align-items: center;
     margin-right: 20px;
+    .daterange-input {
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      min-width: 150px;
+      padding: 6px;
+      background: #f4f7fa;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      cursor: pointer;
+      text-align: center;
+      &__label {
+        cursor: pointer;
+        margin-right: 10px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      &::placeholder {
+        text-align: center;
+      }
+    }
   }
   &-sort__ofselect {
     .select {

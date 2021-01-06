@@ -8,182 +8,26 @@
     <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
     <link rel="stylesheet" href="assets/libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <title>SDAYKAT</title>
   </head>
 
   <body>
-    <header id="header" class="header header-light">
-      <div class="header-body">
-        <div class="container">
-          <div class="header-top">
-            <!-- mobile content -->
-            <div class="header-burger__wrapper" id="header-burger">
-              <div class="header-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-            <a href="#" class="header-mob__logo">
-              <img src="assets/img/logo-light.svg" class="logo-light" alt="logo-light" />
-              <img src="assets/img/logo-dark.svg" class="logo-dark" alt="logo-dark" />
-            </a>
-            <!-- mobile content and-->
-
-            <div class="header-top__nav">
-              <div class="header-top__location">
-                <a href="#" class="header-top__location-link">Челябинск</a>
-                <div class="location-popup">
-                  <div class="location-popup__body">
-                    <div class="location-popup__title">Вы находитесь в Челябинске?</div>
-                    <button id="closeLocationPopup" class="location-popup__btn popup-btn">Верно</button>
-                    <a href="#popup-cities" class="location-popup__search-city popup">Изменить город</a>
-                  </div>
-                </div>
-              </div>
-              <div class="header-top__menu">
-                <ul class="header-top__menu-list">
-                  <li class="header-top__menu-item"><a href="#" class="header-top__menu-link">Франшиза</a></li>
-                  <li class="header-top__menu-item"><a href="#" class="header-top__menu-link">Представительства</a></li>
-                  <li class="header-top__menu-item"><a href="#" class="header-top__menu-link">Программа лояльности</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="header-top__info">
-              <div class="header-top__address">
-                <div class="header-top__address-text">ул. Механическая, 101</div>
-                <a href="#" class="header-top__address-link">Показать на карте</a>
-              </div>
-              <div class="header-top__contact">
-                <a href="tel:+88005507940" class="header-top__contact-tell"> <p>8 800 550 79 40</p> </a>
-                <div class="header-top__contact-text">Звонок бесплатный</div>
-              </div>
-              <div class="header-top__cabinet">
-                <a href="/authorization.html" class="header__cabinet-entry" style="display: none">Личный кабинет</a>
-                <div class="header-authorized">
-                  <div class="header-authorized__login">+7 999 444 11 01</div>
-                  <img src="assets/img/authorized.jpg" alt="" class="header-authorized__logo" />
-                  <div class="header-authorized__popup">
-                    <div class="popup-authorized">
-                      <div class="popup-authorized__status-wrapp">
-                        <img src="assets/img/icons/status-icon.svg" alt="" class="popup-authorized__status-logo" />
-                        <div class="popup-authorized__status-content">
-                          <div class="popup-authorized__status">Серебрянный</div>
-                          <div class="popup-authorized__status-text">Ваш статус</div>
-                        </div>
-                      </div>
-                      <ul class="popup-authorized__menu">
-                        <li class="popup-authorized__menu-item">
-                          <a href="#" class="popup-authorized__menu-link">Профиль</a>
-                        </li>
-                        <li class="popup-authorized__menu-item">
-                          <a href="#" class="popup-authorized__menu-link">Сделки</a>
-                        </li>
-                        <li class="popup-authorized__menu-item">
-                          <a href="#" class="popup-authorized__menu-link">Аналитика</a>
-                        </li>
-                      </ul>
-                      <div class="popup-authorized__btn popup-btn">Выйти</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="header-bottom">
-            <a href="#" class="header-bottom__logo">
-              <img src="assets/img/logo-light.svg" class="logo-light" alt="logo-light" />
-              <img src="assets/img/logo-dark.svg" class="logo-dark" alt="logo-dark" />
-            </a>
-            <div class="header-bottom__menu">
-              <ul class="header-bottom__menu-list">
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Главная</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Цены</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Удаление катализатора</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Оптовикам</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">Журнал</a></li>
-                <li class="header-bottom__menu-item"><a href="#" class="header-bottom__menu-link">О компании</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div id="mobMenu" class="header-mob__body">
-          <div class="header-mob__head">
-            <div class="header-mob__location">
-              <a href="#popup-cities" class="header-mob__location-link popup">Челябинск</a>
-              <div class="header-mob__location-street">ул. Механическая, 101</div>
-            </div>
-            <button class="header-mob__body-close close-mob-menu-js"></button>
-          </div>
-          <div class="header-mob__cabinet">
-            <a href="/authorization.html" class="header__cabinet-entry close-mob-menu-js" style="display: none">Личный кабинет</a>
-            <div class="header-mob__authorized">
-              <div class="authorized-logo">
-                <img src="assets/img/icons/authorized-icon.svg" alt="" class="authorized-logo__img" />
-                <div class="authorized-login">+7 999 444 11 01</div>
-              </div>
-              <ul class="authorized-menu">
-                <li class="authorized-menu__item">
-                  <a href="" class="authorized-menu__link close-mob-menu-js">профиль</a>
-                </li>
-                <li class="authorized-menu__item">
-                  <a href="" class="authorized-menu__link close-mob-menu-js">аналитика</a>
-                </li>
-                <li class="authorized-menu__item">
-                  <a href="" class="authorized-menu__link close-mob-menu-js">сделки</a>
-                </li>
-                <li class="authorized-menu__item">
-                  <a href="" class="authorized-menu__link close-mob-menu-js">бонусы</a>
-                </li>
-              </ul>
-              <a href="#" class="authorized-btn close-mob-menu-js">Выйти</a>
-            </div>
-          </div>
-          <ul class="header-mob__menu">
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Главная</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Цены</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Удаление катализатора</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Оптовикам</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Журнал</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">О компании</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Франшиза</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Представительства</a>
-            </li>
-            <li class="header-mob__menu-item">
-              <a href="#" class="header-mob__menu-link close-mob-menu-js">Программа лояльности</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
+    <?php 
+  $header_class = 'header-light';
+  include("header.php"); 
+  ?>
     <div class="profile-page header-top__indent">
       <section class="profile section-wrapper pt-0">
-        <div class="container">
-          <div class="tab-wrapper">
+        <div class="container d-flex">
+          <div class="tab-wrapper" style="width: 100%">
             <div class="profile-head">
               <div class="profile-tabs">
                 <div class="profile-tab tab active" data-tab="1">Профиль</div>
                 <div class="profile-tab tab" data-tab="2">Сделки</div>
                 <div class="profile-tab tab" data-tab="3">Аналитика</div>
               </div>
-              <a href="/index.php" class="profile-exit__btn btn_hover btn gray2-btn">Выйти</a>
             </div>
             <div class="profile-body">
               <!-- TAB PROFILE -->
@@ -509,7 +353,15 @@
               <!-- TAB transactions-->
               <div class="transactions profile-tab__content tab-content" data-tab="2" style="display: none">
                 <div class="transactions-head">
-                  <div class="transactions-sort__ofcalendar">1</div>
+                  <div class="profile-tab__title-mob">
+                    <h3 class="profile-tab__title h3">Сделки</h3>
+                  </div>
+                  <div class="transactions-sort__daterange">
+                    <label class="daterange-input__label" for="daterange-input">
+                      <img src="assets/img/icons/icon-daterange-input.svg" alt="" />
+                    </label>
+                    <input id="daterange-input" class="daterange-input" type="text" name="daterange" value="01/01/2018 - 01/15/2021" />
+                  </div>
                   <div class="transactions-sort__ofselect">
                     <div class="select select-custom-js">
                       <div class="select__header">
@@ -625,178 +477,114 @@
                 <div class="analitics-content">analitics</div>
               </div>
               <!-- TAB ANALITICS END-->
-              <!-- TAB SIDEBAR -->
-              <div class="profile-sidebar">
-                <div class="quotes profile-sidebar__item profile-block">
-                  <div class="quotes__head">
-                    <div class="profile-block__head-title">Катировки</div>
-                    <div class="quotes__tabs">
-                      <div class="quotes__tab active">RUB</div>
-                      <div class="quotes__tab">USD</div>
-                    </div>
-                  </div>
-                  <div class="quotes__content">
-                    <ul class="quotes-items">
-                      <li class="quotes-item">
-                        <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
-                        <div class="curs-metal__price">5 658,74 ₽/г</div>
-                      </li>
-                      <li class="quotes-item">
-                        <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
-                        <div class="curs-metal__price">5 658,74 ₽/г</div>
-                      </li>
-                      <li class="quotes-item">
-                        <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_down"></span></div>
-                        <div class="curs-metal__price">5 658,74 ₽/г</div>
-                      </li>
-                    </ul>
-                    <ul class="quotes-items">
-                      <li class="quotes-item">
-                        <div class="curs-metal__valuta">EUR<span class="curs-metal__valuta_up"></span></div>
-                        <div class="curs-metal__price">55 ₽</div>
-                      </li>
-                      <li class="quotes-item">
-                        <div class="curs-metal__valuta">USD<span class="curs-metal__valuta_up"></span></div>
-                        <div class="curs-metal__price">56 ₽</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="status profile-block">
-                  <div class="status-head">
-                    <img src="assets/img/icons/status-icon.svg" alt="" class="status-icon" />
-                    <div class="status-title">Серебрянный<span>Ваш статус</span></div>
-                  </div>
-                  <div class="status-content">
-                    <div class="status-range">
-                      <div class="status-block__number" style="margin-left: 30%">10 Кг</div>
-                      <div class="status-line">
-                        <div class="status-line_active" style="width: 30%"></div>
-                      </div>
-                      <div class="status-block__info">
-                        <p class="status-block_min">0 Кг</p>
-                        <p class="status-block_max">Золотой - 30 Кг</p>
-                      </div>
-                    </div>
-                    <div class="status-bonuses">
-                      <div class="status-bonuses__title">Кэшбек <span class="status-bonuses__percent">3%</span></div>
-                      <div class="status-bonuses__title">Ретро Бонус <span class="status-bonuses__percent">1%</span></div>
-                    </div>
-                    <div class="status-pay">
-                      <div class="status-pay__title">
-                        Выплаты Ретро Бонуса <br />
-                        в зависимости от статуса
-                      </div>
-                      <ul class="status-pay__list">
-                        <li class="status-pay__list-item">Серебрянный<span class="status-bonuses__percent">3%</span></li>
-                        <li class="status-pay__list-item">Золотой<span class="status-bonuses__percent">4%</span></li>
-                        <li class="status-pay__list-item">Платина<span class="status-bonuses__percent">5%</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- TAB SIDEBAR END-->
             </div>
           </div>
+          <!-- TAB SIDEBAR -->
+          <div class="profile-sidebar">
+            <div class="profile-head">
+              <a href="/index.php" class="profile-exit__btn btn_hover btn gray2-btn">Выйти</a>
+            </div>
+            <div class="quotes profile-sidebar__item profile-block">
+              <div class="tab-wrapper">
+                <div class="quotes__head">
+                  <div class="profile-block__head-title">Катировки</div>
+                  <div class="quotes__tabs">
+                    <div class="quotes__tab tab active" data-tab="RUB">RUB</div>
+                    <div class="quotes__tab tab" data-tab="USD">USD</div>
+                  </div>
+                </div>
+                <div class="quotes__content tab-content" data-tab="RUB">
+                  <ul class="quotes-items">
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">5 658,74 ₽/г</div>
+                    </li>
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">5 658,74 ₽/г</div>
+                    </li>
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_down"></span></div>
+                      <div class="curs-metal__price">5 658,74 ₽/г</div>
+                    </li>
+                  </ul>
+                  <ul class="quotes-items">
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">EUR<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">55 ₽</div>
+                    </li>
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">USD<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">56 ₽</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="quotes__content tab-content" data-tab="USD" style="display: none">
+                  <ul class="quotes-items">
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_down"></span></div>
+                      <div class="curs-metal__price">785,74 ₽/г</div>
+                    </li>
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">5 658,74 ₽/г</div>
+                    </li>
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">658,74 ₽/г</div>
+                    </li>
+                  </ul>
+                  <ul class="quotes-items">
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">EUR<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">35 ₽</div>
+                    </li>
+                    <li class="quotes-item">
+                      <div class="curs-metal__valuta">USD<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__price">96 ₽</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="status profile-block">
+              <div class="status-head">
+                <img src="assets/img/icons/status-icon.svg" alt="" class="status-icon" />
+                <div class="status-title">Серебрянный<span>Ваш статус</span></div>
+              </div>
+              <div class="status-content">
+                <div class="status-range">
+                  <div class="status-block__number" style="margin-left: 30%">10 Кг</div>
+                  <div class="status-line">
+                    <div class="status-line_active" style="width: 30%"></div>
+                  </div>
+                  <div class="status-block__info">
+                    <p class="status-block_min">0 Кг</p>
+                    <p class="status-block_max">Золотой - 30 Кг</p>
+                  </div>
+                </div>
+                <div class="status-bonuses">
+                  <div class="status-bonuses__title">Кэшбек <span class="status-bonuses__percent">3%</span></div>
+                  <div class="status-bonuses__title">Ретро Бонус <span class="status-bonuses__percent">1%</span></div>
+                </div>
+                <div class="status-pay">
+                  <div class="status-pay__title">
+                    Выплаты Ретро Бонуса <br />
+                    в зависимости от статуса
+                  </div>
+                  <ul class="status-pay__list">
+                    <li class="status-pay__list-item">Серебрянный<span class="status-bonuses__percent">3%</span></li>
+                    <li class="status-pay__list-item">Золотой<span class="status-bonuses__percent">4%</span></li>
+                    <li class="status-pay__list-item">Платина<span class="status-bonuses__percent">5%</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TAB SIDEBAR END-->
         </div>
       </section>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-body">
-          <a href="tel:+88005507940" class="footer-tell--mob">8 800 550 79 40</a>
-          <div class="footer-tell__text--mob">Звонок бесплатный</div>
-          <div class="footer-item footer-contacts">
-            <a href="tel:+88005507940" class="footer-tell">8 800 550 79 40</a>
-            <div class="footer-tell__text">Звонок бесплатный</div>
-            <a href="#" class="footer-privacy">Пользовательское соглашение</a>
-            <a href="#" class="footer-privacy">Политика конфиденциальности</a>
-            <ul class="footer-social__list">
-              <li class="footer-social__item">
-                <a href="#" class="footer-social__link social__vk" target="_blank">
-                  <svg>
-                    <use xlink:href="assets/img/icons/vk-icon.svg#vk-icon"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social__item">
-                <a href="#" class="footer-social__link social__inst" target="_blank">
-                  <svg>
-                    <use xlink:href="assets/img/icons/inst-icon.svg#inst-icon"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social__item">
-                <a href="#" class="footer-social__link social__odnoklassniki" target="_blank">
-                  <svg>
-                    <use xlink:href="assets/img/icons/odnoklassniki-icon.svg#odnoklassniki-icon"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-item footer-item__about accordion-tab-js">
-            <div class="footer-item__title">О компании</div>
-            <ul class="footer-item__menu-list accordion-content-js">
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Миссия и ценности</a>
-              </li>
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Команда</a>
-              </li>
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Вакансии</a>
-              </li>
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Контакты</a>
-              </li>
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Франшиза</a>
-              </li>
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Представительства</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-item footer-item__clients accordion-tab-js">
-            <div class="footer-item__title">Клиентам и партнёрам</div>
-            <ul class="footer-item__menu-list accordion-content-js">
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Цены</a>
-              </li>
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Удаление катализатора</a>
-              </li>
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Оптовикам</a>
-              </li>
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Программа лояльности</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-item footer-item__journal accordion-tab-js">
-            <div class="footer-item__title">Журнал</div>
-            <ul class="footer-item__menu-list accordion-content-js">
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Каталитические системы</a>
-              </li>
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Драгоценные металлы</a>
-              </li>
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Автомобильная отрасль</a>
-              </li>
-              <li class="footer-item__menu-item">
-                <a href="#" class="footer-item__menu-link">Вторичное сырьё</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-copy">© 2020, Sdaykat.ru</div>
-      </div>
-    </footer>
 
     <!-- Popup city -->
     <div id="popup-cities" class="popup-cities white-popup mfp-hide">
@@ -855,15 +643,6 @@
     </div>
     <!-- Popup city and-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/libs/scrollbar/jquery.scrollbar.min.js"></script>
-    <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/libs/slick/slick.min.js"></script>
-
-    <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
-    <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>
-    <script src="assets/libs/jquery-libs/jquery.ui.touch-punch.min.js"></script>
-
-    <script src="assets/js/main.js"></script>
+    <?php include("footer.php"); ?>
   </body>
 </html>

@@ -739,6 +739,11 @@
         }
       }
     }
+    &-sidebar {
+      .profile-head {
+        margin-bottom: 20px;
+      }
+    }
   }
   .profile-registration {
     .profile {
@@ -788,6 +793,20 @@
     }
     &-block__more {
       display: block;
+    }
+    &-head {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-sort__daterange {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &-sort__ofselect {
+      width: 100%;
+      .select__header {
+        justify-content: space-between;
+      }
     }
   }
   .lot-block {
@@ -1721,6 +1740,11 @@
     }
   }
   //=========================== transactions end
+  .bonuses-mobile-page {
+    .status {
+      display: block;
+    }
+  }
   //=========================== profile end
   //=========================== Footer
   .footer {
