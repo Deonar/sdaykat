@@ -76,7 +76,8 @@
         <div class="footer-item__title">Журнал</div>
         <ul class="footer-item__menu-list accordion-content-js">
           <li class="footer-item__menu-item">
-            <a href="/journal.php#art-catalytic-systems" class="footer-item__menu-link">Каталитические системы</a>
+            <a href="/journal.php#art-catalytic-systems" class="footer-item__menu-link">Каталитические
+              системы</a>
           </li>
           <li class="footer-item__menu-item">
             <a href="/journal.php#art-precious-metal" class="footer-item__menu-link">Драгоценные металлы</a>

@@ -13,7 +13,7 @@
   </head>
 
   <body>
-  <?php include("header.php"); ?>
+    <?php include("header.php"); ?>
 
     <main class="main main_delete-catalysts">
       <div class="container">
@@ -115,38 +115,38 @@
         <div class="requirement-body">
           <h2 class="requirement-title primary-title">Процесс удаления катализатора</h2>
           <div class="requirement-list">
-            <div href="#" class="requirement-item d-flex flex-direction-column justify-content-sb">
+            <a href="tel:+88005507940" class="requirement-item d-flex flex-direction-column justify-content-sb">
               <div class="requirement-item__wrap">
                 <img src="assets/img/icons/requirement-5.svg" alt="" class="requirement-item__icon" />
                 <div class="requirement-item__title">Звонок</div>
                 <div class="requirement-item__text">Оставляете заявку на сайте или звоните нам. Вместе выбираем подходящие время и дату приезда.</div>
               </div>
-              <a href="tel:+88005507940" class="requirement-item__link requirement-item__link--tell">8 800 550 79 40</a>
-            </div>
-            <div href="#" class="requirement-item d-flex flex-direction-column justify-content-sb">
+              <div class="requirement-item__link requirement-item__link--tell">8 800 550 79 40</div>
+            </a>
+            <a href="#map" class="requirement-item d-flex flex-direction-column justify-content-sb scrollto">
               <div class="requirement-item__wrap">
                 <img src="assets/img/icons/requirement-6.svg" alt="" class="requirement-item__icon" />
                 <div class="requirement-item__title">Приезд</div>
                 <div class="requirement-item__text">Катализаторы не должны быть влажными, допускается естественная влажность 1-2%</div>
               </div>
-              <a href="#" class="requirement-item__link">показать на карте</a>
-            </div>
-            <div href="#" class="requirement-item d-flex flex-direction-column justify-content-sb">
+              <div class="requirement-item__link">показать на карте</div>
+            </a>
+            <a href="#steps" class="requirement-item d-flex flex-direction-column justify-content-sb scrollto">
               <div class="requirement-item__wrap">
                 <img src="assets/img/icons/requirement-7.svg" alt="" class="requirement-item__icon" />
                 <div class="requirement-item__title">Бесплатное удаление</div>
                 <div class="requirement-item__text">Катализаторы не должны быть влажными, допускается естественная влажность 1-2%</div>
               </div>
-              <a href="#" class="requirement-item__link">почему бесплатно?</a>
-            </div>
-            <div href="#" class="requirement-item d-flex flex-direction-column justify-content-sb">
+              <div class="requirement-item__link">почему бесплатно?</div>
+            </a>
+            <a href="#additional-service" class="requirement-item d-flex flex-direction-column justify-content-sb scrollto">
               <div class="requirement-item__wrap">
                 <img src="assets/img/icons/requirement-8.svg" alt="" class="requirement-item__icon" />
                 <div class="requirement-item__title">Дополнительный сервис</div>
                 <div class="requirement-item__text">Проводим необходимые работы для удаления катализатора.</div>
               </div>
-              <a href="#" class="requirement-item__link">узнать о доп. сервисе</a>
-            </div>
+              <div class="requirement-item__link">узнать о доп. сервисе</div>
+            </a>
           </div>
         </div>
       </div>
@@ -154,7 +154,7 @@
 
     <?php include("templates/map.php"); ?>
 
-    <section class="steps section-wrapper">
+    <section id="steps" class="steps section-wrapper">
       <div class="container">
         <div class="steps__body">
           <h2 class="steps__title primary-title">Бесплатная услуга – это не обман и не благотворительность</h2>
@@ -174,7 +174,7 @@
       </div>
     </section>
 
-    <section class="additional-service section-wrapper">
+    <section id="additional-service" class="additional-service section-wrapper">
       <div class="container">
         <div class="additional-body">
           <h3 class="additional-title h3">Дополнительные услуги</h3>
@@ -309,3 +309,5 @@
     <!-- popup-thank end-->
 
     <?php include("footer.php"); ?>
+  </body>
+</html>

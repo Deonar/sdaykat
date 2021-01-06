@@ -1229,7 +1229,8 @@
   .calculator-price__ofauto {
     .select {
       &__body {
-        max-width: 200px;
+        min-width: 200px !important;
+        max-width: 200px !important;
       }
       &__header-search {
         width: 200px;
@@ -1380,8 +1381,12 @@
       flex-direction: column-reverse;
     }
     &__entry {
-      max-width: 100%;
+      max-width: 370px;
+      margin: 0 auto;
       margin-top: 50px;
+    }
+    &__entry-btn {
+      width: 100%;
     }
   }
   //=========================== entry-cabinet and
@@ -2152,20 +2157,7 @@
       flex-direction: column;
     }
     &__menu-body {
-      max-width: 100%;
-      margin-right: 0px;
-    }
-    &__menu {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    &__menu-item {
-      margin-bottom: 10px;
-      margin-right: 30px;
-    }
-    &__menu-link {
-      font-size: 12px;
-      line-height: 16px;
+      display: none;
     }
   }
   //=========================== privacy-policy and
