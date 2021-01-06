@@ -90,6 +90,11 @@ jQuery(document).ready(function ($) {
     return false;
   });
 
+  // actions-content-show-js
+  $('.actions-content-show-js').on('click', function (e) {
+    $(this).toggleClass('active');
+  });
+
   //==================================  Popup city
   $('#city-list').on('click', '.selectCity__item', function () {
     city = $(this).data('city');
@@ -123,6 +128,22 @@ jQuery(document).ready(function ($) {
       }
     });
   }
+  //========================  tabs desc accordion
+  $('.accordion-js').on('click', function () {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $(this).parent().find('.accordion-block-js').hide('300');
+      $('.transactions-block__more').text('свернуть');
+      $(this).parent().find('.transactions-block__more').text('развернуть');
+    } else {
+      $('.accordion-js').removeClass('active');
+      $(this).addClass('active');
+      $('.accordion-block-js').slideUp(200);
+      $(this).parent().find('.accordion-block-js').toggle('blind');
+      $('.transactions-block__more').text('развернуть');
+      $(this).parent().find('.transactions-block__more').text('свернуть');
+    }
+  });
   //======================== tabs accordion mobile end
   //======================== tabs
   $('.tab-wrapper').on('click', '.tab', function (event) {
@@ -243,9 +264,14 @@ jQuery(document).ready(function ($) {
     function selectChoose() {
       let text = this.innerHTML,
         select = this.closest('.select-custom-js'),
+        selectDataValue = this.dataset.selectValue;
+      if (select) {
         currentText = select.querySelector('.select__current');
+        currentInput = select.querySelector('input');
 
-      currentText.innerHTML = text;
+        currentText.innerHTML = text;
+        currentInput.value = selectDataValue;
+      }
       select.classList.remove('is-active');
     }
   };

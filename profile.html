@@ -508,8 +508,115 @@
               <!-- TAB PROFILE END-->
               <!-- TAB transactions-->
               <div class="transactions profile-tab__content tab-content" data-tab="2" style="display: none">
-                <ul class="transactions-list">
-                  <li class="transactions-list__item profile-block">TRANSACTIONS</li>
+                <div class="transactions-head">
+                  <div class="transactions-sort__ofcalendar">1</div>
+                  <div class="transactions-sort__ofselect">
+                    <div class="select select-custom-js">
+                      <div class="select__header">
+                        <label class="select__label">Сортировка:</label>
+                        <span class="select__current">по объему сырья</span>
+                        <input type="hidden" name="search" value="1" />
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item" data-select-value="1">по объему сырья</div>
+                        <div class="select__item" data-select-value="2">по сумме</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="transactions-blocks">
+                  <li class="transactions-block">
+                    <div class="transactions-block__head accordion-js active">
+                      <div class="transactions-block__info">
+                        <div class="transactions-block__info-item">10 кг <span>Вес сырья</span></div>
+                        <div class="transactions-block__info-item">3 % <span>Кэшбек</span></div>
+                        <div class="transactions-block__info-item">320 000 ₽ <span>Сумма выплаты</span></div>
+                      </div>
+                      <div class="transactions-block__options">
+                        <div class="transactions-block__options-time">10.02.2020 / 16:11</div>
+
+                        <div class="transactions-block__options-actions actions-content-show-js">
+                          <button class="actions-btn btn">Действия</button>
+                          <div class="actions-content">
+                            <a href="#" class="actions-link">Заказать хим. анализ</a>
+                            <a href="#" class="actions-link">Получить паспорт расчет</a>
+                            <a href="#" class="actions-link">Скачать чек</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transactions-block__content lot-blocks accordion-block-js">
+                      <div class="lot-block">
+                        <div class="lot-block__head">
+                          <div class="lot-block__title">Лот #1</div>
+                          <div class="lot-block__info">5 кг / Керамика</div>
+                        </div>
+                        <div class="lot-block__content">
+                          <div class="lot-block__item">Сумма <span>160 000 ₽</span></div>
+                          <div class="lot-block__item">Содердание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
+                          <div class="lot-block__item">Авто <span>BMW X5 2020</span></div>
+                        </div>
+                      </div>
+                      <div class="lot-block">
+                        <div class="lot-block__head">
+                          <div class="lot-block__title">Лот #1</div>
+                          <div class="lot-block__info">5 кг / Керамика</div>
+                        </div>
+                        <div class="lot-block__content">
+                          <div class="lot-block__item">Сумма <span>160 000 ₽</span></div>
+                          <div class="lot-block__item">Содердание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
+                          <div class="lot-block__item">Авто <span>BMW X5 2020</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transactions-block__more transactions-block__more--hide accordion-js">свернуть</div>
+                  </li>
+                  <li class="transactions-block">
+                    <div class="transactions-block__head accordion-js">
+                      <div class="transactions-block__info">
+                        <div class="transactions-block__info-item">10 кг <span>Вес сырья</span></div>
+                        <div class="transactions-block__info-item">3 % <span>Кэшбек</span></div>
+                        <div class="transactions-block__info-item">320 000 ₽ <span>Сумма выплаты</span></div>
+                      </div>
+                      <div class="transactions-block__options">
+                        <div class="transactions-block__options-time">10.02.2020 / 16:11</div>
+
+                        <div class="transactions-block__options-actions actions-content-show-js">
+                          <button class="actions-btn btn">Действия</button>
+                          <div class="actions-content">
+                            <a href="#" class="actions-link">Заказать хим. анализ</a>
+                            <a href="#" class="actions-link">Получить паспорт расчет</a>
+                            <a href="#" class="actions-link">Скачать чек</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transactions-block__content lot-blocks accordion-block-js" style="display: none">
+                      <div class="lot-block">
+                        <div class="lot-block__head">
+                          <div class="lot-block__title">Лот #1</div>
+                          <div class="lot-block__info">5 кг / Керамика</div>
+                        </div>
+                        <div class="lot-block__content">
+                          <div class="lot-block__item">Сумма <span>160 000 ₽</span></div>
+                          <div class="lot-block__item">Содердание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
+                          <div class="lot-block__item">Авто <span>BMW X5 2020</span></div>
+                        </div>
+                      </div>
+                      <div class="lot-block">
+                        <div class="lot-block__head">
+                          <div class="lot-block__title">Лот #1</div>
+                          <div class="lot-block__info">5 кг / Керамика</div>
+                        </div>
+                        <div class="lot-block__content">
+                          <div class="lot-block__item">Сумма <span>160 000 ₽</span></div>
+                          <div class="lot-block__item">Содердание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
+                          <div class="lot-block__item">Авто <span>BMW X5 2020</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transactions-block__more transactions-block__more--show accordion-js">Развернуть</div>
+                  </li>
                 </ul>
               </div>
               <!-- TAB transactions END-->
@@ -561,7 +668,16 @@
                     <div class="status-title">Серебрянный<span>Ваш статус</span></div>
                   </div>
                   <div class="status-content">
-                    <div class="status-range"></div>
+                    <div class="status-range">
+                      <div class="status-block__number" style="margin-left: 30%">10 Кг</div>
+                      <div class="status-line">
+                        <div class="status-line_active" style="width: 30%"></div>
+                      </div>
+                      <div class="status-block__info">
+                        <p class="status-block_min">0 Кг</p>
+                        <p class="status-block_max">Золотой - 30 Кг</p>
+                      </div>
+                    </div>
                     <div class="status-bonuses">
                       <div class="status-bonuses__title">Кэшбек <span class="status-bonuses__percent">3%</span></div>
                       <div class="status-bonuses__title">Ретро Бонус <span class="status-bonuses__percent">1%</span></div>
