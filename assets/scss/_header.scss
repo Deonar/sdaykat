@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
-    border-bottom: 1px solid #758089;
+    border-bottom: 1px solid #e2e4ea;
   }
   &-top__nav {
     display: flex;
@@ -484,6 +484,11 @@
     background: transparent;
     color: $text;
     border: 1px solid #e2e4ea;
+    &:hover {
+      transition: all 0.3s ease;
+      color: $text-secondery;
+      border: 1px solid $secondery;
+    }
   }
   .header-top__address-link:hover {
     color: $text-secondery;

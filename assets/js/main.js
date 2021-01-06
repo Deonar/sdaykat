@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
 
     $('html, body').animate(
       {
-        scrollTop: $(href).offset().top - 150,
+        scrollTop: $(href).offset().top - 100,
       },
       {
         duration: 370, // по умолчанию «400»

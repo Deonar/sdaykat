@@ -770,7 +770,7 @@
     position: relative;
     padding-left: 60px;
     width: 100%;
-    max-width: 380px;
+    max-width: 410px;
     &::after {
       content: '!';
       position: absolute;
@@ -813,6 +813,7 @@
     padding-right: 50px;
     width: 100%;
     max-width: 180px;
+    align-self: baseline;
     &:last-child {
       width: 100%;
       max-width: 320px;
@@ -1377,7 +1378,6 @@
     overflow: hidden;
   }
   &-item {
-    cursor: pointer;
     padding: 30px;
     width: 25%;
     background: #fff;
@@ -1485,7 +1485,6 @@
   }
   &-list__item {
     position: relative;
-    padding: 15px 30px 15px 0px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     outline: none;
     &:last-child {
@@ -1518,6 +1517,7 @@
     }
   }
   &-list__link {
+    padding: 15px 30px 15px 0px;
     outline: none;
     display: flex;
     align-items: center;
@@ -1757,9 +1757,10 @@
       font-weight: 400;
     }
     &__body {
-      max-width: 240px;
+      max-width: 240px !important;
       left: auto !important;
       right: 0;
+      margin-top: 2px;
     }
     &__header-search {
       display: flex;
@@ -2079,6 +2080,9 @@
         display: none;
       }
     }
+    &-offer__title{
+      margin-bottom: 0;
+    }
     &-list {
       padding-bottom: 0px;
       border-bottom: none;
@@ -2176,6 +2180,7 @@
     line-height: 32px;
     margin-bottom: 30px;
     color: $text-light;
+    max-width: 270px;
   }
   &__entry-btn {
     display: block;
