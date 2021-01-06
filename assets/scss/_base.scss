@@ -188,7 +188,7 @@ body {
       }
     }
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 52%;
@@ -232,14 +232,14 @@ body {
   }
 }
 .small-text {
-  font-family: 'ProximaNova';
+  font-family: "ProximaNova";
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
 }
 .big-text {
-  font-family: 'ProximaNova';
+  font-family: "ProximaNova";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -248,7 +248,7 @@ body {
   text-align: left;
 }
 .title {
-  font-family: 'Stapel';
+  font-family: "Stapel";
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -258,7 +258,7 @@ body {
   width: 100%;
   font-size: 30px;
   color: $text;
-  font-family: 'Stapel';
+  font-family: "Stapel";
   font-weight: 500;
   line-height: 38px;
   &__light {
@@ -283,6 +283,14 @@ body {
     animation-name: move;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.55, 0, 0.21, 1);
+  }
+}
+@keyframes hoverFlare {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: -100px;
   }
 }
 .btn {
@@ -312,20 +320,19 @@ body {
     vertical-align: top;
     z-index: 2;
     &:before {
-      content: '';
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
-      height: 100%;
-      width: 20%;
-      position: absolute;
-      top: 0;
-      left: -150px;
-      transform: skewX(-45deg);
+      content: "";
     }
     &:hover {
       // transform: scale(1.1)
       &:before {
-        left: 120%;
-        transition: 0.9s ease-in-out;
+        transition: 1s ease-in-out;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+        height: 100%;
+        width: 20%;
+        position: absolute;
+        top: 0;
+        transform: skewX(-45deg);
+        animation: hoverFlare 1.3s infinite;
       }
     }
   }
@@ -479,7 +486,7 @@ body {
 }
 
 .link {
-  font-family: 'ProximaNova';
+  font-family: "ProximaNova";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -503,7 +510,7 @@ body {
     margin-bottom: 50px;
   }
   &-title {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 400;
     font-size: 42px;
     line-height: 42px;
@@ -542,7 +549,7 @@ body {
     }
     a {
       display: inline-block;
-      font-family: 'Stapel';
+      font-family: "Stapel";
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -557,7 +564,7 @@ body {
       margin-bottom: 30px;
     }
     h4 {
-      font-family: 'Stapel';
+      font-family: "Stapel";
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -582,7 +589,7 @@ body {
           margin-bottom: 0;
         }
         &:before {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           width: 6px;
@@ -623,7 +630,7 @@ body {
     font-size: 14px;
     &:not(:last-child):after {
       display: block;
-      content: '/';
+      content: "/";
       color: #717784;
       transform: translateX(5px);
     }
@@ -659,7 +666,7 @@ body {
     width: 100%;
     max-width: 200px;
     &::before {
-      content: '';
+      content: "";
       display: block;
       height: 15px;
       width: 15px;
@@ -674,7 +681,7 @@ body {
   }
   &__phone {
     outline: none;
-    font-family: 'ProximaNova';
+    font-family: "ProximaNova";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -716,7 +723,7 @@ body {
     margin-right: 10px;
     cursor: pointer;
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       width: 10px;
       height: 7px;
@@ -787,32 +794,32 @@ body {
 }
 
 .star-rating > fieldset:not(:checked) > label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url('../img/icons/rating-off.svg');
+  background-image: url("../img/icons/rating-off.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .star-rating > fieldset:not(:checked) > label:hover:before,
 .star-rating > fieldset:not(:checked) > label:hover ~ label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url('../img/icons/rating-on.svg');
+  background-image: url("../img/icons/rating-on.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .star-rating > fieldset > input:checked ~ label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url('../img/icons/rating-on.svg');
+  background-image: url("../img/icons/rating-on.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -838,10 +845,10 @@ body {
     background-position: center;
   }
   &_on {
-    background-image: url('../img/icons/rating-on.svg');
+    background-image: url("../img/icons/rating-on.svg");
   }
   &_off {
-    background-image: url('../img/icons/rating-off.svg');
+    background-image: url("../img/icons/rating-off.svg");
   }
 }
 
@@ -939,14 +946,14 @@ body {
     color: $primary;
     cursor: pointer;
     &::after {
-      content: '';
+      content: "";
       display: inline-block;
       position: relative;
       top: 3px;
       width: 20px;
       height: 12px;
       margin-left: 5px;
-      background: url('../img/icons/arrow-green.svg') center center no-repeat;
+      background: url("../img/icons/arrow-green.svg") center center no-repeat;
       background-size: 70%;
       transition: all 0.3s ease;
     }
@@ -954,14 +961,14 @@ body {
   &__arrow {
     position: relative;
     &::after {
-      content: '';
+      content: "";
       display: inline-block;
       position: absolute;
       top: 3px;
       width: 20px;
       height: 12px;
       right: 10px;
-      background: url('../img/icons/select-arrow.svg') center center no-repeat;
+      background: url("../img/icons/select-arrow.svg") center center no-repeat;
       background-size: 70%;
       transition: all 0.3s ease;
     }
@@ -1161,7 +1168,7 @@ body {
   line-height: 18px;
   color: $text-light;
   span {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -1180,7 +1187,7 @@ body {
   background: #f4f7fa;
   text-align: left;
   &-head {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;

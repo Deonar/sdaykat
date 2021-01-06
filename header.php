@@ -1,14 +1,18 @@
 <?php
-if (!$header_class) {
-    $header_class = '';
+if (!isset($header_class)) {
+  $header_class = '';
 }
 ?>
+
+<!-- Preloader -->
 <div id="dr-preloader">
   <div class="dr-preloader">
     <div class="dr-preloader-child dr-preloader-double-bounce-1"></div>
     <div class="dr-preloader-child dr-preloader-double-bounce-2"></div>
   </div>
 </div>
+<!-- Preloader end-->
+
 <header id="header" class="header <?php echo ($header_class); ?>">
   <div class="header-body">
     <div class="container">
@@ -170,3 +174,60 @@ if (!$header_class) {
     </div>
   </div>
 </header>
+
+<!-- Popup city -->
+<div id="popup-cities" class="popup-cities white-popup mfp-hide">
+  <div class="popup-cities__body">
+    <div class="selectCity__wrapper">
+      <div class="selectCity__title popup-primary__title">Список городов присутствия</div>
+      <div class="selectCity__input">
+        <input type="text" placeholder="Введите свой город" id="inputCity" />
+      </div>
+      <ul class="selectCity__list scrollbar scrollbar-js" id="city-list">
+        <li class="selectRegion__item">
+          <div class="selectRegion__item-title">Свердловкая область</div>
+          <ul class="selectRegion__item-list">
+            <li class="selectCity__item" data-city="Екатеринбург" data-region="Свердловкая область">Екатеринбург</li>
+            <li class="selectCity__item" data-city="Пышма" data-region="Свердловкая область">Пышма</li>
+            <li class="selectCity__item" data-city="Первоуральск" data-region="Свердловкая область">Первоуральск</li>
+            <li class="selectCity__item" data-city="Реж" data-region="Свердловкая область">Реж</li>
+            <li class="selectCity__item" data-city="Артемовский" data-region="Свердловкая область">Артемовский</li>
+            <li class="selectCity__item" data-city="Березовский" data-region="Свердловкая область">Березовский</li>
+            <li class="selectCity__item" data-city="Сысерть" data-region="Свердловкая область">Сысерть</li>
+            <li class="selectCity__item" data-city="Арамиль" data-region="Свердловкая область">Арамиль</li>
+            <li class="selectCity__item" data-city="Нижний Тагил" data-region="Свердловкая область">Нижний Тагил</li>
+          </ul>
+        </li>
+        <li class="selectRegion__item">
+          <div class="selectRegion__item-title">Челябинская область</div>
+          <ul class="selectRegion__item-list">
+            <li class="selectCity__item" data-city="Екатеринбург" data-region="Свердловкая область">Екатеринбург</li>
+            <li class="selectCity__item" data-city="Пышма" data-region="Свердловкая область">Пышма</li>
+            <li class="selectCity__item" data-city="Первоуральск" data-region="Свердловкая область">Первоуральск</li>
+            <li class="selectCity__item" data-city="Реж" data-region="Свердловкая область">Реж</li>
+            <li class="selectCity__item" data-city="Артемовский" data-region="Свердловкая область">Артемовский</li>
+            <li class="selectCity__item" data-city="Березовский" data-region="Свердловкая область">Березовский</li>
+            <li class="selectCity__item" data-city="Сысерть" data-region="Свердловкая область">Сысерть</li>
+            <li class="selectCity__item" data-city="Арамиль" data-region="Свердловкая область">Арамиль</li>
+            <li class="selectCity__item" data-city="Нижний Тагил" data-region="Свердловкая область">Нижний Тагил</li>
+          </ul>
+        </li>
+        <li class="selectRegion__item">
+          <div class="selectRegion__item-title">Челябинская область</div>
+          <ul class="selectRegion__item-list">
+            <li class="selectCity__item" data-city="Екатеринбург" data-region="Свердловкая область">Екатеринбург</li>
+            <li class="selectCity__item" data-city="Пышма" data-region="Свердловкая область">Пышма</li>
+            <li class="selectCity__item" data-city="Первоуральск" data-region="Свердловкая область">Первоуральск</li>
+            <li class="selectCity__item" data-city="Реж" data-region="Свердловкая область">Реж</li>
+            <li class="selectCity__item" data-city="Артемовский" data-region="Свердловкая область">Артемовский</li>
+            <li class="selectCity__item" data-city="Березовский" data-region="Свердловкая область">Березовский</li>
+            <li class="selectCity__item" data-city="Сысерть" data-region="Свердловкая область">Сысерть</li>
+            <li class="selectCity__item" data-city="Арамиль" data-region="Свердловкая область">Арамиль</li>
+            <li class="selectCity__item" data-city="Нижний Тагил" data-region="Свердловкая область">Нижний Тагил</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Popup city end-->
