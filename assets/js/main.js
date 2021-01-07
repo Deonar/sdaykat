@@ -1,13 +1,7 @@
 jQuery(document).ready(function ($) {
   //Get Coockie
   function getCookie(name) {
-    let matches = document.cookie.match(
-      new RegExp(
-        "(?:^|; )" +
-        name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
-        "=([^;]*)"
-      )
-    );
+    let matches = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'));
     return matches ? decodeURIComponent(matches[1]) : undefined;
   }
   /*-------------------------------------
@@ -28,12 +22,15 @@ jQuery(document).ready(function ($) {
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
 
-    $('html, body').animate({
-      scrollTop: $(href).offset().top - 100,
-    }, {
-      duration: 370, // по умолчанию «400»
-      easing: 'linear', // по умолчанию «swing»
-    });
+    $('html, body').animate(
+      {
+        scrollTop: $(href).offset().top - 100,
+      },
+      {
+        duration: 370, // по умолчанию «400»
+        easing: 'linear', // по умолчанию «swing»
+      }
+    );
     if ($(window).width() < 768) {
       $('html, body').animate({
         scrollTop: $(href).offset().top - 70,
@@ -123,14 +120,18 @@ jQuery(document).ready(function ($) {
   $('#save-info').on('click', function (e) {
     $('#profile-registration').show();
     $('#profile-registration-edit').hide();
-    $('html, body').animate({
-      scrollTop: 0
-    }, 'slow');
+    $('html, body').animate(
+      {
+        scrollTop: 0,
+      },
+      'slow'
+    );
     return false;
   });
 
   // actions-content-show-js
   $('.actions-content-show-js').on('click', function (e) {
+    e.stopPropagation();
     $(this).toggleClass('active');
   });
 
@@ -146,13 +147,13 @@ jQuery(document).ready(function ($) {
 
     $('#inputCity').val(city);
 
-    document.cookie = "user-city=" + city + "; path=/";
-    document.cookie = "user-region=" + region + "; path=/";
+    document.cookie = 'user-city=' + city + '; path=/';
+    document.cookie = 'user-region=' + region + '; path=/';
 
     $.magnificPopup.close();
   });
 
-  var userCity = getCookie("user-city");
+  var userCity = getCookie('user-city');
   if (userCity) {
     $('.header-top__location').removeClass('active');
   }
@@ -162,7 +163,7 @@ jQuery(document).ready(function ($) {
   $('.closeLocationPopup').on('click', function (e) {
     $('.header-top__location').removeClass('active');
     city = $('.header-top__location .header-top__location-link').text();
-    document.cookie = "user-city=" + city + "; path=/";
+    document.cookie = 'user-city=' + city + '; path=/';
   });
   $('.header-top__location-link').on('click', function (e) {
     $('.header-top__location').toggleClass('active');
@@ -190,7 +191,7 @@ jQuery(document).ready(function ($) {
   $('.accordion-js').on('click', function () {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
-      $(this).parent().find('.accordion-block-js').hide('300');
+      $(this).parent().find('.accordion-block-js').hide();
       $('.transactions-block__more').text('свернуть');
       $(this).parent().find('.transactions-block__more').text('развернуть');
     } else {
@@ -284,7 +285,8 @@ jQuery(document).ready(function ($) {
     },
     prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"></button>',
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
@@ -323,7 +325,8 @@ jQuery(document).ready(function ($) {
     dots: false,
     prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"></button>',
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
@@ -502,5 +505,4 @@ jQuery(document).ready(function ($) {
       $('#calculate-input-size').val(ui.value);
     },
   });
-
 });
