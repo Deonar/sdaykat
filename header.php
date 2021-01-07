@@ -133,13 +133,16 @@ if (!isset($header_class)) {
           </div>
           <ul class="authorized-menu">
             <li class="authorized-menu__item">
-              <a href="/profile.php" class="authorized-menu__link close-mob-menu-js">профиль</a>
+              <a href="/profile.php#profile-tab"
+                class="authorized-menu__link close-mob-menu-js location-reload">профиль</a>
             </li>
             <li class="authorized-menu__item">
-              <a href="/profile.php" class="authorized-menu__link close-mob-menu-js">аналитика</a>
+              <a href="/profile.php#analitic-tab"
+                class="authorized-menu__link close-mob-menu-js location-reload">аналитика</a>
             </li>
             <li class="authorized-menu__item">
-              <a href="/profile.php" class="authorized-menu__link close-mob-menu-js">сделки</a>
+              <a href="/profile.php#transactions-tab"
+                class="authorized-menu__link close-mob-menu-js location-reload">сделки</a>
             </li>
             <li class="authorized-menu__item">
               <a href="/bonuses.php" class="authorized-menu__link close-mob-menu-js">бонусы</a>
