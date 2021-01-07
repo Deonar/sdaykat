@@ -339,3 +339,6 @@
     <!-- Popup form-calculator and-->
 
     <?php include("footer.php"); ?>
+
+    </body>
+</html>   

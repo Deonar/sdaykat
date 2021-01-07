@@ -337,4 +337,6 @@
     </div>
     <!-- Popup calculator end-->
 
-    <?php include("footer.php"); ?> 
+    <?php include("footer.php"); ?>
+    </body>
+</html>

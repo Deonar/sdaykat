@@ -1,3 +1,5 @@
+$el = $('#representative-map path[fill="white"]');
+
 function scrollToData(id) {
   console.log(id);
   $el = $('.representative-item[data-id="' + id + '"]');
@@ -7,8 +9,6 @@ function scrollToData(id) {
   }, 500);
 
 }
-
-$el = $('#representative-map path[fill="white"]');
 
 for (var i = 0; i < $el.length; i++) {
   if ($el.eq(i).prev().attr('fill') != 'white') {

@@ -1,4 +1,15 @@
 jQuery(document).ready(function ($) {
+   //Get Coockie
+   function getCookie(name) {
+    let matches = document.cookie.match(
+      new RegExp(
+        "(?:^|; )" +
+          name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
+          "=([^;]*)"
+      )
+    );
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+  }
   /*-------------------------------------
 		Preloader
 	-------------------------------------*/
@@ -136,13 +147,23 @@ jQuery(document).ready(function ($) {
 
     $('#inputCity').val(city);
 
+    document.cookie = "user-city=" + city + "; path=/";
+    document.cookie = "user-region=" + region + "; path=/";
+
     $.magnificPopup.close();
   });
+
+  var userCity = getCookie("user-city");
+  if (userCity) {
+    $('.header-top__location').removeClass('active');
+  }
 
   // ======================== location popup
 
   $('.closeLocationPopup').on('click', function (e) {
     $('.header-top__location').removeClass('active');
+    city = $('.header-top__location .header-top__location-link').text();
+    document.cookie = "user-city=" + city + "; path=/";
   });
   $('.header-top__location-link').on('click', function (e) {
     $('.header-top__location').toggleClass('active');
@@ -183,9 +204,7 @@ jQuery(document).ready(function ($) {
     }
   });
   //======================== tabs profile end
-  //======================== daterangepicker profile
-  $('input[name="daterange"]').daterangepicker();
-  //======================== daterangepicker profile end
+
   //======================== tabs
   $('.tab-wrapper').on('click', '.tab', function (event) {
     var tab = $(this).attr('data-tab');
@@ -422,4 +441,5 @@ jQuery(document).ready(function ($) {
       $('#calculate-input-size').val(ui.value);
     },
   });
+
 });

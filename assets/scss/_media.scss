@@ -1239,7 +1239,6 @@
   }
   //=========================== calculator-price__ofauto end
 
-  //=========================== calculator-price__ofauto and
   //=========================== steps
   .steps {
     &__title {
@@ -1472,6 +1471,9 @@
     }
     &-list__cities-item {
       transition: all 0.3s ease;
+    }
+    &-map__svg{
+      display: none;
     }
   }
   //=========================== representative and

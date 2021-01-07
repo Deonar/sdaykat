@@ -2282,7 +2282,7 @@
   }
   &-map {
   }
-  &-map__img {
+  &-map__svg {
     margin-bottom: 50px;
     svg {
       display: block;
@@ -2329,6 +2329,10 @@
     color: $text-gray;
     margin-bottom: 15px;
     width: 25%;
+    cursor: pointer;
+    &:hover{
+      color: $orange;
+    }
   }
 }
 
@@ -2669,6 +2673,7 @@
 }
 
 .franchise-calculator {
+  padding-bottom: 80px;
   .calculator {
     &-form__price {
       font-size: 30px;

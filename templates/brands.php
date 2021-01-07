@@ -35,15 +35,10 @@ $brands = array(
     array('img' => 'jaguar', 'name' => "jaguar"),
     array('img' => 'jeep', 'name' => "jeep"),
     array('img' => 'lexus', 'name' => "lexus"),
-    // array('img' => 'lincoln', 'name' => "lincoln"),
     array('img' => 'mini-cooper', 'name' => "mini cooper"),
     array('img' => 'porsche', 'name' => "porsche"),
-    // array('img' => 'changan', 'name' => "changan"),
     array('img' => 'subaru', 'name' => "subaru"),
-    // array('img' => 'saab', 'name' => "saab"),
     array('img' => 'suzuki', 'name' => "suzuki"),
-    // array('img' => 'tesla', 'name' => "tesla"),
-    // array('img' => 'rover', 'name' => "rover"),
 );
 ?>
 

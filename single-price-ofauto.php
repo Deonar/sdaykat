@@ -511,3 +511,5 @@
     <!-- popup-form-calculator end-->
 
     <?php include("footer.php"); ?>
+    </body>
+</html>

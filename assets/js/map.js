@@ -141,5 +141,28 @@ function init() {
 
   });
 
+  $("#representative-list").on("click", '.representative-list__cities-item', function () {
+    city = $(this).html();
+
+    $('#current-map-city').text(city);
+    $('html, body').animate(
+      {
+        scrollTop: $('#current-map-city').offset().top - 100,
+      },
+      {
+        duration: 370, // по умолчанию «400»
+        easing: 'linear', // по умолчанию «swing»
+      }
+    );
+    if ($(window).width() < 768) {
+      $('html, body').animate({
+        scrollTop: $('#current-map-city').offset().top - 70,
+      });
+    }
+    return false;
+    // ajax
+    updatePoints()
+  });
+
   updatePoints()
 }

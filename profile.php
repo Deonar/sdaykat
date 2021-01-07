@@ -31,7 +31,7 @@
             </div>
             <div class="profile-body">
               <!-- TAB PROFILE -->
-              <div class="profile-tab__content tab-content" data-tab="1">
+              <div class="profile-tab__content tab-content" data-tab="1" style="display: none">
                 <div id="profile-registration-edit" class="profile-registration-edit profile-blocks">
                   <div class="profile-tab__title-mob">
                     <h3 class="profile-tab__title h3">Профиль</h3>
@@ -473,8 +473,12 @@
               </div>
               <!-- TAB transactions END-->
               <!-- TAB ANALITICS-->
-              <div class="analitics profile-tab__content tab-content" data-tab="3" style="display: none">
-                <div class="analitics-content">analitics</div>
+              <div class="analitics profile-tab__content tab-content" data-tab="3" >
+                <div class="analitics-content">
+                  <?php include("templates/analitic-delivery.php"); ?>
+                  <?php include("templates/analitic-pay.php"); ?>
+                  <?php include("templates/analitic-materials.php"); ?>
+                </div>
               </div>
               <!-- TAB ANALITICS END-->
             </div>
@@ -587,4 +591,9 @@
     </div>
 
     <?php include("footer.php"); ?>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="assets/js/analitic.js"></script>
+    </body>
+</html>
  

@@ -99,22 +99,14 @@
 <script src="assets/libs/scrollbar/jquery.scrollbar.min.js"></script>
 <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="assets/libs/slick/slick.min.js"></script>
+<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
 <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
 <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>
 <script src="assets/libs/jquery-libs/jquery.ui.touch-punch.min.js"></script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-
 <script src="assets/js/main.js"></script>
 <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript">
 </script>
 
-
-<script src="assets/js/map-representative.js"></script>
-<script src="assets/js/map-franchise.js"></script>
 <script src="assets/js/map.js"></script>
-</body>
-
-</html>

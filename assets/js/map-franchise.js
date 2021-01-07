@@ -1,3 +1,5 @@
+$el = $('#franchise-map path[fill="white"]');
+
 function getData(id) {
 
   $.getJSON("assets/js/data-franchise.json", function (json) {
@@ -21,8 +23,6 @@ function getData(id) {
   });
 }
 
-$el = $('#franchise-map path[fill="white"]');
-
 for (var i = 0; i < $el.length; i++) {
   $el.eq(i).click(function (i) {
     return function () {
@@ -38,7 +38,7 @@ for (var i = 0; i < $el.length; i++) {
   $el.eq(i).prev().click(function (i) {
     return function () {
       if ($el.eq(i).prev().attr('fill') != 'white') {
-        // alert(i)
+        // console.log(i)
         getData(i)
         $('path[fill="#043598"]').attr('fill', '#B1B9CA')
         $el.eq(i).prev().attr('fill', '#043598')

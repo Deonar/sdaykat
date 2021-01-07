@@ -449,3 +449,6 @@
   <!-- popup-form curyer end-->
 
   <?php include("footer.php"); ?>
+
+  </body>
+</html>

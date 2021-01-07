@@ -379,3 +379,6 @@
     <!-- popup-thank end-->
 
     <?php include("footer.php"); ?>
+
+    </body>
+</html>

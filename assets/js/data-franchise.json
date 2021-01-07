@@ -1,15 +1,17 @@
 [
   {
-    "id": "19",
+    "id": "6",
     "title": "Челябинская область",
     "occupied": [
-      "cupidatat",
-      "nostrud",
-      "aute",
-      "cupidatat",
-      "aute",
-      "veniam",
-      "velit"
+      "Челябинск",
+      "Магнитогорск",
+      "Златоуст",
+      "Чебаркуль",
+      "Миасс",
+      "Копейск",
+      "Троицк",
+      "Коркино",
+      "Октябрьский"
     ],
     "avaliable": [
       "commodo",
@@ -22,8 +24,32 @@
     ]
   },
   {
-    "id": "17",
-    "title": "Московская область",
+    "id": "8",
+    "title": "Республика Башкортостан",
+    "occupied": [
+      "Челябинск",
+      "Магнитогорск",
+      "Златоуст",
+      "Чебаркуль",
+      "Миасс",
+      "Копейск",
+      "Троицк",
+      "Коркино",
+      "Октябрьский"
+    ],
+    "avaliable": [
+      "commodo",
+      "commodo",
+      "consequat",
+      "aliquip",
+      "qui",
+      "mollit",
+      "ea"
+    ]
+  },
+  {
+    "id": "19",
+    "title": "Нижегородская область",
     "occupied": [
       "commodo",
       "commodo",
@@ -86,7 +112,7 @@
   },
   {
     "id": "15",
-    "title": "Ленинградская область",
+    "title": "Республика Татарстан",
     "occupied": [
       "Lorem",
       "excepteur",
@@ -105,7 +131,7 @@
   },
   {
     "id": "13",
-    "title": "Челябинская область1",
+    "title": "Республика Удмуртия",
     "occupied": [
       "cupidatat",
       "nostrud",
@@ -126,16 +152,17 @@
     ]
   },
   {
-    "id": "8",
-    "title": "Московская область1",
+    "id": "20",
+    "title": "Московская область",
     "occupied": [
-      "commodo",
-      "commodo",
-      "consequat",
-      "aliquip",
-      "qui",
-      "mollit",
-      "ea"
+      "Одинцово",
+      "Коломна",
+      "Электросталь",
+      "Красногорск",
+      "Люберцы",
+      "Королёв",
+      "Подольск",
+      "Балашиха"
     ],
     "avaliable": [
       "cupidatat",
@@ -148,8 +175,8 @@
     ]
   },
   {
-    "id": "6",
-    "title": "Волгоградская область1",
+    "id": "11",
+    "title": "Самарская область",
     "occupied": [
       "est",
       "exercitation",
@@ -171,7 +198,7 @@
   },
   {
     "id": "2",
-    "title": "Калиниградская область1",
+    "title": "Свердловская область",
     "occupied": [
       "laborum",
       "tempor",
@@ -189,8 +216,27 @@
     ]
   },
   {
-    "id": "4",
-    "title": "Ленинградская область1",
+    "id": "17",
+    "title": "Пензенская область",
+    "occupied": [
+      "Lorem",
+      "excepteur",
+      "culpa",
+      "fugiat",
+      "proident",
+      "proident",
+      "proident"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Самарская область",
     "occupied": [
       "Lorem",
       "excepteur",
@@ -209,7 +255,7 @@
   },
   {
     "id": "0",
-    "title": "Ленинградская область2",
+    "title": "Тюменская область",
     "occupied": [
       "Lorem",
       "excepteur",
@@ -227,8 +273,27 @@
     ]
   },
   {
-    "id": "20",
-    "title": "Ленинградская область3",
+    "id": "4",
+    "title": "Тюменская область",
+    "occupied": [
+      "Lorem",
+      "excepteur",
+      "culpa",
+      "fugiat",
+      "proident",
+      "proident",
+      "proident"
+    ],
+    "avaliable": [
+      "cupidatat",
+      "nostrud",
+      "aute",
+      "cupidatat"
+    ]
+  },
+  {
+    "id": "21",
+    "title": "Тюменская область",
     "occupied": [
       "Lorem",
       "excepteur",
