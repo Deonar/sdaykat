@@ -240,7 +240,7 @@ var options2 = {
 };
 
 for (var i = 0; i < colors.length; i++) {
-    $('.diagram__info__single').eq(i).find('.diagram__info__single--title span').css('background', colors[i]);
+    $('.diagram-info__item').eq(i).find('.diagram-info__title span').css('background', colors[i]);
 }
 
 var chart1 = document.querySelector("#analitic-delivery")
