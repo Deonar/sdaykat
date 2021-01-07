@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +40,7 @@
 //Wholesale price
 .main_franchise {
   padding-top: 170px;
-  background-image: url("../img/franchise-page-bg.jpg");
+  background-image: url('../img/franchise-page-bg.jpg');
   .main-title {
     margin-top: 40px;
     max-width: 500px;
@@ -90,7 +90,7 @@
     margin-top: 10px;
   }
   &__valuta {
-    font-family: "ProximaNova";
+    font-family: 'ProximaNova';
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -115,7 +115,7 @@
     }
   }
   &__price {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -157,14 +157,14 @@
     padding-bottom: 30px;
   }
   &__title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
     color: $text-primary;
   }
   &__name {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -179,7 +179,7 @@
   }
   &__quantity,
   &__percent {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -210,14 +210,14 @@
     justify-content: space-between;
     padding: 80px;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       left: 50px;
       top: 50px;
       width: 80px;
       height: 80px;
       z-index: 10;
-      background: url("../img/icons/calculator-icon.svg") center center no-repeat;
+      background: url('../img/icons/calculator-icon.svg') center center no-repeat;
     }
   }
   &-settings {
@@ -238,7 +238,7 @@
     }
   }
   &-result__title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -280,7 +280,7 @@
   &-form__title {
   }
   &-form__price {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 400;
     font-size: 56px;
     line-height: 71px;
@@ -295,7 +295,7 @@
     color: #717784;
   }
   &-form__tell {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -331,7 +331,7 @@
     }
   }
   &-item__label {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -353,7 +353,7 @@
     background: rgba(255, 255, 255, 0.1);
   }
   &-item__material {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -432,7 +432,7 @@
     display: flex;
     flex-wrap: wrap;
     span {
-      font-family: "Stapel";
+      font-family: 'Stapel';
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -468,7 +468,7 @@
     label {
       position: relative;
       &::after {
-        content: "";
+        content: '';
         display: block;
         height: 15px;
         width: 15px;
@@ -529,7 +529,7 @@
     }
   }
   &__title {
-    font-family: "ProximaNova";
+    font-family: 'ProximaNova';
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -539,7 +539,7 @@
     margin-bottom: 5px;
   }
   &__price {
-    font-family: "ProximaNova", sans-serif;
+    font-family: 'ProximaNova', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -635,7 +635,7 @@
   }
 }
 .big-price {
-  font-family: "Stapel";
+  font-family: 'Stapel';
   font-size: 56px;
   font-style: normal;
   font-weight: 400;
@@ -718,14 +718,14 @@
     padding: 80px;
     position: relative;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       left: 50px;
       top: 50px;
       width: 80px;
       height: 80px;
       z-index: 10;
-      background: url("../img/icons/percent-icon.svg") center center no-repeat;
+      background: url('../img/icons/percent-icon.svg') center center no-repeat;
     }
   }
   &-title {
@@ -746,7 +746,7 @@
     }
   }
   &-item__percent {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -754,7 +754,7 @@
     color: $text-secondery;
   }
   &-item__title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -776,7 +776,7 @@
     width: 100%;
     max-width: 410px;
     &::after {
-      content: "!";
+      content: '!';
       position: absolute;
       width: 40px;
       height: 40px;
@@ -792,7 +792,7 @@
     }
   }
   &-offer__title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -832,7 +832,7 @@
   }
   &-programs__item-num,
   &-programs__item-text {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -860,7 +860,7 @@
       }
     }
     &__item-num {
-      font-family: "Stapel";
+      font-family: 'Stapel';
       font-weight: 500;
       font-size: 18px;
       line-height: 22px;
@@ -900,7 +900,7 @@
     display: inline-block;
     padding: 4px;
 
-    font-family: "ProximaNova";
+    font-family: 'ProximaNova';
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -1116,14 +1116,14 @@
     color: $orange;
     cursor: pointer;
     &::after {
-      content: "";
+      content: '';
       display: inline-block;
       position: relative;
       top: 0px;
       width: 20px;
       height: 12px;
       margin-left: 5px;
-      background: url("../img/icons/arrow-down.svg") center center no-repeat;
+      background: url('../img/icons/arrow-down.svg') center center no-repeat;
       background-size: 70%;
       transition: all 0.3s ease;
     }
@@ -1131,14 +1131,14 @@
   &__arrow {
     position: relative;
     &::after {
-      content: "";
+      content: '';
       display: inline-block;
       position: absolute;
       top: 0px;
       width: 20px;
       height: 12px;
       right: 10px;
-      background: url("../img/icons/arrow-down.svg") center center no-repeat;
+      background: url('../img/icons/arrow-down.svg') center center no-repeat;
       background-size: 70%;
       transition: all 0.3s ease;
     }
@@ -1242,7 +1242,7 @@
       top: 10px;
       width: 30px;
       height: 30px;
-      background: url("../img/icons/arrow-preview-slider.svg") center center no-repeat;
+      background: url('../img/icons/arrow-preview-slider.svg') center center no-repeat;
       background-size: contain;
     }
   }
@@ -1288,7 +1288,7 @@
 .map {
   &__header {
     .select__current {
-      font-family: "Stapel";
+      font-family: 'Stapel';
       font-weight: 500;
       font-size: 30px;
     }
@@ -1322,7 +1322,7 @@
     margin-bottom: 10px;
   }
   &-tab {
-    font-family: "ProximaNova";
+    font-family: 'ProximaNova';
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -1356,7 +1356,7 @@
     cursor: pointer;
     position: relative;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       right: 13px;
       top: 50%;
@@ -1414,7 +1414,7 @@
     margin-bottom: 20px;
   }
   &-item__title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -1434,7 +1434,7 @@
     text-transform: uppercase;
     margin-top: 20px;
     &--tell {
-      font-family: "Stapel";
+      font-family: 'Stapel';
       font-weight: 500;
       font-size: 18px;
       line-height: 23px;
@@ -1451,14 +1451,14 @@
     border-radius: 3px;
     background: $primary;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       left: 50px;
       top: 50px;
       width: 60px;
       height: 80px;
       z-index: 10;
-      background: url("../img/icons/rubles-icon.svg") center center no-repeat;
+      background: url('../img/icons/rubles-icon.svg') center center no-repeat;
     }
   }
   &-title {
@@ -1512,7 +1512,7 @@
       border-bottom: 0px;
     }
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       right: 5px;
       top: 50%;
@@ -1545,7 +1545,7 @@
     justify-content: space-between;
   }
   &-auto {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -1563,7 +1563,7 @@
     display: none;
   }
   &-price__title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -1693,7 +1693,7 @@
     padding: 30px;
   }
   &__item-title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -1715,14 +1715,14 @@
     }
   }
   &__year {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     color: $text;
   }
   &__price {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -1766,7 +1766,7 @@
   .calculator-body:after {
     width: 60px;
     height: 80px;
-    background: url("../img/icons/rubles-icon.svg") center center no-repeat;
+    background: url('../img/icons/rubles-icon.svg') center center no-repeat;
   }
   .calculator-title {
     margin-top: 10px;
@@ -1822,7 +1822,7 @@
     }
   }
   &__item-num {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 400;
     font-size: 56px;
     line-height: 71px;
@@ -1831,7 +1831,7 @@
     margin-bottom: 10px;
   }
   &__item-title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -1900,7 +1900,7 @@
     }
   }
   &-item__title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -1913,7 +1913,7 @@
     margin-bottom: 20px;
   }
   &-item__price {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -1942,7 +1942,7 @@
     max-width: 470px;
   }
   &__quantity-people {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     display: flex;
     align-items: flex-end;
     padding-bottom: 23px;
@@ -1951,7 +1951,7 @@
     color: $text-primary;
     border-bottom: 1px solid #e2e4ea;
     span {
-      font-family: "Stapel";
+      font-family: 'Stapel';
       font-size: 14px;
       font-weight: 500;
       line-height: 18px;
@@ -1964,7 +1964,7 @@
     justify-content: space-between;
   }
   &__statistics-item {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 30px;
     line-height: 38px;
@@ -1974,7 +1974,7 @@
     span {
       white-space: normal;
       display: block;
-      font-family: "Stapel";
+      font-family: 'Stapel';
       font-weight: 500;
       font-size: 14px;
       line-height: 18px;
@@ -1994,7 +1994,7 @@
     margin-bottom: 15px;
   }
   &__target-title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 30px;
     line-height: 38px;
@@ -2037,7 +2037,7 @@
     }
   }
   &__item-name {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -2069,7 +2069,7 @@
     margin-bottom: 5px;
   }
   &-item__price {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -2123,14 +2123,14 @@
         margin-right: auto;
       }
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         left: 30px;
         top: 30px;
         width: 80px;
         height: 80px;
         z-index: 10;
-        background: url("../img/icons/percent-icon.svg") center center no-repeat;
+        background: url('../img/icons/percent-icon.svg') center center no-repeat;
       }
     }
     &__title {
@@ -2195,7 +2195,7 @@
     margin-bottom: 20px;
   }
   &__entry-title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -2243,7 +2243,7 @@
     margin-right: 100px;
   }
   &__menu-title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -2255,7 +2255,7 @@
     margin-bottom: 16px;
   }
   &__menu-link {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -2307,13 +2307,13 @@
     margin-right: 50px;
   }
   &-item__img {
+    width: 90px;
     img {
       height: 40px;
       max-height: 40px;
     }
   }
   &-item__title {
-    margin-left: 45px;
   }
   &-list__cities {
     display: flex;
@@ -2322,6 +2322,10 @@
     max-width: 770px;
     padding: 35px 0px 20px 0px;
     border-bottom: 1px solid #e2e4ea;
+    &-wrapp {
+      width: 100%;
+      max-width: 770px;
+    }
   }
   &-list__cities-item {
     font-size: 16px;
@@ -2330,20 +2334,20 @@
     margin-bottom: 15px;
     width: 25%;
     cursor: pointer;
-    &:hover{
+    &:hover {
       color: $orange;
     }
   }
 }
 
-.representative-map__img path[fill="#B1B9CA"] {
-  cursor: pointer
+.representative-map__img path[fill='#B1B9CA'] {
+  cursor: pointer;
 }
-.representative-map__img path[fill="#043598"] {
-  cursor: pointer
+.representative-map__img path[fill='#043598'] {
+  cursor: pointer;
 }
-.representative-map__img path[fill="white"] {
-  cursor: pointer
+.representative-map__img path[fill='white'] {
+  cursor: pointer;
 }
 
 .franchise-sentence {
@@ -2391,7 +2395,7 @@
     margin-bottom: 20px;
   }
   &__item-title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -2416,7 +2420,7 @@
     color: $text-gray;
     margin-bottom: 50px;
     span {
-      font-family: "Stapel";
+      font-family: 'Stapel';
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -2467,7 +2471,7 @@
     padding: 30px;
   }
   &__region {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -2523,12 +2527,12 @@
       &__wrapper {
         position: relative;
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           display: block;
           width: 12px;
           height: 12px;
-          background: url("../img/icons/icon-search-geo.svg") center center no-repeat;
+          background: url('../img/icons/icon-search-geo.svg') center center no-repeat;
           background-size: contain;
           right: 10px;
           top: 50%;
@@ -2539,16 +2543,16 @@
   }
 }
 
-.franchise-map__svg path[fill="#B1B9CA"] {
+.franchise-map__svg path[fill='#B1B9CA'] {
   cursor: pointer;
-  &:hover{
+  &:hover {
     fill: $blue;
   }
 }
-.franchise-map__svg path[fill="#043598"] {
+.franchise-map__svg path[fill='#043598'] {
   cursor: pointer;
 }
-.franchise-map__svg path[fill="white"] {
+.franchise-map__svg path[fill='white'] {
   cursor: pointer;
 }
 
@@ -2587,7 +2591,7 @@
     margin-bottom: 20px;
   }
   &__item-title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -2634,7 +2638,7 @@
     margin-bottom: 40px;
     max-width: 500px;
     span {
-      font-family: "Stapel";
+      font-family: 'Stapel';
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -2657,7 +2661,7 @@
     margin-bottom: 20px;
   }
   &__item-title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -2751,7 +2755,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       display: block;
       left: 0;
@@ -2759,7 +2763,7 @@
       transform: translateY(-50%);
       width: 18px;
       height: 12px;
-      background: url("../img/icons/arrow-prev-light.svg") center center no-repeat;
+      background: url('../img/icons/arrow-prev-light.svg') center center no-repeat;
       background-size: contain;
     }
     &:hover {
@@ -2793,7 +2797,7 @@
   &__input {
     border: none;
     outline: none;
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -2834,7 +2838,7 @@
     opacity: 0.7;
   }
   &__sms-timer {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -2869,7 +2873,7 @@
     margin-right: 20px;
   }
   &-tab {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 30px;
     line-height: 38px;
@@ -2942,7 +2946,7 @@
     }
   }
   &-block__head-title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -2952,7 +2956,7 @@
       margin-left: 20px;
       width: 14px;
       height: 10px;
-      background: url("../img/icons/icon-checked-dark.svg") center center no-repeat;
+      background: url('../img/icons/icon-checked-dark.svg') center center no-repeat;
       background-size: contain;
     }
   }
@@ -3123,7 +3127,7 @@
       transform: translate(-50%, -50%);
     }
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 0px;
       right: 0px;
@@ -3133,7 +3137,7 @@
       background: rgba(0, 0, 0, 0.3);
     }
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 50%;
       top: 50%;
@@ -3141,7 +3145,7 @@
       display: block;
       width: 8px;
       height: 8px;
-      background: url("../img/icons/icon-close-light.svg") center center no-repeat;
+      background: url('../img/icons/icon-close-light.svg') center center no-repeat;
       background-size: contain;
       z-index: 1;
     }
@@ -3190,14 +3194,14 @@
     transition: all 0.3s ease;
     margin-right: 20px;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 10px;
       right: 10px;
       display: block;
       width: 8px;
       height: 8px;
-      background: url("../img/icons/icon-plus.svg") center center no-repeat;
+      background: url('../img/icons/icon-plus.svg') center center no-repeat;
       background-size: contain;
     }
     &:hover {
@@ -3214,7 +3218,7 @@
     position: relative;
     padding-left: 55px;
     .link {
-      font-family: "Stapel";
+      font-family: 'Stapel';
       font-weight: 500;
       font-size: 14px;
       line-height: 18px;
@@ -3228,7 +3232,7 @@
       }
     }
     &::after {
-      content: "!";
+      content: '!';
       position: absolute;
       display: block;
       width: 40px;
@@ -3259,13 +3263,13 @@
     margin-bottom: 5px;
   }
   &-input {
-    &[type="radio"]:checked,
-    &[type="radio"]:not(:checked) {
+    &[type='radio']:checked,
+    &[type='radio']:not(:checked) {
       position: absolute;
       left: -9999px;
     }
-    &[type="radio"]:checked + label,
-    &[type="radio"]:not(:checked) + label {
+    &[type='radio']:checked + label,
+    &[type='radio']:not(:checked) + label {
       position: relative;
       padding-left: 24px;
       cursor: pointer;
@@ -3274,9 +3278,9 @@
       display: inline-block;
       color: $text-gray;
     }
-    &[type="radio"]:checked + label:before,
-    &[type="radio"]:not(:checked) + label:before {
-      content: "";
+    &[type='radio']:checked + label:before,
+    &[type='radio']:not(:checked) + label:before {
+      content: '';
       position: absolute;
       left: 0;
       top: 2px;
@@ -3286,9 +3290,9 @@
       border-radius: 100%;
       background: #fff;
     }
-    &[type="radio"]:checked + label:after,
-    &[type="radio"]:not(:checked) + label:after {
-      content: "";
+    &[type='radio']:checked + label:after,
+    &[type='radio']:not(:checked) + label:after {
+      content: '';
       width: 14px;
       height: 14px;
       background: transparent;
@@ -3299,11 +3303,11 @@
       border-radius: 100%;
       transition: all 0.3s ease;
     }
-    &[type="radio"]:not(:checked) + label:after {
+    &[type='radio']:not(:checked) + label:after {
       opacity: 0;
       transform: scale(0);
     }
-    &[type="radio"]:checked + label:after {
+    &[type='radio']:checked + label:after {
       opacity: 1;
       transform: scale(1);
     }
@@ -3391,7 +3395,7 @@
     margin-right: 12px;
   }
   &-title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -3590,7 +3594,7 @@
     color: $text-primary;
     display: none;
     &::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       right: 3px;
@@ -3618,7 +3622,7 @@
     padding-right: 40px;
     cursor: pointer;
     &::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       right: 3px;
@@ -3646,7 +3650,7 @@
     padding-right: 25px;
     padding-left: 25px;
     border-right: 1px solid #e2e4ea;
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -3700,7 +3704,7 @@
     position: relative;
     transition: all 0.3s ease;
     &::after {
-      content: "";
+      content: '';
       display: block;
       width: 4px;
       height: 16px;
@@ -3708,7 +3712,7 @@
       right: 10px;
       top: 50%;
       transform: translateY(-50%);
-      background: url("../img/icons/icon-vertical-dots.svg");
+      background: url('../img/icons/icon-vertical-dots.svg');
     }
     &:hover {
       transition: all 0.3s ease;
@@ -3767,7 +3771,7 @@
     align-items: center;
   }
   &-block__title {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -3775,7 +3779,7 @@
     margin-right: 20px;
   }
   &-block__info {
-    font-family: "Stapel";
+    font-family: 'Stapel';
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;

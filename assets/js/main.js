@@ -1,13 +1,7 @@
 jQuery(document).ready(function ($) {
-   //Get Coockie
-   function getCookie(name) {
-    let matches = document.cookie.match(
-      new RegExp(
-        "(?:^|; )" +
-          name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
-          "=([^;]*)"
-      )
-    );
+  //Get Coockie
+  function getCookie(name) {
+    let matches = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'));
     return matches ? decodeURIComponent(matches[1]) : undefined;
   }
   /*-------------------------------------
@@ -147,13 +141,13 @@ jQuery(document).ready(function ($) {
 
     $('#inputCity').val(city);
 
-    document.cookie = "user-city=" + city + "; path=/";
-    document.cookie = "user-region=" + region + "; path=/";
+    document.cookie = 'user-city=' + city + '; path=/';
+    document.cookie = 'user-region=' + region + '; path=/';
 
     $.magnificPopup.close();
   });
 
-  var userCity = getCookie("user-city");
+  var userCity = getCookie('user-city');
   if (userCity) {
     $('.header-top__location').removeClass('active');
   }
@@ -163,7 +157,7 @@ jQuery(document).ready(function ($) {
   $('.closeLocationPopup').on('click', function (e) {
     $('.header-top__location').removeClass('active');
     city = $('.header-top__location .header-top__location-link').text();
-    document.cookie = "user-city=" + city + "; path=/";
+    document.cookie = 'user-city=' + city + '; path=/';
   });
   $('.header-top__location-link').on('click', function (e) {
     $('.header-top__location').toggleClass('active');
@@ -191,7 +185,7 @@ jQuery(document).ready(function ($) {
   $('.accordion-js').on('click', function () {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
-      $(this).parent().find('.accordion-block-js').hide('300');
+      $(this).parent().find('.accordion-block-js').hide(150);
       $('.transactions-block__more').text('свернуть');
       $(this).parent().find('.transactions-block__more').text('развернуть');
     } else {
@@ -441,5 +435,4 @@ jQuery(document).ready(function ($) {
       $('#calculate-input-size').val(ui.value);
     },
   });
-
 });
