@@ -14,7 +14,7 @@
   </head>
 
   <body>
-  <?php include("header.php"); ?>
+    <?php include("header.php"); ?>
 
     <main class="main main_price-wholesale">
       <div class="container">
@@ -40,7 +40,7 @@
             <!-- Phone form end -->
           </div>
           <div class="d-none d-lg-block col-12 col-lg-4">
-            <div class=" curs-metal">
+            <div class="curs-metal">
               <div class="curs-metal__title">
                 <h3>
                   <b>Честные выплаты до <span class="text-orange">75%</span> по LME</b>
@@ -76,7 +76,9 @@
                   </div>
                 </div>
               </div>
-              <div class="curs-metal__link text-center"><a href="https://www.lme.com/" target="_blank" class="link"> проверить на lme.com <img class="ml-10" src="assets/img/icons/icon-arrow-box.svg" alt="#"></a></div>
+              <div class="curs-metal__link text-center">
+                <a href="https://www.lme.com/" target="_blank" class="link"> проверить на lme.com <img class="ml-10" src="assets/img/icons/icon-arrow-box.svg" alt="#" /></a>
+              </div>
             </div>
           </div>
         </div>
@@ -92,7 +94,7 @@
         <ul class="prices-ofmetal__list">
           <li class="prices-ofmetal__item item-ofmetal">
             <div class="item-ofmetal__head">
-              <div class="item-ofmetal__title">PT</div>
+              <div class="item-ofmetal__title">PD</div>
               <div class="item-ofmetal__name">Платина</div>
             </div>
             <div class="item-ofmetal__row">
@@ -120,7 +122,7 @@
           <li class="prices-ofmetal__item item-ofmetal">
             <div class="item-ofmetal__head">
               <div class="item-ofmetal__title">PT</div>
-              <div class="item-ofmetal__name">Платина</div>
+              <div class="item-ofmetal__name">Паладий</div>
             </div>
             <div class="item-ofmetal__row">
               <div class="item-ofmetal__quantity">3 - 50 кг</div>
@@ -146,8 +148,8 @@
           </li>
           <li class="prices-ofmetal__item item-ofmetal">
             <div class="item-ofmetal__head">
-              <div class="item-ofmetal__title">PT</div>
-              <div class="item-ofmetal__name">Платина</div>
+              <div class="item-ofmetal__title">RH</div>
+              <div class="item-ofmetal__name">Родий</div>
             </div>
             <div class="item-ofmetal__row">
               <div class="item-ofmetal__quantity">3 - 50 кг</div>
@@ -197,7 +199,7 @@
                 <img src="assets/img/icons/important-icon.svg" alt="" class="options-item__icon" />
                 <div id="calculate-range-pt" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                <input id="calculate-input-pt" class="calculator-input" type="text" placeholder="20" />
+                  <input id="calculate-input-pt" class="calculator-input" type="text" placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
@@ -207,7 +209,7 @@
                 <img src="assets/img/icons/important-icon.svg" alt="" class="options-item__icon" />
                 <div id="calculate-range-pd" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                <input id="calculate-input-pd" class="calculator-input" type="text" placeholder="20" />
+                  <input id="calculate-input-pd" class="calculator-input" type="text" placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
@@ -217,7 +219,7 @@
                 <img src="assets/img/icons/important-icon.svg" alt="" class="options-item__icon" />
                 <div id="calculate-range-rh" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                <input id="calculate-input-rh" class="calculator-input" type="text" placeholder="20" />
+                  <input id="calculate-input-rh" class="calculator-input" type="text" placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
@@ -324,6 +326,41 @@
       </div>
     </section>
 
+    <section class="section-wrapper pass-material">
+      <div class="container">
+        <div class="pass-material__header mb-30">
+          <h2 class="h2 title">Как сдать<br />старый катализатор?</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-xl-6 mb-30">
+            <div class="pass-material__item pass-material__item_assessment">
+              <img src="assets/img/pass-assessment.png" alt="#" style="right: 50px" />
+              <h4 class="h4 pass-material__title">Выездная оценка</h4>
+              <p class="pass-material__text">Каждую 10-ю сделку<br />мы возвращаем ретро-бонусы в размере 5% от общей.</p>
+              <div class="pass-material__btn">
+                <a href="#popup-form-manager" class="btn btn_hover btn_small orange-btn popup"> Заказать выезд менеджера </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-6 mb-30">
+            <div class="pass-material__item pass-material__item_offices">
+              <img src="assets/img/pass-offices.png" alt="#" style="right: 50px" />
+              <h4 class="h4 pass-material__title">Стационарные офисы</h4>
+              <p class="pass-material__text">
+                Каждую 10-ю сделку<br />
+                мы возвращаем ретро-бонусы в размере 5% от общей.
+              </p>
+              <div class="pass-material__btn">
+                <a href="#map" class="btn btn_hover btn_small light-blue-btn scrollto">Показать на карте</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <?php include("templates/map.php"); ?>
+
     <!-- popup-thank-specialist -->
     <div id="popup-thank-specialist" class="popup-thank-specialist custom-popup mfp-hide">
       <div class="popup-body">
@@ -379,6 +416,5 @@
     <!-- popup-thank end-->
 
     <?php include("footer.php"); ?>
-
-    </body>
+  </body>
 </html>

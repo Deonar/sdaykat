@@ -426,7 +426,7 @@
                       </div>
                       <div class="lot-block__content">
                         <div class="lot-block__item">Сумма <span>160 000 ₽</span></div>
-                        <div class="lot-block__item">Содердание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
+                        <div class="lot-block__item">Содержание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
                         <div class="lot-block__item">Авто <span>BMW X5 2020</span></div>
                       </div>
                     </div>
@@ -437,7 +437,7 @@
                       </div>
                       <div class="lot-block__content">
                         <div class="lot-block__item">Сумма <span>160 000 ₽</span></div>
-                        <div class="lot-block__item">Содердание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
+                        <div class="lot-block__item">Содержание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
                         <div class="lot-block__item">Авто <span>BMW X5 2020</span></div>
                       </div>
                     </div>
@@ -472,7 +472,7 @@
                       </div>
                       <div class="lot-block__content">
                         <div class="lot-block__item">Сумма <span>160 000 ₽</span></div>
-                        <div class="lot-block__item">Содердание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
+                        <div class="lot-block__item">Содержание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
                         <div class="lot-block__item">Авто <span>BMW X5 2020</span></div>
                       </div>
                     </div>
@@ -483,7 +483,7 @@
                       </div>
                       <div class="lot-block__content">
                         <div class="lot-block__item">Сумма <span>160 000 ₽</span></div>
-                        <div class="lot-block__item">Содердание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
+                        <div class="lot-block__item">Содержание, Pt / Pd / Rh <span>7.1 / 1.3 / 2.5</span></div>
                         <div class="lot-block__item">Авто <span>BMW X5 2020</span></div>
                       </div>
                     </div>
@@ -508,7 +508,7 @@
         <!-- TAB SIDEBAR -->
         <div class="profile-sidebar">
           <div class="profile-head">
-            <a href="/index.php" class="profile-exit__btn btn_hover btn gray2-btn">Выйти</a>
+            <a href="/index.php" class="profile-exit__btn btn gray2-btn">Выйти</a>
           </div>
           <div class="quotes profile-sidebar__item profile-block">
             <div class="tab-wrapper">
@@ -526,11 +526,11 @@
                     <div class="curs-metal__price">5 658,74 ₽/г</div>
                   </li>
                   <li class="quotes-item">
-                    <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                    <div class="curs-metal__valuta">Pt<span class="curs-metal__valuta_up"></span></div>
                     <div class="curs-metal__price">5 658,74 ₽/г</div>
                   </li>
                   <li class="quotes-item">
-                    <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_down"></span></div>
+                    <div class="curs-metal__valuta">Rh<span class="curs-metal__valuta_down"></span></div>
                     <div class="curs-metal__price">5 658,74 ₽/г</div>
                   </li>
                 </ul>
@@ -552,11 +552,11 @@
                     <div class="curs-metal__price">785,74 ₽/г</div>
                   </li>
                   <li class="quotes-item">
-                    <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                    <div class="curs-metal__valuta">Pt<span class="curs-metal__valuta_up"></span></div>
                     <div class="curs-metal__price">5 658,74 ₽/г</div>
                   </li>
                   <li class="quotes-item">
-                    <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                    <div class="curs-metal__valuta">Rh<span class="curs-metal__valuta_up"></span></div>
                     <div class="curs-metal__price">658,74 ₽/г</div>
                   </li>
                 </ul>

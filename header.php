@@ -33,7 +33,7 @@ if (!isset($header_class)) {
 
         <div class="header-top__nav">
           <div class="header-top__location active">
-            <a href="#" class="header-top__location-link">Челябинск</a>
+            <div class="header-top__location-link">Челябинск</div>
             <div class="location-popup">
               <div class="location-popup__body">
                 <div class="location-popup__title">Вы находитесь в Челябинске?</div>
@@ -55,7 +55,7 @@ if (!isset($header_class)) {
         <div class="header-top__info">
           <div class="header-top__address">
             <div class="header-top__address-text">ул. Механическая, 101</div>
-            <a href="#" class="header-top__address-link">Показать на карте</a>
+            <a href="/representative.php#representative-map" class="header-top__address-link">Показать на карте</a>
           </div>
           <div class="header-top__contact">
             <a href="tel:+88005507940" class="header-top__contact-tell">
@@ -91,7 +91,7 @@ if (!isset($header_class)) {
                         data-tab-profile="analitic-tab">Аналитика</a>
                     </li>
                   </ul>
-                  <div class="popup-authorized__btn popup-btn">Выйти</div>
+                  <div class="popup-authorized__btn btn gray2-btn  popup-btn">Выйти</div>
                 </div>
               </div>
             </div>

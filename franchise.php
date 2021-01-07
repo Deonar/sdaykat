@@ -31,13 +31,15 @@
               </label>
 
               <div class="main-form__btn">
-                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn popup" type="button">получить консультацию</a>
+                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn popup" type="button">получить
+                  консультацию</a>
               </div>
             </div>
             <label class="main-form__policy">
               <input type="checkbox" checked="" class="main-form__checkbox" />
               <span class="main-form__checkbox-box"></span>
-              <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+              <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+                  конфиденциальности</a></span>
             </label>
           </form>
           <!-- Phone form end -->
@@ -52,7 +54,10 @@
       <div class="franchise-sentence__head">
         <div class="franchise-sentence__content">
           <h2 class="franchise-sentence__title primary-title">Что предлагаем?</h2>
-          <div class="franchise-sentence__text">Еще 15 лет назад об электромобилях никто не говорил всерьез, но сегодня уже каждый знает, что это, а многие готовы приобрести за любые деньги. Речь, конечно, не о России. Но к примеру, в Норвегии к 2025 году планируют и вовсе отказаться от машин с ДВС, их будет просто невозможно купить на территории страны.</div>
+          <div class="franchise-sentence__text">Еще 15 лет назад об электромобилях никто не говорил всерьез, но сегодня
+            уже каждый знает, что это, а многие готовы приобрести за любые деньги. Речь, конечно, не о России. Но к
+            примеру, в Норвегии к 2025 году планируют и вовсе отказаться от машин с ДВС, их будет просто невозможно
+            купить на территории страны.</div>
         </div>
         <img src="assets/img/catalysts/catalist-destroy.png" alt="" class="franchise-sentence__img" />
       </div>
@@ -60,17 +65,20 @@
         <li class="franchise-sentence__item">
           <img src="assets/img/icons/dollar-icon.svg" alt="" class="franchise-sentence__item-img" />
           <div class="franchise-sentence__item-title">PushAll взнос: 0₽</div>
-          <div class="franchise-sentence__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+          <div class="franchise-sentence__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+            документации.</div>
         </li>
         <li class="franchise-sentence__item">
           <img src="assets/img/icons/percent-dark-icon.svg" alt="" class="franchise-sentence__item-img" />
           <div class="franchise-sentence__item-title">Royalty: 10% от прибыли</div>
-          <div class="franchise-sentence__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+          <div class="franchise-sentence__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+            документации.</div>
         </li>
         <li class="franchise-sentence__item">
           <img src="assets/img/icons/man-icon.svg" alt="" class="franchise-sentence__item-img" />
           <div class="franchise-sentence__item-title">Преимущество</div>
-          <div class="franchise-sentence__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+          <div class="franchise-sentence__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+            документации.</div>
         </li>
       </ul>
     </div>
@@ -145,27 +153,32 @@
     <div class="container">
       <div class="franchise-office__wrapp">
         <div class="franchise-office__content">
-          <div class="franchise-office__title primary-title">Открытие стационарного офисав городах с населением от 300.000 +</div>
+          <div class="franchise-office__title primary-title">Открытие стационарного офисав городах с населением от
+            300.000 +</div>
           <div class="franchise-office__items">
             <div class="franchise-office__item">
-              <img src="assets/img/icons/requirement-1.svg" alt="" class="franchise-office__item-icon" />
+              <img src="assets/img/icons/requirement-13.svg" alt="" class="franchise-office__item-icon" />
               <div class="franchise-office__item-title">Помещение</div>
-              <div class="franchise-office__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+              <div class="franchise-office__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+                документации.</div>
             </div>
             <div class="franchise-office__item">
-              <img src="assets/img/icons/requirement-1.svg" alt="" class="franchise-office__item-icon" />
-              <div class="franchise-office__item-title">Помещение</div>
-              <div class="franchise-office__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+              <img src="assets/img/icons/requirement-14.svg" alt="" class="franchise-office__item-icon" />
+              <div class="franchise-office__item-title">Закуп сырья</div>
+              <div class="franchise-office__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+                документации.</div>
             </div>
             <div class="franchise-office__item">
-              <img src="assets/img/icons/requirement-1.svg" alt="" class="franchise-office__item-icon" />
-              <div class="franchise-office__item-title">Помещение</div>
-              <div class="franchise-office__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+              <img src="assets/img/icons/requirement-15.svg" alt="" class="franchise-office__item-icon" />
+              <div class="franchise-office__item-title">Прибор</div>
+              <div class="franchise-office__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+                документации.</div>
             </div>
             <div class="franchise-office__item">
-              <img src="assets/img/icons/requirement-1.svg" alt="" class="franchise-office__item-icon" />
-              <div class="franchise-office__item-title">Помещение</div>
-              <div class="franchise-office__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+              <img src="assets/img/icons/requirement-16.svg" alt="" class="franchise-office__item-icon" />
+              <div class="franchise-office__item-title">2 человека</div>
+              <div class="franchise-office__item-text">500.000 ₽ на закуп сырья. по всем сделкам, выгрузка необходимой
+                документации. </div>
             </div>
           </div>
         </div>
@@ -178,13 +191,15 @@
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn popup" type="button">Получить консультацию</a>
+                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn popup" type="button">Получить
+                  консультацию</a>
               </div>
             </div>
             <label class="main-form__policy">
               <input type="checkbox" checked="" class="main-form__checkbox" />
               <span class="main-form__checkbox-box"></span>
-              <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+              <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+                  конфиденциальности</a></span>
             </label>
           </form>
         </div>
@@ -200,19 +215,29 @@
       <div class="row">
         <div class="col-12 col-lg-7">
           <div class="about-block__content">
-            <p class="big-text mb-20">Еще 15 лет назад об электромобилях никто не говорил всерьез, но сегодня уже каждый знает, что это, а многие готовы приобрести за любые деньги.</p>
-            <p class="small-text mb-20 opacity-7">Еще 15 лет назад об электромобилях никто не говорил всерьез, но сегодня уже каждый знает, что это, а многие готовы приобрести за любые деньги.</p>
+            <p class="big-text mb-20">Еще 15 лет назад об электромобилях никто не говорил всерьез, но сегодня уже каждый
+              знает, что это, а многие готовы приобрести за любые деньги.</p>
+            <p class="small-text mb-20 opacity-7">Еще 15 лет назад об электромобилях никто не говорил всерьез, но
+              сегодня уже каждый знает, что это, а многие готовы приобрести за любые деньги.</p>
           </div>
           <div class="about-block__btn">
             <a href="/about.php#vacancy" class="btn white-btn">4 вакансии</a>
             <a href="/about.php" class="btn transparent-btn btn_arrow">Узнать больше о компании
               <span class="arrow-move">
                 <span class="arrow-move-clip">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
-                    <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512"
+                    xml:space="preserve">
+                    <path
+                      d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z">
+                    </path>
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
-                    <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512"
+                    xml:space="preserve">
+                    <path
+                      d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z">
+                    </path>
                   </svg>
                 </span> </span></a>
           </div>
@@ -244,37 +269,44 @@
   <section class="franchise-benefit section-wrapper">
     <div class="container">
       <div class="franchise-benefit__title primary-title">Что вы получаете при покупке франшизы у нас?</div>
-      <div class="franchise-benefit__sub-title">Мы предоставляем Вам бизнес по выкупу каталитического сырья <span> “под ключ”</span>, с окупаемостью <span> до 6 месяцев.</span></div>
+      <div class="franchise-benefit__sub-title">Мы предоставляем Вам бизнес по выкупу каталитического сырья <span> “под
+          ключ”</span>, с окупаемостью <span> до 6 месяцев.</span></div>
       <ul class="franchise-benefit__items">
         <li class="franchise-benefit__item">
-          <img src="assets/img/icons/requirement-1.svg" alt="" class="franchise-benefit__item-icon" />
+          <img src="assets/img/icons/requirement-17.svg" alt="" class="franchise-benefit__item-icon" />
           <div class="franchise-benefit__item-title">Трафик</div>
-          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+            документации.</div>
         </li>
         <li class="franchise-benefit__item">
-          <img src="assets/img/icons/requirement-1.svg" alt="" class="franchise-benefit__item-icon" />
-          <div class="franchise-benefit__item-title">Трафик</div>
-          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+          <img src="assets/img/icons/requirement-18.svg" alt="" class="franchise-benefit__item-icon" />
+          <div class="franchise-benefit__item-title">СRМ / ERP системы</div>
+          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+            документации.</div>
         </li>
         <li class="franchise-benefit__item">
-          <img src="assets/img/icons/requirement-1.svg" alt="" class="franchise-benefit__item-icon" />
-          <div class="franchise-benefit__item-title">Трафик</div>
-          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+          <img src="assets/img/icons/requirement-10.svg" alt="" class="franchise-benefit__item-icon" />
+          <div class="franchise-benefit__item-title">КоллЦентр</div>
+          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+            документации.</div>
         </li>
         <li class="franchise-benefit__item">
-          <img src="assets/img/icons/requirement-1.svg" alt="" class="franchise-benefit__item-icon" />
-          <div class="franchise-benefit__item-title">Трафик</div>
-          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+          <img src="assets/img/icons/requirement-11.svg" alt="" class="franchise-benefit__item-icon" />
+          <div class="franchise-benefit__item-title">Сбыт под честную биржу</div>
+          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+            документации.</div>
         </li>
         <li class="franchise-benefit__item">
-          <img src="assets/img/icons/requirement-1.svg" alt="" class="franchise-benefit__item-icon" />
-          <div class="franchise-benefit__item-title">Трафик</div>
-          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+          <img src="assets/img/icons/requirement-19.svg" alt="" class="franchise-benefit__item-icon" />
+          <div class="franchise-benefit__item-title">Программа лояльности</div>
+          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+            документации.</div>
         </li>
         <li class="franchise-benefit__item">
-          <img src="assets/img/icons/requirement-1.svg" alt="" class="franchise-benefit__item-icon" />
-          <div class="franchise-benefit__item-title">Трафик</div>
-          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой документации.</div>
+          <img src="assets/img/icons/requirement-20.svg" alt="" class="franchise-benefit__item-icon" />
+          <div class="franchise-benefit__item-title">Аппаратные решения</div>
+          <div class="franchise-benefit__item-text">Подробная аналитика по всем сделкам, выгрузка необходимой
+            документации.</div>
         </li>
       </ul>
     </div>
@@ -318,13 +350,15 @@
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn popup" type="button">стать партнером sdaykat</a>
+                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn popup" type="button">стать
+                  партнером sdaykat</a>
               </div>
             </div>
             <label class="main-form__policy">
               <input type="checkbox" checked="" class="main-form__checkbox" />
               <span class="main-form__checkbox-box"></span>
-              <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+              <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+                  конфиденциальности</a></span>
             </label>
           </form>
           <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>
@@ -361,13 +395,15 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup" type="button">вызвать специалиста</a>
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup"
+              type="button">вызвать специалиста</a>
           </div>
         </div>
         <label class="main-form__policy">
           <input type="checkbox" checked="" class="main-form__checkbox" />
           <span class="main-form__checkbox-box"></span>
-          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+              конфиденциальности</a></span>
         </label>
       </form>
       <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>

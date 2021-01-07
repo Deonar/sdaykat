@@ -1086,6 +1086,11 @@
     }
   }
   //=========================== Bonuses end
+  //=========================== Features
+  .features {
+    margin-bottom: 25px;
+  }
+  //=========================== Features end
   //=========================== price-oftype
   .price-oftype {
     .main-form {
@@ -1784,6 +1789,21 @@
     }
   }
   //=========================== profile end
+  .page-404 {
+    margin-bottom: 80px;
+    &__wrapp {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__img {
+      max-width: 100%;
+      padding-top: 35%;
+    }
+    &__content {
+      margin-top: 50px;
+      margin-left: 0px;
+    }
+  }
   //=========================== Footer
   .footer {
     padding: 30px 0;
@@ -2332,7 +2352,7 @@
   //=========================== franchise-calculator end
 }
 @media (max-width: 360px) {
-  .main_franchise{
+  .main_franchise {
     background-position: 60% top;
   }
   //=========================== price-ofauto

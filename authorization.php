@@ -40,8 +40,10 @@
                 <div class="main-form__btn">
                   <button id="entry-account" class="authorization__btn btn btn_hover" type="button">войти в
                     аккаунт</button>
-                  <a href="#" id="registration-account" class="authorization__btn btn btn_hover"
-                    type="button">Зарегистрироваться</a>
+
+                  <a href="/profile.php#profile-tab" id="registration-account"
+                    class="authorization__btn authorization__btn-link  btn open-profile-js"
+                    data-tab-profile="profile-tab" type="button">Зарегистрироваться</a>
                 </div>
               </div>
             </form>
@@ -150,5 +152,6 @@
 
   <?php include("footer.php"); ?>
 
-  </body>
+</body>
+
 </html>

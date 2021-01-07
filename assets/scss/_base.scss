@@ -199,6 +199,10 @@ body {
       border-bottom: 2px solid #b1b9ca;
       border-left: 2px solid #b1b9ca;
     }
+    &:hover::after {
+      border-bottom: 2px solid #fff;
+      border-left: 2px solid #fff;
+    }
   }
   &__item {
     position: relative;
@@ -223,6 +227,7 @@ body {
       transition: all 0.3s ease;
       background-color: $primary;
       color: #fff;
+      border: 1px solid transparent;
     }
   }
   &__wrap {
@@ -465,10 +470,9 @@ body {
 }
 
 .gray2-btn {
-  background: $gray2-btn;
-  color: $text;
+  background: #f4f7fa;
   &:hover {
-    background: $gray2-btn;
+    background: #e2e4ea;
   }
 }
 .gray-btn {
@@ -497,7 +501,8 @@ body {
   text-transform: uppercase;
   color: $text-primary;
   &:hover {
-    text-decoration: underline;
+    color: $text-primary !important;
+    text-decoration: underline !important;
   }
 }
 
@@ -526,6 +531,7 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: $text-gray;
+    max-width: 540px;
   }
   &__all-content {
     margin: 0 auto;
@@ -551,6 +557,7 @@ body {
       max-width: 970px;
       margin: 0 auto;
       margin-bottom: 30px;
+      margin-top: 30px;
     }
     a {
       display: inline-block;
@@ -1001,8 +1008,13 @@ body {
     margin-right: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     cursor: pointer;
+    transition: all 0.3s ease;
     &:first-child {
       padding-top: 0;
+    }
+    &:hover {
+      transition: all 0.3s ease;
+      color: $text-primary;
     }
   }
   &__item {

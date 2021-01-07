@@ -31,13 +31,15 @@
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover primary-btn popup" type="button">Продать катализатор</a>
+                <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover primary-btn popup"
+                  type="button">Продать катализатор</a>
               </div>
             </div>
             <label class="main-form__policy">
               <input type="checkbox" checked="" class="main-form__checkbox" />
               <span class="main-form__checkbox-box"></span>
-              <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+              <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+                  конфиденциальности</a></span>
             </label>
           </form>
           <!-- Phone form end -->
@@ -102,21 +104,22 @@
                 </div>
               </div>
               <div class="curs-metal-list__item">
-                <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                <div class="curs-metal__valuta">Pt<span class="curs-metal__valuta_up"></span></div>
                 <div class="d-flex justify-content-between">
                   <div class="h4">5 658,74 ₽/г</div>
                   <div class="h5 text-placeholder">5 648,74 ₽/г</div>
                 </div>
               </div>
               <div class="curs-metal-list__item">
-                <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_down"></span></div>
+                <div class="curs-metal__valuta">Rh<span class="curs-metal__valuta_down"></span></div>
                 <div class="d-flex justify-content-between">
                   <div class="h4">5 658,74 ₽/г</div>
                   <div class="h5 text-placeholder">5 648,74 ₽/г</div>
                 </div>
               </div>
             </div>
-            <div class="curs-metal__link text-center"><a href="https://www.lme.com/" target="_blank" class="link"> проверить на lme.com <img class="ml-10" src="assets/img/icons/icon-arrow-box.svg" alt=""></a></div>
+            <div class="curs-metal__link text-center"><a href="https://www.lme.com/" target="_blank" class="link">
+                проверить на lme.com <img class="ml-10" src="assets/img/icons/icon-arrow-box.svg" alt=""></a></div>
           </div>
         </div>
       </div>
@@ -145,7 +148,7 @@
           <h4 class="catalysts__title">Сажевый фильтр</h4>
           <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
           <div class="catalysts__link link"> Узнать стоимость </div>
-          </a>
+        </a>
         <a href="/single-price-oftype.php" class="catalysts__item">
           <div class="catalysts__img">
             <img src="assets/img/catalysts/import.png" alt="" />
@@ -153,7 +156,7 @@
           <h4 class="catalysts__title">Металл импортный</h4>
           <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
           <div class="catalysts__link link"> Узнать стоимость </div>
-</a>
+        </a>
         <a href="/single-price-oftype.php" class="catalysts__item">
           <div class="catalysts__img">
             <img src="assets/img/catalysts/native.png" alt="" />
@@ -161,12 +164,12 @@
           <h4 class="catalysts__title">Металл отечественный</h4>
           <p class="catalysts__text">Оставляете заявку. Вместе выбираем подходящие время и дату приезда.</p>
           <div class="catalysts__link link"> Узнать стоимость </div>
-          </a>
+        </a>
       </div>
     </div>
   </section>
 
-  <?php include("templates/brands.php"); ?> 
+  <?php include("templates/brands.php"); ?>
 
   <section class="section-wrapper delete-catalysts">
     <div class="container">
@@ -178,7 +181,8 @@
             <div class="delete-catalysts__icon mb-20">
               <img src="assets/img/icons/icon-sky.svg" alt="" />
             </div>
-            <p class="delete-catalysts__text">Уменьшается приемистость мотора, появление ядовитого<br />запаха выхлопных газов</p>
+            <p class="delete-catalysts__text">Уменьшается приемистость мотора, появление ядовитого<br />запаха выхлопных
+              газов</p>
           </div>
           <div class="col-12 col-sm-6 col-lg-4 mb-30">
             <div class="delete-catalysts__icon mb-20">
@@ -214,11 +218,17 @@
         <a href="/delete-catalysts.php" class="btn btn_arrow light-blue-btn mt-30">Узнать больше
           <span class="arrow-move">
             <span class="arrow-move-clip">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
-                <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
+                <path
+                  d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z">
+                </path>
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
-                <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
+                <path
+                  d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z">
+                </path>
               </svg>
             </span>
           </span>
@@ -239,7 +249,8 @@
             <h4 class="h4 pass-material__title">Выездная оценка</h4>
             <p class="pass-material__text">Каждую 10-ю сделку<br />мы возвращаем ретро-бонусы в размере 5% от общей.</p>
             <div class="pass-material__btn">
-              <a href="#popup-form-manager" class="btn btn_small btn_hover orange-btn popup"> Заказать выезд менеджера </a>
+              <a href="#popup-form-manager" class="btn btn_small btn_hover orange-btn popup"> Заказать выезд менеджера
+              </a>
             </div>
           </div>
         </div>
@@ -281,19 +292,29 @@
       <div class="row">
         <div class="col-12 col-lg-7">
           <div class="about-block__content">
-            <p class="big-text mb-20">Еще 15 лет назад об электромобилях никто не говорил всерьез, но сегодня уже каждый знает, что это, а многие готовы приобрести за любые деньги.</p>
-            <p class="small-text mb-20 opacity-7">Еще 15 лет назад об электромобилях никто не говорил всерьез, но сегодня уже каждый знает, что это, а многие готовы приобрести за любые деньги.</p>
+            <p class="big-text mb-20">Еще 15 лет назад об электромобилях никто не говорил всерьез, но сегодня уже каждый
+              знает, что это, а многие готовы приобрести за любые деньги.</p>
+            <p class="small-text mb-20 opacity-7">Еще 15 лет назад об электромобилях никто не говорил всерьез, но
+              сегодня уже каждый знает, что это, а многие готовы приобрести за любые деньги.</p>
           </div>
           <div class="about-block__btn">
-            <a href="/about.php#vacancy" class="btn white-btn">4 вакансии</a>
+            <a href="/about.php#vacancy" class="about-block__button btn ">4 вакансии</a>
             <a href="/about.php" class="btn transparent-btn btn_arrow">Узнать больше о компании
               <span class="arrow-move">
                 <span class="arrow-move-clip">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
-                    <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512"
+                    xml:space="preserve">
+                    <path
+                      d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z">
+                    </path>
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
-                    <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512"
+                    xml:space="preserve">
+                    <path
+                      d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z">
+                    </path>
                   </svg>
                 </span> </span></a>
           </div>
@@ -359,7 +380,7 @@
             <img src="assets/img/icons/icon-percent-cyan.svg" alt="#" />
           </div>
           <h4 class="features__title">
-            Программа<br/>
+            Программа<br />
             лояльности
           </h4>
           <p class="features__text">
@@ -403,7 +424,8 @@
                 <li class="stars-rating__item stars-rating_off"></li>
               </ul>
             </div>
-            <p class="reviews__text">Пункты приемы находятся в следующих городах: Казань, Челябинск, Уфа. Вы всегда можете самостоятельно сдать сырьё, адреса и время работы...</p>
+            <p class="reviews__text">Пункты приемы находятся в следующих городах: Казань, Челябинск, Уфа. Вы всегда
+              можете самостоятельно сдать сырьё, адреса и время работы...</p>
             <div class="reviews__bottom">
               <a href="#" class="link">Прочитать весь отзыв</a>
               <div class="reviews__icon">
@@ -427,7 +449,8 @@
                 <li class="stars-rating__item stars-rating_off"></li>
               </ul>
             </div>
-            <p class="reviews__text">Пункты приемы находятся в следующих городах: Казань, Челябинск, Уфа. Вы всегда можете самостоятельно сдать сырьё, адреса и время работы...</p>
+            <p class="reviews__text">Пункты приемы находятся в следующих городах: Казань, Челябинск, Уфа. Вы всегда
+              можете самостоятельно сдать сырьё, адреса и время работы...</p>
             <div class="reviews__bottom">
               <a href="#" class="link">Прочитать весь отзыв</a>
               <div class="reviews__icon">
@@ -451,7 +474,8 @@
                 <li class="stars-rating__item stars-rating_off"></li>
               </ul>
             </div>
-            <p class="reviews__text">Пункты приемы находятся в следующих городах: Казань, Челябинск, Уфа. Вы всегда можете самостоятельно сдать сырьё, адреса и время работы...</p>
+            <p class="reviews__text">Пункты приемы находятся в следующих городах: Казань, Челябинск, Уфа. Вы всегда
+              можете самостоятельно сдать сырьё, адреса и время работы...</p>
             <div class="reviews__bottom">
               <a href="#" class="link">Прочитать весь отзыв</a>
               <div class="reviews__icon">
@@ -475,7 +499,8 @@
                 <li class="stars-rating__item stars-rating_off"></li>
               </ul>
             </div>
-            <p class="reviews__text">Пункты приемы находятся в следующих городах: Казань, Челябинск, Уфа. Вы всегда можете самостоятельно сдать сырьё, адреса и время работы...</p>
+            <p class="reviews__text">Пункты приемы находятся в следующих городах: Казань, Челябинск, Уфа. Вы всегда
+              можете самостоятельно сдать сырьё, адреса и время работы...</p>
             <div class="reviews__bottom">
               <a href="#" class="link">Прочитать весь отзыв</a>
               <div class="reviews__icon">
@@ -554,20 +579,23 @@
     <div class="popup-body">
       <h3 class="popup-primary__title">Выездная оценка</h3>
 
-      <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта точной стоимости катализатора.</div>
+      <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта
+        точной стоимости катализатора.</div>
       <form class="popup-form main-form main-form__light">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup" type="button">вызвать специалиста</a>
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup"
+              type="button">вызвать специалиста</a>
           </div>
         </div>
         <label class="main-form__policy">
           <input type="checkbox" checked="" class="main-form__checkbox" />
           <span class="main-form__checkbox-box"></span>
-          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+              конфиденциальности</a></span>
         </label>
       </form>
     </div>
@@ -596,13 +624,15 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-curyer" class="main-form__submit btn btn_hover blue-btn popup" type="button">вызвать специалиста</a>
+            <a href="#popup-thank-curyer" class="main-form__submit btn btn_hover blue-btn popup" type="button">вызвать
+              специалиста</a>
           </div>
         </div>
         <label class="main-form__policy">
           <input type="checkbox" checked="" class="main-form__checkbox" />
           <span class="main-form__checkbox-box"></span>
-          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+              конфиденциальности</a></span>
         </label>
       </form>
     </div>
@@ -611,5 +641,6 @@
 
   <?php include("footer.php"); ?>
 
-  </body>
+</body>
+
 </html>
