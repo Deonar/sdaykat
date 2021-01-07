@@ -156,7 +156,7 @@ function init() {
     );
     if ($(window).width() < 768) {
       $('html, body').animate({
-        scrollTop: $('#current-map-city').offset().top - 70,
+        scrollTop: $('#current-map-city').offset().top - 100,
       });
     }
     return false;

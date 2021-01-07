@@ -2336,13 +2336,13 @@
   }
 }
 
-.representative-map__img path[fill="#B1B9CA"] {
+.representative-map__svg path[fill="#B1B9CA"] {
+  cursor: pointer;
+}
+.representative-map__svg path[fill="#043598"] {
   cursor: pointer
 }
-.representative-map__img path[fill="#043598"] {
-  cursor: pointer
-}
-.representative-map__img path[fill="white"] {
+.representative-map__svg path[fill="white"] {
   cursor: pointer
 }
 
