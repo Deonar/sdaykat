@@ -12,7 +12,16 @@
       flex-direction: column;
     }
   }
-
+ //=========================== Reviews
+ .reviews {
+  .slider-btn__prev {
+    left: -20px;
+  }
+  .slider-btn__next {
+    right: -20px;
+  }
+}
+//=========================== Reviews end
   //=========================== HEADER
   .header {
     &-top__address {

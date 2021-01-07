@@ -120,12 +120,18 @@ jQuery(document).ready(function ($) {
   $('#save-info').on('click', function (e) {
     $('#profile-registration').show();
     $('#profile-registration-edit').hide();
-    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    $('html, body').animate(
+      {
+        scrollTop: 0,
+      },
+      'slow'
+    );
     return false;
   });
 
   // actions-content-show-js
   $('.actions-content-show-js').on('click', function (e) {
+    e.stopPropagation();
     $(this).toggleClass('active');
   });
 
@@ -185,7 +191,7 @@ jQuery(document).ready(function ($) {
   $('.accordion-js').on('click', function () {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
-      $(this).parent().find('.accordion-block-js').hide(150);
+      $(this).parent().find('.accordion-block-js').hide();
       $('.transactions-block__more').text('свернуть');
       $(this).parent().find('.transactions-block__more').text('развернуть');
     } else {
@@ -213,6 +219,20 @@ jQuery(document).ready(function ($) {
   });
   //======================== tabs  end
   //======================== SLICK SLIDERS
+  var curr = 0;
+  var percentTime = 0;
+  $('#reviews-slider').on('init', function (event, slick, currentSlide, nextSlide) {
+    percentTime = 0;
+    $('.reviews__wrapper .slick-dots li').find('.actual_dot path').css('stroke-dasharray', '0, 100');
+
+    for (var i = 0; i < $('.reviews__wrapper .slick-dots li').length; i++) {
+      if (!$('.reviews__wrapper .slick-dots li').eq(i).attr('class')) {
+        $('.reviews__wrapper .slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100');
+      } else {
+        break;
+      }
+    }
+  });
   $('#reviews-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -222,6 +242,9 @@ jQuery(document).ready(function ($) {
     dots: true,
     centerPadding: '0',
     speed: 500,
+    customPaging: function (slider, i) {
+      return '<svg viewBox="0 0 36 36" class="actual_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#feb700"; stroke-width="6" stroke-dasharray="80, 100"; /></svg><svg viewBox="0 0 36 36" class="bg_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#feb700"; stroke-width="6" stroke-dasharray="100, 100"; /></svg>';
+    },
     prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"></button>',
     responsive: [
@@ -239,6 +262,43 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
+
+  $('#reviews-slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    percentTime = 0;
+    $('.reviews__wrapper .slick-dots li').find('.actual_dot path').css('stroke-dasharray', '0, 100');
+    for (var i = 0; i < $('.reviews__wrapper .slick-dots li').length; i++) {
+      if (!$('.reviews__wrapper .slick-dots li').eq(i).attr('class')) {
+        $('.reviews__wrapper .slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100');
+      } else {
+        curr = i;
+        break;
+      }
+    }
+  });
+
+  function startProgressbar() {
+    percentTime = 0;
+    setInterval(interval, 50);
+  }
+
+  function interval() {
+    percentTime++;
+    if (curr != -1) {
+      if (percentTime < 100) {
+        $('.reviews__wrapper .slick-dots li')
+          .eq(curr)
+          .find('.actual_dot path')
+          .css('stroke-dasharray', percentTime + ', 100');
+      } else {
+        curr = -1;
+        $('#reviews-slider').slick('slickNext');
+        percentTime = 0;
+      }
+    }
+  }
+
+  startProgressbar();
+
   $('#price-oftype__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
