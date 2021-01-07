@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
   <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
 
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/main.css?v=2" />
   <title>SDAYKAT</title>
 </head>
 

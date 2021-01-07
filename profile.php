@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
   <link rel="stylesheet" href="assets/libs/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/main.css?v=2" />
   <title>SDAYKAT</title>
 </head>
 

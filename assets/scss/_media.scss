@@ -2332,6 +2332,9 @@
   //=========================== franchise-calculator end
 }
 @media (max-width: 360px) {
+  .main_franchise{
+    background-position: 60% top;
+  }
   //=========================== price-ofauto
   .price-ofauto {
     &__head {

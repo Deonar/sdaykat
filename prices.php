@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/libs/jquery-libs/jquery-ui.min.css" />
   <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
 
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/main.css?v=2" />
   <title>SDAYKAT</title>
 </head>
 
