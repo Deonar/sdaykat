@@ -79,13 +79,16 @@ if (!isset($header_class)) {
                   </div>
                   <ul class="popup-authorized__menu">
                     <li class="popup-authorized__menu-item">
-                      <a href="/profile.php" class="popup-authorized__menu-link">Профиль</a>
+                      <a href="/profile.php#profile-tab" class="popup-authorized__menu-link open-profile-js"
+                        data-tab-profile="profile-tab">Профиль</a>
                     </li>
                     <li class="popup-authorized__menu-item">
-                      <a href="/profile.php" class="popup-authorized__menu-link">Сделки</a>
+                      <a href="/profile.php#transactions-tab" class="popup-authorized__menu-link open-profile-js"
+                        data-tab-profile="transactions-tab">Сделки</a>
                     </li>
                     <li class="popup-authorized__menu-item">
-                      <a href="/profile.php" class="popup-authorized__menu-link">Аналитика</a>
+                      <a href="/profile.php#analitic-tab" class="popup-authorized__menu-link open-profile-js"
+                        data-tab-profile="analitic-tab">Аналитика</a>
                     </li>
                   </ul>
                   <div class="popup-authorized__btn popup-btn">Выйти</div>
@@ -133,16 +136,16 @@ if (!isset($header_class)) {
           </div>
           <ul class="authorized-menu">
             <li class="authorized-menu__item">
-              <a href="/profile.php#profile-tab"
-                class="authorized-menu__link close-mob-menu-js location-reload">профиль</a>
+              <a href="/profile.php#profile-tab" class="authorized-menu__link close-mob-menu-js open-profile-js"
+                data-tab-profile="profile-tab">профиль</a>
             </li>
             <li class="authorized-menu__item">
-              <a href="/profile.php#analitic-tab"
-                class="authorized-menu__link close-mob-menu-js location-reload">аналитика</a>
+              <a href="/profile.php#analitic-tab" class="authorized-menu__link close-mob-menu-js open-profile-js"
+                data-tab-profile="analitic-tab">аналитика</a>
             </li>
             <li class="authorized-menu__item">
-              <a href="/profile.php#transactions-tab"
-                class="authorized-menu__link close-mob-menu-js location-reload">сделки</a>
+              <a href="/profile.php#transactions-tab" class="authorized-menu__link close-mob-menu-js open-profile-js"
+                data-tab-profile="transactions-tab">сделки</a>
             </li>
             <li class="authorized-menu__item">
               <a href="/bonuses.php" class="authorized-menu__link close-mob-menu-js">бонусы</a>
