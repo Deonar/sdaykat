@@ -25,14 +25,14 @@
         <div class="tab-wrapper" style="width: 100%">
           <div class="profile-head">
             <div class="profile-tabs">
-              <div class="profile-tab tab active" data-tab="1">Профиль</div>
-              <div class="profile-tab tab" data-tab="2">Сделки</div>
-              <div class="profile-tab tab" data-tab="3">Аналитика</div>
+              <div id="profile-tab" class="profile-tab tab active" data-tab="1">Профиль</div>
+              <div id="transactions-tab" class="profile-tab tab" data-tab="2">Сделки</div>
+              <div id="analitics-tab" class="profile-tab tab" data-tab="3">Аналитика</div>
             </div>
           </div>
           <div class="profile-body">
             <!-- TAB PROFILE -->
-            <div class="profile-tab__content tab-content" data-tab="1" style="display: none">
+            <div id="profile-tab-content" class="profile-tab__content tab-content" data-tab="1">
               <div id="profile-registration-edit" class="profile-registration-edit profile-blocks">
                 <div class="profile-tab__title-mob">
                   <h3 class="profile-tab__title h3">Профиль</h3>
@@ -370,7 +370,8 @@
             </div>
             <!-- TAB PROFILE END-->
             <!-- TAB transactions-->
-            <div class="transactions profile-tab__content tab-content" data-tab="2" style="display: none">
+            <div id="transactions-tab-content" class="transactions profile-tab__content tab-content" data-tab="2"
+              style="display: none">
               <div class="transactions-head">
                 <div class="profile-tab__title-mob">
                   <h3 class="profile-tab__title h3">Сделки</h3>
@@ -493,7 +494,8 @@
             </div>
             <!-- TAB transactions END-->
             <!-- TAB ANALITICS-->
-            <div class="analitics profile-tab__content tab-content" data-tab="3">
+            <div id="analitics-tab-content" class="analitics profile-tab__content tab-content" data-tab="3"
+              style="display: none">
               <div class="analitics-content">
                 <?php include("templates/analitic-delivery.php"); ?>
                 <?php include("templates/analitic-pay.php"); ?>

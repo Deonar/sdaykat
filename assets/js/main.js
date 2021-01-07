@@ -204,6 +204,33 @@ jQuery(document).ready(function ($) {
     }
   });
   //======================== tabs profile end
+  //======================== click link mob menu --> show tabs profile
+
+  let hash = window.location.hash;
+  if (hash == '#profile-tab') {
+    $('#profile-tab').addClass('active');
+    $('#transactions-tab').removeClass('active');
+    $('#analitics-tab').removeClass('active');
+    $('#profile-tab-content').show();
+    $('#transactions-tab-content').hide();
+    $('#analitics-tab-content').hide();
+  } else if (hash == '#analitic-tab') {
+    $('#profile-tab').removeClass('active');
+    $('#transactions-tab').removeClass('active');
+    $('#analitics-tab').addClass('active');
+    $('#profile-tab-content').hide();
+    $('#transactions-tab-content').hide();
+    $('#analitics-tab-content').show();
+  } else if (hash == '#transactions-tab') {
+    $('#profile-tab').removeClass('active');
+    $('#transactions-tab').addClass('active');
+    $('#analitics-tab').removeClass('active');
+    $('#profile-tab-content').hide();
+    $('#transactions-tab-content').show();
+    $('#analitics-tab-content').hide();
+  }
+
+  //======================== click link mob menu --> show tabs profile end
 
   //======================== tabs
   $('.tab-wrapper').on('click', '.tab', function (event) {
