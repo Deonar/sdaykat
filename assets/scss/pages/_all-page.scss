@@ -3804,3 +3804,15 @@
     }
   }
 }
+
+.slick-dots li svg:focus {
+  outline: none !important;
+}
+.slick-dots li:focus {
+  outline: none !important;
+}
+.bg_dot {
+  margin-top: -12px;
+  opacity: 0.3;
+}
+
