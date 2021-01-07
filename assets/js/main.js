@@ -246,20 +246,58 @@ jQuery(document).ready(function ($) {
   });
   //======================== tabs  end
   //======================== SLICK SLIDERS
-  var curr = 0;
-  var percentTime = 0;
-  $('#reviews-slider').on('init', function (event, slick, currentSlide, nextSlide) {
-    percentTime = 0;
-    $('.reviews__wrapper .slick-dots li').find('.actual_dot path').css('stroke-dasharray', '0, 100');
+  
 
-    for (var i = 0; i < $('.reviews__wrapper .slick-dots li').length; i++) {
-      if (!$('.reviews__wrapper .slick-dots li').eq(i).attr('class')) {
-        $('.reviews__wrapper .slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100');
-      } else {
-        break;
+  function sliderTimer(id) {
+    var curr = 0
+    var percentTime = 0;
+    id_slider = $('#' + id)
+
+    id_slider.on('init', function (event, slick, currentSlide, nextSlide) {
+      percentTime = 0
+      id_slider.find('.actual_dot path').css('stroke-dasharray', '0, 100')
+
+      for (var i = 0; i < id_slider.find('.slick-dots li').length; i++) {
+        if (!id_slider.find('.slick-dots li').eq(i).attr('class')) {
+          id_slider.find('.slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100')
+        } else {
+          break;
+        }
+      }
+    });
+    id_slider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+      percentTime = 0
+      id_slider.find('.actual_dot path').css('stroke-dasharray', '0, 100')
+      for (var i = 0; i < id_slider.find('.slick-dots li').length; i++) {
+        if (!id_slider.find('.slick-dots li').eq(i).attr('class')) {
+          id_slider.find('.slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100')
+        } else {
+          curr = i;
+          break;
+        }
+      }
+    });
+
+    function startProgressbar() {
+      percentTime = 0;
+      setInterval(interval, 50);
+    }
+
+    function interval() {
+      percentTime++;
+      if (curr != -1) {
+        if (percentTime < 100) {
+          id_slider.find('.slick-dots li').eq(curr).find('.actual_dot path').css('stroke-dasharray', percentTime + ', 100')
+        } else {
+          curr = -1;
+          id_slider.slick('slickNext');
+          percentTime = 0
+        }
       }
     }
-  });
+    startProgressbar();
+  }
+  sliderTimer('reviews-slider');
   $('#reviews-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -290,50 +328,22 @@ jQuery(document).ready(function ($) {
     ],
   });
 
-  $('#reviews-slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
-    percentTime = 0;
-    $('.reviews__wrapper .slick-dots li').find('.actual_dot path').css('stroke-dasharray', '0, 100');
-    for (var i = 0; i < $('.reviews__wrapper .slick-dots li').length; i++) {
-      if (!$('.reviews__wrapper .slick-dots li').eq(i).attr('class')) {
-        $('.reviews__wrapper .slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100');
-      } else {
-        curr = i;
-        break;
-      }
-    }
-  });
-
-  function startProgressbar() {
-    percentTime = 0;
-    setInterval(interval, 50);
-  }
-
-  function interval() {
-    percentTime++;
-    if (curr != -1) {
-      if (percentTime < 100) {
-        $('.reviews__wrapper .slick-dots li')
-          .eq(curr)
-          .find('.actual_dot path')
-          .css('stroke-dasharray', percentTime + ', 100');
-      } else {
-        curr = -1;
-        $('#reviews-slider').slick('slickNext');
-        percentTime = 0;
-      }
-    }
-  }
-
-  startProgressbar();
-
+  sliderTimer('price-oftype__slider');
   $('#price-oftype__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
+    infinite: true,
     dots: true,
+    speed: 500,
+    customPaging: function (slider, i) {
+      return '<svg viewBox="0 0 36 36" class="actual_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#fff"; stroke-width="6" stroke-dasharray="80, 100"; /></svg><svg viewBox="0 0 36 36" class="bg_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#fff"; stroke-width="6" stroke-dasharray="100, 100"; /></svg>';
+    },
     prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"></button>',
   });
+
+
   $('#redemption-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
