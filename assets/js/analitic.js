@@ -1,5 +1,5 @@
 //======================== daterangepicker profile
-$('input[name="daterange"]').daterangepicker();
+$('.daterange-input').daterangepicker();
 
 var options = {
     series: [{
@@ -243,19 +243,19 @@ for (var i = 0; i < colors.length; i++) {
     $('.diagram__info__single').eq(i).find('.diagram__info__single--title span').css('background', colors[i]);
 }
 
-var chart1 = document.querySelector("#chart1")
+var chart1 = document.querySelector("#analitic-delivery")
 if (chart1) {
     var chart1 = new ApexCharts(chart1, options);
     chart1.render();
 }
 
-var chart2 = document.querySelector("#chart2")
+var chart2 = document.querySelector("#analitic-pay")
 if (chart2) {
     var chart2 = new ApexCharts(chart2, options1);
     chart2.render();
 }
 
-var chart3 = document.querySelector("#chart3")
+var chart3 = document.querySelector("#analitic-materials")
 if (chart3) {
     var chart3 = new ApexCharts(chart3, options2);
     chart3.render();

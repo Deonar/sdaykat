@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="col-6">
-            <div id="chart3"></div>
+            <div id="analitic-materials"></div>
         </div>
     </div>
 

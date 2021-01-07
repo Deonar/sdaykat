@@ -1,3 +1,3 @@
 <div class="graph">
-    <div id="chart2"></div>
+    <div id="analitic-pay"></div>
 </div>

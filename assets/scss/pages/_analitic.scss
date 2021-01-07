@@ -1,66 +1,11 @@
-
 .graph {
-    max-width: 100% ;
-    padding: 50px;
-    overflow: hidden;
-  }
-  
-  .apexcharts-yaxis tspan {
-    font-family: "ProximaNova", sans-serif !important;
-    font-weight: 700 !important;
-    font-size: 12px !important;
-    color: #B1B9CA !important;
-    opacity: 0.7 !important;
-  }
-  .apexcharts-xaxis tspan {
-    font-family: "ProximaNova", sans-serif !important;
-    font-weight: 700 !important;
-    font-size: 12px !important;
-    color: #B1B9CA !important;
-    opacity: 0.7 !important;
-  }
-  
-  .arrow_box {
-    position: relative;
-    background: #fff;
-    border: 2px solid #043598;
-    font-family: "Proxima Nova";
-    font-weight: 700;
-  
-    border-radius: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    position: relative;
-    background: #fff;
-    left: 0;
-    top: 0;
-    color: #043598;
-    box-shadow: 0px 10px 17px rgba(4, 53, 152, 0.2); /* Добавляем тень для блока */
-    border: none !important;
-    white-space: nowrap;
-  }
-  .arrow_box::after, .arrow_box::before {
-    content: '';
-    position: absolute;
-    background: #fff;
-    left: calc(50% - 10px); bottom: -11px;
-    width: 20px; height: 20px;
-    box-shadow: 0 0 7px rgba(4, 53, 152, 0.2); /* Добавляем тень для уголка */
-    z-index: -1; /* Прячем за основным блоком */
-    transform: rotate(45deg); /* Поворачиваем на 45º */
-    -webkit-transform: rotate(45deg);
-    }
-  .arrow_box::before {
-    z-index: 1; /* Накладываем поверх, чтобы скрыть следы тени */
-    box-shadow: none; /* Прячем тень */
-  }
-  .apexcharts-toolbar {
-    display: none !important;
-  }
-  
-  #chart1 .apexcharts-tooltip {
+  background: #ffffff;
+  border: 1px solid #e2e4ea;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 30px;
+  margin-bottom: 30px;
+  .apexcharts-tooltip {
     color: #fff;
     transform: translateX(10px) translateY(10px);
     overflow: visible !important;
@@ -68,110 +13,151 @@
     margin-top: -45px;
     border: none !important;
   }
-  
-  #chart1 .apexcharts-tooltip span {
+  .apexcharts-tooltip span {
     padding: 5px 10px;
     display: inline-block;
   }
-  
-  #chart2 .apexcharts-tooltip {
-    color: #fff;
-    transform: translateX(10px) translateY(10px);
-    overflow: visible !important;
-    white-space: normal !important;
-    margin-top: -45px;
-    border: none !important;
+}
+
+.apexcharts-yaxis tspan {
+  font-family: "ProximaNova", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  color: #b1b9ca !important;
+  opacity: 0.7 !important;
+}
+.apexcharts-xaxis tspan {
+  font-family: "ProximaNova", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  color: #b1b9ca !important;
+  opacity: 0.7 !important;
+}
+
+.arrow_box {
+  position: relative;
+  background: #fff;
+  border: 2px solid #043598;
+  font-family: "Proxima Nova";
+  font-weight: 700;
+
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  position: relative;
+  background: #fff;
+  left: 0;
+  top: 0;
+  color: #043598;
+  box-shadow: 0px 10px 17px rgba(4, 53, 152, 0.2); /* Добавляем тень для блока */
+  border: none !important;
+  white-space: nowrap;
+}
+.arrow_box::after,
+.arrow_box::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  left: calc(50% - 10px);
+  bottom: -11px;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 7px rgba(4, 53, 152, 0.2); /* Добавляем тень для уголка */
+  z-index: -1; /* Прячем за основным блоком */
+  transform: rotate(45deg); /* Поворачиваем на 45º */
+  -webkit-transform: rotate(45deg);
+}
+.arrow_box::before {
+  z-index: 1; /* Накладываем поверх, чтобы скрыть следы тени */
+  box-shadow: none; /* Прячем тень */
+}
+.apexcharts-toolbar {
+  display: none !important;
+}
+
+.diagram__info {
+  font-family: "Stapel";
+  width: calc(100% - 280px);
+}
+.diagram__info h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.diagram {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border: 1px solid #e2e4ea;
+  border-radius: 3px;
+  padding: 30px;
+  max-width: 100%;
+  align-items: center;
+}
+.diagram__info__single {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 100px;
+  border-bottom: 2px solid #e2e4ea;
+}
+.diagram__info .diagram__info__single:last-child {
+  border: none;
+}
+.diagram__info__single--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+.diagram__info__single--title span {
+  content: "";
+  display: inline-block;
+  border-radius: 3px;
+  width: 14px;
+  height: 14px;
+  margin-right: 15px;
+}
+.diagram__info__single--percent {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .graph {
+    overflow-x: scroll;
+    padding: 0;
   }
-  
-  #chart2 .apexcharts-tooltip span {
-    padding: 5px 10px;
-    display: inline-block;
+  .graph #chart1 {
+    min-width: 768px;
   }
-  
-  .diagram__info {
-    font-family: "Stapel";
-    width: calc(100% - 280px);
+  .graph #chart2 {
+    min-width: 768px;
   }
-  .diagram__info h2 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    padding-bottom: 15px;
-  }
+
   .diagram {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    border: 1px solid #E2E4EA;
-    border-radius: 3px;
-    padding: 30px;
-    max-width: 100%;
-    align-items: center;
-  }
-  .diagram__info__single {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-right: 100px;
-    border-bottom: 2px solid #E2E4EA;
-  }
-  .diagram__info .diagram__info__single:last-child {
+    display: block;
     border: none;
   }
-  .diagram__info__single--title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+  .diagram__info {
+    width: 100%;
   }
-  .diagram__info__single--title span {
-    content: '';
-    display: inline-block;
-    border-radius: 3px;
-    width: 14px;
-    height: 14px;
-    margin-right: 15px;
+  .diagram__info__single {
+    margin-right: 0;
   }
-  .diagram__info__single--percent {
-    font-size: 24px;
-    font-weight: 700;
+  #chart3 {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
   }
-  
-  @media (max-width: 767px) {
-  
-    .graph {
-      overflow-x: scroll;
-      padding: 0;
-    }
-    .graph #chart1 {
-      min-width: 768px;
-    }
-    .graph #chart2 {
-      min-width: 768px;
-    }
-  
-  
-    .diagram {
-      display: block;
-      border: none;
-    }
-    .diagram__info {
-      width: 100%;
-    }
-    .diagram__info__single {
-      margin-right: 0;
-    }
-    #chart3 {
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      justify-content: center;
-    }
-    .diagram {
-      padding: 0;
-    }
+  .diagram {
+    padding: 0;
   }
-  
+}
