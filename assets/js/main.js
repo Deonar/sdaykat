@@ -205,23 +205,23 @@ jQuery(document).ready(function ($) {
   });
   //======================== tabs profile end
   //======================== click link mob menu --> show tabs profile
-
-  let hash = window.location.hash;
-  if (hash == '#profile-tab') {
+  function showProfileContent() {
     $('#profile-tab').addClass('active');
     $('#transactions-tab').removeClass('active');
     $('#analitics-tab').removeClass('active');
     $('#profile-tab-content').show();
     $('#transactions-tab-content').hide();
     $('#analitics-tab-content').hide();
-  } else if (hash == '#analitic-tab') {
+  }
+  function showAnaliticContent() {
     $('#profile-tab').removeClass('active');
     $('#transactions-tab').removeClass('active');
     $('#analitics-tab').addClass('active');
     $('#profile-tab-content').hide();
     $('#transactions-tab-content').hide();
     $('#analitics-tab-content').show();
-  } else if (hash == '#transactions-tab') {
+  }
+  function showTransactionsContent() {
     $('#profile-tab').removeClass('active');
     $('#transactions-tab').addClass('active');
     $('#analitics-tab').removeClass('active');
@@ -229,7 +229,28 @@ jQuery(document).ready(function ($) {
     $('#transactions-tab-content').show();
     $('#analitics-tab-content').hide();
   }
-
+  function openTabsProfile() {
+    let hash = window.location.hash;
+    if (hash == '#profile-tab') {
+      showProfileContent();
+    } else if (hash == '#analitic-tab') {
+      showAnaliticContent();
+    } else if (hash == '#transactions-tab') {
+      showTransactionsContent();
+    }
+  }
+  openTabsProfile();
+  $('.open-profile-js').on('click', function (e) {
+    let dataTabProfile = $(this).data('tab-profile');
+    console.log(dataTabProfile);
+    if (dataTabProfile == 'profile-tab') {
+      showProfileContent();
+    } else if (dataTabProfile == 'analitic-tab') {
+      showAnaliticContent();
+    } else if (dataTabProfile == 'transactions-tab') {
+      showTransactionsContent();
+    }
+  });
   //======================== click link mob menu --> show tabs profile end
 
   //======================== tabs
@@ -246,31 +267,30 @@ jQuery(document).ready(function ($) {
   });
   //======================== tabs  end
   //======================== SLICK SLIDERS
-  
 
   function sliderTimer(id) {
-    var curr = 0
+    var curr = 0;
     var percentTime = 0;
-    id_slider = $('#' + id)
+    id_slider = $('#' + id);
 
     id_slider.on('init', function (event, slick, currentSlide, nextSlide) {
-      percentTime = 0
-      id_slider.find('.actual_dot path').css('stroke-dasharray', '0, 100')
+      percentTime = 0;
+      id_slider.find('.actual_dot path').css('stroke-dasharray', '0, 100');
 
       for (var i = 0; i < id_slider.find('.slick-dots li').length; i++) {
         if (!id_slider.find('.slick-dots li').eq(i).attr('class')) {
-          id_slider.find('.slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100')
+          id_slider.find('.slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100');
         } else {
           break;
         }
       }
     });
     id_slider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
-      percentTime = 0
-      id_slider.find('.actual_dot path').css('stroke-dasharray', '0, 100')
+      percentTime = 0;
+      id_slider.find('.actual_dot path').css('stroke-dasharray', '0, 100');
       for (var i = 0; i < id_slider.find('.slick-dots li').length; i++) {
         if (!id_slider.find('.slick-dots li').eq(i).attr('class')) {
-          id_slider.find('.slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100')
+          id_slider.find('.slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100');
         } else {
           curr = i;
           break;
@@ -287,11 +307,15 @@ jQuery(document).ready(function ($) {
       percentTime++;
       if (curr != -1) {
         if (percentTime < 100) {
-          id_slider.find('.slick-dots li').eq(curr).find('.actual_dot path').css('stroke-dasharray', percentTime + ', 100')
+          id_slider
+            .find('.slick-dots li')
+            .eq(curr)
+            .find('.actual_dot path')
+            .css('stroke-dasharray', percentTime + ', 100');
         } else {
           curr = -1;
           id_slider.slick('slickNext');
-          percentTime = 0
+          percentTime = 0;
         }
       }
     }
@@ -342,7 +366,6 @@ jQuery(document).ready(function ($) {
     prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"></button>',
   });
-
 
   $('#redemption-slider').slick({
     slidesToShow: 3,
