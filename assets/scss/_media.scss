@@ -12,16 +12,16 @@
       flex-direction: column;
     }
   }
- //=========================== Reviews
- .reviews {
-  .slider-btn__prev {
-    left: -20px;
+  //=========================== Reviews
+  .reviews {
+    .slider-btn__prev {
+      left: -20px;
+    }
+    .slider-btn__next {
+      right: -20px;
+    }
   }
-  .slider-btn__next {
-    right: -20px;
-  }
-}
-//=========================== Reviews end
+  //=========================== Reviews end
   //=========================== HEADER
   .header {
     &-top__address {
@@ -1849,7 +1849,7 @@
 }
 @media (max-width: 578px) {
   .custom-popup {
-    // min-height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
