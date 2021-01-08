@@ -3,6 +3,9 @@ $el = $('#representative-map path[fill="white"]');
 function scrollToData(id) {
   console.log(id);
   $temp = $('.representative-item[data-id="' + id + '"]');
+  $('.representative-item__title').removeClass('active');
+  $temp.find('.representative-item__title').addClass('active');
+
   if (!($temp.length)) return false;
   $('html, body').animate({
     scrollTop: $temp.offset().top

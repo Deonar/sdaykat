@@ -1,35 +1,50 @@
 [
-
   {
-    "id": "-1",
-    "title": "Челябинская область1",
-    "image": "nizegorsk",
+    "id": "17",
+    "title": "Московская область",
+    "image": "moscow",
     "occupied": [
-      "Челябинск",
-      "Магнитогорск",
-      "Златоуст",
-      "Чебаркуль",
-      "Миасс",
-      "Копейск",
-      "Троицк",
-      "Коркино",
-      "Октябрьский"
+      "Одинцово",
+      "Коломна",
+      "Электросталь",
+      "Красногорск",
+      "Люберцы",
+      "Мытищи",
+      "Химки",
+      "Подольск",
+      "Балашиха"
     ],
     "avaliable": [
-      "commodo",
-      "commodo",
-      "consequat",
-      "aliquip",
-      "qui",
-      "mollit",
-      "ea"
+      "Одинцово",
+      "Коломна",
+      "Электросталь"
     ]
   },
-
+  {
+    "id": "16",
+    "title": "Нижегородская область",
+    "image": "nizegorsk",
+    "occupied": [
+      "Городец",
+      "Нижний Новгород",
+      "Дзержинск",
+      "Арзамас",
+      "Саров",
+      "Первомайск",
+      "Шахунья"
+    ],
+    "avaliable": [
+      "Городец",
+      "Нижний Новгород",
+      "Дзержинск",
+      "Арзамас",
+      "Саров"
+    ]
+  },
   {
     "id": "3",
     "title": "Челябинская область",
-    "image": "saratov",
+    "image": "chelabinsk",
     "occupied": [
       "Челябинск",
       "Магнитогорск",
@@ -52,19 +67,44 @@
     ]
   },
   {
-    "id": "8",
-    "title": "Республика Башкортостан",
+    "id": "0",
+    "title": "Сведловская область",
+    "image": "sverdlovsk",
+    "occupied": [
+      "Екатеринбург",
+      "Пышма",
+      "Первоуральск",
+      "Реж",
+      "Артемовский",
+      "Березовский",
+      "Сысерть",
+      "Арамиль",
+      "Нижний Тагил"
+    ],
+    "avaliable": [
+      "commodo",
+      "commodo",
+      "consequat",
+      "aliquip",
+      "qui",
+      "mollit",
+      "ea"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Саратовская область",
     "image": "saratov",
     "occupied": [
-      "Челябинск",
-      "Магнитогорск",
-      "Златоуст",
-      "Чебаркуль",
-      "Миасс",
-      "Копейск",
-      "Троицк",
-      "Коркино",
-      "Октябрьский"
+      "Екатеринбург",
+      "Пышма",
+      "Первоуральск",
+      "Реж",
+      "Артемовский",
+      "Березовский",
+      "Сысерть",
+      "Арамиль",
+      "Нижний Тагил"
     ],
     "avaliable": [
       "commodo",
@@ -78,9 +118,22 @@
   },
   {
     "id": "5",
-    "title": "Нижегородская область",
-    "image": "saratov",
+    "title": "Республика Башкортостан",
+    "image": "bashcorstan",
     "occupied": [
+      "Благовещенск",
+      "Верхнеяркеево",
+      "Бугульма",
+      "Уфа",
+      "Стерлитамак",
+      "Салават",
+      "Нефтекамск",
+      "Белорецк",
+      "Ишимбай",
+      "Бирск",
+      "Чишмы"
+    ],
+    "avaliable": [
       "commodo",
       "commodo",
       "consequat",
@@ -88,116 +141,43 @@
       "qui",
       "mollit",
       "ea"
-    ],
-    "avaliable": [
-      "cupidatat",
-      "nostrud",
-      "aute",
-      "cupidatat",
-      "aute",
-      "veniam",
-      "velit"
     ]
   },
   {
     "id": "10",
-    "title": "Волгоградская область",
-    "image": "saratov",
+    "title": "Республика Башкортостан",
+    "image": "udmurtya",
     "occupied": [
-      "est",
-      "exercitation",
-      "nostrud",
-      "eu",
-      "officia",
-      "non",
-      "dolor"
+      "Ижевск",
+        "Воткинск",
+        "Чайковский",
+        "Сарапул",
+        "Нефтекамск",
+        "Можга",
+        "Игра",
+        "Ува"
     ],
     "avaliable": [
-      "cupidatat",
-      "nostrud",
-      "aute",
-      "cupidatat",
-      "aute",
-      "veniam",
-      "velit"
+      "commodo",
+      "commodo",
+      "consequat",
+      "aliquip",
+      "qui",
+      "mollit",
+      "ea"
     ]
   },
   {
     "id": "12",
-    "title": "Калиниградская область",
-    "image": "saratov",
-    "occupied": [
-      "laborum",
-      "tempor",
-      "incididunt",
-      "eu",
-      "dolore",
-      "sint"
-    ],
-    "avaliable": [
-      "cupidatat",
-      "nostrud",
-      "aute",
-      "cupidatat",
-      "aute"
-    ]
-  },
-  {
-    "id": "7",
     "title": "Республика Татарстан",
-    "image": "saratov",
+    "image": "tatarstan",
     "occupied": [
-      "Lorem",
-      "excepteur",
-      "culpa",
-      "fugiat",
-      "proident",
-      "proident",
-      "proident"
-    ],
-    "avaliable": [
-      "cupidatat",
-      "nostrud",
-      "aute",
-      "cupidatat"
-    ]
-  },
-  {
-    "id": "3",
-    "title": "Республика Удмуртия",
-    "image": "saratov",
-    "occupied": [
-      "cupidatat",
-      "nostrud",
-      "aute",
-      "cupidatat",
-      "aute",
-      "veniam",
-      "velit"
-    ],
-    "avaliable": [
-      "commodo",
-      "commodo",
-      "consequat",
-      "aliquip",
-      "qui",
-      "mollit",
-      "ea"
-    ]
-  },
-  {
-    "id": "16",
-    "title": "Московская область",
-    "image": "nizegorsk",
-    "occupied": [
-      "Одинцово",
-      "Коломна",
-      "Электросталь",
-      "Красногорск",
-      "Люберцы",
-      "Королёв",
-      "Подольск",
-      "Балашиха"
+      "Казань",
+        "Набережные Челны",
+        "Нижнекамск",
+        "Альметьевск",
+        "Бугульма",
+        "Зеленодольск"
     ],
     "avaliable": [
       "cupidatat",
@@ -210,17 +190,15 @@
     ]
   },
   {
-    "id": "11",
+    "id": "8",
     "title": "Самарская область",
-    "image": "nizegorsk",
+    "image": "samara",
     "occupied": [
-      "est",
-      "exercitation",
-      "nostrud",
-      "eu",
-      "officia",
-      "non",
-      "dolor"
+      "Самара",
+      "Тольятти",
+      "Сызрань",
+      "Чапаевск",
+      "Отрадный"
     ],
     "avaliable": [
       "cupidatat",
@@ -233,16 +211,17 @@
     ]
   },
   {
-    "id": "2",
-    "title": "Свердловская область",
-    "image": "saratov",
+    "id": "14",
+    "title": "Пензенская область",
+    "image": "penza",
     "occupied": [
-      "laborum",
-      "tempor",
-      "incididunt",
-      "eu",
-      "dolore",
-      "sint"
+      "Пенза",
+      "Кузнецк",
+      "Заречный",
+      "Каменка",
+      "Нижний Ломов",
+      "Городище",
+      "Сурск"
     ],
     "avaliable": [
       "cupidatat",
@@ -253,103 +232,51 @@
     ]
   },
   {
-    "id": "17",
-    "title": "Пензенская область",
-    "image": "nizegorsk",
-    "occupied": [
-      "Lorem",
-      "excepteur",
-      "culpa",
-      "fugiat",
-      "proident",
-      "proident",
-      "proident"
-    ],
-    "avaliable": [
-      "cupidatat",
-      "nostrud",
-      "aute",
-      "cupidatat"
-    ]
-  },
-  {
-    "id": "10",
-    "title": "Самарская область",
-    "image": "nizegorsk",
-    "occupied": [
-      "Lorem",
-      "excepteur",
-      "culpa",
-      "fugiat",
-      "proident",
-      "proident",
-      "proident"
-    ],
-    "avaliable": [
-      "cupidatat",
-      "nostrud",
-      "aute",
-      "cupidatat"
-    ]
-  },
-  {
-    "id": "0",
+    "id": "18",
     "title": "Тюменская область",
-    "image": "nizegorsk",
+    "image": "tymen",
     "occupied": [
-      "Lorem",
-      "excepteur",
-      "culpa",
-      "fugiat",
-      "proident",
-      "proident",
-      "proident"
+      "Тюмень",
+      "Тобольск",
+      "Ишим",
+      "Ялуторовск",
+      "Заводоуковск",
+      "Боровский",
+      "Голышманово",
+      "Винзили",
+      "Сумкино",
+      "Богандинский"
     ],
     "avaliable": [
       "cupidatat",
       "nostrud",
       "aute",
-      "cupidatat"
+      "cupidatat",
+      "aute"
     ]
   },
   {
-    "id": "4",
+    "id": "-1",
     "title": "Тюменская область",
-    "image": "saratov",
+    "image": "tymen",
     "occupied": [
-      "Lorem",
-      "excepteur",
-      "culpa",
-      "fugiat",
-      "proident",
-      "proident",
-      "proident"
+      "Тюмень",
+      "Тобольск",
+      "Ишим",
+      "Ялуторовск",
+      "Заводоуковск",
+      "Боровский",
+      "Голышманово",
+      "Винзили",
+      "Сумкино",
+      "Богандинский"
     ],
     "avaliable": [
       "cupidatat",
       "nostrud",
       "aute",
-      "cupidatat"
-    ]
-  },
-  {
-    "id": "21",
-    "title": "Тюменская область",
-    "image": "nizegorsk",
-    "occupied": [
-      "Lorem",
-      "excepteur",
-      "culpa",
-      "fugiat",
-      "proident",
-      "proident",
-      "proident"
-    ],
-    "avaliable": [
       "cupidatat",
-      "nostrud",
-      "aute",
-      "cupidatat"
+      "aute"
     ]
   }
 ]

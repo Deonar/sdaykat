@@ -2353,6 +2353,9 @@
     }
   }
   &-item__title {
+    &.active{
+      color: $secondery;
+    }
   }
   &-list__cities {
     display: flex;
