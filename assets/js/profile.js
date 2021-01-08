@@ -352,7 +352,18 @@ var options2 = {
         type: 'donut',
         width: 230,
     },
-
+    states: {
+        hover: {
+            filter: {
+                type: 'none',
+            }
+        },
+        active: {
+            filter: {
+                type: 'none',
+            }
+        },
+    },
     colors: colors,
     legend: {
         show: false,
