@@ -52,6 +52,7 @@
               <form class="price-oftype__form main-form main-form__light">
                 <div class="main-form__wrapper">
                   <label class="main-form__label main-form__label_phone">
+                  <span class="main-form__label-error" style="display:none;">некорректный номер</span>
                     <input class="main-form__phone mask-phone" type="tel" name="phone"
                       placeholder="+7 (___) ___-__-__" />
                   </label>
@@ -403,6 +404,7 @@
       <form class="popup-form main-form main-form__light">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
+          <span class="main-form__label-error" style="display:none;">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
@@ -440,6 +442,7 @@
       <form class="popup-form main-form main-form__light">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
+          <span class="main-form__label-error" style="display:none;">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">

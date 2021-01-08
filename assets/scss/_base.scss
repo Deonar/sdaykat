@@ -691,6 +691,24 @@ body {
       z-index: 9;
     }
   }
+  &__label {
+    position: relative;
+    &._error input {
+      border: 1px solid #d10000;
+    }
+    input:focus {
+      border: 1px solid $primary;
+    }
+  }
+  &__label-error {
+    position: absolute;
+    left: 5px;
+    bottom: 98%;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #d10000;
+  }
   &__phone {
     outline: none;
     font-family: 'ProximaNova';
