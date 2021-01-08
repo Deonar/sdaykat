@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Page link -->
-  
+
   <!-- Base link -->
   <?php include("inc/base-link.php"); ?>
 
@@ -15,9 +15,9 @@
 
 <body>
   <?php
-  $page = 'authorization'; 
+  $page = 'authorization';
   $header_class = 'header-light';
-  include("header.php"); 
+  include("header.php");
   ?>
 
   <main class="page__authorization header-top__indent">
@@ -37,16 +37,14 @@
               </div>
               <div class="main-form__wrapper">
                 <label class="main-form__label main-form__label_phone">
-                  <span class="main-form__label-error" style="display:none;">некорректный номер</span>
+                  <span class="main-form__label-error">некорректный номер</span>
                   <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
                   <button id="entry-account" class="authorization__btn btn btn_hover" type="button">войти в
                     аккаунт</button>
 
-                  <a href="/profile.php#profile-tab" id="registration-account"
-                    class="authorization__btn authorization__btn-link  btn open-profile-js"
-                    data-tab-profile="profile-tab" type="button">Зарегистрироваться</a>
+                  <a href="/profile.php#profile-tab" id="registration-account" class="authorization__btn authorization__btn-link  btn open-profile-js" data-tab-profile="profile-tab" type="button">Зарегистрироваться</a>
                 </div>
               </div>
             </form>
@@ -60,18 +58,16 @@
                 oтправленный на ваш номер
               </p>
               <div class="authorization-confirm__input-wrap">
-                <input class="authorization-confirm__input" maxlength="1" type="text" placeholder="|" />
-                <input class="authorization-confirm__input" maxlength="1" type="text" placeholder="|" />
-                <input class="authorization-confirm__input" maxlength="1" type="text" placeholder="|" />
-                <input class="authorization-confirm__input" maxlength="1" type="text" placeholder="|" />
+                <input id="otc-1" autocomplete="one-time-code" name="code_number" pattern="[0-9]*" required="" class="authorization-confirm__input" maxlength="1" type="number" inputtype="numeric" placeholder="|">
+                <input min="0" max="9" name="code_number" pattern="[0-9]*" required="" class="authorization-confirm__input" maxlength="1" type="number" inputtype="numeric" placeholder="|"/>
+                <input min="0" max="9" name="code_number" pattern="[0-9]*" required="" class="authorization-confirm__input" maxlength="1" type="number" inputtype="numeric" placeholder="|"/>
+                <input min="0" max="9" name="code_number" pattern="[0-9]*" required="" class="authorization-confirm__input" maxlength="1" type="number" inputtype="numeric" placeholder="|"/>
               </div>
-              <a href="#" class="authorization-confirm__btn btn btn_hover primary-btn">Подтвердить</a>
+              <button type="submit" class="authorization-confirm__btn btn btn_hover primary-btn">Подтвердить</button>
               <span id="authorization-confirm__sms" class="authorization-confirm__sms">Отправить повторное смс
                 через:</span>
-              <span id="authorization-confirm__sms-timer" class="authorization-confirm__sms-timer ">00:<span
-                  class="authorization-confirm__sms-timer seconds"> 15</span></span>
-              <span id="send-sms" id="authorization-confirm__sms-send" class="authorization-confirm__sms-send"
-                style="display: none">Отправить смс</span>
+              <span id="authorization-confirm__sms-timer" class="authorization-confirm__sms-timer ">00:<span class="authorization-confirm__sms-timer seconds"> 15</span></span>
+              <span id="send-sms" id="authorization-confirm__sms-send" class="authorization-confirm__sms-send" style="display: none">Отправить смс</span>
             </div>
           </form>
           <div class="entry-cabinet__conditions">
@@ -154,7 +150,9 @@
   </main>
 
   <?php include("footer.php"); ?>
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="assets/js/profile.js"></script>
 </body>
 
 </html>

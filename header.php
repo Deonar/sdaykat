@@ -64,8 +64,8 @@ if (!isset($header_class)) {
             <div class="header-top__contact-text">Звонок бесплатный</div>
           </div>
           <div class="header-top__cabinet">
-            <a href="/authorization.php" class="header__cabinet-entry" style="display: none">Личный кабинет</a>
-            <div class="header-authorized">
+            <a href="/authorization.php" class="header__cabinet-entry" id="sing-in">Личный кабинет</a>
+            <div class="header-authorized" style="display: none">
               <div class="header-authorized__login">+7 999 444 11 01</div>
               <img src="assets/img/authorized.jpg" alt="" class="header-authorized__logo" />
               <div class="header-authorized__popup">
@@ -91,7 +91,7 @@ if (!isset($header_class)) {
                         data-tab-profile="analitic-tab">Аналитика</a>
                     </li>
                   </ul>
-                  <div class="popup-authorized__btn btn gray2-btn  popup-btn">Выйти</div>
+                  <div class="popup-authorized__btn btn gray2-btn  popup-btn" id="log-out">Выйти</div>
                 </div>
               </div>
             </div>
@@ -127,9 +127,9 @@ if (!isset($header_class)) {
         <button class="header-mob__body-close close-mob-menu-js"></button>
       </div>
       <div class="header-mob__cabinet">
-        <a href="/authorization.php" class="header__cabinet-entry close-mob-menu-js" style="display: none">Личный
+        <a href="/authorization.php" class="header__cabinet-entry close-mob-menu-js" id="sing-in_mob">Личный
           кабинет</a>
-        <div class="header-mob__authorized">
+        <div class="header-mob__authorized" style="display: none">
           <div class="authorized-logo">
             <img src="assets/img/icons/authorized-icon.svg" alt="" class="authorized-logo__img" />
             <div class="authorized-login">+7 999 444 11 01</div>
@@ -151,7 +151,7 @@ if (!isset($header_class)) {
               <a href="/bonuses.php" class="authorized-menu__link close-mob-menu-js">бонусы</a>
             </li>
           </ul>
-          <a href="#" class="authorized-btn close-mob-menu-js">Выйти</a>
+          <a href="#" class="authorized-btn close-mob-menu-js" id="log-out_mob">Выйти</a>
         </div>
       </div>
       <ul class="header-mob__menu">

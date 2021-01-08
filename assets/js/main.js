@@ -95,43 +95,7 @@ jQuery(document).ready(function ($) {
     $('#mobMenu').removeClass('active');
   });
 
-  //entry-account
-  $('#entry-account').on('click', function (e) {
-    $('#authorization-confirm').show();
-    $('#entry-cabinet__entry').hide();
-  });
-  $('#change-number').on('click', function (e) {
-    $('#entry-cabinet__entry').show();
-    $('#authorization-confirm').hide();
-  });
-
-  // TAIMER
-  function startTimer() {
-    var _Seconds = $('.seconds').text(),
-      int;
-    int = setInterval(function () {
-      // запускаем интервал
-      if (_Seconds > 0) {
-        _Seconds--; // вычитаем 1
-        $('.seconds').text(_Seconds); // выводим получившееся значение в блок
-      } else {
-        clearInterval(int); // очищаем интервал, чтобы он не продолжал работу при _Seconds = 0
-        $('#send-sms').show(300);
-        $('#authorization-confirm__sms').hide(300);
-        $('#authorization-confirm__sms-timer').hide(300);
-        $('.seconds').text('15');
-      }
-    }, 1000);
-  }
-  $('#entry-account').on('click', function (e) {
-    startTimer();
-  });
-  $('#send-sms').on('click', function (e) {
-    $(this).hide();
-    $('#authorization-confirm__sms').show(300);
-    $('#authorization-confirm__sms-timer').show(300);
-    startTimer();
-  });
+  
 
   // profile save-info
   $('#save-info').on('click', function (e) {
