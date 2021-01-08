@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
- <!-- Base link -->
- <?php include("inc/base-link.php"); ?>
+  <!-- Base link -->
+  <?php include("inc/base-link.php"); ?>
 
-<title>Журнал</title>
+  <title>Журнал</title>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
               <div class="article__item-img">
                 <img src="assets/img/article/article_5.jpg" alt="Каталитические системы" />
               </div>
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_blue"> Автомобильная отрасль </span>
               <div class="article__item-bottom">
                 <h2 class="article__item-title primary-title primary-title__light">Сколько стоит старый катализатор?
                 </h2>
@@ -80,7 +80,7 @@
         <div class="row no-gutters article article__small-items">
           <div class="col-12 col-sm-4">
             <a href="/single-article.php" class="article__item">
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_black">Драгоценные металлы</span>
               <h4 class="article__item-title h4">Сколько стоит старый катализатор?</h4>
               <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
               <div class="article__bottom">
@@ -91,7 +91,7 @@
           </div>
           <div class="col-12 col-sm-4">
             <a href="/single-article.php" class="article__item">
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_blue"> Автомобильная отрасль </span>
               <h4 class="article__item-title h4">Сколько стоит старый катализатор?</h4>
               <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
               <div class="article__bottom">
@@ -102,7 +102,7 @@
           </div>
           <div class="col-12 col-sm-4">
             <a href="/single-article.php" class="article__item">
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_yellow"> Вторичное сырье </span>
               <h4 class="article__item-title h4">Сколько стоит старый катализатор?</h4>
               <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
               <div class="article__bottom">
@@ -322,7 +322,7 @@
         <form class="calculator-form__body main-form">
           <div class="main-form__wrapper">
             <label class="main-form__label main-form__label_phone">
-            <span class="main-form__label-error" style="display:none;">некорректный номер</span>
+              <span class="main-form__label-error" style="display:none;">некорректный номер</span>
               <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
             </label>
             <div class="main-form__btn">
