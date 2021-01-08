@@ -22,15 +22,12 @@ jQuery(document).ready(function ($) {
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
 
-    $('html, body').animate(
-      {
-        scrollTop: $(href).offset().top - 100,
-      },
-      {
-        duration: 370, // по умолчанию «400»
-        easing: 'linear', // по умолчанию «swing»
-      }
-    );
+    $('html, body').animate({
+      scrollTop: $(href).offset().top - 100,
+    }, {
+      duration: 370, // по умолчанию «400»
+      easing: 'linear', // по умолчанию «swing»
+    });
     if ($(window).width() < 768) {
       $('html, body').animate({
         scrollTop: $(href).offset().top - 70,
@@ -44,6 +41,27 @@ jQuery(document).ready(function ($) {
     mainClass: 'mfp-fade',
   });
 
+  $(".main-form__phone").blur(function () {
+    if ($(this).val().length >= 18) {
+      $(this).closest(".main-form__label_phone").addClass("_done").removeClass("_error");
+    } else {
+      $.magnificPopup.close({});
+      $(this).closest(".main-form__label_phone").removeClass("_done").addClass("_error");
+    }
+  });
+  $(".main-form__submit").on("click", function (e) {
+    e.preventDefault();
+    if ($(this).closest('.main-form').find(".main-form__checkbox").is(":checked")) {
+      if ($(this).closest('.main-form').find(".main-form__phone").val().length >= 18) {
+      } else {
+        $.magnificPopup.close({});
+        $(this).closest('.main-form').find(".main-form__phone").closest(".main-form__label_phone").addClass("_error");
+      }
+    } else{
+      $.magnificPopup.close({});
+    }
+  });
+  
   //scroll-header-menu
   var scrollPos = 0;
   $(document).scroll(function () {
@@ -88,7 +106,6 @@ jQuery(document).ready(function ($) {
   });
 
   // TAIMER
-
   function startTimer() {
     var _Seconds = $('.seconds').text(),
       int;
@@ -120,8 +137,7 @@ jQuery(document).ready(function ($) {
   $('#save-info').on('click', function (e) {
     $('#profile-registration').show();
     $('#profile-registration-edit').hide();
-    $('html, body').animate(
-      {
+    $('html, body').animate({
         scrollTop: 0,
       },
       'slow'
@@ -213,6 +229,7 @@ jQuery(document).ready(function ($) {
     $('#transactions-tab-content').hide();
     $('#analitics-tab-content').hide();
   }
+
   function showAnaliticContent() {
     $('#profile-tab').removeClass('active');
     $('#transactions-tab').removeClass('active');
@@ -221,6 +238,7 @@ jQuery(document).ready(function ($) {
     $('#transactions-tab-content').hide();
     $('#analitics-tab-content').show();
   }
+
   function showTransactionsContent() {
     $('#profile-tab').removeClass('active');
     $('#transactions-tab').addClass('active');
@@ -229,6 +247,7 @@ jQuery(document).ready(function ($) {
     $('#transactions-tab-content').show();
     $('#analitics-tab-content').hide();
   }
+
   function openTabsProfile() {
     let hash = window.location.hash;
     if (hash == '#profile-tab') {
@@ -268,29 +287,28 @@ jQuery(document).ready(function ($) {
   //======================== tabs  end
   //======================== SLICK SLIDERS
 
-  function sliderTimer(id) {
+  function sliderTimer(sider) {
     var curr = 0;
     var percentTime = 0;
-    id_slider = $('#' + id);
 
-    id_slider.on('init', function (event, slick, currentSlide, nextSlide) {
+    sider.on('init', function (event, slick, currentSlide, nextSlide) {
       percentTime = 0;
-      id_slider.find('.actual_dot path').css('stroke-dasharray', '0, 100');
+      sider.find('.actual_dot path').css('stroke-dasharray', '0, 100');
 
-      for (var i = 0; i < id_slider.find('.slick-dots li').length; i++) {
-        if (!id_slider.find('.slick-dots li').eq(i).attr('class')) {
-          id_slider.find('.slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100');
+      for (var i = 0; i < sider.find('.slick-dots li').length; i++) {
+        if (!sider.find('.slick-dots li').eq(i).attr('class')) {
+          sider.find('.slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100');
         } else {
           break;
         }
       }
     });
-    id_slider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    sider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
       percentTime = 0;
-      id_slider.find('.actual_dot path').css('stroke-dasharray', '0, 100');
-      for (var i = 0; i < id_slider.find('.slick-dots li').length; i++) {
-        if (!id_slider.find('.slick-dots li').eq(i).attr('class')) {
-          id_slider.find('.slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100');
+      sider.find('.actual_dot path').css('stroke-dasharray', '0, 100');
+      for (var i = 0; i < sider.find('.slick-dots li').length; i++) {
+        if (!sider.find('.slick-dots li').eq(i).attr('class')) {
+          sider.find('.slick-dots li').eq(i).find('.actual_dot path').css('stroke-dasharray', '100, 100');
         } else {
           curr = i;
           break;
@@ -307,21 +325,22 @@ jQuery(document).ready(function ($) {
       percentTime++;
       if (curr != -1) {
         if (percentTime < 100) {
-          id_slider
+          sider
             .find('.slick-dots li')
             .eq(curr)
             .find('.actual_dot path')
             .css('stroke-dasharray', percentTime + ', 100');
         } else {
           curr = -1;
-          id_slider.slick('slickNext');
+          sider.slick('slickNext');
           percentTime = 0;
         }
       }
     }
     startProgressbar();
   }
-  sliderTimer('reviews-slider');
+  if($("div").is("#reviews-slider")) {
+  sliderTimer($('#reviews-slider'));
   $('#reviews-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -336,8 +355,7 @@ jQuery(document).ready(function ($) {
     },
     prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"></button>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
@@ -351,21 +369,24 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
+  }
 
-  sliderTimer('price-oftype__slider');
-  $('#price-oftype__slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
-    infinite: true,
-    dots: true,
-    speed: 500,
-    customPaging: function (slider, i) {
-      return '<svg viewBox="0 0 36 36" class="actual_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#fff"; stroke-width="6" stroke-dasharray="80, 100"; /></svg><svg viewBox="0 0 36 36" class="bg_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#fff"; stroke-width="6" stroke-dasharray="100, 100"; /></svg>';
-    },
-    prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
-    nextArrow: '<button class="slider-btn slider-btn__next"></button>',
-  });
+  if($("div").is("#price-oftype__slider")) {
+    sliderTimer($('#price-oftype__slider'));
+    $('#price-oftype__slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      infinite: true,
+      dots: true,
+      speed: 500,
+      customPaging: function (slider, i) {
+        return '<svg viewBox="0 0 36 36" class="actual_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#fff"; stroke-width="6" stroke-dasharray="80, 100"; /></svg><svg viewBox="0 0 36 36" class="bg_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#fff"; stroke-width="6" stroke-dasharray="100, 100"; /></svg>';
+      },
+      prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
+      nextArrow: '<button class="slider-btn slider-btn__next"></button>',
+    });
+  }
 
   $('#redemption-slider').slick({
     slidesToShow: 3,
@@ -375,8 +396,7 @@ jQuery(document).ready(function ($) {
     dots: false,
     prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"></button>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,

@@ -2388,6 +2388,14 @@
 .representative-map__svg path[fill='white'] {
   cursor: pointer;
 }
+.representative-map__svg path[fill='#B1B9CA']:hover {
+  fill: $blue;
+}
+
+.obl_union.hovered {
+  fill: $blue;
+}
+
 
 .franchise-sentence {
   padding: 80px 0;
@@ -3910,4 +3918,61 @@
   }
   &__link {
   }
+}
+
+//Map toltip
+.map-tooltip {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1005105;
+  transition: 0.4s;
+  transform: scale(0);
+  cursor: pointer;
+}
+
+.map-tooltip {
+  background: #fff;
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1E1E1E;
+}
+.map-tooltip img {
+  width: 16px;
+}
+.map-tooltip span {
+  display: inline-block;
+  padding-left: 8px;
+  max-width: 110px;
+  white-space: normal;
+}
+.map-tooltip {
+  border-radius: 10px;
+  padding: 7px;
+  box-shadow: 0px 10px 17px rgba(4, 53, 152, 0.2); /* Добавляем тень для блока */
+  border: none !important;
+  white-space: nowrap;
+}
+.map-tooltip::after, .map-tooltip::before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  left: calc(50% - 5px); bottom: -5px;
+  width: 10px; height: 10px;
+  z-index: -1; /* Прячем за основным блоком */
+  transform: rotate(45deg); /* Поворачиваем на 45º */
+  -webkit-transform: rotate(45deg);
+  }
+.map-tooltip::before {
+  z-index: 1; /* Накладываем поверх, чтобы скрыть следы тени */
+  box-shadow: none; /* Прячем тень */
 }

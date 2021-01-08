@@ -1,7 +1,35 @@
 [
+
   {
-    "id": "6",
+    "id": "-1",
+    "title": "Челябинская область1",
+    "image": "nizegorsk",
+    "occupied": [
+      "Челябинск",
+      "Магнитогорск",
+      "Златоуст",
+      "Чебаркуль",
+      "Миасс",
+      "Копейск",
+      "Троицк",
+      "Коркино",
+      "Октябрьский"
+    ],
+    "avaliable": [
+      "commodo",
+      "commodo",
+      "consequat",
+      "aliquip",
+      "qui",
+      "mollit",
+      "ea"
+    ]
+  },
+
+  {
+    "id": "3",
     "title": "Челябинская область",
+    "image": "saratov",
     "occupied": [
       "Челябинск",
       "Магнитогорск",
@@ -26,6 +54,7 @@
   {
     "id": "8",
     "title": "Республика Башкортостан",
+    "image": "saratov",
     "occupied": [
       "Челябинск",
       "Магнитогорск",
@@ -48,8 +77,9 @@
     ]
   },
   {
-    "id": "19",
+    "id": "5",
     "title": "Нижегородская область",
+    "image": "saratov",
     "occupied": [
       "commodo",
       "commodo",
@@ -72,6 +102,7 @@
   {
     "id": "10",
     "title": "Волгоградская область",
+    "image": "saratov",
     "occupied": [
       "est",
       "exercitation",
@@ -92,8 +123,9 @@
     ]
   },
   {
-    "id": "11",
+    "id": "12",
     "title": "Калиниградская область",
+    "image": "saratov",
     "occupied": [
       "laborum",
       "tempor",
@@ -111,8 +143,9 @@
     ]
   },
   {
-    "id": "15",
+    "id": "7",
     "title": "Республика Татарстан",
+    "image": "saratov",
     "occupied": [
       "Lorem",
       "excepteur",
@@ -130,8 +163,9 @@
     ]
   },
   {
-    "id": "13",
+    "id": "3",
     "title": "Республика Удмуртия",
+    "image": "saratov",
     "occupied": [
       "cupidatat",
       "nostrud",
@@ -152,8 +186,9 @@
     ]
   },
   {
-    "id": "20",
+    "id": "16",
     "title": "Московская область",
+    "image": "nizegorsk",
     "occupied": [
       "Одинцово",
       "Коломна",
@@ -177,6 +212,7 @@
   {
     "id": "11",
     "title": "Самарская область",
+    "image": "nizegorsk",
     "occupied": [
       "est",
       "exercitation",
@@ -199,6 +235,7 @@
   {
     "id": "2",
     "title": "Свердловская область",
+    "image": "saratov",
     "occupied": [
       "laborum",
       "tempor",
@@ -218,6 +255,7 @@
   {
     "id": "17",
     "title": "Пензенская область",
+    "image": "nizegorsk",
     "occupied": [
       "Lorem",
       "excepteur",
@@ -237,6 +275,7 @@
   {
     "id": "10",
     "title": "Самарская область",
+    "image": "nizegorsk",
     "occupied": [
       "Lorem",
       "excepteur",
@@ -256,6 +295,7 @@
   {
     "id": "0",
     "title": "Тюменская область",
+    "image": "nizegorsk",
     "occupied": [
       "Lorem",
       "excepteur",
@@ -275,6 +315,7 @@
   {
     "id": "4",
     "title": "Тюменская область",
+    "image": "saratov",
     "occupied": [
       "Lorem",
       "excepteur",
@@ -294,6 +335,7 @@
   {
     "id": "21",
     "title": "Тюменская область",
+    "image": "nizegorsk",
     "occupied": [
       "Lorem",
       "excepteur",

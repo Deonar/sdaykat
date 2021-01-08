@@ -5,18 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="assets/libs/bootstrap-grid/bootstrap-grid.min.css" />
-  <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
-  <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
+  <!-- Base link -->
+  <?php include("inc/base-link.php"); ?>
 
-  <link rel="stylesheet" href="assets/css/main.css?v=2" />
-  <title>SDAYKAT</title>
+  <title>Программа лояльности</title>
 </head>
 
 <body>
-  <?php 
+  <?php
+  $page = "loyalty-program";
   $header_class = 'header-light';
-  include("header.php"); 
+  include("header.php");
   ?>
 
   <div class="loyalty-program-page header-top__indent">
@@ -155,8 +154,7 @@
             <img src="assets/img/icons/requirement-9.svg" alt="" class="entry-cabinet__entry-img" />
             <div class="entry-cabinet__entry-title">Зарегистрируйтесь <br /> в личном кабинете и начните получать
               бонусы!</div>
-            <a href="/authorization.php"
-              class="entry-cabinet__entry-btn btn btn_hover orange-btn">зарегистрироваться</a>
+            <a href="/authorization.php" class="entry-cabinet__entry-btn btn btn_hover orange-btn">зарегистрироваться</a>
           </div>
           <div class="entry-cabinet__conditions">
             <div class="requirement-list">
@@ -191,6 +189,7 @@
     </section>
   </div>
 
-    <?php include("footer.php"); ?>
-    </body>
+  <?php include("footer.php"); ?>
+</body>
+
 </html>

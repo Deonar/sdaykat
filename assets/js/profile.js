@@ -1,5 +1,40 @@
 //======================== daterangepicker profile
-$('.daterange-input').daterangepicker();
+$('.daterange-input').daterangepicker({
+    "locale": {
+        "format": "MM/DD/YYYY",
+        "separator": " - ",
+        "applyLabel": "Выбрать",
+        "cancelLabel": "Отмена",
+        "fromLabel": "От",
+        "toLabel": "До",
+        "customRangeLabel": "Своя дата",
+        "daysOfWeek": [
+            "Вс",
+            "Пт",
+            "Вт",
+            "Ср",
+            "Чт",
+            "Пт",
+            "Сб"
+        ],
+        "monthNames": [
+            "Январь",
+            "Февраль",
+            "Март",
+            "Апрель",
+            "Май",
+            "Июнь",
+            "Июль",
+            "Август",
+            "Сентябрь",
+            "Октябрь",
+            "Ноябрь",
+            "Декабрь"
+        ],
+        "firstDay": 1
+    }
+}
+);
 
 var options = {
     series: [{

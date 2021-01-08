@@ -4,8 +4,8 @@
             Объем выплат
         </h3>
         <div class="transactions-sort__daterange">
-            <input id="daterange-delivery" class="daterange-input" type="text" name="daterange" value="01/01/2018 - 01/15/2021" />
-            <label class="daterange-input__label" for="daterange-delivery">
+            <input id="daterange-pay" class="daterange-input" type="text" name="daterange" value="01/01/2018 - 01/15/2021" />
+            <label class="daterange-input__label" for="daterange-pay">
                 <img src="assets/img/icons/icon-daterange-input.svg" alt="" />
             </label>
         </div>

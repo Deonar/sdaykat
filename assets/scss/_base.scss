@@ -693,14 +693,20 @@ body {
   }
   &__label {
     position: relative;
-    &._error input {
-      border: 1px solid #d10000;
+    &._error {
+      input {
+        border: 1px solid #d10000;
+      }
+      .main-form__label-error{
+        display: block;
+      }
     }
     input:focus {
       border: 1px solid $primary;
     }
   }
   &__label-error {
+    display: none;
     position: absolute;
     left: 5px;
     bottom: 98%;

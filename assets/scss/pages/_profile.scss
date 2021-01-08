@@ -1,3 +1,13 @@
+// Data range
+.active {
+  &.start-date.available {
+    background-color: $blue;
+  }
+  &.end-date.available {
+    background-color: $blue;
+  }
+}
+
 .graph {
   background: #ffffff;
   border: 1px solid #e2e4ea;
@@ -100,19 +110,19 @@
     align-items: center;
     justify-content: space-between;
     max-width: 340px;
-    border-bottom: 1px solid #E2E4EA;
+    border-bottom: 1px solid #e2e4ea;
     padding: 15px 0;
-    &:last-child{
+    &:last-child {
       border-bottom: none;
     }
   }
   &__title {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 31px;
-    span{
+    span {
       display: inline-block;
       margin-right: 15px;
       width: 15px;
@@ -121,14 +131,14 @@
     }
   }
   &__value {
-    font-family: 'Stapel';
+    font-family: "Stapel";
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 23px;
   }
 }
-.diagram-cicle{
+.diagram-cicle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,21 +152,20 @@
 
 @media (max-width: 767px) {
   .graph {
-   padding: 0;
-   border: none;
-   &__title{
-     margin-bottom: 20px;
-   }
-   &__header{
-     display: block;
-     .daterange-input{
+    padding: 0;
+    border: none;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__header {
+      display: block;
+      .daterange-input {
         order: 1;
-     }
-     .daterange-input__label{
-      order: 0;
-      margin-right: 10px;
-     }
-   }
+      }
+      .daterange-input__label {
+        order: 0;
+        margin-right: 10px;
+      }
+    }
   }
-  
 }

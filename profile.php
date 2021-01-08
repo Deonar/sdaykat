@@ -10,14 +10,17 @@
   <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
   <link rel="stylesheet" href="assets/libs/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <meta property="og:image" content="/assets/img/placholder-soc.jpg" />
+  <link rel="image_src" href="/assets/img/placholder-soc.jpg">
   <link rel="stylesheet" href="assets/css/main.css?v=2" />
   <title>SDAYKAT</title>
 </head>
 
 <body>
-  <?php 
+  <?php
   $header_class = 'header-light';
-  include("header.php"); 
+  include("header.php");
   ?>
   <div class="profile-page header-top__indent">
     <section class="profile section-wrapper pt-0">
@@ -63,8 +66,7 @@
                       <div class="profile-item">
                         <div class="profile-item__name">Ваш номер</div>
                         <div class="profile-item__content">
-                          <input class="profile__custom-input custom-input mask-phone" type="tell" name="profile-phone"
-                            placeholder="+7 (___) ___-__-__" />
+                          <input class="profile__custom-input custom-input mask-phone" type="tell" name="profile-phone" placeholder="+7 (___) ___-__-__" />
                         </div>
                       </div>
                       <div class="profile-item align-items-start">
@@ -85,8 +87,7 @@
                       <div class="profile-item">
                         <div class="profile-item__name">Ваши ФИО</div>
                         <div class="profile-item__content">
-                          <input class="profile__custom-input profile__custom-input--big custom-input" type="text"
-                            name="profile-name" placeholder="ФИО" />
+                          <input class="profile__custom-input profile__custom-input--big custom-input" type="text" name="profile-name" placeholder="ФИО" />
                         </div>
                       </div>
                     </div>
@@ -120,22 +121,19 @@
                         <div class="profile-item">
                           <div class="profile-item__name">Серия и номер паспорта</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-passport-siries"
-                              placeholder="45 41 217 877" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-passport-siries" placeholder="45 41 217 877" />
                           </div>
                         </div>
                         <div class="profile-item">
                           <div class="profile-item__name">Дата рождения</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-birthday"
-                              placeholder="10.08.1995" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-birthday" placeholder="10.08.1995" />
                           </div>
                         </div>
                         <div class="profile-item">
                           <div class="profile-item__name">Место рождения</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-place-of-birth"
-                              placeholder="РФ, г. Челябинск" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-place-of-birth" placeholder="РФ, г. Челябинск" />
                           </div>
                         </div>
                       </div>
@@ -143,15 +141,13 @@
                         <div class="profile-item">
                           <div class="profile-item__name">Дата выдачи</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue"
-                              placeholder="11.02.2020" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue" placeholder="11.02.2020" />
                           </div>
                         </div>
                         <div class="profile-item profile-item__textarea align-items-start">
                           <div class="profile-item__name pt-1">Кем выдан паспорт</div>
                           <div class="profile-item__content">
-                            <textarea class="profile__custom-textarea" type="text"
-                              name="profile-passport-issued-by"></textarea>
+                            <textarea class="profile__custom-textarea" type="text" name="profile-passport-issued-by"></textarea>
                           </div>
                         </div>
                       </div>
@@ -174,29 +170,25 @@
                         <div class="profile-item">
                           <div class="profile-item__name">Индекс</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-index"
-                              placeholder="454 074" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-index" placeholder="454 074" />
                           </div>
                         </div>
                         <div class="profile-item">
                           <div class="profile-item__name">Регион</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-region"
-                              placeholder="Уральский" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-region" placeholder="Уральский" />
                           </div>
                         </div>
                         <div class="profile-item">
                           <div class="profile-item__name">Город</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-city"
-                              placeholder="Челябинск" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-city" placeholder="Челябинск" />
                           </div>
                         </div>
                         <div class="profile-item">
                           <div class="profile-item__name">Улица</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-street"
-                              placeholder="пр-т Ленина" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-street" placeholder="пр-т Ленина" />
                           </div>
                         </div>
                       </div>
@@ -204,29 +196,25 @@
                         <div class="profile-item">
                           <div class="profile-item__name">Дом</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue"
-                              placeholder="44" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue" placeholder="44" />
                           </div>
                         </div>
                         <div class="profile-item">
                           <div class="profile-item__name">Корпус</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue"
-                              placeholder="4" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue" placeholder="4" />
                           </div>
                         </div>
                         <div class="profile-item">
                           <div class="profile-item__name">Строение</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue"
-                              placeholder="1" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue" placeholder="1" />
                           </div>
                         </div>
                         <div class="profile-item">
                           <div class="profile-item__name">Квартира</div>
                           <div class="profile-item__content">
-                            <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue"
-                              placeholder="41" />
+                            <input class="profile__custom-input custom-input" type="text" name="profile-date-of-issue" placeholder="41" />
                           </div>
                         </div>
                       </div>
@@ -239,8 +227,7 @@
               <div id="profile-registration" class="profile-registration profile-blocks" style="display: none">
                 <div class="profile-tab__title-mob">
                   <h3 class="profile-tab__title h3">Профиль</h3>
-                  <div class="profile__info-for-edit">Чтобы изменить данные, свяжитесь с менеджером по телефону <a
-                      href="tel:+88005507940" class="link">8 800 550 79 40</a></div>
+                  <div class="profile__info-for-edit">Чтобы изменить данные, свяжитесь с менеджером по телефону <a href="tel:+88005507940" class="link">8 800 550 79 40</a></div>
                 </div>
                 <div class="profile-block">
                   <div class="profile-block__head">
@@ -370,8 +357,7 @@
             </div>
             <!-- TAB PROFILE END-->
             <!-- TAB transactions-->
-            <div id="transactions-tab-content" class="transactions profile-tab__content tab-content" data-tab="2"
-              style="display: none">
+            <div id="transactions-tab-content" class="transactions profile-tab__content tab-content" data-tab="2" style="display: none">
               <div class="transactions-head">
                 <div class="profile-tab__title-mob">
                   <h3 class="profile-tab__title h3">Сделки</h3>
@@ -380,8 +366,7 @@
                   <label class="daterange-input__label" for="daterange-input">
                     <img src="assets/img/icons/icon-daterange-input.svg" alt="" />
                   </label>
-                  <input id="daterange-input" class="daterange-input" type="text" name="daterange"
-                    value="01/01/2018 - 01/15/2021" />
+                  <input id="daterange-input" class="daterange-input" type="text" name="daterange" value="01/01/2018 - 01/15/2021" />
                 </div>
                 <div class="transactions-sort__ofselect">
                   <div class="select select-custom-js">
@@ -494,8 +479,7 @@
             </div>
             <!-- TAB transactions END-->
             <!-- TAB ANALITICS-->
-            <div id="analitics-tab-content" class="analitics profile-tab__content tab-content" data-tab="3"
-              style="display: none">
+            <div id="analitics-tab-content" class="analitics profile-tab__content tab-content" data-tab="3" style="display: none">
               <div class="analitics-content">
                 <?php include("templates/analitic-delivery.php"); ?>
                 <?php include("templates/analitic-pay.php"); ?>
@@ -617,7 +601,7 @@
   <?php include("footer.php"); ?>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-  <script src="assets/js/analitic.js"></script>
+  <script src="assets/js/profile.js"></script>
 </body>
 
 </html>

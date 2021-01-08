@@ -44,10 +44,10 @@ if (!isset($header_class)) {
           </div>
           <div class="header-top__menu">
             <ul class="header-top__menu-list">
-              <li class="header-top__menu-item"><a href="/franchise.php" class="header-top__menu-link">Франшиза</a></li>
+              <li class="header-top__menu-item"><a href="/franchise.php" class="header-top__menu-link <?php echo ($page == 'franchise') ? 'active' : '';?>">Франшиза</a></li>
               <li class="header-top__menu-item"><a href="/representative.php"
-                  class="header-top__menu-link">Представительства</a></li>
-              <li class="header-top__menu-item"><a href="/loyalty-program.php" class="header-top__menu-link">Программа
+                  class="header-top__menu-link <?php echo ($page == 'representative') ? 'active' : '';?>">Представительства</a></li>
+              <li class="header-top__menu-item"><a href="/loyalty-program.php" class="header-top__menu-link <?php echo ($page == 'loyalty-program') ? 'active' : '';?>">Программа
                   лояльности</a></li>
             </ul>
           </div>
@@ -105,14 +105,14 @@ if (!isset($header_class)) {
         </a>
         <div class="header-bottom__menu">
           <ul class="header-bottom__menu-list">
-            <li class="header-bottom__menu-item"><a href="/" class="header-bottom__menu-link">Главная</a></li>
-            <li class="header-bottom__menu-item"><a href="/prices.php" class="header-bottom__menu-link">Цены</a></li>
+            <li class="header-bottom__menu-item"><a href="/" class="header-bottom__menu-link <?php echo ($page == 'home') ? 'active' : '';?>">Главная</a></li>
+            <li class="header-bottom__menu-item"><a href="/prices.php" class="header-bottom__menu-link <?php echo ($page == 'prices') ? 'active' : '';?>">Цены</a></li>
             <li class="header-bottom__menu-item"><a href="/delete-catalysts.php"
-                class="header-bottom__menu-link">Удаление катализатора</a></li>
+                class="header-bottom__menu-link <?php echo ($page == 'delete-catalysts') ? 'active' : '';?>">Удаление катализатора</a></li>
             <li class="header-bottom__menu-item"><a href="/prices-wholesalers.php"
-                class="header-bottom__menu-link">Оптовикам</a></li>
-            <li class="header-bottom__menu-item"><a href="/journal.php" class="header-bottom__menu-link">Журнал</a></li>
-            <li class="header-bottom__menu-item"><a href="/about.php" class="header-bottom__menu-link">О компании</a>
+                class="header-bottom__menu-link <?php echo ($page == 'prices-wholesalers') ? 'active' : '';?>">Оптовикам</a></li>
+            <li class="header-bottom__menu-item"><a href="/journal.php" class="header-bottom__menu-link <?php echo ($page == 'journal') ? 'active' : '';?>">Журнал</a></li>
+            <li class="header-bottom__menu-item"><a href="/about.php" class="header-bottom__menu-link <?php echo ($page == 'about') ? 'active' : '';?>">О компании</a>
             </li>
           </ul>
         </div>
