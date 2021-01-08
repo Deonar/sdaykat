@@ -229,16 +229,19 @@
               <div class="main-form__wrapper">
                 <label class="main-form__label main-form__label main-form__label_phone">
                   <span class="main-form__label-error">некорректный номер</span>
-                  <input class="main-form__phone mask-phone" id="client-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+                  <input class="main-form__phone mask-phone" id="client-phone" type="tel" name="phone"
+                    placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
-                  <a href="#" id="action-btn" class="main-form__submit btn btn_hover primary-btn" type="button">Продать катализатор</a>
+                  <a href="#popup-form-manager" id="action-btn"
+                    class="main-form__submit btn btn_hover primary-btn popup" type="button">Продать катализатор</a>
                 </div>
               </div>
               <label class="main-form__policy">
                 <input type="checkbox" checked="" id="check" class="main-form__checkbox" />
                 <span class="main-form__checkbox-box"></span>
-                <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+                <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+                    конфиденциальности</a></span>
               </label>
             </form>
             <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>
@@ -256,22 +259,26 @@
             <li class="bonuses-item">
               <div class="bonuses-item__percent">5%</div>
               <div class="bonuses-item__title">Ретро-бонусы</div>
-              <div class="bonuses-item__text">Каждую 10-ю сделку мы возвращаем ретро-бонусы в размере 5% от общей суммы этих сделок.</div>
+              <div class="bonuses-item__text">Каждую 10-ю сделку мы возвращаем ретро-бонусы в размере 5% от общей суммы
+                этих сделок.</div>
             </li>
             <li class="bonuses-item">
               <div class="bonuses-item__percent">5%</div>
               <div class="bonuses-item__title">Ретро-бонусы</div>
-              <div class="bonuses-item__text">Каждую 10-ю сделку мы возвращаем ретро-бонусы в размере 5% от общей суммы этих сделок.</div>
+              <div class="bonuses-item__text">Каждую 10-ю сделку мы возвращаем ретро-бонусы в размере 5% от общей суммы
+                этих сделок.</div>
             </li>
             <li class="bonuses-item">
               <div class="bonuses-item__percent">10%</div>
               <div class="bonuses-item__title">Ретро-бонусы</div>
-              <div class="bonuses-item__text">За каждого приведенного друга через личный кабинет мы начисляем Вам 10% от суммы сделки.</div>
+              <div class="bonuses-item__text">За каждого приведенного друга через личный кабинет мы начисляем Вам 10% от
+                суммы сделки.</div>
             </li>
           </ul>
           <div class="bonuses-options">
             <div class="bonuses-offer">
-              <div class="bonuses-offer__title">Постоянным оптовым клиентам готовы предложить индивидуальные условия сотрудничества</div>
+              <div class="bonuses-offer__title">Постоянным оптовым клиентам готовы предложить индивидуальные условия
+                сотрудничества</div>
               <a href="/loyalty-program.php" class="bonuses-offer__link">узнать больше</a>
             </div>
             <ul class="bonuses-programs">
@@ -299,9 +306,11 @@
             <div class="pass-material__item pass-material__item_assessment">
               <img src="assets/img/pass-assessment.png" alt="#" />
               <h4 class="h4 pass-material__title">Выездная оценка</h4>
-              <p class="pass-material__text">Каждую 10-ю сделку<br />мы возвращаем ретро-бонусы в размере 5% от общей.</p>
+              <p class="pass-material__text">Каждую 10-ю сделку<br />мы возвращаем ретро-бонусы в размере 5% от общей.
+              </p>
               <div class="pass-material__btn">
-                <a href="#popup-form-manager" class="btn btn_small btn_hover orange-btn popup"> Заказать выезд менеджера </a>
+                <a href="#popup-form-manager" class="btn btn_small btn_hover orange-btn popup"> Заказать выезд менеджера
+                </a>
               </div>
             </div>
           </div>
@@ -353,7 +362,8 @@
     <div class="popup-body">
       <h3 class="popup-primary__title">Выездная оценка</h3>
 
-      <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта точной стоимости катализатора.</div>
+      <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта
+        точной стоимости катализатора.</div>
       <form class="popup-form main-form main-form__light">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
@@ -361,13 +371,15 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup" type="button">вызвать специалиста</a>
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup"
+              type="button">вызвать специалиста</a>
           </div>
         </div>
         <label class="main-form__policy">
           <input type="checkbox" checked="" class="main-form__checkbox" />
           <span class="main-form__checkbox-box"></span>
-          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+              конфиденциальности</a></span>
         </label>
       </form>
     </div>
@@ -382,7 +394,8 @@
         стоимость сырья
       </h3>
       <div class="calculator-form__price">28 000 ₽</div>
-      <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта точной стоимости катализатора.</div>
+      <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта
+        точной стоимости катализатора.</div>
       <form class="popup-form main-form main-form__light">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
@@ -390,13 +403,15 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup" type="button">вызвать специалиста</a>
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup"
+              type="button">вызвать специалиста</a>
           </div>
         </div>
         <label class="main-form__policy">
           <input type="checkbox" checked="" class="main-form__checkbox" />
           <span class="main-form__checkbox-box"></span>
-          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+              конфиденциальности</a></span>
         </label>
       </form>
       <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>
@@ -424,6 +439,34 @@
     </div>
   </div>
   <!-- popup-thank end-->
+  <!-- popup-form manager -->
+  <div id="popup-form-manager" class="popup-form-calculator custom-popup mfp-hide">
+    <div class="popup-body">
+      <h3 class="popup-primary__title">Выездная оценка</h3>
+
+      <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта
+        точной стоимости катализатора.</div>
+      <form class="popup-form main-form main-form__light">
+        <div class="main-form__wrapper">
+          <label class="main-form__label main-form__label_phone">
+            <span class="main-form__label-error" style="display:none;">некорректный номер</span>
+            <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+          </label>
+          <div class="main-form__btn">
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup"
+              type="button">вызвать специалиста</a>
+          </div>
+        </div>
+        <label class="main-form__policy">
+          <input type="checkbox" checked="" class="main-form__checkbox" />
+          <span class="main-form__checkbox-box"></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+              конфиденциальности</a></span>
+        </label>
+      </form>
+    </div>
+  </div>
+  <!-- popup-form manager end-->
 
   <!-- popup-form curyer -->
   <div id="popup-form-courier" class="popup-form-calculator custom-popup mfp-hide">
@@ -438,13 +481,15 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-curyer" class="main-form__submit btn btn_hover blue-btn popup" type="button">вызвать специалиста</a>
+            <a href="#popup-thank-curyer" class="main-form__submit btn btn_hover blue-btn popup" type="button">вызвать
+              специалиста</a>
           </div>
         </div>
         <label class="main-form__policy">
           <input type="checkbox" checked="" class="main-form__checkbox" />
           <span class="main-form__checkbox-box"></span>
-          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+              конфиденциальности</a></span>
         </label>
       </form>
     </div>

@@ -180,7 +180,8 @@
             <div class="steps__item-title">Честные выплаты до 75% по LME</div>
             <div class="steps__item-text">Собственная CRM-система, интегрированная с LME и ЦБ РФ, расчитывающая
               стоимость по курсу предыдущего дня.</div>
-            <a href="https://www.lme.com/" target="_blank" class="steps__item-link link">проверить НА lme.COM <img src="assets/img/icons/icon-arrow-box.svg" alt="" /></a>
+            <a href="https://www.lme.com/" target="_blank" class="steps__item-link link">проверить НА lme.COM <img
+                src="assets/img/icons/icon-arrow-box.svg" alt="" /></a>
           </li>
           <li class="steps__item">
             <div class="steps__item-num">02</div>
@@ -193,7 +194,7 @@
     </div>
   </section>
 
-  <section class="vacancy section-wrapper" id="vacancy">
+  <section class="vacancy" id="vacancy">
     <div class="container">
       <h2 class="about-section__title primary-title">
         Актуальные вакансии <br />
@@ -201,15 +202,15 @@
       </h2>
       <div class="row vacancy-row">
         <?php foreach ($vacancies as $key => $vacancy) { ?>
-          <div class="col-sm-12 col-md-6">
-            <div class="vacancy-item">
-              <img src="assets/img/icons/vacansy/<?php echo ($vacancy['icon']) ?>" class="vacancy-item__icon" alt="" />
-              <h3 class="vacancy-item__title h3"><?php echo ($vacancy['title']) ?></h3>
-              <div class="vacancy-item__price"><?php echo ($vacancy['salary']) ?></div>
-              <div class="vacancy-item__text"><?php echo ($vacancy['text']) ?></div>
-              <a href="#popup-vacancy" class="vacancy-item__link link popup">откликнуться на вакансию</a>
-            </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="vacancy-item">
+            <img src="assets/img/icons/vacansy/<?php echo ($vacancy['icon']) ?>" class="vacancy-item__icon" alt="" />
+            <h3 class="vacancy-item__title h3"><?php echo ($vacancy['title']) ?></h3>
+            <div class="vacancy-item__price"><?php echo ($vacancy['salary']) ?></div>
+            <div class="vacancy-item__text"><?php echo ($vacancy['text']) ?></div>
+            <a href="#popup-vacancy" class="vacancy-item__link link popup">откликнуться на вакансию</a>
           </div>
+        </div>
         <?php } ?>
       </div>
     </div>
