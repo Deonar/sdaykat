@@ -181,7 +181,7 @@
         <div class="calculator-body">
           <div class="calculator-settings">
             <h2 class="calculator-title primary-title__light">
-              Расчитайте оптовую <br />
+              Расчитайте оптовую <br/>
               стоимость сырья
             </h2>
             <div class="calculator-result__weight">
@@ -257,7 +257,7 @@
     <section class="requirement section-wrapper">
       <div class="container">
         <div class="requirement-body">
-          <h2 class="requirement-title primary-title">Требования к принимаемому сырью</h2>
+          <h2 class="requirement-title primary-title">Требования<br/>к принимаемому сырью</h2>
           <div class="requirement-list">
             <div href="#" class="requirement-item">
               <img src="assets/img/icons/requirement-1.svg" alt="" class="requirement-item__icon" />

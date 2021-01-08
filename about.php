@@ -15,7 +15,63 @@
 </head>
 
 <body>
-  <?php $page = 'about'; include("header.php"); ?>
+  <?php $page = 'about';
+  include("header.php"); ?>
+
+  <?php
+  $vacancies = array(
+    [
+      'icon' => 'vacansy-icon-1.svg',
+      'title' => "Менеджер выездной оценки",
+      'salary' => 'от 40 000 ₽/мес',
+      'text' => 'Вакансия подразумевает что работник будет обрабатывать заявки, которые будут приходить ему на телефон (ничего самому искать не надо). ',
+    ],
+    [
+      'icon' => 'vacansy-icon-2.svg',
+      'title' => "Менеджер стационарного офиса",
+      'salary' => 'от 40 000 ₽/мес',
+      'text' => 'Вакансия подразумевает что работник будет обрабатывать заявки, которые будут приходить ему на телефон (ничего самому искать не надо). ',
+    ],
+    [
+      'icon' => 'vacansy-icon-3.svg',
+      'title' => "Цеховик",
+      'salary' => 'от 40 000 ₽/мес',
+      'text' => 'Вакансия подразумевает что работник будет обрабатывать заявки, которые будут приходить ему на телефон (ничего самому искать не надо). ',
+    ],
+    [
+      'icon' => 'vacansy-icon-4.svg',
+      'title' => "Промоутер",
+      'salary' => 'от 40 000 ₽/мес',
+      'text' => 'Вакансия подразумевает что работник будет обрабатывать заявки, которые будут приходить ему на телефон (ничего самому искать не надо). ',
+    ],
+    [
+      'icon' => 'vacansy-icon-5.svg',
+      'title' => "Программисты PHP",
+      'salary' => 'от 40 000 ₽/мес',
+      'text' => 'Вакансия подразумевает что работник будет обрабатывать заявки, которые будут приходить ему на телефон (ничего самому искать не надо). ',
+    ],
+    [
+      'icon' => 'vacansy-icon-5.svg',
+      'title' => "Программист JS",
+      'salary' => 'от 40 000 ₽/мес',
+      'text' => 'Вакансия подразумевает что работник будет обрабатывать заявки, которые будут приходить ему на телефон (ничего самому искать не надо). ',
+    ],
+    [
+      'icon' => 'vacansy-icon-5.svg',
+      'title' => "QA-специалист",
+      'salary' => 'от 40 000 ₽/мес',
+      'text' => 'Вакансия подразумевает что работник будет обрабатывать заявки, которые будут приходить ему на телефон (ничего самому искать не надо). ',
+    ],
+    [
+      'icon' => 'vacansy-icon-6.svg',
+      'title' => "Менеджер по продажам",
+      'salary' => 'от 40 000 ₽/мес',
+      'text' => 'Вакансия подразумевает что работник будет обрабатывать заявки, которые будут приходить ему на телефон (ничего самому искать не надо). ',
+    ],
+  );
+  ?>
+
+
 
   <main class="main main_about-page">
     <div class="container">
@@ -124,8 +180,7 @@
             <div class="steps__item-title">Честные выплаты до 75% по LME</div>
             <div class="steps__item-text">Собственная CRM-система, интегрированная с LME и ЦБ РФ, расчитывающая
               стоимость по курсу предыдущего дня.</div>
-            <a href="https://www.lme.com/" target="_blank" class="steps__item-link link">проверить НА lme.COM <img
-                src="assets/img/icons/icon-arrow-box.svg" alt="" /></a>
+            <a href="https://www.lme.com/" target="_blank" class="steps__item-link link">проверить НА lme.COM <img src="assets/img/icons/icon-arrow-box.svg" alt="" /></a>
           </li>
           <li class="steps__item">
             <div class="steps__item-num">02</div>
@@ -145,46 +200,17 @@
         в Челябинске
       </h2>
       <div class="row vacancy-row">
-        <div class="col-sm-12 col-md-6">
-          <div class="vacancy-item">
-            <img src="assets/img/icons/vacansy/vacansy-icon-1.svg" class="vacancy-item__icon" alt="" />
-            <h3 class="vacancy-item__title h3">Менеджер выездной оценки</h3>
-            <div class="vacancy-item__price">от 40 000 ₽/мес</div>
-            <div class="vacancy-item__text">Вакансия подразумевает что работник будет обрабатывать заявки, которые будут
-              приходить ему на телефон (ничего самому искать не надо).</div>
-            <a href="#popup-vacancy" class="vacancy-item__link link popup">откликнуться на вакансию</a>
+        <?php foreach ($vacancies as $key => $vacancy) { ?>
+          <div class="col-sm-12 col-md-6">
+            <div class="vacancy-item">
+              <img src="assets/img/icons/vacansy/<?php echo ($vacancy['icon']) ?>" class="vacancy-item__icon" alt="" />
+              <h3 class="vacancy-item__title h3"><?php echo ($vacancy['title']) ?></h3>
+              <div class="vacancy-item__price"><?php echo ($vacancy['salary']) ?></div>
+              <div class="vacancy-item__text"><?php echo ($vacancy['text']) ?></div>
+              <a href="#popup-vacancy" class="vacancy-item__link link popup">откликнуться на вакансию</a>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <div class="vacancy-item">
-            <img src="assets/img/icons/vacansy/vacansy-icon-2.svg" class="vacancy-item__icon" alt="" />
-            <h3 class="vacancy-item__title h3">Менеджер выездной оценки</h3>
-            <div class="vacancy-item__price">от 40 000 ₽/мес</div>
-            <div class="vacancy-item__text">Вакансия подразумевает что работник будет обрабатывать заявки, которые будут
-              приходить ему на телефон (ничего самому искать не надо).</div>
-            <a href="#popup-vacancy" class="vacancy-item__link link popup">откликнуться на вакансию</a>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <div class="vacancy-item">
-            <img src="assets/img/icons/vacansy/vacansy-icon-3.svg" class="vacancy-item__icon" alt="" />
-            <h3 class="vacancy-item__title h3">Менеджер выездной оценки</h3>
-            <div class="vacancy-item__price">от 40 000 ₽/мес</div>
-            <div class="vacancy-item__text">Вакансия подразумевает что работник будет обрабатывать заявки, которые будут
-              приходить ему на телефон (ничего самому искать не надо).</div>
-            <a href="#popup-vacancy" class="vacancy-item__link link popup">откликнуться на вакансию</a>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <div class="vacancy-item">
-            <img src="assets/img/icons/vacansy/vacansy-icon-4.svg" class="vacancy-item__icon" alt="" />
-            <h3 class="vacancy-item__title h3">Менеджер выездной оценки</h3>
-            <div class="vacancy-item__price">от 40 000 ₽/мес</div>
-            <div class="vacancy-item__text">Вакансия подразумевает что работник будет обрабатывать заявки, которые будут
-              приходить ему на телефон (ничего самому искать не надо).</div>
-            <a href="#popup-vacancy" class="vacancy-item__link link popup">откликнуться на вакансию</a>
-          </div>
-        </div>
+        <?php } ?>
       </div>
     </div>
   </section>
