@@ -5,18 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="assets/libs/bootstrap-grid/bootstrap-grid.min.css" />
-  <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
+  <!-- Page link -->
   <link rel="stylesheet" href="assets/libs/slick/slick.css" />
   <link rel="stylesheet" href="assets/libs/jquery-libs/jquery-ui.min.css" />
-  <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
 
-  <link rel="stylesheet" href="assets/css/main.css?v=2" />
-  <title>SDAYKAT</title>
+  <!-- Base link -->
+  <?php include("inc/base-link.php"); ?>
+
+  <title>Керамический фильтр</title>
 </head>
 
 <body>
   <?php
+  $page = 'prices';
   $header_class = 'header-light';
   include("header.php");
   ?>
@@ -26,15 +27,10 @@
       <div class="container">
         <ul class="breadcrumbs__container">
           <li class="breadcrumbs__item">
-            <a href="/journal.html" class="nuxt-link-active breadcrumbs__link t-control">Журнал</a>
+            <a href="/prices.php" class="nuxt-link-active breadcrumbs__link t-control">Цены</a>
           </li>
           <li class="breadcrumbs__item">
-            <a href="/single-section-journal.html" class="nuxt-link-active breadcrumbs__link t-control">Каталитические
-              системы</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <span to="/single-article" class="breadcrumbs__link t-control breadcrumbs__link--disabled">Сколько стоит
-              удаленный катализатор</span>
+            <span to="/single-article" class="breadcrumbs__link t-control breadcrumbs__link--disabled">Керамический фильтр</span>
           </li>
         </ul>
       </div>
@@ -52,7 +48,7 @@
               <form class="price-oftype__form main-form main-form__light">
                 <div class="main-form__wrapper">
                   <label class="main-form__label main-form__label_phone">
-                  <span class="main-form__label-error" style="display:none;">некорректный номер</span>
+                  <span class="main-form__label-error">некорректный номер</span>
                     <input class="main-form__phone mask-phone" type="tel" name="phone"
                       placeholder="+7 (___) ___-__-__" />
                   </label>
@@ -404,7 +400,7 @@
       <form class="popup-form main-form main-form__light">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
-          <span class="main-form__label-error" style="display:none;">некорректный номер</span>
+          <span class="main-form__label-error">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
@@ -442,7 +438,7 @@
       <form class="popup-form main-form main-form__light">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
-          <span class="main-form__label-error" style="display:none;">некорректный номер</span>
+          <span class="main-form__label-error">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">

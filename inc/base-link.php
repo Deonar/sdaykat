@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
 <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
 
-<link rel="stylesheet" href="assets/css/main.css?v=2" />
+<link rel="stylesheet" href="assets/css/main.css?v=3" />
 
 <link rel="icon" href="/assets/img/favicon.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/assets/img/favicon.png">

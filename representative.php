@@ -5,12 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="assets/libs/bootstrap-grid/bootstrap-grid.min.css" />
-  <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
-  <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
+   <!-- Base link -->
+   <?php include("inc/base-link.php"); ?>
 
-  <link rel="stylesheet" href="assets/css/main.css?v=2" />
-  <title>SDAYKAT</title>
+  <title>Представительства</title>
 </head>
 
 <body>
@@ -185,6 +183,7 @@
   );
   ?>
   <?php
+  $page = 'representative';
   $header_class = 'header-light';
   include("header.php");
   ?>

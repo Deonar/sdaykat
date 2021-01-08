@@ -4,21 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" href="assets/libs/bootstrap-grid/bootstrap-grid.min.css" />
-  <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
-  <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
-  <link rel="stylesheet" href="assets/libs/slick/slick.css" />
+  
+  <!-- Page link -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="assets/libs/slick/slick.css" />
+ 
+ <!-- Base link -->
+  <?php include("inc/base-link.php"); ?>
 
-  <meta property="og:image" content="/assets/img/placholder-soc.jpg" />
-  <link rel="image_src" href="/assets/img/placholder-soc.jpg">
-  <link rel="stylesheet" href="assets/css/main.css?v=2" />
-  <title>SDAYKAT</title>
+  <title>Профиль</title>
 </head>
 
 <body>
   <?php
+  $page = 'profile';
   $header_class = 'header-light';
   include("header.php");
   ?>
