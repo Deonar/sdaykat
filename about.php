@@ -114,9 +114,9 @@
         </div>
         <div class="col-12 col-sm-6 col-xl-6">
           <div class="about-company__target">
-            <div class="about-company__target-title">Наша миссия</div>
-            <div class="about-company__target-text">Сделать рынок каталитического сырья более простым и понятным
-              обывателям и предложить самые лояльные и привлекательные условия по сотрудничеству.</div>
+            <div class="about-company__target-title">Наша цель</div>
+            <div class="about-company__target-text">Сформировать федеральную сеть, предоставляющую услуги по удалению и
+              выкупу автомобильных катализаторов.</div>
           </div>
         </div>
       </div>

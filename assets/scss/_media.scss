@@ -961,6 +961,7 @@
   //=========================== HEADER end
   //=========================== prices-ofmetal
   .prices-ofmetal {
+    padding-top: 50px;
     &__head {
       flex-direction: column;
       align-items: flex-start;
@@ -1091,6 +1092,11 @@
     margin-bottom: 25px;
   }
   //=========================== Features end
+  //=========================== delete-catalysts
+  .delete-catalysts {
+    padding-top: 50px;
+  }
+  //=========================== delete-catalysts end
   //=========================== price-oftype
   .price-oftype {
     .main-form {
@@ -1621,6 +1627,7 @@
   //=========================== franchise-office and
   //=========================== franchise-benefit
   .franchise-benefit {
+    padding-top: 50px;
     &__title {
       margin-bottom: 20px;
       max-width: 100%;

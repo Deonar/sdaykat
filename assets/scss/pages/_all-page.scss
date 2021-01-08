@@ -134,6 +134,7 @@
   }
 }
 .prices-ofmetal {
+  padding-top: 100px;
   &__head {
     display: flex;
     align-items: center;
@@ -580,6 +581,7 @@
   }
 }
 .delete-catalysts {
+  padding-top: 100px;
   &__wrapper {
     background-color: #043598;
     background-image: url(../img/delete-catalysts-bg.png);
@@ -2411,12 +2413,11 @@
 }
 
 .franchise-sentence {
-  padding: 80px 0;
+  padding: 100px 0;
   margin-bottom: 50px;
   background: #f4f7fa;
   &__head {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
   }
@@ -2687,6 +2688,7 @@
 }
 
 .franchise-benefit {
+  padding-top: 100px;
   &__title {
     margin-bottom: 10px;
     max-width: 450px;
