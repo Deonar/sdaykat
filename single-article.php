@@ -77,32 +77,37 @@
         <p>Устройство, обеспечивающее чистоту выхлопных газов двигателя внутреннего сгорания, находится под капотом автомобиля и называется каталитическим нейтрализатором / катколлектором / катализатором. Внешняя оболочка состоит из металла, а внутри катализатора располагается огромное количество сот. Примерно 60 микроканалов на 1 квадратный сантиметр функционируют ради фильтрации токсичных выбросов, защищая окружающую среду.</p>
         <p><strong>Чем грязнее выхлоп, тем сложнее переработать его.</strong> Постепенно катализатор забивается и выходит из строя. Если вы заправляете свой автомобиль некачественным топливом, то вам очень скоро придется удалять катализатор.</p>
         <img src="assets/img/all-content/img-3.jpg" alt="" />
+
+        <!-- vk_comments -->
+        <div class="vk-comments">
+
+          <!-- Put this script tag to the <head> of your page -->
+          <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+          <script type="text/javascript">
+            VK.init({
+              apiId: 7722460,
+              onlyWidgets: true
+            });
+          </script>
+
+          <!-- Put this div tag to the place, where the Comments block will be -->
+          <div id="vk_comments"></div>
+          <script type="text/javascript">
+            VK.Widgets.Comments('vk_comments', {
+              limit: 10,
+              attach: '*'
+            });
+          </script>
+
+        </div>
+        <!-- End vk_comments -->
       </div>
+
     </section>
 
 
-    <!-- vk_comments -->
-    <div class="section-wrapper">
-      <!-- Put this script tag to the <head> of your page -->
-      <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
 
-      <script type="text/javascript">
-        VK.init({
-          apiId: 7722460,
-          onlyWidgets: true
-        });
-      </script>
-
-      <!-- Put this div tag to the place, where the Comments block will be -->
-      <div id="vk_comments"></div>
-      <script type="text/javascript">
-        VK.Widgets.Comments('vk_comments', {
-          limit: 10,
-          attach: '*'
-        });
-      </script>
-    </div>
-    <!-- End vk_comments -->
 
     <section class="popular-article article-section">
       <div class="container">
