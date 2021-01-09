@@ -597,10 +597,10 @@
     <div id="save-info-popup" class="save-info__popup" style="display: none">
       <div class="save-info__popup-body">
         <div id="save-info-popup-closes" class="save-info__popup-closes">
-          <img src="assets/img/icons/close-icon.svg" alt="">
+          <img src="assets/img/icons/close-icon.svg" alt="" />
         </div>
         <img src="assets/img/icons/icon-checked-yellow.svg" alt="V" class="save-info__popup-icon" />
-        <div class="save-info__popup-text">изменениния сохранены</div>
+        <div class="save-info__popup-text">Изменениния сохранены</div>
       </div>
     </div>
     <!-- popup save-info end -->

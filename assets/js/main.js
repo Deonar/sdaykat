@@ -129,6 +129,27 @@ jQuery(document).ready(function ($) {
     $(this).toggleClass('active');
   });
 
+  // options-tooltip
+  var isDesktop = (function () {
+    return !('ontouchstart' in window) || !('onmsgesturechange' in window);
+  })();
+  window.isDesktop = isDesktop;
+  if (isDesktop) {
+    $('.options-tooltip-js').hover(function (e) {
+      $(this).toggleClass('active');
+    });
+  } else {
+    $('.options-tooltip-js').on('click', function () {
+      if ($(this).hasClass('active')) {
+        $('.options-tooltip-js').removeClass('active');
+        $(this).removeClass('active');
+      } else {
+        $('.options-tooltip-js').removeClass('active');
+        $(this).addClass('active');
+      }
+    });
+  }
+
   //==================================  Popup city
   $('#city-list').on('click', '.selectCity__item', function () {
     city = $(this).data('city');

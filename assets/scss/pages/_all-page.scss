@@ -383,6 +383,49 @@
     margin-right: 20px;
     cursor: pointer;
   }
+  &-item__tooltip {
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &-body {
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+      transition: all 0.3s ease;
+    }
+    &-content {
+      position: relative;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 3px;
+      font-size: 12px;
+      line-height: 18px;
+      width: 240px;
+      max-width: 240px;
+      color: $text-gray;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 98%;
+        border: 10px solid transparent;
+        border-top: 10px solid #ffffff;
+        border-radius: 3px;
+        transform: translateY(-50%) rotate(90deg);
+      }
+    }
+    &.active .options-item__tooltip-body{
+      transition: all 0.3s ease;
+      opacity: 1;
+      visibility: visible;
+      z-index: 10;
+    }
+  }
 }
 .catalysts {
   background-color: #f4f7fa;
