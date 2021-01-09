@@ -58,7 +58,7 @@ if (!isset($header_class)) {
         <div class="header-top__info">
           <div class="header-top__address">
             <div class="header-top__address-text">ул. Механическая, 101</div>
-            <a href="/representative.php#representative-map" class="header-top__address-link">Показать на карте</a>
+            <a href="/representative.php#map" class="header-top__address-link">Показать на карте</a>
           </div>
           <div class="header-top__contact">
             <a href="tel:+88005507940" class="header-top__contact-tell">
