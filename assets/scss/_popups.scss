@@ -5,6 +5,10 @@
   width: 100%;
   margin: 0px auto;
 }
+.mfp-wrap {
+  position: fixed !important;
+  overflow-y: scroll !important;
+}
 .mfp-container {
   padding: 0;
 }

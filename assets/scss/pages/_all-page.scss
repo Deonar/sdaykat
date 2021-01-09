@@ -419,7 +419,7 @@
         transform: translateY(-50%) rotate(90deg);
       }
     }
-    &.active .options-item__tooltip-body{
+    &.active .options-item__tooltip-body {
       transition: all 0.3s ease;
       opacity: 1;
       visibility: visible;
@@ -1303,7 +1303,6 @@
     width: 100%;
     max-width: 570px;
     margin-right: 30px;
-    max-height: 360px;
     overflow: hidden;
   }
   &__title {
@@ -1332,7 +1331,6 @@
   &__slider-wrapper {
     position: relative;
     .slider-item__preview-btn {
-      display: none;
       cursor: pointer;
       position: absolute;
       left: 25px;

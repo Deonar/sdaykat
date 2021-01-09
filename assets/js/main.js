@@ -42,6 +42,9 @@ jQuery(document).ready(function ($) {
   //======================== POPUPS
   $('.popup').magnificPopup({
     mainClass: 'mfp-fade',
+    // overflowY: 'hidden',
+    // fixedContentPos: true,
+    // fixedBgPos: true,
   });
 
   $('.main-form__phone').blur(function () {
