@@ -48,13 +48,11 @@
               <form class="price-oftype__form main-form main-form__light">
                 <div class="main-form__wrapper">
                   <label class="main-form__label main-form__label_phone">
-                  <span class="main-form__label-error">некорректный номер</span>
-                    <input class="main-form__phone mask-phone" type="tel" name="phone"
-                      placeholder="+7 (___) ___-__-__" />
+                    <span class="main-form__label-error">некорректный номер</span>
+                    <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                   </label>
                   <div class="main-form__btn">
-                    <a href="#popup-thank" class="main-form__submit btn btn_hover primary-btn popup"
-                      type="button">Продать катализатор</a>
+                    <a href="#popup-thank" class="main-form__submit btn btn_hover primary-btn" type="button">Продать катализатор</a>
                   </div>
                 </div>
                 <label class="main-form__policy">
@@ -400,12 +398,11 @@
       <form class="popup-form main-form main-form__light">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
-          <span class="main-form__label-error">некорректный номер</span>
+            <span class="main-form__label-error">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup"
-              type="button">вызвать специалиста</a>
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать специалиста</a>
           </div>
         </div>
         <label class="main-form__policy">
@@ -438,11 +435,11 @@
       <form class="popup-form main-form main-form__light">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
-          <span class="main-form__label-error">некорректный номер</span>
+            <span class="main-form__label-error">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-curyer" class="main-form__submit btn btn_hover blue-btn popup" type="button">вызвать
+            <a href="#popup-thank-curyer" class="main-form__submit btn btn_hover blue-btn" type="button">вызвать
               специалиста</a>
           </div>
         </div>
@@ -470,6 +467,10 @@
   <!-- popup-thank end-->
 
   <?php include("footer.php"); ?>
+  <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript">
+  </script>
+
+  <script src="assets/js/map.js"></script>
 </body>
 
 </html>

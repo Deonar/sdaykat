@@ -491,7 +491,7 @@
         <!-- TAB SIDEBAR -->
         <div class="profile-sidebar">
           <div class="profile-head">
-            <a href="/index.php" class="profile-exit__btn btn gray2-btn">Выйти</a>
+            <a href="/index.php" class="profile-exit__btn btn gray2-btn log-out-js">Выйти</a>
           </div>
           <div class="quotes profile-sidebar__item profile-block">
             <div class="tab-wrapper">
@@ -600,7 +600,7 @@
   <?php include("footer.php"); ?>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-  <script src="assets/js/profile.js"></script>
+  <script src="assets/js/profile.js?v=4"></script>
 </body>
 
 </html>

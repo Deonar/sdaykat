@@ -45,23 +45,32 @@ jQuery(document).ready(function ($) {
     if ($(this).val().length >= 18) {
       $(this).closest(".main-form__label_phone").addClass("_done").removeClass("_error");
     } else {
-      $.magnificPopup.close({});
       $(this).closest(".main-form__label_phone").removeClass("_done").addClass("_error");
     }
   });
   $(".main-form__submit").on("click", function (e) {
-    e.preventDefault();
+  
     if ($(this).closest('.main-form').find(".main-form__checkbox").is(":checked")) {
       if ($(this).closest('.main-form').find(".main-form__phone").val().length >= 18) {
+        let href = $(this).attr('href');
+        
+        if (href) {
+          console.log(href);
+          e.stopPropagation();
+          $.magnificPopup.open({
+            items: {
+              src: href,
+            },
+            type: 'inline'
+          });
+        }
       } else {
-        $.magnificPopup.close({});
         $(this).closest('.main-form').find(".main-form__phone").closest(".main-form__label_phone").addClass("_error");
       }
-    } else{
-      $.magnificPopup.close({});
     }
+    e.preventDefault();
   });
-  
+
   //scroll-header-menu
   var scrollPos = 0;
   $(document).scroll(function () {
@@ -95,7 +104,7 @@ jQuery(document).ready(function ($) {
     $('#mobMenu').removeClass('active');
   });
 
-  
+
 
   // profile save-info
   $('#save-info').on('click', function (e) {
@@ -138,8 +147,22 @@ jQuery(document).ready(function ($) {
     $('.header-top__location').removeClass('active');
   }
 
-  // ======================== location popup
+  var userAuth = getCookie('user-auth');
 
+  if (Number(userAuth)) {
+    $('#sing-in, #sing-in_mob').hide();
+    $('.header-authorized, .header-mob__authorized').show();
+  }else{
+    $('#sing-in, #sing-in_mob').show();
+    $('.header-authorized, .header-mob__authorized').hide();
+  }
+
+  $('#log-out, #log-out_mob, .log-out-js').on('click', function () {
+    document.cookie = 'user-auth=0; path=/';
+    window.location.href = "/";
+  });
+
+  // ======================== location popup
   $('.closeLocationPopup').on('click', function (e) {
     $('.header-top__location').removeClass('active');
     city = $('.header-top__location .header-top__location-link').text();
@@ -303,39 +326,39 @@ jQuery(document).ready(function ($) {
     }
     startProgressbar();
   }
-  if($("div").is("#reviews-slider")) {
-  sliderTimer($('#reviews-slider'));
-  $('#reviews-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    adaptiveHeight: true,
-    infinite: true,
-    dots: true,
-    centerPadding: '0',
-    speed: 500,
-    customPaging: function (slider, i) {
-      return '<svg viewBox="0 0 36 36" class="actual_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#feb700"; stroke-width="6" stroke-dasharray="80, 100"; /></svg><svg viewBox="0 0 36 36" class="bg_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#feb700"; stroke-width="6" stroke-dasharray="100, 100"; /></svg>';
-    },
-    prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
-    nextArrow: '<button class="slider-btn slider-btn__next"></button>',
-    responsive: [{
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        },
+  if ($("div").is("#reviews-slider")) {
+    sliderTimer($('#reviews-slider'));
+    $('#reviews-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      adaptiveHeight: true,
+      infinite: true,
+      dots: true,
+      centerPadding: '0',
+      speed: 500,
+      customPaging: function (slider, i) {
+        return '<svg viewBox="0 0 36 36" class="actual_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#feb700"; stroke-width="6" stroke-dasharray="80, 100"; /></svg><svg viewBox="0 0 36 36" class="bg_dot"><path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#feb700"; stroke-width="6" stroke-dasharray="100, 100"; /></svg>';
       },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
+      prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
+      nextArrow: '<button class="slider-btn slider-btn__next"></button>',
+      responsive: [{
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+          },
         },
-      },
-    ],
-  });
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
   }
 
-  if($("div").is("#price-oftype__slider")) {
+  if ($("div").is("#price-oftype__slider")) {
     sliderTimer($('#price-oftype__slider'));
     $('#price-oftype__slider').slick({
       slidesToShow: 1,

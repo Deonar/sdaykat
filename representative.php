@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <!-- Base link -->
-   <?php include("inc/base-link.php"); ?>
+  <!-- Base link -->
+  <?php include("inc/base-link.php"); ?>
 
   <title>Представительства</title>
 </head>
@@ -206,23 +206,23 @@
         </div>
         <ul class="representative-list" id="representative-list">
           <?php foreach ($regions as $key => $region) { ?>
-          <li class="representative-item accordion-tab-js" data-id="<?php echo ($region['id']) ?>">
-            <div class="representative-item__head">
-              <div class="representative-item__img">
-                <img src="assets/img/map/<?php echo ($region['img']) ?>.svg" alt="" />
+            <li class="representative-item accordion-tab-js" data-id="<?php echo ($region['id']) ?>">
+              <div class="representative-item__head">
+                <div class="representative-item__img">
+                  <img src="assets/img/map/<?php echo ($region['img']) ?>.svg" alt="" />
+                </div>
+                <h3 class="representative-item__title h3">
+                  <?php echo ($region['title']) ?>
+                </h3>
               </div>
-              <h3 class="representative-item__title h3">
-                <?php echo ($region['title']) ?>
-              </h3>
-            </div>
-            <div class="representative-list__cities-wrapp accordion-content-js">
-              <ul class="representative-list__cities">
-                <?php foreach ($region['cities'] as $key => $city) { ?>
-                <li class="representative-list__cities-item"><?php echo $city ?></li>
-                <?php } ?>
-              </ul>
-            </div>
-          </li>
+              <div class="representative-list__cities-wrapp accordion-content-js">
+                <ul class="representative-list__cities">
+                  <?php foreach ($region['cities'] as $key => $city) { ?>
+                    <li class="representative-list__cities-item"><?php echo $city ?></li>
+                  <?php } ?>
+                </ul>
+              </div>
+            </li>
           <?php } ?>
         </ul>
       </div>
@@ -231,8 +231,11 @@
   </div>
 
   <?php include("footer.php"); ?>
-
   <script src="assets/js/map-representative.js"></script>
+  <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript">
+  </script>
+
+  <script src="assets/js/map.js"></script>
 </body>
 
 </html>

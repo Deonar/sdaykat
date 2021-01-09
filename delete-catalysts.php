@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Page link -->
-    <link rel="stylesheet" href="assets/libs/slick/slick.css" />
 
-    <!-- Base link -->
-    <?php include("inc/base-link.php"); ?>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Page link -->
+  <link rel="stylesheet" href="assets/libs/slick/slick.css" />
 
-    <title>Удаление катализатора</title>
-  </head>
+  <!-- Base link -->
+  <?php include("inc/base-link.php"); ?>
+
+  <title>Удаление катализатора</title>
+</head>
+
+<body>
+  <?php $page = 'delete-catalysts'; include("header.php"); ?>
 
   <body>
-    <?php $page = 'delete-catalysts'; include("header.php"); ?>
+    <?php $page = 'delete-catalysts';
+  include("header.php"); ?>
 
     <main class="main main_delete-catalysts">
       <div class="container">
@@ -28,14 +33,15 @@
                   <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
-                  <a href="#popup-thank__dell" class="main-form__submit btn btn_hover blue-sky-btn popup" type="button">удалить катализатор</a>
+                  <a href="#popup-thank__dell" class="main-form__submit btn btn_hover blue-sky-btn"
+                    type="button">удалить катализатор</a>
                 </div>
-              </div>
-              <label class="main-form__policy">
-                <input type="checkbox" checked="" class="main-form__checkbox" />
-                <span class="main-form__checkbox-box"></span>
-                <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
-              </label>
+                <label class="main-form__policy">
+                  <input type="checkbox" checked="" class="main-form__checkbox" />
+                  <span class="main-form__checkbox-box"></span>
+                  <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+                      конфиденциальности</a></span>
+                </label>
             </form>
             <!-- Phone form end -->
           </div>
@@ -73,7 +79,8 @@
               <div class="delete-catalysts__icon mb-20">
                 <img src="assets/img/icons/icon-sky.svg" alt="" />
               </div>
-              <p class="delete-catalysts__text">Уменьшается приемистость мотора, появление ядовитого<br />запаха выхлопных газов</p>
+              <p class="delete-catalysts__text">Уменьшается приемистость мотора, появление ядовитого<br />запаха
+                выхлопных газов</p>
             </div>
             <div class="col-12 col-sm-6 col-lg-4 mb-30">
               <div class="delete-catalysts__icon mb-20">
@@ -109,6 +116,7 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
 
     <section class="requirement section-wrapper">
@@ -120,7 +128,9 @@
               <div class="requirement-item__wrap">
                 <img src="assets/img/icons/requirement-5.svg" alt="" class="requirement-item__icon" />
                 <div class="requirement-item__title">Звонок</div>
-                <div class="requirement-item__text">Оставляете заявку на сайте или звоните нам. Вместе выбираем подходящие время и дату приезда.</div>
+                <div class="requirement-item__text">Оставляете заявку на сайте или звоните нам. Вместе выбираем
+                  подходящие
+                  время и дату приезда.</div>
               </div>
               <div class="requirement-item__link requirement-item__link--tell">8 800 550 79 40</div>
             </a>
@@ -128,7 +138,8 @@
               <div class="requirement-item__wrap">
                 <img src="assets/img/icons/requirement-6.svg" alt="" class="requirement-item__icon" />
                 <div class="requirement-item__title">Приезд</div>
-                <div class="requirement-item__text">Катализаторы не должны быть влажными, допускается естественная влажность 1-2%</div>
+                <div class="requirement-item__text">Катализаторы не должны быть влажными, допускается естественная
+                  влажность 1-2%</div>
               </div>
               <div class="requirement-item__link">показать на карте</div>
             </a>
@@ -136,11 +147,13 @@
               <div class="requirement-item__wrap">
                 <img src="assets/img/icons/requirement-7.svg" alt="" class="requirement-item__icon" />
                 <div class="requirement-item__title">Бесплатное удаление</div>
-                <div class="requirement-item__text">Катализаторы не должны быть влажными, допускается естественная влажность 1-2%</div>
+                <div class="requirement-item__text">Катализаторы не должны быть влажными, допускается естественная
+                  влажность 1-2%</div>
               </div>
               <div class="requirement-item__link">почему бесплатно?</div>
             </a>
-            <a href="#additional-service" class="requirement-item d-flex flex-direction-column justify-content-sb scrollto">
+            <a href="#additional-service"
+              class="requirement-item d-flex flex-direction-column justify-content-sb scrollto">
               <div class="requirement-item__wrap">
                 <img src="assets/img/icons/requirement-8.svg" alt="" class="requirement-item__icon" />
                 <div class="requirement-item__title">Дополнительный сервис</div>
@@ -150,7 +163,6 @@
             </a>
           </div>
         </div>
-      </div>
     </section>
 
     <?php include("templates/map.php"); ?>
@@ -174,7 +186,8 @@
                 Нас ценят <br />
                 и рекламируют
               </div>
-              <div class="steps__item-text">Наши клиенты получают качественную бесплатную услугу, а мы — благодарные отзывы, дополнительный пиар и еще больше клиентов.</div>
+              <div class="steps__item-text">Наши клиенты получают качественную бесплатную услугу, а мы — благодарные
+                отзывы, дополнительный пиар и еще больше клиентов.</div>
             </li>
           </ul>
         </div>
@@ -191,7 +204,8 @@
                 <img src="assets/img/additional/additional-1.jpg" alt="" />
               </div>
               <h4 class="additional-item__title">Удаление катализатора</h4>
-              <div class="additional-item__text">Настроим режимы работы электронных контроллеров путём коррекции внутренних управляющих программ</div>
+              <div class="additional-item__text">Настроим режимы работы электронных контроллеров путём коррекции
+                внутренних управляющих программ</div>
               <div class="additional-item__price">БЕСПЛАТНО</div>
             </li>
             <li class="additional-item">
@@ -199,7 +213,8 @@
                 <img src="assets/img/additional/additional-2.jpg" alt="" />
               </div>
               <h4 class="additional-item__title">Чип тюннинг</h4>
-              <div class="additional-item__text">Настроим режимы работы электронных контроллеров путём коррекции внутренних управляющих программ</div>
+              <div class="additional-item__text">Настроим режимы работы электронных контроллеров путём коррекции
+                внутренних управляющих программ</div>
               <div class="additional-item__price">от 1 000 рублей</div>
             </li>
             <li class="additional-item">
@@ -207,7 +222,8 @@
                 <img src="assets/img/additional/additional-3.jpg" alt="" />
               </div>
               <h4 class="additional-item__title">Ремонт выхлопа</h4>
-              <div class="additional-item__text">Настроим режимы работы электронных контроллеров путём коррекции внутренних управляющих программ</div>
+              <div class="additional-item__text">Настроим режимы работы электронных контроллеров путём коррекции
+                внутренних управляющих программ</div>
               <div class="additional-item__price">от 1 000 рублей</div>
             </li>
             <li class="additional-item">
@@ -215,7 +231,8 @@
                 <img src="assets/img/additional/additional-4.jpg" alt="" />
               </div>
               <h4 class="additional-item__title">Установка пламегасителя</h4>
-              <div class="additional-item__text">Настроим режимы работы электронных контроллеров путём коррекции внутренних управляющих программ</div>
+              <div class="additional-item__text">Настроим режимы работы электронных контроллеров путём коррекции
+                внутренних управляющих программ</div>
               <div class="additional-item__price">от 1 000 рублей</div>
             </li>
           </ul>
@@ -248,8 +265,18 @@
         </div>
       </div>
     </div>
+    </div>
     <!-- popup-thank end-->
 
     <?php include("footer.php"); ?>
+    <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU"
+      type="text/javascript">
+    </script>
+
+    <script src="assets/js/map.js"></script>
   </body>
+
+  <?php include("footer.php"); ?>
+</body>
+
 </html>

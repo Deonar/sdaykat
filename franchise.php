@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/libs/jquery-libs/jquery-ui.min.css" />
   <link rel="stylesheet" href="assets/libs/slick/slick.css" />
 
-   <!-- Base link -->
+  <!-- Base link -->
   <?php include("inc/base-link.php"); ?>
 
   <title>Франшиза</title>
@@ -16,7 +16,8 @@
 
 <body>
 
-  <?php $page = 'franchise'; include("header.php"); ?>
+  <?php $page = 'franchise';
+  include("header.php"); ?>
 
   <main class="main main_franchise">
     <div class="container">
@@ -27,12 +28,12 @@
           <form class="main-form">
             <div class="main-form__wrapper">
               <label class="main-form__label main-form__label_phone">
-              <span class="main-form__label-error">некорректный номер</span>
+                <span class="main-form__label-error">некорректный номер</span>
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
 
               <div class="main-form__btn">
-                <a href="#popup-thank" id="action-btn" class="main-form__submit btn btn_hover gray-btn popup" type="button">получить
+                <a href="#popup-thank" id="action-btn" class="main-form__submit btn btn_hover gray-btn" type="button">получить
                   консультацию</a>
               </div>
             </div>
@@ -189,11 +190,11 @@
             <div class="price-ofauto__form-text">Отправьте заявку. Наши менеджеры свяжутся с вами.</div>
             <div class="main-form__wrapper">
               <label class="main-form__label main-form__label_phone">
-              <span class="main-form__label-error">некорректный номер</span>
+                <span class="main-form__label-error">некорректный номер</span>
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn popup" type="button">Получить
+                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn" type="button">Получить
                   консультацию</a>
               </div>
             </div>
@@ -227,18 +228,12 @@
             <a href="/about.php" class="btn transparent-btn btn_arrow">Узнать больше о компании
               <span class="arrow-move">
                 <span class="arrow-move-clip">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512"
-                    xml:space="preserve">
-                    <path
-                      d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
+                    <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z">
                     </path>
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512"
-                    xml:space="preserve">
-                    <path
-                      d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
+                    <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z">
                     </path>
                   </svg>
                 </span> </span></a>
@@ -349,11 +344,11 @@
           <form class="calculator-form__body main-form main-form__light">
             <div class="main-form__wrapper">
               <label class="main-form__label main-form__label_phone">
-              <span class="main-form__label-error">некорректный номер</span>
+                <span class="main-form__label-error">некорректный номер</span>
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn popup" type="button">стать
+                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn" type="button">стать
                   партнером sdaykat</a>
               </div>
             </div>
@@ -395,12 +390,11 @@
       <form class="popup-form main-form main-form__light">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
-          <span class="main-form__label-error" style="display:none;">некорректный номер</span>
+            <span class="main-form__label-error" style="display:none;">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn popup"
-              type="button">вызвать специалиста</a>
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать специалиста</a>
           </div>
         </div>
         <label class="main-form__policy">
@@ -428,6 +422,10 @@
 
   <?php include("footer.php"); ?>
   <script src="assets/js/map-franchise.js"></script>
+  <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript">
+  </script>
+
+  <script src="assets/js/map.js"></script>
 </body>
 
 </html>
