@@ -22,12 +22,15 @@ jQuery(document).ready(function ($) {
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
 
-    $('html, body').animate({
-      scrollTop: $(href).offset().top - 100,
-    }, {
-      duration: 370, // по умолчанию «400»
-      easing: 'linear', // по умолчанию «swing»
-    });
+    $('html, body').animate(
+      {
+        scrollTop: $(href).offset().top - 100,
+      },
+      {
+        duration: 370, // по умолчанию «400»
+        easing: 'linear', // по умолчанию «swing»
+      }
+    );
     if ($(window).width() < 768) {
       $('html, body').animate({
         scrollTop: $(href).offset().top - 70,
@@ -41,19 +44,18 @@ jQuery(document).ready(function ($) {
     mainClass: 'mfp-fade',
   });
 
-  $(".main-form__phone").blur(function () {
+  $('.main-form__phone').blur(function () {
     if ($(this).val().length >= 18) {
-      $(this).closest(".main-form__label_phone").addClass("_done").removeClass("_error");
+      $(this).closest('.main-form__label_phone').addClass('_done').removeClass('_error');
     } else {
-      $(this).closest(".main-form__label_phone").removeClass("_done").addClass("_error");
+      $(this).closest('.main-form__label_phone').removeClass('_done').addClass('_error');
     }
   });
-  $(".main-form__submit").on("click", function (e) {
-  
-    if ($(this).closest('.main-form').find(".main-form__checkbox").is(":checked")) {
-      if ($(this).closest('.main-form').find(".main-form__phone").val().length >= 18) {
+  $('.main-form__submit').on('click', function (e) {
+    if ($(this).closest('.main-form').find('.main-form__checkbox').is(':checked')) {
+      if ($(this).closest('.main-form').find('.main-form__phone').val().length >= 18) {
         let href = $(this).attr('href');
-        
+
         if (href) {
           console.log(href);
           e.stopPropagation();
@@ -61,11 +63,11 @@ jQuery(document).ready(function ($) {
             items: {
               src: href,
             },
-            type: 'inline'
+            type: 'inline',
           });
         }
       } else {
-        $(this).closest('.main-form').find(".main-form__phone").closest(".main-form__label_phone").addClass("_error");
+        $(this).closest('.main-form').find('.main-form__phone').closest('.main-form__label_phone').addClass('_error');
       }
     }
     e.preventDefault();
@@ -104,18 +106,21 @@ jQuery(document).ready(function ($) {
     $('#mobMenu').removeClass('active');
   });
 
-
-
   // profile save-info
   $('#save-info').on('click', function (e) {
+    $('#save-info-popup').fadeIn();
     $('#profile-registration').show();
     $('#profile-registration-edit').hide();
-    $('html, body').animate({
+    $('html, body').animate(
+      {
         scrollTop: 0,
       },
       'slow'
     );
     return false;
+  });
+  $('#save-info-popup-closes').on('click', function (e) {
+    $('#save-info-popup').fadeOut();
   });
 
   // actions-content-show-js
@@ -123,6 +128,27 @@ jQuery(document).ready(function ($) {
     e.stopPropagation();
     $(this).toggleClass('active');
   });
+
+  // options-tooltip
+  var isDesktop = (function () {
+    return !('ontouchstart' in window) || !('onmsgesturechange' in window);
+  })();
+  window.isDesktop = isDesktop;
+  if (isDesktop) {
+    $('.options-tooltip-js').hover(function (e) {
+      $(this).toggleClass('active');
+    });
+  } else {
+    $('.options-tooltip-js').on('click', function () {
+      if ($(this).hasClass('active')) {
+        $('.options-tooltip-js').removeClass('active');
+        $(this).removeClass('active');
+      } else {
+        $('.options-tooltip-js').removeClass('active');
+        $(this).addClass('active');
+      }
+    });
+  }
 
   //==================================  Popup city
   $('#city-list').on('click', '.selectCity__item', function () {
@@ -152,14 +178,14 @@ jQuery(document).ready(function ($) {
   if (Number(userAuth)) {
     $('#sing-in, #sing-in_mob').hide();
     $('.header-authorized, .header-mob__authorized').show();
-  }else{
+  } else {
     $('#sing-in, #sing-in_mob').show();
     $('.header-authorized, .header-mob__authorized').hide();
   }
 
   $('#log-out, #log-out_mob, .log-out-js').on('click', function () {
     document.cookie = 'user-auth=0; path=/';
-    window.location.href = "/";
+    window.location.href = '/';
   });
 
   // ======================== location popup
@@ -326,7 +352,7 @@ jQuery(document).ready(function ($) {
     }
     startProgressbar();
   }
-  if ($("div").is("#reviews-slider")) {
+  if ($('div').is('#reviews-slider')) {
     sliderTimer($('#reviews-slider'));
     $('#reviews-slider').slick({
       slidesToShow: 3,
@@ -342,7 +368,8 @@ jQuery(document).ready(function ($) {
       },
       prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
       nextArrow: '<button class="slider-btn slider-btn__next"></button>',
-      responsive: [{
+      responsive: [
+        {
           breakpoint: 992,
           settings: {
             slidesToShow: 2,
@@ -358,7 +385,7 @@ jQuery(document).ready(function ($) {
     });
   }
 
-  if ($("div").is("#price-oftype__slider")) {
+  if ($('div').is('#price-oftype__slider')) {
     sliderTimer($('#price-oftype__slider'));
     $('#price-oftype__slider').slick({
       slidesToShow: 1,
@@ -383,7 +410,8 @@ jQuery(document).ready(function ($) {
     dots: false,
     prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"></button>',
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
