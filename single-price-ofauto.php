@@ -30,7 +30,7 @@
             <a href="/prices.php" class="nuxt-link-active breadcrumbs__link t-control">Цены</a>
           </li>
           <li class="breadcrumbs__item">
-            <span to="#" class="breadcrumbs__link t-control breadcrumbs__link--disabled">Керамический фильтр</span>
+            <span to="#" class="breadcrumbs__link t-control breadcrumbs__link--disabled">Цены по марке авто BMW</span>
           </li>
         </ul>
       </div>
@@ -62,7 +62,8 @@
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank-specialist" class="main-form__submit primary-btn btn btn_hover" type="button">Узнать стоимось</a>
+                <a href="#popup-thank-specialist" class="main-form__submit primary-btn btn btn_hover"
+                  type="button">Узнать стоимось</a>
               </div>
             </div>
             <label class="main-form__policy">
@@ -301,7 +302,8 @@
                   <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
-                  <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover primary-btn" type="button">Продать катализатор</a>
+                  <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover primary-btn"
+                    type="button">Продать катализатор</a>
                 </div>
               </div>
               <label class="main-form__policy">
@@ -450,7 +452,8 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать специалиста</a>
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать
+              специалиста</a>
           </div>
         </div>
         <label class="main-form__policy">
@@ -519,7 +522,8 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать специалиста</a>
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать
+              специалиста</a>
           </div>
         </div>
         <label class="main-form__policy">
@@ -536,7 +540,8 @@
   <!-- popup-form-calculator end-->
 
   <?php include("footer.php"); ?>
-  <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript">
+  <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU"
+    type="text/javascript">
   </script>
 
   <script src="assets/js/map.js"></script>

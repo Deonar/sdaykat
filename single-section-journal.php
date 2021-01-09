@@ -74,7 +74,7 @@
               <div class="article__item-img">
                 <img src="assets/img/article/article_5.jpg" alt="Каталитические системы" />
               </div>
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_white"> Каталитические системы </span>
               <div class="article__item-bottom">
                 <h2 class="article__item-title primary-title primary-title__light">Сколько стоит старый катализатор?
                 </h2>
@@ -112,7 +112,7 @@
           </a>
           <a href="/single-article.php" class="col-12 col-sm-4 article__item">
             <div class="article__img">
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_white"> Каталитические системы </span>
               <img src="assets/img/article/article_2.jpg" class="img-responsive" alt="Каталитические системы" />
             </div>
             <h4 class="article__title">Сколько стоит старый катализатор?</h4>
@@ -124,7 +124,7 @@
           </a>
           <a href="/single-article.php" class="col-12 col-sm-4 article__item">
             <div class="article__img">
-              <span class="article__label article__label_orange"> Каталитические системы </span>
+              <span class="article__label article__label_white"> Каталитические системы </span>
               <img src="assets/img/article/article_3.jpg" class="img-responsive" alt="Каталитические системы" />
             </div>
             <h4 class="article__title">Сколько стоит старый катализатор?</h4>
@@ -150,7 +150,7 @@
           </a>
           <a href="/single-article.php" class="col-12 col-sm-4 article__item">
             <div class="article__img">
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_white"> Каталитические системы </span>
               <img src="assets/img/article/article_2.jpg" class="img-responsive" alt="Каталитические системы" />
             </div>
             <h4 class="article__title">Сколько стоит старый катализатор?</h4>
@@ -162,7 +162,7 @@
           </a>
           <a href="/single-article.php" class="col-12 col-sm-4 article__item">
             <div class="article__img">
-              <span class="article__label article__label_orange"> Каталитические системы </span>
+              <span class="article__label article__label_white"> Каталитические системы </span>
               <img src="assets/img/article/article_3.jpg" class="img-responsive" alt="Каталитические системы" />
             </div>
             <h4 class="article__title">Сколько стоит старый катализатор?</h4>
@@ -188,7 +188,7 @@
           </a>
           <a href="/single-article.php" class="col-12 col-sm-4 article__item">
             <div class="article__img">
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_white"> Каталитические системы </span>
               <img src="assets/img/article/article_2.jpg" class="img-responsive" alt="Каталитические системы" />
             </div>
             <h4 class="article__title">Сколько стоит старый катализатор?</h4>
@@ -200,7 +200,7 @@
           </a>
           <a href="/single-article.php" class="col-12 col-sm-4 article__item">
             <div class="article__img">
-              <span class="article__label article__label_orange"> Каталитические системы </span>
+              <span class="article__label article__label_white"> Каталитические системы </span>
               <img src="assets/img/article/article_3.jpg" class="img-responsive" alt="Каталитические системы" />
             </div>
             <h4 class="article__title">Сколько стоит старый катализатор?</h4>
@@ -258,7 +258,7 @@
               <div class="article__item-img">
                 <img src="assets/img/article/article_5.jpg" alt="Каталитические системы" />
               </div>
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_blue"> Автомобильная отрасль </span>
               <div class="article__item-bottom">
                 <h2 class="article__item-title primary-title primary-title__light">Сколько стоит старый катализатор?
                 </h2>
@@ -279,7 +279,7 @@
         <div class="row no-gutters article article__small-items">
           <div class="col-12 col-sm-4">
             <a href="/single-article.php" class="article__item">
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_black">Драгоценные металлы</span>
               <h4 class="article__item-title h4">Сколько стоит старый катализатор?</h4>
               <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
               <div class="article__bottom">
@@ -290,7 +290,7 @@
           </div>
           <div class="col-12 col-sm-4">
             <a href="/single-article.php" class="article__item">
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_blue"> Автомобильная отрасль </span>
               <h4 class="article__item-title h4">Сколько стоит старый катализатор?</h4>
               <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
               <div class="article__bottom">
@@ -301,7 +301,7 @@
           </div>
           <div class="col-12 col-sm-4">
             <a href="/single-article.php" class="article__item">
-              <span class="article__label article__label_blue"> Каталитические системы </span>
+              <span class="article__label article__label_yellow"> Вторичное сырье </span>
               <h4 class="article__item-title h4">Сколько стоит старый катализатор?</h4>
               <p class="article__text">В пунктах приема металлолома не принимают катализаторы из-за их опасности.</p>
               <div class="article__bottom">

@@ -76,17 +76,17 @@
         <div class="footer-item__title">Журнал</div>
         <ul class="footer-item__menu-list accordion-content-js">
           <li class="footer-item__menu-item">
-            <a href="/journal.php#art-catalytic-systems" class="footer-item__menu-link">Каталитические
+            <a href="/single-section-journal.php" class="footer-item__menu-link">Каталитические
               системы</a>
           </li>
           <li class="footer-item__menu-item">
-            <a href="/journal.php#art-precious-metal" class="footer-item__menu-link">Драгоценные металлы</a>
+            <a href="/single-section-journal.php" class="footer-item__menu-link">Драгоценные металлы</a>
           </li>
           <li class="footer-item__menu-item">
-            <a href="/journal.php#art-car" class="footer-item__menu-link">Автомобильная отрасль</a>
+            <a href="/single-section-journal.php" class="footer-item__menu-link">Автомобильная отрасль</a>
           </li>
           <li class="footer-item__menu-item">
-            <a href="/journal.php#art-secondary-material" class="footer-item__menu-link">Вторичное сырьё</a>
+            <a href="/single-section-journal.php" class="footer-item__menu-link">Вторичное сырьё</a>
           </li>
         </ul>
       </div>
@@ -106,4 +106,3 @@
 <script src="assets/libs/jquery-libs/jquery.ui.touch-punch.min.js"></script>
 
 <script src="assets/js/main.js?v=4"></script>
-

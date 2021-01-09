@@ -94,6 +94,16 @@
         margin-bottom: 0px;
       }
     }
+    &__range {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      span {
+        font-size: 26px;
+        margin-right: 0px;
+        line-height: 26px;
+      }
+    }
   }
   //=========================== price-ofauto end
   //=========================== loyalty-instruction
@@ -519,7 +529,9 @@
       margin-right: 15px;
     }
     &__head {
-      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 35px;
+      margin-bottom: 30px;
     }
     &__logo {
       min-width: 90px;
@@ -540,6 +552,15 @@
     }
     &__form-text {
       margin-bottom: 20px;
+    }
+    &__range {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      span {
+        font-size: 26px;
+        line-height: 30px;
+      }
     }
   }
   //=========================== price-ofauto end
@@ -1210,6 +1231,7 @@
     &__content {
       margin-right: 0px;
     }
+
     &__logo {
       min-width: 60px;
       min-height: 60px;
@@ -1222,6 +1244,12 @@
     &__form {
       border: none;
       padding: 50px 25px 20px 25px;
+    }
+    &__range {
+      span {
+        font-size: 18px;
+        line-height: 22px;
+      }
     }
   }
   //=========================== price-ofauto end
@@ -2376,25 +2404,7 @@
   .main_franchise {
     background-position: 60% top;
   }
-  //=========================== price-ofauto
-  .price-ofauto {
-    &__head {
-      align-items: flex-start;
-    }
-    &__logo {
-      min-width: 40px;
-      min-height: 40px;
-      max-width: 40px;
-      max-height: 40px;
-    }
-    &__range {
-      span {
-        margin-right: 10px;
-        font-size: 16px;
-      }
-    }
-  }
-  //=========================== price-ofauto end
+
   .about-block {
     .about-info {
       &_col:first-child {
