@@ -15,72 +15,32 @@
     <?php $page = "prices-wholesalers";
   include("header.php"); ?>
 
-    <main class="main main_price-wholesale">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-8">
-            <h1 class="main-title">Бесплатно удалим катализатор<br />и выкупим сырье</h1>
-            <!-- Phone form  -->
-            <form class="main-form">
-              <div class="main-form__wrapper">
-                <label class="main-form__label main-form__label_phone">
-                  <span class="main-form__label-error" style="display: none">некорректный номер</span>
-                  <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
-                </label>
-                <div class="main-form__btn">
-                  <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" id="intro-submit-btn" type="button">Продать сырье</a>
-                </div>
-              </div>
-              <label class="main-form__policy">
-                <input type="checkbox" checked="" class="main-form__checkbox" />
-                <span class="main-form__checkbox-box"></span>
-                <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+  <main class="main main_price-wholesale">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h1 class="main-title">Бесплатно удалим катализатор<br />и выкупим сырье</h1>
+          <!-- Phone form  -->
+          <form class="main-form">
+            <div class="main-form__wrapper">
+              <label class="main-form__label main-form__label_phone">
+                <span class="main-form__label-error">некорректный номер</span>
+                <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
-            </form>
-            <!-- Phone form end -->
-          </div>
-          <div class="d-none d-lg-block col-12 col-lg-4">
-            <div class="curs-metal">
-              <div class="curs-metal__title">
-                <h3>
-                  <b>Честные выплаты до <span class="text-orange">75%</span> по LME</b>
-                </h3>
-                <div class="curs-metal__icon">
-                  <img src="assets/img/icons/icon-metal.svg" alt="" />
-                </div>
-              </div>
-              <div class="curs-metal-list">
-                <div class="curs-metal-list__item d-flex justify-content-between text-placeholder">
-                  <div class="small-text">Сегодня</div>
-                  <div class="small-text">Вчера</div>
-                </div>
-                <div class="curs-metal-list__item">
-                  <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
-                  <div class="d-flex justify-content-between">
-                    <div class="h4">5 658,74 ₽/г</div>
-                    <div class="h5 text-placeholder">5 648,74 ₽/г</div>
-                  </div>
-                </div>
-                <div class="curs-metal-list__item">
-                  <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
-                  <div class="d-flex justify-content-between">
-                    <div class="h4">5 658,74 ₽/г</div>
-                    <div class="h5 text-placeholder">5 648,74 ₽/г</div>
-                  </div>
-                </div>
-                <div class="curs-metal-list__item">
-                  <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_down"></span></div>
-                  <div class="d-flex justify-content-between">
-                    <div class="h4">5 658,74 ₽/г</div>
-                    <div class="h5 text-placeholder">5 648,74 ₽/г</div>
-                  </div>
-                </div>
-              </div>
-              <div class="curs-metal__link text-center">
-                <a href="https://www.lme.com/" target="_blank" class="link"> проверить на lme.com <img class="ml-10" src="assets/img/icons/icon-arrow-box.svg" alt="#" /></a>
+              <div class="main-form__btn">
+                <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" id="intro-submit-btn" type="button">Продать сырье</a>
               </div>
             </div>
-          </div>
+            <label class="main-form__policy">
+              <input type="checkbox" checked="" class="main-form__checkbox" />
+              <span class="main-form__checkbox-box"></span>
+              <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой конфиденциальности</a></span>
+            </label>
+          </form>
+          <!-- Phone form end -->
+        </div>
+        <div class="d-none d-lg-block col-12 col-lg-4">
+          <?php include("templates/curs-metal.php"); ?>
         </div>
       </div>
     </main>
@@ -249,7 +209,7 @@
             <form class="calculator-form__body main-form main-form__light">
               <div class="main-form__wrapper">
                 <label class="main-form__label main-form__label_phone">
-                  <span class="main-form__label-error" style="display: none">некорректный номер</span>
+                  <span class="main-form__label-error">некорректный номер</span>
                   <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
