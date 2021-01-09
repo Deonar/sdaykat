@@ -1,3 +1,5 @@
+
+jQuery(document).ready(function ($) {
 $('#map_btn-more').on('click', function () {
   $(this).hide();
   $('#map .map-list').addClass('map_show-all');
@@ -166,3 +168,4 @@ function init() {
 
   updatePoints()
 }
+});

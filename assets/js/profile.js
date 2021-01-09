@@ -1,3 +1,4 @@
+jQuery(document).ready(function ($) {
 //======================== daterangepicker profile
 $('.daterange-input').daterangepicker({
     "locale": {
@@ -34,7 +35,6 @@ $('.daterange-input').daterangepicker({
         "firstDay": 1
     }
 });
-
 
 //entry-account
 $('#entry-account').on('click', function (e) {
@@ -144,6 +144,8 @@ if(in1){
 $('#authorization-confirm').on('submit', function(e){
     e.preventDefault();
     window.location.href = "/profile.php";
+
+    document.cookie = 'user-auth=1; path=/';
 })
 
 //======================== Analitic
@@ -417,3 +419,4 @@ if (chart3) {
     var chart3 = new ApexCharts(chart3, options2);
     chart3.render();
 }
+});

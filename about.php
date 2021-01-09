@@ -231,11 +231,11 @@
       <form class="popup-form main-form main-form__light">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
-            <span class="main-form__label-error" style="display:none;">некорректный номер</span>
+            <span class="main-form__label-error">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank" class="main-form__submit btn btn_hover border-gray-btn popup" type="button">отправить
+            <a href="#popup-thank" class="main-form__submit btn btn_hover border-gray-btn" type="button">отправить
               отклик</a>
           </div>
         </div>
@@ -261,6 +261,7 @@
   <!-- popup-thank end-->
 
   <?php include("footer.php"); ?>
+  
 </body>
 
 </html>
