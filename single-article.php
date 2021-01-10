@@ -197,6 +197,7 @@
             стоимость сырья
           </h3>
           <div class="calculator-form__price">28 000 ₽</div>
+
           <div class="calculator-form__text">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта точной стоимости катализатора.</div>
           <form class="calculator-form__body main-form">
             <div class="main-form__wrapper">

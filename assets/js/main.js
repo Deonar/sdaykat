@@ -42,28 +42,32 @@ jQuery(document).ready(function ($) {
   //======================== POPUPS
   $('.popup').magnificPopup({
     mainClass: 'mfp-fade',
-    // overflowY: 'hidden',
-    fixedContentPos: true,
+    type: 'inline',
+    fixedContentPos: false,
     fixedBgPos: true,
     callbacks: {
-      open: function() {
+      open: function () {
         $('body').addClass('overflow-h');
+        console.log('open');
       },
-      close: function() {
+      close: function () {
         $('body').removeClass('overflow-h');
-      }}
+        console.log('close');
+      },
+    },
   });
 
-  $('.slider-item__preview-btn').on('click', function(){
-    $('#price-oftype__slider').magnificPopup({
-      delegate: 'a',
-      type:'image',
-      gallery: {
-        enabled: true
-      }
-    }).magnificPopup('open');
-  })
-  
+  $('.slider-item__preview-btn').on('click', function () {
+    $('#price-oftype__slider')
+      .magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+          enabled: true,
+        },
+      })
+      .magnificPopup('open');
+  });
 
   $('.main-form__phone').blur(function () {
     if ($(this).val().length >= 18) {
@@ -78,13 +82,22 @@ jQuery(document).ready(function ($) {
         let href = $(this).attr('href');
 
         if (href) {
-          console.log(href);
           e.stopPropagation();
           $.magnificPopup.open({
             items: {
               src: href,
             },
             type: 'inline',
+            callbacks: {
+              open: function () {
+                $('body').addClass('overflow-h');
+                console.log('open');
+              },
+              close: function () {
+                $('body').removeClass('overflow-h');
+                console.log('close');
+              },
+            },
           });
         }
       } else {
@@ -134,15 +147,8 @@ jQuery(document).ready(function ($) {
   });
 
   // options-tooltip
-  var isDesktop = (function () {
-    return !('ontouchstart' in window) || !('onmsgesturechange' in window);
-  })();
-  window.isDesktop = isDesktop;
-  if (isDesktop) {
-    $('.options-tooltip-js').hover(function (e) {
-      $(this).toggleClass('active');
-    });
-  } else {
+
+  if ($(window).innerWidth() <= 768) {
     $('.options-tooltip-js').on('click', function () {
       if ($(this).hasClass('active')) {
         $('.options-tooltip-js').removeClass('active');
@@ -151,6 +157,13 @@ jQuery(document).ready(function ($) {
         $('.options-tooltip-js').removeClass('active');
         $(this).addClass('active');
       }
+    });
+    // $('.tooltip-close-js').on('click', function () {
+    //   $(this).parent().parent().parent().removeClass('active');
+    // });
+  } else {
+    $('.options-tooltip-js').hover(function (e) {
+      $(this).toggleClass('active');
     });
   }
 
@@ -278,7 +291,7 @@ jQuery(document).ready(function ($) {
   openTabsProfile();
   $('.open-profile-js').on('click', function (e) {
     let dataTabProfile = $(this).data('tab-profile');
-    console.log(dataTabProfile);
+
     if (dataTabProfile == 'profile-tab') {
       showProfileContent();
     } else if (dataTabProfile == 'analitic-tab') {

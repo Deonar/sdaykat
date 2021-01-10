@@ -74,10 +74,10 @@
               </a>
               <a href="assets/img/catalysts/ceramics-slider-1.jpg" class="price-oftype__slider-item">
                 <img class="slider-item__img" src="assets/img/catalysts/ceramics-slider-1.jpg" alt="" />
-                </a>
+              </a>
               <a href="assets/img/catalysts/ceramics-slider-2.jpg" class="price-oftype__slider-item">
                 <img class="slider-item__img" src="assets/img/catalysts/ceramics-slider-2.jpg" alt="" />
-                </a>
+              </a>
             </div>
             <button class="slider-item__preview-btn"></button>
           </div>
@@ -311,7 +311,7 @@
                 мы возвращаем ретро-бонусы в размере 5% от общей.
               </p>
               <div class="pass-material__btn">
-                <a href="#map" class="btn btn_small btn_hover light-blue-btn scrollto">Показать на карте</a>
+                <a href="#map" class="btn btn_small btn_hover light-blue-btn scrollto">Показать адреса</a>
               </div>
             </div>
           </div>

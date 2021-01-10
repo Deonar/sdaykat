@@ -299,6 +299,30 @@
     color: $text-secondery;
     margin-bottom: 10px;
   }
+  &-form__warning {
+    position: relative;
+    color: $text-gray;
+    max-width: 330px;
+    padding-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    &::after {
+      content: '!';
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 40px;
+      font-weight: 600;
+      font-size: 20px;
+      border-radius: 50%;
+      color: $text-primary;
+      line-height: 40px;
+      text-align: center;
+      background: #e8edf5;
+      left: 0;
+      top: 0;
+    }
+  }
   &-form__tell-label {
     font-size: 12px;
     line-height: 16px;
@@ -312,6 +336,9 @@
     font-size: 24px;
     line-height: 32px;
     color: $text-primary;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 .calculator-input {
@@ -396,17 +423,31 @@
       visibility: hidden;
       z-index: -1;
       transition: all 0.3s ease;
+      box-shadow: 0px 20px 40px rgba(30, 30, 30, 0.3);
     }
     &-content {
       position: relative;
-      padding: 10px;
-      background-color: #fff;
-      border-radius: 3px;
-      font-size: 12px;
-      line-height: 18px;
       width: 240px;
       max-width: 240px;
-      color: $text-gray;
+      border-radius: 3px;
+      padding: 10px;
+      background-color: #fff;
+      span {
+        font-size: 12px;
+        line-height: 18px;
+        color: $text-gray;
+      }
+      .tooltip-close {
+        position: absolute;
+        display: block;
+        top: 0px;
+        right: 0px;
+        padding: 10px;
+        width: 8px;
+        height: 8px;
+        background: url('../img/icons/icon-close-dark.svg') center center no-repeat;
+        background-size: 8px 8px;
+      }
       &::after {
         content: '';
         display: block;
@@ -1246,7 +1287,7 @@
     width: 100%;
     min-width: 210px;
     max-width: 230px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     background: #fff;
     padding: 20px 10px 20px 20px;
@@ -2092,6 +2133,10 @@
     padding: 50px;
     background: $primary;
     margin-bottom: 15px;
+    height: calc(100% - 15px);
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &__target-title {
     font-family: 'Stapel';
@@ -3861,7 +3906,7 @@
     top: 110%;
     padding: 12px;
     background: #ffffff;
-    box-shadow: 0px 20px 40px rgba(30, 30, 30, 0.1);
+    box-shadow: 0px 20px 40px rgba(30, 30, 30, 0.2);
     border-radius: 3px;
   }
   &-link {

@@ -294,7 +294,9 @@
               <br />
               BMW X5 2020 г
             </h3>
-            <div class="calculator-form__price">28 000 ₽</div>
+            <div class="calculator-form__price" style="display: none">28 000 ₽</div>
+            <div class="calculator-form__warning form-warning-js">Выберите модель и год выпуска авто для оценки точной
+              стоимости</div>
             <form class="calculator-form__body main-form main-form__light">
               <div class="main-form__wrapper">
                 <label class="main-form__label main-form__label_phone">
@@ -347,7 +349,7 @@
                 мы возвращаем ретро-бонусы в размере 5% от общей.
               </p>
               <div class="pass-material__btn">
-                <a href="#map" class="btn btn_hover btn_small light-blue-btn scrollto">Показать на карте</a>
+                <a href="#map" class="btn btn_hover btn_small light-blue-btn scrollto">Показать адреса</a>
               </div>
             </div>
           </div>
@@ -541,8 +543,7 @@
 
   <?php include("footer.php"); ?>
   <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU"
-    type="text/javascript">
-  </script>
+    type="text/javascript"></script>
 
   <script src="assets/js/map.js"></script>
 </body>

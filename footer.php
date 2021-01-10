@@ -95,7 +95,7 @@
   </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/libs/jquery-libs/jquery.min.js"></script>
 <script src="assets/libs/scrollbar/jquery.scrollbar.min.js"></script>
 <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="assets/libs/slick/slick.min.js"></script>

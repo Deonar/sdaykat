@@ -223,7 +223,7 @@
               мы возвращаем ретро-бонусы в размере 5% от общей.
             </p>
             <div class="pass-material__btn">
-              <a href="#map" class="btn btn_small btn_hover light-blue-btn scrollto">Показать на карте</a>
+              <a href="#map" class="btn btn_small btn_hover light-blue-btn scrollto">Показать адреса</a>
             </div>
           </div>
         </div>
