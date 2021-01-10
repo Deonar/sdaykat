@@ -69,15 +69,15 @@
           </div>
           <div class="price-oftype__slider-wrapper">
             <div class="price-oftype__slider" id="price-oftype__slider">
-              <div class="price-oftype__slider-item">
+              <a href="assets/img/catalysts/ceramics-slider.jpg" class="price-oftype__slider-item">
                 <img class="slider-item__img" src="assets/img/catalysts/ceramics-slider.jpg" alt="" />
-              </div>
-              <div class="price-oftype__slider-item">
+              </a>
+              <a href="assets/img/catalysts/ceramics-slider-1.jpg" class="price-oftype__slider-item">
                 <img class="slider-item__img" src="assets/img/catalysts/ceramics-slider-1.jpg" alt="" />
-              </div>
-              <div class="price-oftype__slider-item">
+                </a>
+              <a href="assets/img/catalysts/ceramics-slider-2.jpg" class="price-oftype__slider-item">
                 <img class="slider-item__img" src="assets/img/catalysts/ceramics-slider-2.jpg" alt="" />
-              </div>
+                </a>
             </div>
             <button class="slider-item__preview-btn"></button>
           </div>

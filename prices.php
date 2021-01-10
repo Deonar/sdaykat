@@ -88,7 +88,7 @@
           <ul class="prices-ofmetal__list">
             <li class="prices-ofmetal__item item-ofmetal">
               <div class="item-ofmetal__head">
-                <div class="item-ofmetal__title">PD</div>
+                <div class="item-ofmetal__title">PT</div>
                 <div class="item-ofmetal__name">Платина</div>
               </div>
               <div class="item-ofmetal__row">
@@ -115,7 +115,7 @@
             </li>
             <li class="prices-ofmetal__item item-ofmetal">
               <div class="item-ofmetal__head">
-                <div class="item-ofmetal__title">PT</div>
+                <div class="item-ofmetal__title">PD</div>
                 <div class="item-ofmetal__name">Паладий</div>
               </div>
               <div class="item-ofmetal__row">
@@ -188,7 +188,7 @@
               <div class="calculator-options options-calculator">
                 <div class="options-item">
                   <div class="options-item__percent">65%</div>
-                  <div class="options-item__material">PD</div>
+                  <div class="options-item__material">PT</div>
                   <div class="options-item__tooltip options-tooltip-js">
                     <img src="assets/img/icons/important-icon.svg" alt="" class="options-item__icon" />
                     <div class="options-item__tooltip-body">
@@ -203,7 +203,7 @@
                 </div>
                 <div class="options-item">
                   <div class="options-item__percent">65%</div>
-                  <div class="options-item__material">PT</div>
+                  <div class="options-item__material">PD</div>
                   <div class="options-item__tooltip options-tooltip-js">
                     <img src="assets/img/icons/important-icon.svg" alt="" class="options-item__icon" />
                     <div class="options-item__tooltip-body">

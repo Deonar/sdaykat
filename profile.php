@@ -502,11 +502,11 @@
                 <div class="quotes__content tab-content" data-tab="RUB">
                   <ul class="quotes-items">
                     <li class="quotes-item">
-                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__valuta">Pt<span class="curs-metal__valuta_up"></span></div>
                       <div class="curs-metal__price">5 658,74 ₽/г</div>
                     </li>
                     <li class="quotes-item">
-                      <div class="curs-metal__valuta">Pt<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
                       <div class="curs-metal__price">5 658,74 ₽/г</div>
                     </li>
                     <li class="quotes-item">
@@ -528,11 +528,11 @@
                 <div class="quotes__content tab-content" data-tab="USD" style="display: none">
                   <ul class="quotes-items">
                     <li class="quotes-item">
-                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_down"></span></div>
+                      <div class="curs-metal__valuta">Pt<span class="curs-metal__valuta_down"></span></div>
                       <div class="curs-metal__price">785,74 ₽/г</div>
                     </li>
                     <li class="quotes-item">
-                      <div class="curs-metal__valuta">Pt<span class="curs-metal__valuta_up"></span></div>
+                      <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
                       <div class="curs-metal__price">5 658,74 ₽/г</div>
                     </li>
                     <li class="quotes-item">

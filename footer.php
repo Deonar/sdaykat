@@ -10,21 +10,21 @@
         <a href="/privacy-policy.php" class="footer-privacy">Политика конфиденциальности</a>
         <ul class="footer-social__list">
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link social__vk" target="_blank">
+            <a href="/404.php" class="footer-social__link social__vk" target="_blank">
               <svg>
                 <use xlink:href="assets/img/icons/vk-icon.svg#vk-icon"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link social__inst" target="_blank">
+            <a href="/404.php" class="footer-social__link social__inst" target="_blank">
               <svg>
                 <use xlink:href="assets/img/icons/inst-icon.svg#inst-icon"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link social__odnoklassniki" target="_blank">
+            <a href="/404.php" class="footer-social__link social__odnoklassniki" target="_blank">
               <svg>
                 <use xlink:href="assets/img/icons/odnoklassniki-icon.svg#odnoklassniki-icon"></use>
               </svg>

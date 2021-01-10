@@ -45,7 +45,25 @@ jQuery(document).ready(function ($) {
     // overflowY: 'hidden',
     fixedContentPos: true,
     fixedBgPos: true,
+    callbacks: {
+      open: function() {
+        $('body').addClass('overflow-h');
+      },
+      close: function() {
+        $('body').removeClass('overflow-h');
+      }}
   });
+
+  $('.slider-item__preview-btn').on('click', function(){
+    $('#price-oftype__slider').magnificPopup({
+      delegate: 'a',
+      type:'image',
+      gallery: {
+        enabled: true
+      }
+    }).magnificPopup('open');
+  })
+  
 
   $('.main-form__phone').blur(function () {
     if ($(this).val().length >= 18) {
