@@ -289,7 +289,7 @@
   .about-company {
     &__histoty {
       font-size: 16px;
-      line-height: 16px;
+      line-height: 22px;
       margin-bottom: 20px;
     }
     &__text {
@@ -424,7 +424,7 @@
       max-width: 100%;
     }
     .container--mob {
-      padding: 0 15px;
+      padding: 0 25px;
     }
     &__body {
       flex-direction: column;
@@ -439,6 +439,9 @@
     }
     &__slider-item {
       padding-bottom: 11%;
+    }
+    &__range span {
+      padding-right: 0px;
     }
   }
   //=========================== price-oftype end
@@ -1163,7 +1166,7 @@
       }
     }
     &__slider-wrapper .slider-item__preview-btn {
-      display: block;
+      display: none;
     }
   }
   //=========================== price-oftype end
@@ -1921,6 +1924,13 @@
   //=========================== Footer end
 }
 @media (max-width: 578px) {
+  .select__body {
+    max-width: 100%;
+  }
+  .select.is-active .select__body {
+    top: 88%;
+    max-width: 100%;
+  }
   .custom-popup {
     min-height: 100vh;
     display: flex;

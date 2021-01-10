@@ -30,7 +30,8 @@
             <a href="/prices.php" class="nuxt-link-active breadcrumbs__link t-control">Цены</a>
           </li>
           <li class="breadcrumbs__item">
-            <span to="/single-article" class="breadcrumbs__link t-control breadcrumbs__link--disabled">Керамический фильтр</span>
+            <span to="/single-article" class="breadcrumbs__link t-control breadcrumbs__link--disabled">Керамический
+              фильтр</span>
           </li>
         </ul>
       </div>
@@ -49,10 +50,12 @@
                 <div class="main-form__wrapper">
                   <label class="main-form__label main-form__label_phone">
                     <span class="main-form__label-error">некорректный номер</span>
-                    <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+                    <input class="main-form__phone mask-phone" type="tel" name="phone"
+                      placeholder="+7 (___) ___-__-__" />
                   </label>
                   <div class="main-form__btn">
-                    <a href="#popup-thank" class="main-form__submit btn btn_hover primary-btn" type="button">Продать катализатор</a>
+                    <a href="#popup-thank" class="main-form__submit btn btn_hover primary-btn" type="button">Продать
+                      катализатор</a>
                   </div>
                 </div>
                 <label class="main-form__policy">
@@ -275,7 +278,7 @@
               BMW
             </div>
             <div class="redemption-price__range price__range">от <span>4 000 ₽</span> до <span>45 000 ₽</span></div>
-            <a href="#" class="redemption-button btn light-blue-btn">УЗНАТЬ ТОЧНУЮ СТОИМОСТЬ</a>
+            <a href="/single-price-ofauto.php" class="redemption-button btn light-blue-btn">УЗНАТЬ ТОЧНУЮ СТОИМОСТЬ</a>
           </form>
         </div>
       </div>
@@ -402,7 +405,8 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать специалиста</a>
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать
+              специалиста</a>
           </div>
         </div>
         <label class="main-form__policy">
@@ -467,7 +471,8 @@
   <!-- popup-thank end-->
 
   <?php include("footer.php"); ?>
-  <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript">
+  <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU"
+    type="text/javascript">
   </script>
 
   <script src="assets/js/map.js"></script>

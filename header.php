@@ -127,6 +127,7 @@ if (!isset($header_class)) {
         </div>
       </div>
     </div>
+
     <div id="mobMenu" class="header-mob__body">
       <div class="header-mob__head">
         <div class="header-mob__location">
@@ -192,6 +193,69 @@ if (!isset($header_class)) {
           <a href="/loyalty-program.php" class="header-mob__menu-link close-mob-menu-js">Программа лояльности</a>
         </li>
       </ul>
+      <div class="quotes">
+        <div class="tab-wrapper">
+          <div class="quotes__head">
+            <div class="profile-block__head-title">Катировки</div>
+            <div class="quotes__tabs">
+              <div class="quotes__tab tab active" data-tab="RUB">RUB</div>
+              <div class="quotes__tab tab" data-tab="USD">USD</div>
+            </div>
+          </div>
+          <div class="quotes__content tab-content" data-tab="RUB">
+            <ul class="quotes-items">
+              <li class="quotes-item">
+                <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_up"></span></div>
+                <div class="curs-metal__price">5 658,74 ₽/г</div>
+              </li>
+              <li class="quotes-item">
+                <div class="curs-metal__valuta">Pt<span class="curs-metal__valuta_up"></span></div>
+                <div class="curs-metal__price">5 658,74 ₽/г</div>
+              </li>
+              <li class="quotes-item">
+                <div class="curs-metal__valuta">Rh<span class="curs-metal__valuta_down"></span></div>
+                <div class="curs-metal__price">5 658,74 ₽/г</div>
+              </li>
+            </ul>
+            <ul class="quotes-items">
+              <li class="quotes-item">
+                <div class="curs-metal__valuta">EUR<span class="curs-metal__valuta_up"></span></div>
+                <div class="curs-metal__price">55 ₽</div>
+              </li>
+              <li class="quotes-item">
+                <div class="curs-metal__valuta">USD<span class="curs-metal__valuta_up"></span></div>
+                <div class="curs-metal__price">56 ₽</div>
+              </li>
+            </ul>
+          </div>
+          <div class="quotes__content tab-content" data-tab="USD" style="display: none">
+            <ul class="quotes-items">
+              <li class="quotes-item">
+                <div class="curs-metal__valuta">Pd<span class="curs-metal__valuta_down"></span></div>
+                <div class="curs-metal__price">785,74 ₽/г</div>
+              </li>
+              <li class="quotes-item">
+                <div class="curs-metal__valuta">Pt<span class="curs-metal__valuta_up"></span></div>
+                <div class="curs-metal__price">5 658,74 ₽/г</div>
+              </li>
+              <li class="quotes-item">
+                <div class="curs-metal__valuta">Rh<span class="curs-metal__valuta_up"></span></div>
+                <div class="curs-metal__price">658,74 ₽/г</div>
+              </li>
+            </ul>
+            <ul class="quotes-items">
+              <li class="quotes-item">
+                <div class="curs-metal__valuta">EUR<span class="curs-metal__valuta_up"></span></div>
+                <div class="curs-metal__price">35 ₽</div>
+              </li>
+              <li class="quotes-item">
+                <div class="curs-metal__valuta">USD<span class="curs-metal__valuta_up"></span></div>
+                <div class="curs-metal__price">96 ₽</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
