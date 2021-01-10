@@ -1931,6 +1931,10 @@
     top: 88%;
     max-width: 100%;
   }
+  .mfp-wrap {
+    position: fixed !important;
+    overflow-y: scroll !important;
+  }
   .custom-popup {
     min-height: 100vh;
     display: flex;
