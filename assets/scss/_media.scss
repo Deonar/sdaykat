@@ -1036,7 +1036,7 @@
         width: 60px;
         height: 60px;
         z-index: 10;
-        background: url("../img/icons/calculator-icon.svg") center center no-repeat;
+        background: url('../img/icons/calculator-icon.svg') center center no-repeat;
         background-size: contain;
       }
     }
@@ -1530,7 +1530,7 @@
       max-width: 100%;
       padding: 15px 0;
       &::after {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         right: 4px;
@@ -1902,7 +1902,7 @@
       padding: 12px 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       &::after {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         right: 4px;
@@ -1931,7 +1931,9 @@
     top: 88%;
     max-width: 100%;
   }
+
   .mfp-wrap {
+    top: 0 !important;
     position: fixed !important;
     overflow-y: scroll !important;
   }
@@ -2435,7 +2437,7 @@
     }
   }
 
-  #vk_comments #page_wrap{
+  #vk_comments #page_wrap {
     min-width: 260px;
   }
 }
