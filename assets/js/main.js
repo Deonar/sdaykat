@@ -45,6 +45,14 @@ jQuery(document).ready(function ($) {
     // overflowY: 'hidden',
     fixedContentPos: true,
     fixedBgPos: true,
+    callbacks: {
+      beforeOpen: function () {
+        jQuery('body').css('overflow', 'hidden');
+      },
+      beforeClose: function () {
+        jQuery('body').css('overflow', 'auto');
+      },
+    },
   });
 
   $('.main-form__phone').blur(function () {
