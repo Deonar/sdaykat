@@ -105,4 +105,4 @@
 <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>
 <script src="assets/libs/jquery-libs/jquery.ui.touch-punch.min.js"></script>
 
-<script src="assets/js/main.js?v=4"></script>
+<script src="assets/js/main.js?v=5"></script>
