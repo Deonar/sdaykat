@@ -270,8 +270,3 @@
 
   <script src="assets/js/map.js"></script>
 </body>
-
-<?php include("footer.php"); ?>
-</body>
-
-</html>

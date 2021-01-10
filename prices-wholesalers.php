@@ -391,6 +391,33 @@
       </div>
     </div>
     <!-- popup-thank end-->
+<!-- popup-form manager -->
+<div id="popup-form-manager" class="popup-form-calculator custom-popup mfp-hide">
+    <div class="popup-body">
+      <h3 class="popup-primary__title">Выездная оценка</h3>
+
+      <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта
+        точной стоимости катализатора.</div>
+      <form class="popup-form main-form main-form__light">
+        <div class="main-form__wrapper">
+          <label class="main-form__label main-form__label_phone">
+            <span class="main-form__label-error">некорректный номер</span>
+            <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+          </label>
+          <div class="main-form__btn">
+            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать специалиста</a>
+          </div>
+        </div>
+        <label class="main-form__policy">
+          <input type="checkbox" checked="" class="main-form__checkbox" />
+          <span class="main-form__checkbox-box"></span>
+          <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
+              конфиденциальности</a></span>
+        </label>
+      </form>
+    </div>
+  </div>
+  <!-- popup-form manager end-->
 
     <?php include("footer.php"); ?>
     <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script>
