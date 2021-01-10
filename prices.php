@@ -182,7 +182,7 @@
             <div class="calculator-result__weight">
               <div class="calculator-result__title">Общий вес сырья:</div>
               <div class="calculator-result__input">
-                <input class="calculator-input" type="text" maxlength="5" placeholder="20" />
+                <input class="calculator-input" id="calculate-input-weight" type="number" maxlength="5" placeholder="20" />
                 <label class="calculator-result__label">Кг</label>
               </div>
             </div>
@@ -202,7 +202,7 @@
                 </div>
                 <div id="calculate-range-pt" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                  <input id="calculate-input-pt" class="calculator-input" maxlength="5" type="text" placeholder="20" />
+                  <input id="calculate-input-pt" class="calculator-input" maxlength="5" type="number" placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
@@ -218,7 +218,7 @@
                 </div>
                 <div id="calculate-range-pd" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                  <input id="calculate-input-pd" class="calculator-input" maxlength="5" type="text" placeholder="20" />
+                  <input id="calculate-input-pd" class="calculator-input" maxlength="5" type="number" placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
@@ -234,7 +234,7 @@
                 </div>
                 <div id="calculate-range-rh" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                  <input id="calculate-input-rh" class="calculator-input" maxlength="5" type="text" placeholder="20" />
+                  <input id="calculate-input-rh" class="calculator-input" maxlength="5" type="number" placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
@@ -245,7 +245,7 @@
               Общая <br />
               стоимость сырья
             </h3>
-            <div class="calculator-form__price" style="display: none">28 000 ₽</div>
+            <div class="calculator-form__price" id="calculator-total-price" style="display: none">28 000 ₽</div>
             <div class="calculator-form__warning form-warning-js">Укажите вес сырья и содержание металлов для
               предарительного расчета</div>
             <form class="calculator-form__body main-form main-form__light">
@@ -270,7 +270,7 @@
             <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>
             <a href="tel:+88005507940" class="calculator-form__tell">8 800 550 79 40</a>
           </div>
-          <a href="#popup-form-calculator" class="calculator-calculate-btn btn popup">рассчитать СТОИМОСТЬ</a>
+          <a href="#popup-form-calculator" class="calculator-calculate-btn btn">рассчитать СТОИМОСТЬ</a>
         </div>
       </div>
     </section>

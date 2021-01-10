@@ -22,15 +22,12 @@ jQuery(document).ready(function ($) {
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
 
-    $('html, body').animate(
-      {
-        scrollTop: $(href).offset().top - 100,
-      },
-      {
-        duration: 370, // по умолчанию «400»
-        easing: 'linear', // по умолчанию «swing»
-      }
-    );
+    $('html, body').animate({
+      scrollTop: $(href).offset().top - 100,
+    }, {
+      duration: 370, // по умолчанию «400»
+      easing: 'linear', // по умолчанию «swing»
+    });
     if ($(window).width() < 768) {
       $('html, body').animate({
         scrollTop: $(href).offset().top - 70,
@@ -385,8 +382,7 @@ jQuery(document).ready(function ($) {
       },
       prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
       nextArrow: '<button class="slider-btn slider-btn__next"></button>',
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 992,
           settings: {
             slidesToShow: 2,
@@ -427,8 +423,7 @@ jQuery(document).ready(function ($) {
     dots: false,
     prevArrow: '<button class="slider-btn slider-btn__prev"></button>',
     nextArrow: '<button class="slider-btn slider-btn__next"></button>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
@@ -607,4 +602,42 @@ jQuery(document).ready(function ($) {
       $('#calculate-input-size').val(ui.value);
     },
   });
+
+  //Cтоимость сырья
+  $('#calculate-input-weight').on('input', function () {
+    if ($('#calculate-input-weight').val()) {
+      $('.form-warning-js').hide();
+      $('#calculator-total-price').show();
+    } else {
+      $('.form-warning-js').show();
+      $('#calculator-total-price').hide();
+    }
+  })
+
+  $('.calculator-calculate-btn').on('click', function (e) {
+    if ($('#calculate-input-weight').val()) {
+      let href = $(this).attr('href');
+      if (href) {
+        e.stopPropagation();
+        $.magnificPopup.open({
+          items: {
+            src: href,
+          },
+          type: 'inline',
+          callbacks: {
+            open: function () {
+              $('body').addClass('overflow-h');
+              console.log('open');
+            },
+            close: function () {
+              $('body').removeClass('overflow-h');
+              console.log('close');
+            },
+          },
+        });
+      }
+    }
+    e.preventDefault();
+  });
+
 });

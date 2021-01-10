@@ -152,7 +152,7 @@
   <?php include("footer.php"); ?>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-  <script src="assets/js/profile.js?v=5"></script>
+  <script src="assets/js/profile.js?v=6"></script>
 </body>
 
 </html>

@@ -151,9 +151,16 @@
 }
 
 @media (max-width: 767px) {
+  #analitic-delivery {
+    min-width: 768px;
+  }
+  #analitic-pay {
+    min-width: 768px;
+  }
   .graph {
     padding: 0;
     border: none;
+   
     &__title {
       margin-bottom: 20px;
     }
@@ -166,6 +173,9 @@
         order: 0;
         margin-right: 10px;
       }
+    }
+    &__wrapper{
+      overflow-x: scroll;
     }
   }
 }

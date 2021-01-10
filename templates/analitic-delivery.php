@@ -10,5 +10,7 @@
             </label>
         </div>
     </div>
-    <div id="analitic-delivery"></div>
+    <div class="graph__wrapper">
+        <div id="analitic-delivery"></div>
+    </div>
 </div>
