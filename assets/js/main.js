@@ -43,8 +43,8 @@ jQuery(document).ready(function ($) {
   $('.popup').magnificPopup({
     mainClass: 'mfp-fade',
     // overflowY: 'hidden',
-    // fixedContentPos: true,
-    // fixedBgPos: true,
+    fixedContentPos: true,
+    fixedBgPos: true,
   });
 
   $('.main-form__phone').blur(function () {
