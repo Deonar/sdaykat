@@ -117,23 +117,6 @@ jQuery(document).ready(function ($) {
     $('#mobMenu').removeClass('active');
   });
 
-  // profile save-info
-  $('#save-info').on('click', function (e) {
-    $('#save-info-popup').fadeIn();
-    $('#profile-registration').show();
-    $('#profile-registration-edit').hide();
-    $('html, body').animate(
-      {
-        scrollTop: 0,
-      },
-      'slow'
-    );
-    return false;
-  });
-  $('#save-info-popup-closes').on('click', function (e) {
-    $('#save-info-popup').fadeOut();
-  });
-
   // actions-content-show-js
   $('.actions-content-show-js').on('click', function (e) {
     e.stopPropagation();
