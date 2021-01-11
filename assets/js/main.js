@@ -544,10 +544,18 @@ jQuery(document).ready(function ($) {
     $('.brands__wrapper').addClass('brands_show-all');
   });
 
+
+
   function numberWithSpaces(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   }
-
+  
+  $('.input-nubmer-js').on("change keyup input click", function() {
+    if(this.value.match(/[^0-9]/g)){
+        this.value = this.value.replace(/[^0-9]/g, "");
+    };
+    this.value = numberWithSpaces(this.value);
+});
   // Стоимость сырья PT
   $('#calculate-range-pt').slider({
     range: 'min',

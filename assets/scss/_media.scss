@@ -2451,6 +2451,11 @@
     }
   }
 
+}
+@media (max-width: 340px){
+  .vk-comments{
+    margin: 0 -15px;
+  }
   #vk_comments #page_wrap {
     min-width: 260px !important;
   }

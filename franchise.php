@@ -96,7 +96,7 @@
             <div class="select__header-search">
               <label class="select__label">Регионы / области</label>
               <div class="custom-input__wrapper">
-                <input type="text" class="custom-input input-search-js" placeholder="Геолокация" />
+                <input type="text" class="custom-input input-search-js" placeholder="Выберите из списка" />
               </div>
             </div>
 
@@ -330,8 +330,8 @@
             <div class="options-item">
               <div id="calculate-range-people" class="options-item__range custom-range"></div>
               <div class="calculator-result__input">
-                <input id="calculate-input-people" class="calculator-input" value="600000" type="text"
-                  placeholder="20" />
+                <input id="calculate-input-people" class="calculator-input input-nubmer-js" value="600 000" type="text"
+                  placeholder="20"/>
                 <label class="calculator-result__label">чел</label>
               </div>
             </div>
@@ -339,7 +339,7 @@
             <div class="options-item">
               <div id="calculate-range-size" class="options-item__range custom-range"></div>
               <div class="calculator-result__input">
-                <input id="calculate-input-size" class="calculator-input" value="300" type="text"/>
+                <input id="calculate-input-size" class="calculator-input input-nubmer-js" value="300" type="text" placeholder="300"/>
                 <label class="calculator-result__label">Кг</label>
               </div>
             </div>
@@ -370,7 +370,7 @@
           <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>
           <a href="tel:+88005507940" class="calculator-form__tell">8 800 550 79 40</a>
         </div>
-        <a href="#popup-form-calculator" class="calculator-calculate-btn btn popup">рассчитать СТОИМОСТЬ</a>
+        <a href="#popup-form-calculator" class="calculator-calculate-btn btn">рассчитать СТОИМОСТЬ</a>
       </div>
     </div>
   </section>

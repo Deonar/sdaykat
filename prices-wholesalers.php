@@ -29,8 +29,7 @@
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn"
-                  id="intro-submit-btn">Продать сырье</button>
+                <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" id="intro-submit-btn">Продать сырье</button>
               </div>
             </div>
             <label class="main-form__policy">
@@ -148,6 +147,10 @@
             Расчитайте оптовую <br />
             стоимость сырья
           </h2>
+          <div class="d-block d-md-none">
+            <div class="calculator-form__warning form-warning-js" style="color: #fff;">Укажите вес сырья и содержание металлов для
+              предарительного расчета</div>
+          </div>
           <div class="calculator-result__weight">
             <div class="calculator-result__title">Общий вес сырья:</div>
             <div class="calculator-result__input">
@@ -206,6 +209,7 @@
             </div>
           </div>
         </div>
+        <a href="#popup-form-calculator" class="calculator-calculate-btn btn">рассчитать СТОИМОСТЬ</a>
         <div class="calculator-form">
           <h3 class="calculator-form__title primary-title__h3">
             Общая <br />
@@ -216,13 +220,12 @@
             предарительного расчета</div>
           <form class="calculator-form__body main-form main-form__light" action="#">
             <div class="main-form__wrapper">
-              <label class="main-form__label main-form__label_phone" >
+              <label class="main-form__label main-form__label_phone">
                 <span class="main-form__label-error">некорректный номер</span>
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <button type="submit" href="#popup-thank-specialist" class="main-form__submit btn btn_hover primary-btn"
-                  id="intro-submit-btn">Продать катализатор</button>
+                <button type="submit" href="#popup-thank-specialist" class="main-form__submit btn btn_hover primary-btn" id="intro-submit-btn">Продать катализатор</button>
               </div>
             </div>
             <label class="main-form__policy">
@@ -235,7 +238,6 @@
           <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>
           <a href="tel:+88005507940" class="calculator-form__tell">8 800 550 79 40</a>
         </div>
-        <a href="#popup-form-calculator" class="calculator-calculate-btn btn popup">рассчитать СТОИМОСТЬ</a>
       </div>
     </div>
   </section>
@@ -471,8 +473,7 @@
   <!-- popup-form manager end-->
 
   <?php include("footer.php"); ?>
-  <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU"
-    type="text/javascript"></script>
+  <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script>
 
   <script src="assets/js/map.js"></script>
 </body>

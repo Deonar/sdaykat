@@ -1,3 +1,4 @@
+jQuery(document).ready(function ($) {
 $el = $('#franchise-map path[fill="white"]');
 
 function getData(id) {
@@ -137,13 +138,9 @@ $('.obl_union').hover(function () {
   $('.obl_union').removeClass('hovered')
 })
 
-
-
-
-
-
 $(document).on('mouseenter', '.map-tooltip', function () {
     $('.map-tooltip').css('transform', 'scale(1)')
 }).on('mouseleave', '.map-tooltip', function () {
     $('.map-tooltip').css('transform', 'scale(0)')
+});
 });
