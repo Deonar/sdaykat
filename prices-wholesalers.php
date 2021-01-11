@@ -22,15 +22,15 @@
         <div class="col-12 col-lg-8">
           <h1 class="main-title">Бесплатно удалим катализатор<br />и выкупим сырье</h1>
           <!-- Phone form  -->
-          <form class="main-form">
+          <form class="main-form" action="#">
             <div class="main-form__wrapper">
               <label class="main-form__label main-form__label_phone">
                 <span class="main-form__label-error">некорректный номер</span>
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn"
-                  id="intro-submit-btn" type="button">Продать сырье</a>
+                <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn"
+                  id="intro-submit-btn">Продать сырье</button>
               </div>
             </div>
             <label class="main-form__policy">
@@ -214,15 +214,15 @@
           <div class="calculator-form__price" id="calculator-total-price" style="display: none;">28 000 ₽</div>
           <div class="calculator-form__warning form-warning-js">Укажите вес сырья и содержание металлов для
             предарительного расчета</div>
-          <form class="calculator-form__body main-form main-form__light">
+          <form class="calculator-form__body main-form main-form__light" action="#">
             <div class="main-form__wrapper">
               <label class="main-form__label main-form__label_phone" >
                 <span class="main-form__label-error">некорректный номер</span>
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover primary-btn"
-                  id="intro-submit-btn" type="button">Продать катализатор</a>
+                <button type="submit" href="#popup-thank-specialist" class="main-form__submit btn btn_hover primary-btn"
+                  id="intro-submit-btn">Продать катализатор</button>
               </div>
             </div>
             <label class="main-form__policy">
@@ -375,15 +375,15 @@
 
       <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта
         точной стоимости катализатора.</div>
-      <form class="popup-form main-form main-form__light">
+      <form class="popup-form main-form main-form__light" action="#">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
             <span class="main-form__label-error">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать
-              специалиста</a>
+            <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn">вызвать
+              специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">
@@ -407,15 +407,15 @@
       <div class="calculator-form__price">28 000 ₽</div>
       <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта
         точной стоимости катализатора.</div>
-      <form class="popup-form main-form main-form__light">
+      <form class="popup-form main-form main-form__light" action="#">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
-            <span class="main-form__label-error" style="display: none">некорректный номер</span>
+            <span class="main-form__label-error">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать
-              специалиста</a>
+            <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn">вызвать
+              специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">
@@ -449,15 +449,14 @@
 
       <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта
         точной стоимости катализатора.</div>
-      <form class="popup-form main-form main-form__light">
+      <form class="popup-form main-form main-form__light" action="#">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
             <span class="main-form__label-error">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать
-              специалиста</a>
+            <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn">вызвать специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">

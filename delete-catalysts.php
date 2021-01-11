@@ -22,14 +22,14 @@
         <div class="col-12 col-lg-6">
           <h1 class="main-title">Бесплатно удалим катализатор<br />и выкупим сырье</h1>
           <!-- Phone form  -->
-          <form class="main-form">
+          <form class="main-form" action="#">
             <div class="main-form__wrapper">
               <label class="main-form__label main-form__label_phone">
                 <span class="main-form__label-error">некорректный номер</span>
-                <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___--" />
+                <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank__dell" class="main-form__submit btn btn_hover blue-sky-btn" type="button">удалить катализатор</a>
+                <button type="submit" data-target="#popup-thank__dell" class="main-form__submit btn btn_hover blue-sky-btn" >удалить катализатор</button>
               </div>
             </div>
             <label class="main-form__policy">

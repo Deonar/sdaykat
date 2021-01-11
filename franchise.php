@@ -25,7 +25,7 @@
         <div class="col-12 col-lg-6">
           <h1 class="main-title">Оптово-розничный бизнес по выкупу каталитического сырья</h1>
           <!-- Phone form  -->
-          <form class="main-form">
+          <form class="main-form" action="#">
             <div class="main-form__wrapper">
               <label class="main-form__label main-form__label_phone">
                 <span class="main-form__label-error">некорректный номер</span>
@@ -33,9 +33,8 @@
               </label>
 
               <div class="main-form__btn">
-                <a href="#popup-thank" id="action-btn" class="main-form__submit btn btn_hover gray-btn"
-                  type="button">получить
-                  консультацию</a>
+                <button data-target="#popup-thank" type="submit" id="action-btn" class="main-form__submit btn btn_hover gray-btn">получить
+                  консультацию</button>
               </div>
             </div>
             <label class="main-form__policy">
@@ -195,8 +194,8 @@
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn" type="button">Получить
-                  консультацию</a>
+                <button type="submit" data-target="#popup-thank" class="main-form__submit btn btn_hover gray-btn">Получить
+                  консультацию</button>
               </div>
             </div>
             <label class="main-form__policy">
@@ -331,7 +330,7 @@
             <div class="options-item">
               <div id="calculate-range-people" class="options-item__range custom-range"></div>
               <div class="calculator-result__input">
-                <input id="calculate-input-people" class="calculator-input" maxlength="10" type="text"
+                <input id="calculate-input-people" class="calculator-input" value="600000" type="text"
                   placeholder="20" />
                 <label class="calculator-result__label">чел</label>
               </div>
@@ -340,7 +339,7 @@
             <div class="options-item">
               <div id="calculate-range-size" class="options-item__range custom-range"></div>
               <div class="calculator-result__input">
-                <input id="calculate-input-size" class="calculator-input" maxlength="5" type="text" placeholder="20" />
+                <input id="calculate-input-size" class="calculator-input" value="300" type="text"/>
                 <label class="calculator-result__label">Кг</label>
               </div>
             </div>
@@ -350,15 +349,15 @@
           <h3 class="calculator-form__title primary-title__h3">Возможная прибыль региона</h3>
           <div class="calculator-form__price">28 000 ₽</div>
           <!-- <div class="calculator-form__warning form-warning-js">Укажите население и объем сырья в регионе для предарительного расчета</div> -->
-          <form class="calculator-form__body main-form main-form__light">
+          <form class="calculator-form__body main-form main-form__light" action="#">
             <div class="main-form__wrapper">
               <label class="main-form__label main-form__label_phone">
                 <span class="main-form__label-error">некорректный номер</span>
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank" class="main-form__submit btn btn_hover gray-btn" type="button">стать
-                  партнером sdaykat</a>
+                <button type="submit" data-target="#popup-thank" class="main-form__submit btn btn_hover gray-btn">стать
+                  партнером sdaykat</button>
               </div>
             </div>
             <label class="main-form__policy">
@@ -396,15 +395,15 @@
         региона
       </h3>
       <div class="calculator-form__price">2 000 000 ₽</div>
-      <form class="popup-form main-form main-form__light">
+      <form class="popup-form main-form main-form__light" action="#">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
-            <span class="main-form__label-error" style="display:none;">некорректный номер</span>
+            <span class="main-form__label-error">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать
-              специалиста</a>
+            <button type="submit" href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn">вызвать
+              специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">

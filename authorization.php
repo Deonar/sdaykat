@@ -26,7 +26,7 @@
         <div class="entry-cabinet__body">
           <div id="entry-cabinet__entry" class="entry-cabinet__entry">
             <img src="assets/img/icons/requirement-9.svg" alt="" class="entry-cabinet__entry-img" />
-            <form class="authorization__form main-form">
+            <form class="authorization__form main-form" action="#">
               <h3 class="authorization__form-title h3">
                 Вход в личный <br />
                 кабинет клиента
@@ -41,7 +41,7 @@
                   <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
-                  <button id="entry-account" class="authorization__btn btn btn_hover" type="button">войти в
+                  <button type="submit" id="entry-account" class="authorization__btn btn btn_hover">войти в
                     аккаунт</button>
 
                   <a href="/profile.php#profile-tab" id="registration-account" class="authorization__btn authorization__btn-link  btn open-profile-js" data-tab-profile="profile-tab" type="button">Зарегистрироваться</a>

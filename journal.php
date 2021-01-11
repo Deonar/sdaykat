@@ -308,42 +308,6 @@
     </section>
   </div>
 
-  <!-- Popup calculator -->
-  <div id="popup-form-calculator" class="popup-form-calculator white-popup mfp-hide">
-    <div class="popup-calculator__body">
-      <div class="calculator-form">
-        <h3 class="calculator-form__title primary-title__h3">
-          Предварительная <br />
-          стоимость сырья
-        </h3>
-        <div class="calculator-form__price">28 000 ₽</div>
-        <div class="calculator-form__text">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры
-          для расчёта точной стоимости катализатора.</div>
-        <form class="calculator-form__body main-form">
-          <div class="main-form__wrapper">
-            <label class="main-form__label main-form__label_phone">
-              <span class="main-form__label-error" style="display:none;">некорректный номер</span>
-              <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
-            </label>
-            <div class="main-form__btn">
-              <button class="main-form__submit btn btn_hover primary-btn" id="intro-submit-btn" type="button">Продать
-                катализатор</button>
-            </div>
-          </div>
-          <label class="main-form__policy">
-            <input type="checkbox" checked="" class="main-form__checkbox" />
-            <span class="main-form__checkbox-box"></span>
-            <span class="main-form__text small-text"> Я ознакомлен c <a href="/privacy-policy.php">политикой
-                конфиденциальности</a></span>
-          </label>
-        </form>
-        <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>
-        <a href="tel:+88005507940" class="calculator-form__tell">8 800 550 79 40</a>
-      </div>
-    </div>
-  </div>
-  <!-- Popup calculator end-->
-
   <?php include("footer.php"); ?>
 </body>
 
