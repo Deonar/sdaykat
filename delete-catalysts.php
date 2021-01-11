@@ -29,7 +29,8 @@
                 <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <button type="submit" data-target="#popup-thank__dell" class="main-form__submit btn btn_hover blue-sky-btn" >удалить катализатор</button>
+                <button type="submit" data-target="#popup-thank__dell"
+                  class="main-form__submit btn btn_hover blue-sky-btn">удалить катализатор</button>
               </div>
             </div>
             <label class="main-form__policy">
@@ -192,8 +193,8 @@
   <section id="additional-service" class="additional-service section-wrapper">
     <div class="container">
       <div class="additional-body">
-        <h3 class="additional-title h3">Дополнительные услуги</h3>
-        <ul class="additional-list">
+        <h3 class="additional-title primary-title">Дополнительные услуги</h3>
+        <ul class=" additional-list">
           <li class="additional-item">
             <div class="additional-item__img">
               <img src="assets/img/additional/additional-1.jpg" alt="" />
