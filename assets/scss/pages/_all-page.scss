@@ -2134,9 +2134,6 @@
     background: $primary;
     margin-bottom: 15px;
     height: 100%;
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
   &__target-title {
     font-family: 'Stapel';
@@ -3979,9 +3976,6 @@
       font-size: 12px;
       line-height: 16px;
       color: $text;
-    }
-    &:last-child {
-      border-top: none;
     }
   }
 }

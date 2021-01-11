@@ -714,13 +714,14 @@ input[type='number'] {
       }
     }
     input:focus {
+      outline: none;
       border: 1px solid $primary;
     }
   }
   &__label-error {
     display: none;
     position: absolute;
-    left: 5px;
+    left: 1px;
     bottom: 98%;
     font-size: 12px;
     font-weight: 700;
@@ -742,6 +743,10 @@ input[type='number'] {
     padding-left: 40px;
     background: #ffffff;
     border-radius: 3px;
+    &:focus,
+    &:hover {
+      outline: none;
+    }
   }
   &__text {
     color: #fff;

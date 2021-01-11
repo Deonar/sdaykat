@@ -1810,8 +1810,12 @@
   .transactions {
     &-block__info-item {
       font-size: 14px;
+      width: 50%;
       span {
         font-size: 12px;
+      }
+      &:last-child {
+        width: 100%;
       }
     }
     &-block {
@@ -2145,7 +2149,6 @@
     }
   }
   //=========================== calculator-price__ofauto end
-
   //=========================== calculator-price__ofauto and
   //=========================== steps
   .steps {
@@ -2154,6 +2157,9 @@
     }
   }
   //=========================== steps and
+  .about-company__target {
+    height: auto;
+  }
   //=========================== single-article
   .single-article {
     .container {
