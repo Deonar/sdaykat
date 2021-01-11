@@ -27,14 +27,14 @@
             за старый катализатор<br /><b class="text-orange">в Челябинске</b>
           </h1>
           <!-- Phone form  -->
-          <form class="main-form">
+          <form class="main-form" action="#">
             <div class="main-form__wrapper">
               <label class="main-form__label main-form__label_phone">
                 <span class="main-form__label-error">некорректный номер</span>
                 <input class="main-form__phone mask-phone" type="tel" name="phone" id="client-phone" placeholder="+7 (___) ___-__-__" />
               </label>
               <div class="main-form__btn">
-                <a href="#popup-thank-specialist" id="action-btn" class="main-form__submit btn btn_hover primary-btn" type="button">Продать катализатор</a>
+                <button type="submit" data-target="#popup-thank-specialist" id="action-btn" class="main-form__submit btn btn_hover primary-btn">Продать катализатор</button>
               </div>
             </div>
             <label class="main-form__policy">
@@ -535,14 +535,14 @@
 
       <div class="popup-desc">Отправьте заявку для выезда менеджера. Специалист выполнит необходимые замеры для расчёта
         точной стоимости катализатора.</div>
-      <form class="popup-form main-form main-form__light">
+      <form class="popup-form main-form main-form__light" action="#">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
             <span class="main-form__label-error">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn" type="button">вызвать специалиста</a>
+            <button  type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn">вызвать специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">
@@ -572,15 +572,14 @@
       <h3 class="popup-primary__title">Выезд курьера</h3>
 
       <div class="popup-desc">Отправьте заявку для выезда курьера. Мы свяжемся с вами для уточнения информации.</div>
-      <form class="popup-form main-form main-form__light">
+      <form class="popup-form main-form main-form__light" action="#">
         <div class="main-form__wrapper">
           <label class="main-form__label main-form__label_phone">
             <span class="main-form__label-error">некорректный номер</span>
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <a href="#popup-thank-curyer" class="main-form__submit btn btn_hover blue-btn" type="button">вызвать
-              специалиста</a>
+            <button type="submit" data-target="#popup-thank-curyer" class="main-form__submit btn btn_hover blue-btn">вызвать специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">

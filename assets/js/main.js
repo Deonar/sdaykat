@@ -54,16 +54,18 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  $('#price-oftype__slider a').on('click', function(e){
+    e.preventDefault();
+  })
+
   $('.slider-item__preview-btn').on('click', function () {
-    $('#price-oftype__slider')
-      .magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: {
-          enabled: true,
-        },
-      })
-      .magnificPopup('open');
+    $('#price-oftype__slider').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery: {
+        enabled: true,
+      },
+    }).magnificPopup('open');
   });
 
   $('.main-form__phone').blur(function () {
@@ -73,16 +75,15 @@ jQuery(document).ready(function ($) {
       $(this).closest('.main-form__label_phone').removeClass('_done').addClass('_error');
     }
   });
-  $('.main-form__submit').on('click', function (e) {
-    if ($(this).closest('.main-form').find('.main-form__checkbox').is(':checked')) {
-      if ($(this).closest('.main-form').find('.main-form__phone').val().length >= 18) {
-        let href = $(this).attr('href');
-
-        if (href) {
+  $('.main-form').on('submit', function (e) {
+    if ($(this).find('.main-form__checkbox').is(':checked')) {
+      if ($(this).find('.main-form__phone').val().length >= 18) {
+        let target = $(this).find('.main-form__submit').data('target');
+        if (target) {
           e.stopPropagation();
           $.magnificPopup.open({
             items: {
-              src: href,
+              src: target,
             },
             type: 'inline',
             callbacks: {
@@ -98,7 +99,7 @@ jQuery(document).ready(function ($) {
           });
         }
       } else {
-        $(this).closest('.main-form').find('.main-form__phone').closest('.main-form__label_phone').addClass('_error');
+        $(this).find('.main-form__label_phone').addClass('_error');
       }
     }
     e.preventDefault();
@@ -543,6 +544,10 @@ jQuery(document).ready(function ($) {
     $('.brands__wrapper').addClass('brands_show-all');
   });
 
+  function numberWithSpaces(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
+
   // Стоимость сырья PT
   $('#calculate-range-pt').slider({
     range: 'min',
@@ -551,7 +556,7 @@ jQuery(document).ready(function ($) {
     max: 1,
     step: 0.1,
     slide: function (event, ui) {
-      $('#calculate-input-pt').val(ui.value);
+      $('#calculate-input-pt').val(numberWithSpaces(ui.value));
     },
   });
 
@@ -563,7 +568,7 @@ jQuery(document).ready(function ($) {
     max: 1,
     step: 0.1,
     slide: function (event, ui) {
-      $('#calculate-input-pd').val(ui.value);
+      $('#calculate-input-pd').val(numberWithSpaces(ui.value));
     },
   });
 
@@ -575,31 +580,31 @@ jQuery(document).ready(function ($) {
     max: 1,
     step: 0.1,
     slide: function (event, ui) {
-      $('#calculate-input-rh').val(ui.value);
+      $('#calculate-input-rh').val(numberWithSpaces(ui.value));
     },
   });
 
   // Население
   $('#calculate-range-people').slider({
     range: 'min',
-    value: 4800000,
+    value: 600000,
     min: 0,
-    max: 10000000,
+    max: 2000000,
     step: 100,
     slide: function (event, ui) {
-      $('#calculate-input-people').val(ui.value);
+      $('#calculate-input-people').val(numberWithSpaces(ui.value));
     },
   });
 
   // Обьем сырья
   $('#calculate-range-size').slider({
     range: 'min',
-    value: 150,
+    value: 300,
     min: 0,
     max: 1000,
     step: 1,
     slide: function (event, ui) {
-      $('#calculate-input-size').val(ui.value);
+      $('#calculate-input-size').val(numberWithSpaces(ui.value));
     },
   });
 
