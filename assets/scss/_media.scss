@@ -380,6 +380,7 @@
       padding-top: 50px;
       padding-left: 0px;
       max-width: 100%;
+      padding-bottom: 20px;
       &::after {
         left: 0;
         top: 0;
@@ -2456,7 +2457,6 @@
       }
     }
   }
-
 }
 @media (max-width: 350px){
   .vk-comments{
