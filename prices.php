@@ -182,7 +182,8 @@
             <div class="calculator-result__weight">
               <div class="calculator-result__title">Общий вес сырья:</div>
               <div class="calculator-result__input">
-                <input class="calculator-input" id="calculate-input-weight" type="number" maxlength="5" placeholder="20" />
+                <input class="calculator-input" id="calculate-input-weight" type="number" maxlength="5"
+                  placeholder="20" />
                 <label class="calculator-result__label">Кг</label>
               </div>
             </div>
@@ -202,7 +203,8 @@
                 </div>
                 <div id="calculate-range-pt" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                  <input id="calculate-input-pt" class="calculator-input" maxlength="5" type="number" placeholder="20" />
+                  <input id="calculate-input-pt" class="calculator-input" maxlength="5" type="number"
+                    placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
@@ -218,7 +220,8 @@
                 </div>
                 <div id="calculate-range-pd" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                  <input id="calculate-input-pd" class="calculator-input" maxlength="5" type="number" placeholder="20" />
+                  <input id="calculate-input-pd" class="calculator-input" maxlength="5" type="number"
+                    placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
@@ -234,7 +237,8 @@
                 </div>
                 <div id="calculate-range-rh" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                  <input id="calculate-input-rh" class="calculator-input" maxlength="5" type="number" placeholder="20" />
+                  <input id="calculate-input-rh" class="calculator-input" maxlength="5" type="number"
+                    placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
@@ -256,7 +260,8 @@
                     placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
-                  <button type="submit" data-target="#popup-thank-specialist" id="action-btn" class="main-form__submit btn btn_hover primary-btn">Продать катализатор</button>
+                  <button type="submit" data-target="#popup-thank-specialist" id="action-btn"
+                    class="main-form__submit btn btn_hover primary-btn">Продать катализатор</button>
                 </div>
               </div>
               <label class="main-form__policy">
@@ -345,7 +350,7 @@
                 мы возвращаем ретро-бонусы в размере 5% от общей.
               </p>
               <div class="pass-material__btn">
-                <a href="/#map" class="btn btn_small btn_hover light-blue-btn scrollto">Показать адреса</a>
+                <a href="#map" class="btn btn_small btn_hover light-blue-btn scrollto">Показать адреса</a>
               </div>
             </div>
           </div>
@@ -365,6 +370,7 @@
         </div>
       </div>
     </section>
+    <?php include("templates/map.php"); ?>
   </div>
 
   <!-- popup-thank-specialist -->
@@ -393,7 +399,8 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn">вызвать специалиста</button>
+            <button type="submit" data-target="#popup-thank-specialist"
+              class="main-form__submit btn btn_hover orange-btn">вызвать специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">
@@ -424,7 +431,8 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn">вызвать
+            <button type="submit" data-target="#popup-thank-specialist"
+              class="main-form__submit btn btn_hover orange-btn">вызвать
               специалиста</button>
           </div>
         </div>
@@ -474,7 +482,8 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn">вызвать специалиста</button>
+            <button type="submit" data-target="#popup-thank-specialist"
+              class="main-form__submit btn btn_hover orange-btn">вызвать специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">
@@ -501,7 +510,8 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <button type="submit" data-target="#popup-thank-curyer" class="main-form__submit btn btn_hover blue-btn">вызвать специалиста</button>
+            <button type="submit" data-target="#popup-thank-curyer"
+              class="main-form__submit btn btn_hover blue-btn">вызвать специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">
