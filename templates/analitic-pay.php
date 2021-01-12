@@ -1,4 +1,4 @@
-<div class="graph">
+<div class="graph graph-area">
     <div class="graph__header">
         <h3 class="graph__title">
             Объем выплат
@@ -10,7 +10,10 @@
             </label>
         </div>
     </div>
+    <div class="graph__yaxix-analitic-pay"></div>
     <div class="graph__wrapper">
+      <div class="graph__wrapper__content">
         <div id="analitic-pay"></div>
+      </div>
     </div>
 </div>

@@ -154,7 +154,7 @@
           <div class="calculator-result__weight">
             <div class="calculator-result__title">Общий вес сырья:</div>
             <div class="calculator-result__input">
-              <input class="calculator-input" id="calculate-input-weight" type="number" maxlength="5" placeholder="20" />
+              <input class="calculator-input input-nubmer-js" id="calculate-input-weight" type="text" maxlength="5" placeholder="20" />
               <label class="calculator-result__label">Кг</label>
             </div>
           </div>
@@ -171,7 +171,7 @@
               </div>
               <div id="calculate-range-pt" class="options-item__range custom-range"></div>
               <div class="calculator-result__input">
-                <input id="calculate-input-pt" class="calculator-input" maxlength="5" type="number" placeholder="20" />
+                <input id="calculate-input-pt" class="calculator-input input-nubmer-js" maxlength="5" type="text" placeholder="20" />
                 <label class="calculator-result__label">Г/ Кг</label>
               </div>
             </div>
@@ -187,7 +187,7 @@
               </div>
               <div id="calculate-range-pd" class="options-item__range custom-range"></div>
               <div class="calculator-result__input">
-                <input id="calculate-input-pd" class="calculator-input" maxlength="5" type="number" placeholder="20" />
+                <input id="calculate-input-pd" class="calculator-input input-nubmer-js" maxlength="5" type="text" placeholder="20" />
                 <label class="calculator-result__label">Г/ Кг</label>
               </div>
             </div>
@@ -203,7 +203,7 @@
               </div>
               <div id="calculate-range-rh" class="options-item__range custom-range"></div>
               <div class="calculator-result__input">
-                <input id="calculate-input-rh" class="calculator-input" maxlength="5" type="number" placeholder="20" />
+                <input id="calculate-input-rh" class="calculator-input input-nubmer-js" placeholder="20" />
                 <label class="calculator-result__label">Г/ Кг</label>
               </div>
             </div>

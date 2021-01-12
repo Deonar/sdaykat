@@ -58,6 +58,7 @@ jQuery(document).ready(function ($) {
     }
   }
   startWindowScroll = 0;
+
   $('.popup').magnificPopup({
     mainClass: 'mfp-fade',
     type: 'inline',
@@ -77,6 +78,25 @@ jQuery(document).ready(function ($) {
       },
     },
   });
+
+  function openPopupHref(href) {
+    $.magnificPopup.open({
+      items: {
+        src: href,
+      },
+      type: 'inline',
+      callbacks: {
+        open: function () {
+          $('body').addClass('overflow-h');
+          console.log('open');
+        },
+        close: function () {
+          $('body').removeClass('overflow-h');
+          console.log('close');
+        },
+      },
+    });
+  }
 
   $('#price-oftype__slider a').on('click', function (e) {
     e.preventDefault();
@@ -673,22 +693,29 @@ jQuery(document).ready(function ($) {
       let href = $(this).attr('href');
       if (href) {
         e.stopPropagation();
-        $.magnificPopup.open({
-          items: {
-            src: href,
-          },
-          type: 'inline',
-          callbacks: {
-            open: function () {
-              $('body').addClass('overflow-h');
-              console.log('open');
-            },
-            close: function () {
-              $('body').removeClass('overflow-h');
-              console.log('close');
-            },
-          },
-        });
+        openPopupHref(href);
+      }
+    }
+    e.preventDefault();
+  });
+
+  // Прибыль региона
+  $('#calculate-input-people').on('input', function () {
+    if ($('#calculate-input-people').val()) {
+      $('.form-warning-js').hide();
+      $('#calculator-total-price').show();
+    } else {
+      $('.form-warning-js').show();
+      $('#calculator-total-price').hide();
+    }
+  })
+
+  $('.calculator-calculate-btn').on('click', function (e) {
+    if ($('#calculate-input-people').val()) {
+      let href = $(this).attr('href');
+      if (href) {
+        e.stopPropagation();
+        openPopupHref(href);
       }
     }
     e.preventDefault();

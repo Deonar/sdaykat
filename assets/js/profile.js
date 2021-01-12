@@ -1,5 +1,9 @@
 jQuery(document).ready(function ($) {
     //======================== daterangepicker profile
+    // predefined ranges
+    var start = moment().subtract(29, 'days');
+    var end = moment();
+
     $('.daterange-input').daterangepicker({
         "locale": {
             "format": "MM/DD/YYYY",
@@ -33,9 +37,24 @@ jQuery(document).ready(function ($) {
                 "Декабрь"
             ],
             "firstDay": 1
+        },
+        startDate: start,
+        endDate: end,
+        ranges: {
+            'Cегодня': [moment(), moment()],
+            'Вчера': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'За 7 дней': [moment().subtract(6, 'days'), moment()],
+            'За 30 дней': [moment().subtract(29, 'days'), moment()],
+            'За месяц': [moment().startOf('month'), moment().endOf('month')],
+            'За прошлый месяц': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
         }
+    }, function (start, end, label) {
+        $('#kt_daterangepicker_6 .form-control').val(start.format('MM/DD/YYYY') + ' / ' + end.format('MM/DD/YYYY'));
     });
 
+    if (document.documentElement.clientWidth < 420) {
+        $('.daterange-input').attr('readonly', 'readonly')
+    }
     //entry-account
     $('#entry-account').on('click', function (e) {
         if ($(this).closest('.main-form').find(".main-form__phone").val().length >= 18) {
@@ -147,7 +166,7 @@ jQuery(document).ready(function ($) {
 
         document.cookie = 'user-auth=1; path=/';
     })
-    $('#registration-account').on('click', function(){
+    $('#registration-account').on('click', function () {
         document.cookie = 'user-auth=1; path=/';
     })
     // profile save-info
@@ -168,10 +187,11 @@ jQuery(document).ready(function ($) {
     });
 
     //======================== Analitic
+    var issetYaxix = [0, 0];
     var options = {
         series: [{
             name: "Desktops",
-            data: [10, 50, 35, 5, 49, 90, 19]
+            data: [10, 50, 35, 5, 49, 90, 19, 10, 50]
         }],
         chart: {
             height: 437,
@@ -180,6 +200,34 @@ jQuery(document).ready(function ($) {
                 enabled: false
             },
             events: {
+                updated: function (chartContext, config) {
+                    if (issetYaxix[0]) return 0;
+
+                    $h = $('#analitic-delivery').height() - 78;
+                    $('.graph__yaxix-analitic-delivery').css('height', $h);
+                    $yaxix_cnt = $('#analitic-delivery .apexcharts-yaxis text').length;
+                    for (var i = 0; i < $yaxix_cnt; i++) {
+                        $('.graph__yaxix-analitic-delivery').append("<div class='graph__yaxix-analitic-delivery--single'>" + $('#analitic-delivery .apexcharts-yaxis text').eq(i).text() + "</div>");
+                        $el = $('.graph__yaxix-analitic-delivery--single').eq(i);
+                        $el.css('top', (($h + ($h / $yaxix_cnt) - 30) / $yaxix_cnt) * i + 24)
+                    }
+
+                    issetYaxix[0] = 1;
+                },
+                mounted: function (chartContext, config) {
+                    if (issetYaxix[0]) return 0;
+
+                    $h = $('#analitic-delivery').height() - 78;
+                    $('.graph__yaxix-analitic-delivery').css('height', $h);
+                    $yaxix_cnt = $('#analitic-delivery .apexcharts-yaxis text').length;
+                    for (var i = 0; i < $yaxix_cnt; i++) {
+                        $('.graph__yaxix-analitic-delivery').append("<div class='graph__yaxix-analitic-delivery--single'>" + $('#analitic-delivery .apexcharts-yaxis text').eq(i).text() + "</div>");
+                        $el = $('.graph__yaxix-analitic-delivery--single').eq(i);
+                        $el.css('top', (($h + ($h / $yaxix_cnt) - 30) / $yaxix_cnt) * i + 24)
+                    }
+
+                    issetYaxix[0] = 1;
+                },
                 mouseMove: function (event, chartContext, config) {
                     var tooltip = chartContext.el.querySelector('.apexcharts-tooltip');
                     var pointsArray = config.globals.pointsArray;
@@ -203,7 +251,11 @@ jQuery(document).ready(function ($) {
                         tooltip.style.top = position[1] + 'px';
                         tooltip.style.left = (position[0] + 30) + 'px';
                     }
-                }
+
+
+
+                },
+
             }
         },
         fill: {
@@ -231,7 +283,7 @@ jQuery(document).ready(function ($) {
         },
         colors: ["#043598", "#043598"],
         xaxis: {
-            categories: ['10.02', '11.02', '12.02', '13.02', '14.02', '15.02', '16.02'],
+            categories: ['10.02', '11.02', '12.02', '13.02', '14.02', '15.02', '16.02', '15.02', '16.02'],
             labels: {
                 minHeight: 60,
                 maxHeight: 60,
@@ -264,7 +316,27 @@ jQuery(document).ready(function ($) {
         },
         grid: {
             strokeDashArray: 10,
-        }
+        },
+        responsive: [{
+            breakpoint: 768,
+            options: {
+                yaxis: {
+                    labels: {
+                        style: {
+                            cssClass: 'apexcharts--hidden',
+                        },
+                        minWidth: 60,
+                        maxWidth: 60,
+                        offsetX: -30,
+                        offsetY: 0,
+                        rotate: 0,
+                    }
+                }
+            },
+            chart: {
+                width: 768
+            }
+        }]
     };
 
     var options1 = {
@@ -279,6 +351,34 @@ jQuery(document).ready(function ($) {
                 enabled: false
             },
             events: {
+                updated: function (chartContext, config) {
+                    if (issetYaxix[1]) return 0;
+
+                    $h = $('#analitic-pay').height() - 78;
+                    $('.graph__yaxix-analitic-pay').css('height', $h);
+                    $yaxix_cnt = $('#analitic-pay .apexcharts-yaxis text').length;
+                    for (var i = 0; i < $yaxix_cnt; i++) {
+                        $('.graph__yaxix-analitic-pay').append("<div class='graph__yaxix-analitic-pay--single'>" + $('#analitic-pay .apexcharts-yaxis text').eq(i).text() + "</div>");
+                        $el = $('.graph__yaxix-analitic-pay--single').eq(i);
+                        $el.css('top', (($h + ($h / $yaxix_cnt) - 30) / $yaxix_cnt) * i + 24)
+                    }
+
+                    issetYaxix[1] = 1;
+                },
+                mounted: function (chartContext, config) {
+                    if (issetYaxix[1]) return 0;
+
+                    $h = $('#analitic-pay').height() - 78;
+                    $('.graph__yaxix-analitic-pay').css('height', $h);
+                    $yaxix_cnt = $('#analitic-pay .apexcharts-yaxis text').length;
+                    for (var i = 0; i < $yaxix_cnt; i++) {
+                        $('.graph__yaxix-analitic-pay').append("<div class='graph__yaxix-analitic-pay--single'>" + $('#analitic-pay .apexcharts-yaxis text').eq(i).text() + "</div>");
+                        $el = $('.graph__yaxix-analitic-pay--single').eq(i);
+                        $el.css('top', (($h + ($h / $yaxix_cnt) - 30) / $yaxix_cnt) * i + 24)
+                    }
+
+                    issetYaxix[1] = 1;
+                },
                 mouseMove: function (event, chartContext, config) {
                     var tooltip = chartContext.el.querySelector('.apexcharts-tooltip');
                     var pointsArray = config.globals.pointsArray;
@@ -363,7 +463,27 @@ jQuery(document).ready(function ($) {
         },
         grid: {
             strokeDashArray: 10,
-        }
+        },
+        responsive: [{
+            breakpoint: 768,
+            options: {
+                yaxis: {
+                    labels: {
+                        style: {
+                            cssClass: 'apexcharts--hidden',
+                        },
+                        minWidth: 60,
+                        maxWidth: 60,
+                        offsetX: -30,
+                        offsetY: 0,
+                        rotate: 0,
+                    }
+                }
+            },
+            chart: {
+                width: 768
+            }
+        }]
     };
 
     var colors = ['#31BCFE', '#022270', '#043598']

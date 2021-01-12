@@ -179,11 +179,14 @@
               Расчитайте оптовую <br />
               стоимость сырья
             </h2>
+            <div class="d-block d-md-none">
+              <div class="calculator-form__warning form-warning-js" style="color: #fff;">Укажите вес сырья и содержание металлов для
+                предарительного расчета</div>
+            </div>
             <div class="calculator-result__weight">
               <div class="calculator-result__title">Общий вес сырья:</div>
               <div class="calculator-result__input">
-                <input class="calculator-input" id="calculate-input-weight" type="number" maxlength="5"
-                  placeholder="20" />
+                <input class="calculator-input input-nubmer-js" id="calculate-input-weight" type="text" maxlength="5" placeholder="20" />
                 <label class="calculator-result__label">Кг</label>
               </div>
             </div>
@@ -203,8 +206,7 @@
                 </div>
                 <div id="calculate-range-pt" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                  <input id="calculate-input-pt" class="calculator-input" maxlength="5" type="number"
-                    placeholder="20" />
+                  <input id="calculate-input-pt" class="calculator-input input-nubmer-js" maxlength="5" type="text" placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
@@ -220,8 +222,7 @@
                 </div>
                 <div id="calculate-range-pd" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                  <input id="calculate-input-pd" class="calculator-input" maxlength="5" type="number"
-                    placeholder="20" />
+                  <input id="calculate-input-pd" class="calculator-input input-nubmer-js" maxlength="5" type="text" placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
@@ -237,13 +238,13 @@
                 </div>
                 <div id="calculate-range-rh" class="options-item__range custom-range"></div>
                 <div class="calculator-result__input">
-                  <input id="calculate-input-rh" class="calculator-input" maxlength="5" type="number"
-                    placeholder="20" />
+                  <input id="calculate-input-rh" class="calculator-input input-nubmer-js" maxlength="5" type="text" placeholder="20" />
                   <label class="calculator-result__label">Г/ Кг</label>
                 </div>
               </div>
             </div>
           </div>
+          <a href="#popup-form-calculator" class="calculator-calculate-btn btn">рассчитать СТОИМОСТЬ</a>
           <div class="calculator-form">
             <h3 class="calculator-form__title primary-title__h3">
               Общая <br />
@@ -256,12 +257,10 @@
               <div class="main-form__wrapper">
                 <label class="main-form__label main-form__label main-form__label_phone">
                   <span class="main-form__label-error">некорректный номер</span>
-                  <input class="main-form__phone mask-phone" id="client-phone" type="tel" name="phone"
-                    placeholder="+7 (___) ___-__-__" />
+                  <input class="main-form__phone mask-phone" id="client-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
                 </label>
                 <div class="main-form__btn">
-                  <button type="submit" data-target="#popup-thank-specialist" id="action-btn"
-                    class="main-form__submit btn btn_hover primary-btn">Продать катализатор</button>
+                  <button type="submit" data-target="#popup-thank-specialist" id="action-btn" class="main-form__submit btn btn_hover primary-btn">Продать катализатор</button>
                 </div>
               </div>
               <label class="main-form__policy">
@@ -274,7 +273,7 @@
             <div class="calculator-form__tell-label">Или свяжитесь с нами по номеру</div>
             <a href="tel:+88005507940" class="calculator-form__tell">8 800 550 79 40</a>
           </div>
-          <a href="#popup-form-calculator" class="calculator-calculate-btn btn">рассчитать СТОИМОСТЬ</a>
+
         </div>
       </div>
     </section>
@@ -399,8 +398,7 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <button type="submit" data-target="#popup-thank-specialist"
-              class="main-form__submit btn btn_hover orange-btn">вызвать специалиста</button>
+            <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn">вызвать специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">
@@ -431,8 +429,7 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <button type="submit" data-target="#popup-thank-specialist"
-              class="main-form__submit btn btn_hover orange-btn">вызвать
+            <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn">вызвать
               специалиста</button>
           </div>
         </div>
@@ -482,8 +479,7 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <button type="submit" data-target="#popup-thank-specialist"
-              class="main-form__submit btn btn_hover orange-btn">вызвать специалиста</button>
+            <button type="submit" data-target="#popup-thank-specialist" class="main-form__submit btn btn_hover orange-btn">вызвать специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">
@@ -510,8 +506,7 @@
             <input class="main-form__phone mask-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
           </label>
           <div class="main-form__btn">
-            <button type="submit" data-target="#popup-thank-curyer"
-              class="main-form__submit btn btn_hover blue-btn">вызвать специалиста</button>
+            <button type="submit" data-target="#popup-thank-curyer" class="main-form__submit btn btn_hover blue-btn">вызвать специалиста</button>
           </div>
         </div>
         <label class="main-form__policy">
@@ -526,6 +521,10 @@
   <!-- popup-form curyer end-->
 
   <?php include("footer.php"); ?>
+  <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript">
+  </script>
+
+  <script src="assets/js/map.js"></script>
 </body>
 
 </html>

@@ -7,6 +7,9 @@
     background-color: $blue;
   }
 }
+.daterangepicker .ranges li.active{
+  background-color: $blue;
+}
 
 .graph {
   background: #ffffff;
@@ -149,7 +152,12 @@
   align-items: center;
   justify-content: center;
 }
-
+.graph__yaxix-analitic-delivery {
+  display: none;
+}
+.graph__yaxix-analitic-pay {
+  display: none;
+}
 @media (max-width: 767px) {
   #analitic-delivery {
     min-width: 768px;
@@ -177,5 +185,43 @@
     &__wrapper{
       overflow-x: scroll;
     }
+  }
+  .graph-area .apexcharts--hidden {
+    opacity: 0 !important;
+  }
+
+  .graph-area .graph__yaxix-analitic-delivery, .graph-area .graph__yaxix-analitic-pay {
+    position: absolute;
+    display: block;
+    width: 40px;
+  }
+  .graph-area .graph__yaxix-analitic-delivery--single, .graph-area .graph__yaxix-analitic-pay--single {
+    font-family: "ProximaNova", sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    opacity: 0.7 !important;
+    text-align: right;
+    right: 0;
+    position: absolute;
+  }
+  .graph-area .apexcharts-canvas {
+    margin-left: -50px !important;
+    width: 768px !important;
+  }
+  .graph-area .apexcharts-canvas > svg {
+    width: 768px !important;
+  }
+  #analitic-delivery, #analitic-pay  {
+    min-width: 768px !important;
+  }
+  .graph__wrapper__content {
+    overflow: hidden;
+    min-width: 718px;
+  }
+  .graph-area .graph__wrapper {
+    margin-left: 40px !important;
+  }
+  .show-calendar .ranges{
+    display: none;
   }
 }

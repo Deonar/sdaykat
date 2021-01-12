@@ -1,3 +1,4 @@
+jQuery(document).ready(function ($) {
 $el = $('#representative-map path[fill="white"]');
 
 function scrollToData(id) {
@@ -127,12 +128,9 @@ $('.obl_union').hover(function () {
   $('.map-tooltip').css('transform', 'scale(0)')
 })
 
-
-
-
-
 $(document).on('mouseenter', '.map-tooltip', function () {
     $('.map-tooltip').css('transform', 'scale(1)')
 }).on('mouseleave', '.map-tooltip', function () {
     $('.map-tooltip').css('transform', 'scale(0)')
+});
 });

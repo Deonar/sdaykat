@@ -1,4 +1,4 @@
-<div class="graph">
+<div class="graph graph-area">
     <div class="graph__header">
         <h3 class="graph__title">
             Объем сдачи сырья
@@ -10,7 +10,10 @@
             </label>
         </div>
     </div>
+    <div class="graph__yaxix-analitic-delivery"></div>
     <div class="graph__wrapper">
-        <div id="analitic-delivery"></div>
+      <div class="graph__wrapper__content">
+          <div id="analitic-delivery"></div>
+      </div>
     </div>
 </div>
