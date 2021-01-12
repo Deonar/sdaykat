@@ -32,7 +32,7 @@ if (!isset($header_class)) {
         <!-- mobile content end-->
 
         <div class="header-top__nav">
-          <div class="header-top__location active">
+          <div class="header-top__location">
             <div class="header-top__location-link">Челябинск</div>
             <div class="location-popup">
               <div class="location-popup__body">

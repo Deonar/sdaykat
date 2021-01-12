@@ -37,11 +37,35 @@ jQuery(document).ready(function ($) {
   });
 
   //======================== POPUPS
+  window.Utils = {
+    magnificPopupConfiguration: function () {
+      var startWindowScroll = 0;
+
+      return {
+        beforeOpen: function () {
+          startWindowScroll = $(window).scrollTop();
+          $('html').addClass('mfp-helper');
+        },
+        close: function () {
+          $('html').removeClass('mfp-helper');
+          setTimeout(function () {
+            $('body').animate({
+              scrollTop: startWindowScroll
+            }, 0);
+          }, 0);
+        }
+      }
+    }
+  }
+  startWindowScroll = 0;
   $('.popup').magnificPopup({
     mainClass: 'mfp-fade',
     type: 'inline',
     fixedContentPos: false,
     fixedBgPos: true,
+    midClick: true,
+    fixedContentPos: true,
+    callbacks: Utils.magnificPopupConfiguration(),
     callbacks: {
       open: function () {
         $('body').addClass('overflow-h');
@@ -54,7 +78,7 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  $('#price-oftype__slider a').on('click', function(e){
+  $('#price-oftype__slider a').on('click', function (e) {
     e.preventDefault();
   })
 
@@ -86,6 +110,9 @@ jQuery(document).ready(function ($) {
               src: target,
             },
             type: 'inline',
+            midClick: true,
+            fixedContentPos: true,
+            callbacks: Utils.magnificPopupConfiguration(),
             callbacks: {
               open: function () {
                 $('body').addClass('overflow-h');
@@ -183,11 +210,6 @@ jQuery(document).ready(function ($) {
     $.magnificPopup.close();
   });
 
-  var userCity = getCookie('user-city');
-  if (userCity) {
-    $('.header-top__location').removeClass('active');
-  }
-
   var userAuth = getCookie('user-auth');
 
   if (Number(userAuth)) {
@@ -204,6 +226,15 @@ jQuery(document).ready(function ($) {
   });
 
   // ======================== location popup
+  var userCity = getCookie('user-city');
+  if (userCity) {
+    $('.header-top__location').removeClass('active');
+  } else {
+    setTimeout(function () {
+      $('.header-top__location').addClass('active')
+    }, 3000);
+  }
+
   $('.closeLocationPopup').on('click', function (e) {
     $('.header-top__location').removeClass('active');
     city = $('.header-top__location .header-top__location-link').text();
@@ -214,7 +245,13 @@ jQuery(document).ready(function ($) {
   });
 
   // ======================== MASK
-  $('.mask-phone').mask('+7 (999) 999-99-99');
+  $('.mask-phone').mask('+Z (999) 999-99-99', {
+    translation: {
+      'Z': {
+        pattern: /[7-8]/,
+      }
+    }
+  });
 
   //========================  tabs accordion mobile
 
@@ -514,8 +551,12 @@ jQuery(document).ready(function ($) {
   });
   $(document).mouseup(function (e) {
     var select = $('.select');
+    var actions = $('.actions-content-show-js, .header-top__location');
     if (e.target != select[0] && select.has(e.target).length === 0) {
       $('.select').removeClass('is-active');
+    }
+    if (e.target != actions[0] && actions.has(e.target).length === 0) {
+      actions.removeClass('active');
     }
   });
   //======================== ALL SELEC END
@@ -549,13 +590,13 @@ jQuery(document).ready(function ($) {
   function numberWithSpaces(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   }
-  
-  $('.input-nubmer-js').on("change keyup input click", function() {
-    if(this.value.match(/[^0-9]/g)){
-        this.value = this.value.replace(/[^0-9]/g, "");
+
+  $('.input-nubmer-js').on("change keyup input click", function () {
+    if (this.value.match(/[^0-9]/g)) {
+      this.value = this.value.replace(/[^0-9]/g, "");
     };
     this.value = numberWithSpaces(this.value);
-});
+  });
   // Стоимость сырья PT
   $('#calculate-range-pt').slider({
     range: 'min',
